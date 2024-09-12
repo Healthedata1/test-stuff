@@ -1,0 +1,13 @@
+HealthEData_1Sandbox
+=========================================
+
+Generic: line 0, col 0, Error - The link 'ImplementationGuide-.xml' for "XML" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'ImplementationGuide-.json' for "JSON" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/extensions/5.1.0-snapshot1' for "FHIR Extensions Pack" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'http://terminology.hl7.org/5.3.0' for "HL7 Terminology (THO)" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'schematrons.zip' for "Schematrons(compressed folder)" cannot be resolved (NOTFOUND)
+/home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json: line 1, col 17238, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1) (STRUCTURE)
+
+err = 1, warn = 0, info = 0
+IG Publisher Version: 1.6.24
