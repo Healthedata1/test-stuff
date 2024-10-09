@@ -1,16 +1,16 @@
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 22, warn = 7, info = 3
+err = 19, warn = 3, info = 9
 $--
 Generated $--. FHIR version $-- for healthedata1-sandbox#$-- (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
  Build Errors : 12 / 1 / 0
  /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox : 0 / 0 / 1
- /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-adi-intubation : 5 / 1 / 2
- /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-living-will : 5 / 1 / 2
- /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-polst : 5 / 1 / 2
+ /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-adi-intubation : 4 / 0 / 4
+ /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-living-will : 4 / 0 / 4
+ /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-polst : 4 / 0 / 4
  /home/runner/work/test-stuff/test-stuff/input/examples/Patient-example : 0 / 1 / 1
- /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference : 4 / 1 / 1
+ /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference : 4 / 0 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-authentication-time : 3 / 1 / 1
 </table>
 == n/a ==
@@ -29,35 +29,34 @@ ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-cor
 ERROR: /home/runner/work/test-stuff/test-stuff/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 179, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json ==
 == input/examples/DocumentReference-adi-intubation.json ==
-ERROR: DocumentReference/adi-intubation: DocumentReference.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' does not resolve
+INFORMATION: DocumentReference/adi-intubation: DocumentReference.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: DocumentReference/adi-intubation: DocumentReference.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: DocumentReference/adi-intubation: DocumentReference.extension[0]: The extension http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time could not be found so is not allowed here
 ERROR: DocumentReference/adi-intubation: DocumentReference.extension[0].url: URL value 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time' does not resolve
-INFORMATION: DocumentReference/adi-intubation: DocumentReference.type: None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#75787-2)
 ERROR: DocumentReference/adi-intubation: DocumentReference.authenticator.extension[0]: The extension http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time could not be found so is not allowed here
 ERROR: DocumentReference/adi-intubation: DocumentReference.authenticator.extension[0].url: URL value 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time' does not resolve
-WARNING: DocumentReference/adi-intubation: DocumentReference.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: DocumentReference/adi-intubation: DocumentReference.authenticator.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == input/examples/DocumentReference-living-will.json ==
-ERROR: DocumentReference/living-will: DocumentReference.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' does not resolve
+INFORMATION: DocumentReference/living-will: DocumentReference.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: DocumentReference/living-will: DocumentReference.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: DocumentReference/living-will: DocumentReference.extension[0]: The extension http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time could not be found so is not allowed here
 ERROR: DocumentReference/living-will: DocumentReference.extension[0].url: URL value 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time' does not resolve
-INFORMATION: DocumentReference/living-will: DocumentReference.type: None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#86533-7)
 ERROR: DocumentReference/living-will: DocumentReference.authenticator.extension[0]: The extension http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time could not be found so is not allowed here
 ERROR: DocumentReference/living-will: DocumentReference.authenticator.extension[0].url: URL value 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time' does not resolve
-WARNING: DocumentReference/living-will: DocumentReference.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: DocumentReference/living-will: DocumentReference.authenticator.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == input/examples/DocumentReference-polst.json ==
-ERROR: DocumentReference/polst: DocumentReference.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' does not resolve
+INFORMATION: DocumentReference/polst: DocumentReference.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: DocumentReference/polst: DocumentReference.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: DocumentReference/polst: DocumentReference.extension[0]: The extension http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time could not be found so is not allowed here
 ERROR: DocumentReference/polst: DocumentReference.extension[0].url: URL value 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time' does not resolve
-INFORMATION: DocumentReference/polst: DocumentReference.type: None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#100821-8)
 ERROR: DocumentReference/polst: DocumentReference.authenticator.extension[0]: The extension http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time could not be found so is not allowed here
 ERROR: DocumentReference/polst: DocumentReference.authenticator.extension[0].url: URL value 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time' does not resolve
-WARNING: DocumentReference/polst: DocumentReference.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+INFORMATION: DocumentReference/polst: DocumentReference.authenticator.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == input/examples/Patient-example.json ==
 WARNING: Patient/example: Patient.communication[0].preferred.extension[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == input/resources/StructureDefinition-us-core-adi-documentreference.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference.json - the canonical URL (http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference)
 ERROR: StructureDefinition/us-core-adi-documentreference: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'): The Implementation Guide contains no examples for this profile
 ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference: URL Mismatch http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference
 ERROR: StructureDefinition.text.div: Hyperlink 'general-requirements.html#required-bindings-when-slicing-by-valuesets' at 'div/table/tr/td/a' for 'Required Bindings When Slicing by Value Sets' does not resolve
 == input/resources/StructureDefinition-us-core-authentication-time.json ==

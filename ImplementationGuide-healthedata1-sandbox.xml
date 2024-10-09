@@ -17,7 +17,7 @@
   <name value="HealthEData_1Sandbox"/>
   <title value="Health eData 1 Sandbox"/>
   <status value="active"/>
-  <date value="2024-10-09T04:03:33+00:00"/>
+  <date value="2024-10-09T17:54:41+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -620,7 +620,7 @@
       </reference>
       <name value="DocRef ADI-DNI (PDF)"/>
       <description value="This is a an example of ADI-DNI (PDF) for the *US Core ADI DocumentReference Profile*"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -631,7 +631,7 @@
       </reference>
       <name value="DocRef Living Will (PDF)"/>
       <description value="This is a an example of Living Will (PDF) for the *US Core ADI DocumentReference Profile*"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -642,7 +642,7 @@
       </reference>
       <name value="DocRef POLST (PDF)"/>
       <description value="This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

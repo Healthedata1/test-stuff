@@ -9,7 +9,7 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
       <valueMarkdown value="This is a an example of Living Will (PDF) for the *US Core ADI DocumentReference Profile*"/>
     </extension>
-    <profile value="http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"/>
   </meta>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference living-will</b></p><a name="living-will"> </a><a name="hcliving-will"> </a><a name="living-will-en-US"> </a><p><b>org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time</b>: 2024-10-08 19:48:54-0700</p><p><b>identifier</b>: <a href="http://terminology.hl7.org/5.5.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 

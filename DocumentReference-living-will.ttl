@@ -18,8 +18,8 @@
        fhir:value [ fhir:v "This is a an example of Living Will (PDF) for the *US Core ADI DocumentReference Profile*" ]
      ] ) ;
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference>
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference>
      ] )
   ] ; # 
   fhir:text [

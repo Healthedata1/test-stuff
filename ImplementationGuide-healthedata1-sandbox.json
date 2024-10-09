@@ -18,7 +18,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2024-10-09T04:03:33+00:00",
+  "date" : "2024-10-09T17:54:41+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -832,7 +832,7 @@
       },
       "name" : "DocRef ADI-DNI (PDF)",
       "description" : "This is a an example of ADI-DNI (PDF) for the *US Core ADI DocumentReference Profile*",
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
     },
     {
       "extension" : [{
@@ -844,7 +844,7 @@
       },
       "name" : "DocRef Living Will (PDF)",
       "description" : "This is a an example of Living Will (PDF) for the *US Core ADI DocumentReference Profile*",
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
     },
     {
       "extension" : [{
@@ -856,7 +856,7 @@
       },
       "name" : "DocRef POLST (PDF)",
       "description" : "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*",
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
     },
     {
       "extension" : [{

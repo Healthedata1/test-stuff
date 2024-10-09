@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-10-09T04:03:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-09T17:54:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -724,7 +724,10 @@
        ] ;
        fhir:name [ fhir:v "DocRef ADI-DNI (PDF)" ] ;
        fhir:description [ fhir:v "This is a an example of ADI-DNI (PDF) for the *US Core ADI DocumentReference Profile*" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -736,7 +739,10 @@
        ] ;
        fhir:name [ fhir:v "DocRef Living Will (PDF)" ] ;
        fhir:description [ fhir:v "This is a an example of Living Will (PDF) for the *US Core ADI DocumentReference Profile*" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -748,7 +754,10 @@
        ] ;
        fhir:name [ fhir:v "DocRef POLST (PDF)" ] ;
        fhir:description [ fhir:v "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
