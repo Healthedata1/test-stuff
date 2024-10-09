@@ -12,7 +12,7 @@
     <profile value="http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference polst</b></p><a name="polst"> </a><a name="hcpolst"> </a><a name="polst-en-US"> </a><p><b>US Core Authentication Time Extension</b>: 2024-10-08 19:48:54-0700</p><p><b>identifier</b>: <a href="http://terminology.hl7.org/5.5.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference polst</b></p><a name="polst"> </a><a name="hcpolst"> </a><a name="polst-en-US"> </a><p><b>org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time</b>: 2024-10-08 19:48:54-0700</p><p><b>identifier</b>: <a href="http://terminology.hl7.org/5.5.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 

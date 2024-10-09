@@ -4,7 +4,7 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time",
       "title": "US Core Authentication Time Extension",
       "types": [
         "dateTime"
