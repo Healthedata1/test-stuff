@@ -1,55 +1,316 @@
 {
-  "date" : "Thu, 12 Sep, 2024 06:09:38 +0000",
+  "date" : "Wed, 09 Oct, 2024 03:26:46 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json",
-      "size" : 4615,
+      "size" : 7781,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 75,
-          "length" : 34
+          "start" : 84,
+          "length" : 20
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 75,
-          "length" : 6
+          "start" : 84,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 75,
-          "length" : 95
+          "start" : 84,
+          "length" : 94
         },
         {
           "activity" : "validate",
-          "start" : 75,
-          "length" : 2228
+          "start" : 87,
+          "length" : 2485
         },
         {
-          "activity" : "generate1",
-          "start" : 77,
-          "length" : 108
-        },
-        {
-          "activity" : "generate2",
-          "start" : 79,
-          "length" : 92
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 105,
+          "activity" : "scanForUsageStats",
+          "start" : 90,
           "length" : 1
         },
         {
+          "activity" : "generate1",
+          "start" : 94,
+          "length" : 127
+        },
+        {
+          "activity" : "generate2",
+          "start" : 100,
+          "length" : 106
+        },
+        {
           "activity" : "generateValidationPack",
+          "start" : 111,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/DocumentReference-adi-intubation.json",
+      "size" : 147883,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 83,
+          "length" : 20
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 84,
+          "length" : 831
+        },
+        {
+          "activity" : "validate",
+          "start" : 90,
+          "length" : 1533
+        },
+        {
+          "activity" : "generate1",
+          "start" : 94,
+          "length" : 435
+        },
+        {
+          "activity" : "generate2",
+          "start" : 101,
+          "length" : 200
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/DocumentReference-living-will.json",
+      "size" : 186520,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 83,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 85,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 91,
+          "length" : 1446
+        },
+        {
+          "activity" : "processProvenanceDetails",
+          "start" : 94,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 95,
+          "length" : 484
+        },
+        {
+          "activity" : "generate2",
+          "start" : 101,
+          "length" : 71
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/DocumentReference-polst.json",
+      "size" : 1318585,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 83,
+          "length" : 25
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 85,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 93,
+          "length" : 1167
+        },
+        {
+          "activity" : "generate1",
+          "start" : 95,
+          "length" : 3207
+        },
+        {
+          "activity" : "generate2",
+          "start" : 101,
+          "length" : 231
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/Patient-example.json",
+      "size" : 4125,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 83,
+          "length" : 18
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 85,
+          "length" : 114
+        },
+        {
+          "activity" : "validate",
+          "start" : 94,
+          "length" : 353
+        },
+        {
+          "activity" : "generate1",
+          "start" : 99,
+          "length" : 36
+        },
+        {
+          "activity" : "generate2",
+          "start" : 101,
+          "length" : 40
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-us-core-adi-documentreference.json",
+      "size" : 17331,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 83,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 84,
+          "length" : 34
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 112
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 85,
+          "length" : 174
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 2009
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 90,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 90,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 99,
+          "length" : 467
+        },
+        {
+          "activity" : "generate2",
+          "start" : 101,
+          "length" : 1987
+        },
+        {
+          "activity" : "makeDependencies",
           "start" : 105,
           "length" : 4
         },
         {
+          "activity" : "generateValidationPack",
+          "start" : 111,
+          "length" : 20
+        },
+        {
           "activity" : "scanExamplesForR5",
-          "start" : 108,
-          "length" : 3
+          "start" : 135,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureDefinition-us-core-authentication-time.json",
+      "size" : 1847,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 83,
+          "length" : 21
+        },
+        {
+          "activity" : "load",
+          "start" : 84,
+          "length" : 15
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 84,
+          "length" : 29
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 85,
+          "length" : 29
+        },
+        {
+          "activity" : "validate",
+          "start" : 87,
+          "length" : 164
+        },
+        {
+          "activity" : "generate1",
+          "start" : 99,
+          "length" : 73
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 199
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 111,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 1
         }
       ]
     }

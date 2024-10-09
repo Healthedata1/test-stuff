@@ -2,16 +2,70 @@
   "package": "healthedata1-sandbox",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "extensions": [],
-  "profiles": {},
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
+      "title": "US Core Authentication Time Extension",
+      "types": [
+        "dateTime"
+      ]
+    }
+  ],
+  "profiles": {
+    "DocumentReference": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
+        "title": "US Core ADI DocumentReference Profile"
+      }
+    ]
+  },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type.targetProfile",
+      "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "Patient.contact.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "DocumentReference.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "DocumentReference.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-preferenceType": [
+      "Patient.communication.preferred"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
-      "ImplementationGuide"
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "ImplementationGuide",
       "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page"
+      "ImplementationGuide.definition.page.page",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -25,6 +79,17 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
       "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time": [
+      "DocumentReference",
+      "DocumentReference.authenticator"
+    ],
+    "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time": [
+      "DocumentReference",
+      "DocumentReference.authenticator"
     ]
   }
 }

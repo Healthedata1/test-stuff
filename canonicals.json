@@ -1,5 +1,19 @@
 [
   {
+    "id" : "us-core-adi-documentreference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
+    "version" : "0.1.0",
+    "name" : "USCoreADIDocumentReferenceProfile"
+  },
+  {
+    "id" : "us-core-authentication-time",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
+    "version" : "0.1.0",
+    "name" : "USCoreAuthenticationTimeExtension"
+  },
+  {
     "id" : "healthedata1-sandbox",
     "type" : "ImplementationGuide",
     "url" : "http://www.fhir.org/guides/healthedata1-sandbox/ImplementationGuide/healthedata1-sandbox",

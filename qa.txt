@@ -1,18 +1,69 @@
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 1, warn = 0, info = 0
-IG Publisher Version: 1.6.24
-Generated Thu Sep 12 06:10:12 UTC 2024. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
- Build Errors : 6 / 0 / 0
- /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox : 1 / 0 / 1
+err = 19, warn = 12, info = 3
+IG Publisher Version: 1.6.29
+Generated Wed Oct 09 03:27:38 UTC 2024. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
+ Build Errors : 13 / 1 / 0
+ /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox : 0 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-adi-intubation : 1 / 1 / 2
+ /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-living-will : 1 / 1 / 2
+ /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-polst : 1 / 1 / 2
+ /home/runner/work/test-stuff/test-stuff/input/examples/Patient-example : 0 / 1 / 1
+ /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference : 12 / 7 / 1
+ /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-authentication-time : 3 / 0 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: ?pkp-1?: The reference http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time could not be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 193, column 8: The link 'ImplementationGuide-.xml' for "XML" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 194, column 8: The link 'ImplementationGuide-.json' for "JSON" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/ImplementationGuide.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 216, column 2421: The link 'http://hl7.org/fhir/extensions/5.1.0-snapshot1' for "FHIR Extensions Pack" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/ImplementationGuide.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 217, column 2743: The link 'http://terminology.hl7.org/5.3.0' for "HL7 Terminology (THO)" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 229, column 2157: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 305, column 1179: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 454, column 906: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 328, column 726: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 513, column 726: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 767, column 724: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1330, column 726: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1514, column 726: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1768, column 724: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 179, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 214, column 8: The link 'schematrons.zip' for "Schematrons(compressed folder)" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json ==
-ERROR: ImplementationGuide/healthedata1-sandbox: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
+== input/examples/DocumentReference-adi-intubation.json ==
+ERROR: DocumentReference/adi-intubation: DocumentReference.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' does not resolve
+INFORMATION: DocumentReference/adi-intubation: DocumentReference.type: None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#75787-2)
+WARNING: DocumentReference/adi-intubation: DocumentReference.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/DocumentReference-living-will.json ==
+ERROR: DocumentReference/living-will: DocumentReference.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' does not resolve
+INFORMATION: DocumentReference/living-will: DocumentReference.type: None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#86533-7)
+WARNING: DocumentReference/living-will: DocumentReference.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/DocumentReference-polst.json ==
+ERROR: DocumentReference/polst: DocumentReference.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' does not resolve
+INFORMATION: DocumentReference/polst: DocumentReference.type: None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#100821-8)
+WARNING: DocumentReference/polst: DocumentReference.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== input/examples/Patient-example.json ==
+WARNING: Patient/example: Patient.communication[0].preferred.extension[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== input/resources/StructureDefinition-us-core-adi-documentreference.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference.json - the canonical URL (http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference)
+WARNING: StructureDefinition.snapshot.element[8]: The type of profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time cannot be checked as the profile is not known
+WARNING: StructureDefinition.snapshot.element[23]: The type of profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time cannot be checked as the profile is not known
+ERROR: StructureDefinition/us-core-adi-documentreference: StructureDefinition.snapshot.element[8].type[0].profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time' does not resolve
+ERROR: StructureDefinition/us-core-adi-documentreference: StructureDefinition.snapshot.element[23].type[0].profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time' does not resolve
+ERROR: StructureDefinition/us-core-adi-documentreference: StructureDefinition.differential.element[1].type[0].profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time' does not resolve
+ERROR: StructureDefinition/us-core-adi-documentreference: StructureDefinition.differential.element[11].type[0].profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time' does not resolve
+ERROR: StructureDefinition/us-core-adi-documentreference: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+WARNING: StructureDefinition/us-core-adi-documentreference: StructureDefinition.differential.element[1].type[0].profile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time
+WARNING: StructureDefinition/us-core-adi-documentreference: StructureDefinition.differential.element[11].type[0].profile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time
+WARNING: StructureDefinition/us-core-adi-documentreference: StructureDefinition.snapshot.element[8].type[0].profile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time
+WARNING: StructureDefinition/us-core-adi-documentreference: StructureDefinition.snapshot.element[23].type[0].profile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time
+ERROR: us-core-adi-documentreference: Unable to find Extension 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time' referenced at http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference differential DocumentReference.extension (authenticationTime)
+ERROR: us-core-adi-documentreference: Unable to find Extension 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time' referenced at http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference differential DocumentReference.authenticator.extension (authenticationTime)
+ERROR: us-core-adi-documentreference: Unable to find Extension 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time' referenced at http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference snapshot DocumentReference.extension (authenticationTime)
+ERROR: us-core-adi-documentreference: Unable to find Extension 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time' referenced at http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference snapshot DocumentReference.authenticator.extension (authenticationTime)
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'): The Implementation Guide contains no examples for this profile
+ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference: URL Mismatch http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference
+ERROR: StructureDefinition.text.div: Hyperlink 'general-requirements.html#required-bindings-when-slicing-by-valuesets' at 'div/table/tr/td/a' for 'Required Bindings When Slicing by Value Sets' does not resolve
+== input/resources/StructureDefinition-us-core-authentication-time.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-authentication-time.json - the canonical URL (http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-authentication-time) does not match the URL (http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time)
+ERROR: StructureDefinition/us-core-authentication-time: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-authentication-time: URL Mismatch http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-authentication-time vs http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time
