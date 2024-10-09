@@ -1,7 +1,7 @@
 {
     "resourceType": "StructureDefinition",
     "id": "us-core-authentication-time",
-    "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
+    "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time",
     "name": "USCoreAuthenticationTimeExtension",
     "title": "US Core Authentication Time Extension",
     "status": "active",
@@ -40,7 +40,7 @@
             {
                 "id": "Extension.url",
                 "path": "Extension.url",
-                "fixedUri": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time"
+                "fixedUri": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time"
             },
             {
                 "id": "Extension.value[x]",
