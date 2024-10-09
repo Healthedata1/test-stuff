@@ -86,7 +86,7 @@
         },
         "description": "This is a an example of ADI-DNI (PDF) for the *US Core ADI DocumentReference Profile*",
         "name": "DocRef ADI-DNI (PDF)",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
       },
       {
         "reference": {
@@ -94,7 +94,7 @@
         },
         "description": "This is a an example of Living Will (PDF) for the *US Core ADI DocumentReference Profile*",
         "name": "DocRef Living Will (PDF)",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
       },
       {
         "reference": {
@@ -102,7 +102,7 @@
         },
         "description": "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*",
         "name": "DocRef POLST (PDF)",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
       },
       {
         "reference": {

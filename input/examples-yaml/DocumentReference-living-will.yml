@@ -8,7 +8,8 @@ meta:
     valueMarkdown: This is a an example of Living Will (PDF) for the *US Core ADI
       DocumentReference Profile*
   profile:
-  - http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference
+  - http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference
+  # - http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference
 
 
 extension:
