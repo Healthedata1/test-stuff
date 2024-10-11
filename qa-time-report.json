@@ -1,168 +1,55 @@
 {
-  "date" : "Wed, 09 Oct, 2024 17:54:41 +0000",
+  "date" : "Fri, 11 Oct, 2024 23:25:06 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json",
-      "size" : 8012,
+      "size" : 5083,
       "processes" : [
         {
-          "activity" : "load-configure",
-          "start" : 80,
-          "length" : 1
-        },
-        {
           "activity" : "load",
-          "start" : 80,
-          "length" : 28
+          "start" : 63,
+          "length" : 27
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 80,
-          "length" : 7
+          "start" : 63,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 80,
-          "length" : 76
+          "start" : 63,
+          "length" : 104
         },
         {
           "activity" : "validate",
-          "start" : 83,
-          "length" : 1264
+          "start" : 63,
+          "length" : 2277
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 84,
+          "start" : 65,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 86,
-          "length" : 107
+          "start" : 67,
+          "length" : 98
         },
         {
           "activity" : "generate2",
-          "start" : 93,
-          "length" : 86
+          "start" : 69,
+          "length" : 91
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 106,
-          "length" : 3
+          "start" : 76,
+          "length" : 4
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 133,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "input/examples/DocumentReference-adi-intubation.json",
-      "size" : 147873,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 80,
-          "length" : 20
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 80,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 81,
-          "length" : 710
-        },
-        {
-          "activity" : "validate",
-          "start" : 83,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 84,
-          "length" : 605
-        },
-        {
-          "activity" : "generate1",
-          "start" : 86,
-          "length" : 382
-        },
-        {
-          "activity" : "generate2",
-          "start" : 93,
-          "length" : 172
-        }
-      ]
-    },
-    {
-      "name" : "input/examples/DocumentReference-living-will.json",
-      "size" : 186510,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 80,
-          "length" : 18
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 81,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 85,
-          "length" : 283
-        },
-        {
-          "activity" : "generate1",
-          "start" : 87,
-          "length" : 456
-        },
-        {
-          "activity" : "generate2",
-          "start" : 93,
-          "length" : 117
-        }
-      ]
-    },
-    {
-      "name" : "input/examples/DocumentReference-polst.json",
-      "size" : 1318575,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 80,
-          "length" : 39
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 80,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 81,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 85,
-          "length" : 402
-        },
-        {
-          "activity" : "generate1",
-          "start" : 87,
-          "length" : 3182
-        },
-        {
-          "activity" : "generate2",
-          "start" : 94,
-          "length" : 265
+          "start" : 95,
+          "length" : 3
         }
       ]
     },
@@ -172,150 +59,74 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 80,
-          "length" : 16
+          "start" : 63,
+          "length" : 28
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 63,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 81,
-          "length" : 110
+          "start" : 63,
+          "length" : 124
+        },
+        {
+          "activity" : "loadLists",
+          "start" : 65,
+          "length" : 1
         },
         {
           "activity" : "validate",
-          "start" : 86,
-          "length" : 336
+          "start" : 65,
+          "length" : 546
         },
         {
           "activity" : "generate1",
-          "start" : 90,
-          "length" : 18
+          "start" : 67,
+          "length" : 24
         },
         {
           "activity" : "generate2",
-          "start" : 94,
-          "length" : 27
+          "start" : 69,
+          "length" : 29
         }
       ]
     },
     {
-      "name" : "input/resources/StructureDefinition-us-core-adi-documentreference.json",
-      "size" : 17331,
+      "name" : "input/examples/careteam-example.json",
+      "size" : 3141,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 80,
+          "start" : 63,
           "length" : 22
         },
         {
           "activity" : "load-configure",
-          "start" : 80,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 80,
-          "length" : 37
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 80,
-          "length" : 121
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 80,
+          "start" : 63,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 81,
-          "length" : 187
+          "start" : 63,
+          "length" : 9
         },
         {
           "activity" : "validate",
-          "start" : 82,
-          "length" : 1459
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 84,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 84,
-          "length" : 2
+          "start" : 66,
+          "length" : 1312
         },
         {
           "activity" : "generate1",
-          "start" : 90,
-          "length" : 455
+          "start" : 67,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 94,
-          "length" : 2253
-        },
-        {
-          "activity" : "makeDependencies",
-          "start" : 99,
-          "length" : 1
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 106,
-          "length" : 17
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 133,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "input/resources/StructureDefinition-us-core-authentication-time.json",
-      "size" : 1827,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 80,
-          "length" : 26
-        },
-        {
-          "activity" : "load",
-          "start" : 80,
-          "length" : 25
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 80,
-          "length" : 26
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 82,
-          "length" : 15
-        },
-        {
-          "activity" : "validate",
-          "start" : 83,
-          "length" : 91
-        },
-        {
-          "activity" : "generate1",
-          "start" : 91,
-          "length" : 58
-        },
-        {
-          "activity" : "generate2",
-          "start" : 96,
-          "length" : 191
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 106,
-          "length" : 2
+          "start" : 69,
+          "length" : 72
         }
       ]
     }

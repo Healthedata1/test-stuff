@@ -139,13 +139,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
-      </li>
-      <li>
-         <a href="#2">Structures: Extension Definitions</a>
-      </li>
-      <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#1">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -154,40 +148,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Structures: Resource Profiles </h3>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-us-core-adi-documentreference.html"
-                  title="StructureDefinition/us-core-adi-documentreference">US Core ADI DocumentReference Profile</a>
-            </td>
-            <td>
-<p>The US Core ADI DocumentReference Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Presence Profile] together meet the requirements of the U.S. Core Data for Interoperability (USCDI) <em>Advance Directive Observation</em> Data Element. This profile sets minimum expectations for searching and fetching patient ADI documents including Clinical Notes using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document itseld, it communicates the types of advance directive documents, the author, verifier, and other properties. To communicates whether any advance directive documents exist for a patient, see the [US Core Observation ADI Documentation2 Profile]. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource.  It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption. Before reviewing this profile, implementers are encouraged to read the Clinical Notes Guidance to understand the overlap of the US Core DiagnosticReport Profile for Report and Note exchange and the US Core DocumentReference Profile.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="2"> </a>
-   <h3>Structures: Extension Definitions </h3>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-us-core-authentication-time.html"
-                  title="StructureDefinition/us-core-authentication-time">US Core Authentication Time Extension</a>
-            </td>
-            <td>
-<p>This extension indicates when the information in the document was verified.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="3"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -195,28 +155,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="DocumentReference-adi-intubation.html"
-                  title="DocumentReference/adi-intubation">DocRef ADI-DNI (PDF)</a>
+               <a href="CareTeam-example.html" title="CareTeam/example">CareTeam Example</a>
             </td>
             <td>
-<p>This is a an example of ADI-DNI (PDF) for the <em>US Core ADI DocumentReference Profile</em></p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DocumentReference-living-will.html"
-                  title="DocumentReference/living-will">DocRef Living Will (PDF)</a>
-            </td>
-            <td>
-<p>This is a an example of Living Will (PDF) for the <em>US Core ADI DocumentReference Profile</em></p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DocumentReference-polst.html" title="DocumentReference/polst">DocRef POLST (PDF)</a>
-            </td>
-            <td>
-<p>This is a an example of POLST (PDF) for the <em>US Core ADI DocumentReference Profile</em></p>
+<p>This is a careteam example for the <em>US Core CareTeam Profile</em>.</p>
 </td>
          </tr>
          <tr>
@@ -247,7 +189,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 9, 2024 17:54+0000">2024-10-09</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 11, 2024 23:25+0000">2024-10-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

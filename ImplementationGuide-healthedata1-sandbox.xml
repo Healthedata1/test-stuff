@@ -17,7 +17,7 @@
   <name value="HealthEData_1Sandbox"/>
   <title value="Health eData 1 Sandbox"/>
   <status value="active"/>
-  <date value="2024-10-09T17:54:41+00:00"/>
+  <date value="2024-10-11T23:25:06+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -68,7 +68,7 @@
   <dependsOn id="vsac">
     <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
     <packageId value="us.nlm.vsac"/>
-    <version value="0.3.0"/>
+    <version value="0.19.0"/>
   </dependsOn>
   <dependsOn id="uscdcphinvads">
     <uri value="http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads"/>
@@ -613,36 +613,14 @@
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DocumentReference"/>
+        <valueString value="CareTeam"/>
       </extension>
       <reference>
-        <reference value="DocumentReference/adi-intubation"/>
+        <reference value="CareTeam/example"/>
       </reference>
-      <name value="DocRef ADI-DNI (PDF)"/>
-      <description value="This is a an example of ADI-DNI (PDF) for the *US Core ADI DocumentReference Profile*"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DocumentReference"/>
-      </extension>
-      <reference>
-        <reference value="DocumentReference/living-will"/>
-      </reference>
-      <name value="DocRef Living Will (PDF)"/>
-      <description value="This is a an example of Living Will (PDF) for the *US Core ADI DocumentReference Profile*"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DocumentReference"/>
-      </extension>
-      <reference>
-        <reference value="DocumentReference/polst"/>
-      </reference>
-      <name value="DocRef POLST (PDF)"/>
-      <description value="This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"/>
+      <name value="CareTeam Example"/>
+      <description value="This is a careteam example for the *US Core CareTeam Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -653,28 +631,6 @@
       </reference>
       <name value="example"/>
       <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/us-core-adi-documentreference"/>
-      </reference>
-      <name value="US Core ADI DocumentReference Profile"/>
-      <description value="The US Core ADI DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Presence Profile] together meet the requirements of the U.S. Core Data for Interoperability (USCDI) *Advance Directive Observation* Data Element. This profile sets minimum expectations for searching and fetching patient ADI documents including Clinical Notes using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document itseld, it communicates the types of advance directive documents, the author, verifier, and other properties. To communicates whether any advance directive documents exist for a patient, see the [US Core Observation ADI Documentation2 Profile]. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource.  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption. Before reviewing this profile, implementers are encouraged to read the Clinical Notes Guidance to understand the overlap of the US Core DiagnosticReport Profile for Report and Note exchange and the US Core DocumentReference Profile."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/us-core-authentication-time"/>
-      </reference>
-      <name value="US Core Authentication Time Extension"/>
-      <description value="This extension indicates when the information in the document was verified."/>
-      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

@@ -18,7 +18,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2024-10-09T17:54:41+00:00",
+  "date" : "2024-10-11T23:25:06+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -78,7 +78,7 @@
     "id" : "vsac",
     "uri" : "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac",
     "packageId" : "us.nlm.vsac",
-    "version" : "0.3.0"
+    "version" : "0.19.0"
   },
   {
     "id" : "uscdcphinvads",
@@ -825,38 +825,14 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DocumentReference"
+        "valueString" : "CareTeam"
       }],
       "reference" : {
-        "reference" : "DocumentReference/adi-intubation"
+        "reference" : "CareTeam/example"
       },
-      "name" : "DocRef ADI-DNI (PDF)",
-      "description" : "This is a an example of ADI-DNI (PDF) for the *US Core ADI DocumentReference Profile*",
-      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DocumentReference"
-      }],
-      "reference" : {
-        "reference" : "DocumentReference/living-will"
-      },
-      "name" : "DocRef Living Will (PDF)",
-      "description" : "This is a an example of Living Will (PDF) for the *US Core ADI DocumentReference Profile*",
-      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DocumentReference"
-      }],
-      "reference" : {
-        "reference" : "DocumentReference/polst"
-      },
-      "name" : "DocRef POLST (PDF)",
-      "description" : "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*",
-      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
+      "name" : "CareTeam Example",
+      "description" : "This is a careteam example for the *US Core CareTeam Profile*.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
     },
     {
       "extension" : [{
@@ -868,30 +844,6 @@
       },
       "name" : "example",
       "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/us-core-adi-documentreference"
-      },
-      "name" : "US Core ADI DocumentReference Profile",
-      "description" : "The US Core ADI DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Presence Profile] together meet the requirements of the U.S. Core Data for Interoperability (USCDI) *Advance Directive Observation* Data Element. This profile sets minimum expectations for searching and fetching patient ADI documents including Clinical Notes using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document itseld, it communicates the types of advance directive documents, the author, verifier, and other properties. To communicates whether any advance directive documents exist for a patient, see the [US Core Observation ADI Documentation2 Profile]. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource.  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption. Before reviewing this profile, implementers are encouraged to read the Clinical Notes Guidance to understand the overlap of the US Core DiagnosticReport Profile for Report and Note exchange and the US Core DocumentReference Profile.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/us-core-authentication-time"
-      },
-      "name" : "US Core Authentication Time Extension",
-      "description" : "This extension indicates when the information in the document was verified.",
-      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

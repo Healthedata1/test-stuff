@@ -1,8 +1,4 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json	8012	-	1	0	0	0	0	0	7	76	0	0	0	0	0	0	0	1	0	0	107	86	0	0	0	3	0	1
-input/examples/DocumentReference-adi-intubation.json	147873	20	0	0	0	0	0	0	1	710	0	0	0	0	0	0	0	0	0	0	382	172	0	0	0	0	0	0
-input/examples/DocumentReference-living-will.json	186510	18	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	456	117	0	0	0	0	0	0
-input/examples/DocumentReference-polst.json	1318575	39	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	3182	265	0	0	0	0	0	0
-input/examples/Patient-example.json	4125	16	0	0	0	0	0	0	0	110	0	0	0	0	0	0	0	0	0	0	18	27	0	0	0	0	0	0
-input/resources/StructureDefinition-us-core-adi-documentreference.json	17331	22	1	0	0	0	0	121	1	187	0	0	1	0	0	0	0	2	0	0	455	2253	0	1	0	17	0	1
-input/resources/StructureDefinition-us-core-authentication-time.json	1827	26	0	0	0	0	0	26	0	15	0	0	0	0	0	0	0	0	0	0	58	191	0	0	0	2	0	0
+/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json	5083	-	0	0	0	0	0	0	5	104	0	0	0	0	0	0	0	1	0	0	98	91	0	0	0	4	0	3
+input/examples/Patient-example.json	4125	28	0	0	0	0	0	0	1	124	0	1	0	0	0	0	0	0	0	0	24	29	0	0	0	0	0	0
+input/examples/careteam-example.json	3141	22	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	14	72	0	0	0	0	0	0

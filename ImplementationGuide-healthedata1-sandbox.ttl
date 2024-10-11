@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-10-09T17:54:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-11T23:25:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -99,7 +99,7 @@
        fhir:link <http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac>
      ] ;
      fhir:packageId [ fhir:v "us.nlm.vsac" ] ;
-     fhir:version [ fhir:v "0.3.0" ]
+     fhir:version [ fhir:v "0.19.0" ]
   ] [
      fhir:id [ fhir:v "uscdcphinvads" ] ;
      fhir:uri [
@@ -716,47 +716,17 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "DocumentReference" ]
+         fhir:value [ fhir:v "CareTeam" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/DocumentReference/adi-intubation> ;
-         fhir:reference [ fhir:v "DocumentReference/adi-intubation" ]
+         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/CareTeam/example> ;
+         fhir:reference [ fhir:v "CareTeam/example" ]
        ] ;
-       fhir:name [ fhir:v "DocRef ADI-DNI (PDF)" ] ;
-       fhir:description [ fhir:v "This is a an example of ADI-DNI (PDF) for the *US Core ADI DocumentReference Profile*" ] ;
+       fhir:name [ fhir:v "CareTeam Example" ] ;
+       fhir:description [ fhir:v "This is a careteam example for the *US Core CareTeam Profile*." ] ;
        fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "DocumentReference" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/DocumentReference/living-will> ;
-         fhir:reference [ fhir:v "DocumentReference/living-will" ]
-       ] ;
-       fhir:name [ fhir:v "DocRef Living Will (PDF)" ] ;
-       fhir:description [ fhir:v "This is a an example of Living Will (PDF) for the *US Core ADI DocumentReference Profile*" ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "DocumentReference" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/DocumentReference/polst> ;
-         fhir:reference [ fhir:v "DocumentReference/polst" ]
-       ] ;
-       fhir:name [ fhir:v "DocRef POLST (PDF)" ] ;
-       fhir:description [ fhir:v "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*" ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference>
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam>
        ]
      ] [
        fhir:extension ( [
@@ -769,30 +739,6 @@
        ] ;
        fhir:name [ fhir:v "example" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-adi-documentreference" ]
-       ] ;
-       fhir:name [ fhir:v "US Core ADI DocumentReference Profile" ] ;
-       fhir:description [ fhir:v "The US Core ADI DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Presence Profile] together meet the requirements of the U.S. Core Data for Interoperability (USCDI) *Advance Directive Observation* Data Element. This profile sets minimum expectations for searching and fetching patient ADI documents including Clinical Notes using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document itseld, it communicates the types of advance directive documents, the author, verifier, and other properties. To communicates whether any advance directive documents exist for a patient, see the [US Core Observation ADI Documentation2 Profile]. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource.  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption. Before reviewing this profile, implementers are encouraged to read the Clinical Notes Guidance to understand the overlap of the US Core DiagnosticReport Profile for Report and Note exchange and the US Core DocumentReference Profile." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-authentication-time> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-authentication-time" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Authentication Time Extension" ] ;
-       fhir:description [ fhir:v "This extension indicates when the information in the document was verified." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
