@@ -35,10 +35,22 @@
   ],
   "dependsOn": [
     {
-      "packageId": "hl7.fhir.us.core",
-      "version": "7.0.0",
+      "id": "uscore3",
+      "packageId": "hl7.fhir.us.core.3.1.1",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
-      "id": "hl7_fhir_us_core"
+      "version": "3.1.1"
+    },
+    {
+      "id": "uscore6",
+      "packageId": "hl7.fhir.us.core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "version": "6.1.0"
+    },
+    {
+      "id": "uscore7",
+      "packageId": "hl7.fhir.us.core.v700",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "version": "7.0.0"
     },
     {
       "packageId": "hl7.fhir.uv.sdc",
@@ -94,6 +106,22 @@
         },
         "name": "example",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/medicationrequest-coded-oral-axid"
+        },
+        "description": "This is an prescribed oral solution example for the *US Core MedicationRequest Profile*.  It represents the medication and reason using codes.",
+        "name": "MedicationRequest Coded Oral Axid Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-servicerequest"
+        },
+        "description": "testing using  GFM (Github Flavored Markdown) tables in a resource markdown\n\n|FOO|BAR|\n|---|---|\n|foo|bar|\n{:.grid}\n",
+        "exampleBoolean": false,
+        "name": "US Core ServiceRequest Profile"
       }
     ],
     "page": {

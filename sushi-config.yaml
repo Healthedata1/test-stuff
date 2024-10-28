@@ -32,7 +32,20 @@ description: This is a **Healthedata1** sandbox for creation of resources and ex
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.us.core: 7.0.0
+  hl7.fhir.us.core.3.1.1:
+    version: 3.1.1
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore3
+    
+  hl7.fhir.us.core:
+    version: 6.1.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore6
+
+  hl7.fhir.us.core.v700:
+    version: 7.0.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore7
   hl7.fhir.uv.sdc: 3.0.0
   hl7.fhir.uv.bulkdata: 2.0.0
   hl7.fhir.uv.smart-app-launch: 2.0.0
