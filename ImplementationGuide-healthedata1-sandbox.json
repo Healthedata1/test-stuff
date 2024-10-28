@@ -18,7 +18,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2024-10-11T23:25:06+00:00",
+  "date" : "2024-10-28T18:09:00+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -51,9 +51,21 @@
     "version" : "5.1.0"
   },
   {
-    "id" : "hl7_fhir_us_core",
+    "id" : "uscore3",
+    "uri" : "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+    "packageId" : "hl7.fhir.us.core.3.1.1",
+    "version" : "3.1.1"
+  },
+  {
+    "id" : "uscore6",
     "uri" : "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
     "packageId" : "hl7.fhir.us.core",
+    "version" : "6.1.0"
+  },
+  {
+    "id" : "uscore7",
+    "uri" : "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+    "packageId" : "hl7.fhir.us.core.v700",
     "version" : "7.0.0"
   },
   {
@@ -844,6 +856,30 @@
       },
       "name" : "example",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequest-coded-oral-axid"
+      },
+      "name" : "MedicationRequest Coded Oral Axid Example",
+      "description" : "This is an prescribed oral solution example for the *US Core MedicationRequest Profile*.  It represents the medication and reason using codes.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-servicerequest"
+      },
+      "name" : "US Core ServiceRequest Profile",
+      "description" : "testing using  GFM (Github Flavored Markdown) tables in a resource markdown\n\n|FOO|BAR|\n|---|---|\n|foo|bar|\n{:.grid}",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{

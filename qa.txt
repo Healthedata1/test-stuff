@@ -1,25 +1,37 @@
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 4, warn = 2, info = 0
-IG Publisher Version: 1.6.30
-Generated Fri Oct 11 23:25:38 UTC 2024. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
- Build Errors : 4 / 1 / 0
+err = 3, warn = 3, info = 0
+IG Publisher Version: 1.7.1
+Generated Mon Oct 28 18:10:00 UTC 2024. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
+ Build Errors : 12 / 1 / 0
  /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox : 0 / 0 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/Patient-example : 0 / 1 / 1
- /home/runner/work/test-stuff/test-stuff/input/examples/careteam-example : 4 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/careteam-example : 0 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/medicationrequest-coded-oral-axid : 0 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-servicerequest : 3 / 1 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /home/runner/work/test-stuff/test-stuff/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 193, column 8: The link 'ImplementationGuide-.xml' for "XML" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 194, column 8: The link 'ImplementationGuide-.json' for "JSON" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 225, column 2001: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 282, column 1112: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 406, column 835: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 325, column 679: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 461, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 684, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1085, column 679: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1220, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1443, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 179, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 214, column 8: The link 'schematrons.zip' for "Schematrons(compressed folder)" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json ==
 == input/examples/Patient-example.json ==
 WARNING: Patient/example: Patient.communication[0].preferred.extension[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == input/examples/careteam-example.json ==
-ERROR: CareTeam/example: CareTeam.participant[0].role[0].coding[0].version: The code system "http://snomed.info/sct" version "http://snomed.info/sct/731000124108/version/20240301" in the ValueSet include is different to the one in the value ("http://snomed.info/sct/731000124108")
-ERROR: CareTeam/example: CareTeam.participant[1].role[0].coding[0].version: The code system "http://snomed.info/sct" version "http://snomed.info/sct/731000124108/version/20240301" in the ValueSet include is different to the one in the value ("http://snomed.info/sct/731000124108")
-ERROR: CareTeam/example: CareTeam.participant[2].role[0].coding[0].version: The code system "http://snomed.info/sct" version "http://snomed.info/sct/731000124108/version/20240301" in the ValueSet include is different to the one in the value ("http://snomed.info/sct/731000124108")
-ERROR: CareTeam/example: CareTeam.participant[3].role[0].coding[0].version: The code system "http://snomed.info/sct" version "http://snomed.info/sct/731000124108/version/20240301" in the ValueSet include is different to the one in the value ("http://snomed.info/sct/731000124108")
+== input/examples/medicationrequest-coded-oral-axid.json ==
+== input/resources/StructureDefinition-us-core-servicerequest.json ==
+ERROR: StructureDefinition.where(url = 'http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-servicerequest.json - the canonical URL (http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-servicerequest) does not match the URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest)
+WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest'): The Implementation Guide contains no examples for this profile
+ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-servicerequest: URL Mismatch http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-servicerequest vs http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest
+ERROR: StructureDefinition.text.div: Hyperlink 'general-requirements.html#required-bindings-when-slicing-by-valuesets' at 'div/table/tr/td/a' for 'Required Bindings When Slicing by Value Sets' does not resolve

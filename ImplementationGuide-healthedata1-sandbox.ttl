@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-10-11T23:25:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-28T18:09:00+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -61,12 +61,28 @@
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "5.1.0" ]
   ] [
-     fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
+     fhir:id [ fhir:v "uscore3" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.core.3.1.1" ] ;
+     fhir:version [ fhir:v "3.1.1" ]
+  ] [
+     fhir:id [ fhir:v "uscore6" ] ;
      fhir:uri [
        fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
        fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
+     fhir:version [ fhir:v "6.1.0" ]
+  ] [
+     fhir:id [ fhir:v "uscore7" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.core.v700" ] ;
      fhir:version [ fhir:v "7.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
@@ -739,6 +755,33 @@
        ] ;
        fhir:name [ fhir:v "example" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/MedicationRequest/medicationrequest-coded-oral-axid> ;
+         fhir:reference [ fhir:v "MedicationRequest/medicationrequest-coded-oral-axid" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequest Coded Oral Axid Example" ] ;
+       fhir:description [ fhir:v "This is an prescribed oral solution example for the *US Core MedicationRequest Profile*.  It represents the medication and reason using codes." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/StructureDefinition/us-core-servicerequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-servicerequest" ]
+       ] ;
+       fhir:name [ fhir:v "US Core ServiceRequest Profile" ] ;
+       fhir:description [ fhir:v "testing using  GFM (Github Flavored Markdown) tables in a resource markdown\n\n|FOO|BAR|\n|---|---|\n|foo|bar|\n{:.grid}" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

@@ -5,5 +5,12 @@
     "url" : "http://www.fhir.org/guides/healthedata1-sandbox/ImplementationGuide/healthedata1-sandbox",
     "version" : "0.1.0",
     "name" : "HealthEData_1Sandbox"
+  },
+  {
+    "id" : "us-core-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest",
+    "version" : "0.1.0",
+    "name" : "USCoreServiceRequestProfile"
   }
 ]
