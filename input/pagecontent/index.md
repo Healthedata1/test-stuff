@@ -4,31 +4,6 @@
 
 ### h3 element
 
-Use liquid to create a link list of all the ig pages form the site.data.pages.json  file
-
-
-{% raw %}
-```
-{%- for pages_hash in site.data.pages-%}  
-{%- assign hash= pages_hash[1] -%}  
-{%- assign page = pages_hash[0] -%}  
-\ [{{hash.title}}\]: {{page}}  
-{% endfor %}  
-```
-{% endraw %}
-try it:
-
-- [Table of Contents]
-- [Home]
-- [Guidance]
-- [Downloads]
-- [ImplementationGuide Resource]
-- [Change Log]
-- [Artifacts Summary]
-- [Observation]
-- [component]
-
-
 ###  another h3 element
 
 #### h4 element
@@ -42,6 +17,14 @@ try it:
 
 ☝️☝️☝️  \{\:.no_toc\} right after header
 
+{% raw %}
+👇👇👇 included link list file 
+~~~
+{% include r4-link-list.md %} <-- static list of a R4 resources
+{% include page-link-list.md %} <--Uses liquid script to create a link list of all the ig pages from site.data.pages.json  
+~~~
+
+hidden content  looks like 👇👇👇
 ~~~
 [Home]: index.html
 [Guidance]: guidance.html
@@ -49,7 +32,22 @@ try it:
 [ImplementationGuide Resource]: ImplementationGuide.html
 [Change Log]: changes.html
 [Artifacts Summary]: artifacts.html
+...
 ~~~
+{% endraw %}
+
+try it:
+
+- `[Table of Contents]` --> [Table of Contents]
+- `[Home]` --> [Home]
+- `[Guidance]` --> [Guidance]
+- `[Downloads]` --> [Downloads]
+- `[ImplementationGuide Resource]` --> [ImplementationGuide Resource]
+- `[Change Log]` --> [Change Log]
+- `[Artifacts Summary]` --> [Artifacts Summary]
+- `[Observation]` --> [Observation]
+- `[component]` --> [component]
+
 
 {% include link-list.md %}
 
