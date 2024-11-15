@@ -18,7 +18,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2024-10-28T18:09:00+00:00",
+  "date" : "2024-11-15T22:47:58+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -464,7 +464,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{
