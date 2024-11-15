@@ -1,41 +1,55 @@
-### Test How the publisher Renders Quotes for Different HTML Groupings
+{::options toc_levels="1..6"/}
+
+☝️☝️☝️ \{\:\:options toc_levels="1..6"/\} on first line
+
+### h3 element
+
+Use liquid to create a link list of all the ig pages form the site.data.pages.json  file
 
 
+{% raw %}
+```
+{%- for pages_hash in site.data.pages-%}  
+{%- assign hash= pages_hash[1] -%}  
+{%- assign page = pages_hash[0] -%}  
+\ [{{hash.title}}\]: {{page}}  
+{% endfor %}  
+```
+{% endraw %}
+try it:
 
-The markdown uses the straight quotes: `"` and `'`
+- [Table of Contents]
+- [Home]
+- [Guidance]
+- [Downloads]
+- [ImplementationGuide Resource]
+- [Change Log]
+- [Artifacts Summary]
+- [Observation]
+- [component]
+
+
+###  another h3 element
+
+#### h4 element
+
+##### h5 element
+
+###### h6 element
+
+###### Another h6 element with the "no_toc" tag to omit from the toc
+{:.no_toc}
+
+☝️☝️☝️  \{\:.no_toc\} right after header
 
 ~~~
-'The p element'  "The p element"
-
-`'The blockquote element'  "The blockquote element"`
-
-\~~~
-'The pre element'  "The pre element"
-\~~~
-
-- 'The li element'  "The li element"
-1. 'The li element'  "The li element"
-
-### 'the h3 element' "the h3 element"
+[Home]: index.html
+[Guidance]: guidance.html
+[Downloads]: downloads.html
+[ImplementationGuide Resource]: ImplementationGuide.html
+[Change Log]: changes.html
+[Artifacts Summary]: artifacts.html
 ~~~
 
-
-give you...
-
-'The p element'  "The p element"
-
-`'The blockquote element'  "The blockquote element"`
-
-~~~
-'The pre element'  "The pre element"
-~~~
-
-- 'The li element'  "The li element"
-1. 'The li element'  "The li element"
-
-### 'the h3 element' "the h3 element"
-
----
-
-<br/><br/>
+{% include link-list.md %}
 
