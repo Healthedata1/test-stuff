@@ -3,7 +3,7 @@ HealthEData_1Sandbox : Validation Results
 
 err = 3, warn = 5, info = 0
 IG Publisher Version: 1.7.2
-Generated Fri Nov 15 22:49:24 UTC 2024. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
+Generated Fri Nov 15 23:08:56 UTC 2024. FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = http://www.fhir.org/guides/healthedata1-sandbox)
  Build Errors : 13 / 1 / 0
  /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox : 0 / 0 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/Patient-example : 0 / 1 / 1
@@ -25,7 +25,7 @@ ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-cor
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1220, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1443, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 179, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 187, column 8: The link 'foo.html' for "component" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 205, column 84: The link 'foo.html' for "component" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json ==
 == input/examples/Patient-example.json ==
 WARNING: Patient/example: Patient.communication[0].preferred.extension[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided

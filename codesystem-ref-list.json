@@ -59,8 +59,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
     },
     {
       "url" : "http://www.ada.org/cdt",
