@@ -3,7 +3,7 @@
 {%- assign page = pages_hash[0] -%} 
 {%- assign hash= pages_hash[1] -%}
 {%- capture link -%}
-  {{hash.title | prepend: '[' | append: ']'}}: {{page}}
+{{hash.title | replace: '[', '\[' | replace: ']', '\]' | prepend: '[' | append: ']'}}: {{page}}
 {%- endcapture %}
 {{link}}
 {% endfor %} 
