@@ -181,17 +181,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 {% include page-link-list.md %} &lt;--Uses liquid script to create a link list of all the ig pages from site.data.pages.json  
 </code></pre></div></div>
 
-<p>hidden content  looks like &#x1F447;&#x1F447;&#x1F447;</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Home]: index.html
+<p>hidden content looks like &#x1F447;&#x1F447;&#x1F447;</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--this liquid script generate a link-list of the IG pages including  all the IG artifacts based on their titles Note that Commonmmark's shortcut reference links DO NOT support brackets '[]' in the link text --&gt;[Table of Contents]: toc.html
+[Home]: index.html
 [Guidance]: guidance.html
 [Downloads]: downloads.html
 [ImplementationGuide Resource]: ImplementationGuide.html
 [Change Log]: changes.html
 [Artifacts Summary]: artifacts.html
-...
+[US Core ServiceRequest Profile]: StructureDefinition-us-core-servicerequest.html
+[US Core ServiceRequest Profile - Definitions]: StructureDefinition-us-core-servicerequest-definitions.html
+[US Core ServiceRequest Profile - Mappings]: StructureDefinition-us-core-servicerequest-mappings.html
+[US Core ServiceRequest Profile - Testing]: StructureDefinition-us-core-servicerequest-testing.html
+[US Core ServiceRequest Profile - XML Representation]: StructureDefinition-us-core-servicerequest.profile.xml.html
+[US Core ServiceRequest Profile - JSON Representation]: StructureDefinition-us-core-servicerequest.profile.json.html
+[US Core ServiceRequest Profile - TTL Representation]: StructureDefinition-us-core-servicerequest.profile.ttl.html
+[example]: Patient-example.html
+[example - XML Representation]: Patient-example.xml.html
+[example - JSON Representation]: Patient-example.json.html
+[example - TTL Representation]: Patient-example.ttl.html
+[MedicationRequest Coded Oral Axid Example]: MedicationRequest-medicationrequest-coded-oral-axid.html
+[MedicationRequest Coded Oral Axid Example - XML Representation]: MedicationRequest-medicationrequest-coded-oral-axid.xml.html
+[MedicationRequest Coded Oral Axid Example - JSON Representation]: MedicationRequest-medicationrequest-coded-oral-axid.json.html
+[MedicationRequest Coded Oral Axid Example - TTL Representation]: MedicationRequest-medicationrequest-coded-oral-axid.ttl.html
+[My CareTeam Example]: CareTeam-example.html
+[My CareTeam Example - XML Representation]: CareTeam-example.xml.html
+[My CareTeam Example - JSON Representation]: CareTeam-example.json.html
+[My CareTeam Example - TTL Representation]: CareTeam-example.ttl.html
+ 
+
 </code></pre></div></div>
 
-<p>try it:</p>
+<p>Try it:</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">[Table of Contents]</code> –&gt; <a href="toc.html">Table of Contents</a></li>
@@ -208,7 +229,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- FHIR Core Resources -->
 
   <!-- IG Pages (Including IG Artifacts -->
-  <!-- this liquid script generate a link-list of the IG pages including  all the IG artifacts based on their titles -->
+  <!-- this liquid script generate a link-list of the IG pages including  all the IG artifacts based on their titles Note that Commonmmark's shortcut reference links DO NOT support brackets '[]' in the link text -->
 
 
 
@@ -229,7 +250,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 16, 2024 00:26+0000">2024-11-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 16, 2024 01:21+0000">2024-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

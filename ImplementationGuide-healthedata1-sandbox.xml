@@ -17,7 +17,7 @@
   <name value="HealthEData_1Sandbox"/>
   <title value="Health eData 1 Sandbox"/>
   <status value="active"/>
-  <date value="2024-11-16T00:26:23+00:00"/>
+  <date value="2024-11-16T01:21:14+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -623,17 +623,6 @@
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CareTeam"/>
-      </extension>
-      <reference>
-        <reference value="CareTeam/example"/>
-      </reference>
-      <name value="CareTeam Example"/>
-      <description value="This is a careteam example for the *US Core CareTeam Profile*."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -652,6 +641,17 @@
       <name value="MedicationRequest Coded Oral Axid Example"/>
       <description value="This is an prescribed oral solution example for the *US Core MedicationRequest Profile*.  It represents the medication and reason using codes."/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/example"/>
+      </reference>
+      <name value="My CareTeam Example"/>
+      <description value="This is a careteam example for the *US Core CareTeam Profile*."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

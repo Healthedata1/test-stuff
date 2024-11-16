@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:extension ( [
        fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "CareTeam Example" ]
+       fhir:value [ fhir:v "My CareTeam Example" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "This is a careteam example for the *US Core CareTeam Profile*." ]

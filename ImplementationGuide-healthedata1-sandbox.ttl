@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-11-16T00:26:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-16T01:21:14+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -732,21 +732,6 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CareTeam" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/CareTeam/example> ;
-         fhir:reference [ fhir:v "CareTeam/example" ]
-       ] ;
-       fhir:name [ fhir:v "CareTeam Example" ] ;
-       fhir:description [ fhir:v "This is a careteam example for the *US Core CareTeam Profile*." ] ;
-       fhir:example [
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
@@ -769,6 +754,21 @@
        fhir:example [
          fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CareTeam" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/healthedata1-sandbox/CareTeam/example> ;
+         fhir:reference [ fhir:v "CareTeam/example" ]
+       ] ;
+       fhir:name [ fhir:v "My CareTeam Example" ] ;
+       fhir:description [ fhir:v "This is a careteam example for the *US Core CareTeam Profile*." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam>
        ]
      ] [
        fhir:extension ( [

@@ -1,6 +1,6 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json	6259	-	0	0	0	0	0	0	5	284	0	0	0	0	0	0	0	0	0	0	146	122	0	0	0	2	0	2
-input/examples/Patient-example.json	4125	33	1	0	0	0	0	0	1	112	0	0	0	0	0	0	0	0	0	0	58	99	0	0	0	0	0	0
-input/examples/careteam-example.json	3141	21	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	54	116	0	0	0	0	0	0
-input/examples/medicationrequest-coded-oral-axid.json	4894	18	0	0	0	0	0	0	0	102	0	0	0	0	0	0	0	0	0	0	59	113	0	0	0	0	0	0
-input/resources/StructureDefinition-us-core-servicerequest.json	13534	21	0	0	0	0	0	73	1	135	0	0	1	0	0	0	0	2	0	0	351	7842	0	0	0	9	0	1
+/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json	6262	-	0	0	0	0	0	0	4	344	0	0	0	0	0	0	0	1	0	0	94	96	0	0	0	2	0	2
+input/examples/Patient-example.json	4125	46	0	0	0	0	0	0	1	112	0	0	0	0	0	0	0	0	0	0	19	33	0	0	0	0	0	0
+input/examples/careteam-example.json	3144	26	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	18	41	0	0	0	0	0	0
+input/examples/medicationrequest-coded-oral-axid.json	4894	26	0	0	0	0	0	0	0	99	0	0	0	0	0	0	0	0	0	0	31	45	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-servicerequest.json	13534	28	0	0	0	0	0	91	1	126	0	0	1	0	0	0	0	1	0	0	314	2220	0	1	0	11	0	1

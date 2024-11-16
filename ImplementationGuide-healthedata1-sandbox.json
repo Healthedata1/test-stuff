@@ -18,7 +18,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2024-11-16T00:26:23+00:00",
+  "date" : "2024-11-16T01:21:14+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -837,18 +837,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CareTeam"
-      }],
-      "reference" : {
-        "reference" : "CareTeam/example"
-      },
-      "name" : "CareTeam Example",
-      "description" : "This is a careteam example for the *US Core CareTeam Profile*.",
-      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -868,6 +856,18 @@
       "name" : "MedicationRequest Coded Oral Axid Example",
       "description" : "This is an prescribed oral solution example for the *US Core MedicationRequest Profile*.  It represents the medication and reason using codes.",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CareTeam"
+      }],
+      "reference" : {
+        "reference" : "CareTeam/example"
+      },
+      "name" : "My CareTeam Example",
+      "description" : "This is a careteam example for the *US Core CareTeam Profile*.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
     },
     {
       "extension" : [{
