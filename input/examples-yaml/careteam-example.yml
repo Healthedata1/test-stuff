@@ -5,7 +5,7 @@ meta:
   - http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam
   extension:
   - url: http://hl7.org/fhir/StructureDefinition/instance-name
-    valueString: CareTeam Example
+    valueString: 'My CareTeam Example'
   - url: http://hl7.org/fhir/StructureDefinition/instance-description
     valueMarkdown: This is a careteam example for the *US Core CareTeam Profile*.
 status: active

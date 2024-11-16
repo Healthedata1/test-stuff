@@ -94,14 +94,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "CareTeam/example"
-        },
-        "description": "This is a careteam example for the *US Core CareTeam Profile*.",
-        "name": "CareTeam Example",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
-      },
-      {
-        "reference": {
           "reference": "Patient/example"
         },
         "name": "example",
@@ -114,6 +106,14 @@
         "description": "This is an prescribed oral solution example for the *US Core MedicationRequest Profile*.  It represents the medication and reason using codes.",
         "name": "MedicationRequest Coded Oral Axid Example",
         "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+      },
+      {
+        "reference": {
+          "reference": "CareTeam/example"
+        },
+        "description": "This is a careteam example for the *US Core CareTeam Profile*.",
+        "name": "My CareTeam Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
       },
       {
         "reference": {

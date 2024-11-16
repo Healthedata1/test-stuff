@@ -8,7 +8,7 @@
         "extension": [
             {
                 "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
-                "valueString": "CareTeam Example"
+                "valueString": "My CareTeam Example"
             },
             {
                 "url": "http://hl7.org/fhir/StructureDefinition/instance-description",

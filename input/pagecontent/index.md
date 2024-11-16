@@ -23,20 +23,15 @@
 {% include r4-link-list.md %} <-- static list of a R4 resources
 {% include page-link-list.md %} <--Uses liquid script to create a link list of all the ig pages from site.data.pages.json  
 ~~~
-
-hidden content  looks like 👇👇👇
-~~~
-[Home]: index.html
-[Guidance]: guidance.html
-[Downloads]: downloads.html
-[ImplementationGuide Resource]: ImplementationGuide.html
-[Change Log]: changes.html
-[Artifacts Summary]: artifacts.html
-...
-~~~
 {% endraw %}
 
-try it:
+hidden content looks like 👇👇👇
+~~~
+{% include page-link-list.md %}
+~~~
+
+
+Try it:
 
 - `[Table of Contents]` --> [Table of Contents]
 - `[Home]` --> [Home]
