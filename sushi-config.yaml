@@ -10,60 +10,62 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: healthedata1-sandbox
-extension:
-  - url: >-
-      http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-    valueCode: trial-use
-  - url: 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm'
-    valueInteger: 2
-canonical: http://www.fhir.org/guides/healthedata1-sandbox
+id: hl7.fhir.us.healthedata1-sandbox
+# extension:
+  # - url: >-
+  #     http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+  #   valueCode: trial-use
+  # - url: 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm'
+  #   valueInteger: 2
+canonical: http://hl7.org/fhir/us/healthedata1-sandbox
 version: 0.1.0
 name: HealthEData_1Sandbox
 title: Health eData 1 Sandbox
 status: active
 publisher:
-  name: Health eData Inc
-contact:
-  - telecom:
-      - system: email
-        value: 'mailto:ehaas@healthedatainc.com'
+  name: HL7 International / Payer/Provider Information Exchange Work Group
+  url: 'http://www.hl7.org/Special/committees/claims'
+  email: pie@lists.hl7.org
+
+
+jurisdiction: 'urn:iso:std:iso:3166#US'
 description: This is a **Healthedata1** sandbox for creation of resources and examples
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.us.core.3.1.1:
-    version: 3.1.1
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-    id: uscore3
+  hl7.fhir.us.core: 7.0.0
+  # hl7.fhir.us.core.3.1.1:
+  #   version: 3.1.1
+  #   uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+  #   id: uscore3
     
-  hl7.fhir.us.core:
-    version: 6.1.0
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-    id: uscore6
+  # hl7.fhir.us.core:
+  #   version: 6.1.0
+  #   uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+  #   id: uscore6
 
-  hl7.fhir.us.core.v700:
-    version: 7.0.0
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-    id: uscore7
-  hl7.fhir.uv.sdc: 3.0.0
-  hl7.fhir.uv.bulkdata: 2.0.0
-  hl7.fhir.uv.smart-app-launch: 2.0.0
+  # hl7.fhir.us.core.v700:
+  #   version: 7.0.0
+  #   uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+  #   id: uscore7
+  # hl7.fhir.uv.sdc: 3.0.0
+  # hl7.fhir.uv.bulkdata: 2.0.0
+  # hl7.fhir.uv.smart-app-launch: 2.0.0
   us.nlm.vsac:
       uri: 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac'
-      version: 0.19.0
+      version: 0.20.0
       id: vsac
-  us.cdc.phinvads:
-    id: uscdcphinvads
-    uri: 'http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads'
-    version: 0.12.0
+  # us.cdc.phinvads:
+  #   id: uscdcphinvads
+  #   uri: 'http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads'
+  #   version: 0.12.0
 
-groups:
-  TestExamples:
-    name: Test Examples 
-    description: Examples for Testing Stuff Out!!!
-    resources:
-      # - Patient/deceased-example
+# groups:
+#   TestExamples:
+#     name: Test Examples 
+#     description: Examples for Testing Stuff Out!!!
+#     resources:
+#       # - Patient/deceased-example
 
 
 

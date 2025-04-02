@@ -1,127 +1,74 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "healthedata1-sandbox",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueCode": "trial-use"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 2
-    }
-  ],
-  "url": "http://www.fhir.org/guides/healthedata1-sandbox/ImplementationGuide/healthedata1-sandbox",
+  "id": "hl7.fhir.us.healthedata1-sandbox",
+  "url": "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox",
   "version": "0.1.0",
   "name": "HealthEData_1Sandbox",
   "title": "Health eData 1 Sandbox",
   "status": "active",
-  "publisher": "Health eData Inc",
+  "publisher": "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact": [
     {
+      "name": "HL7 International / Payer/Provider Information Exchange Work Group",
       "telecom": [
         {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/claims"
+        },
+        {
           "system": "email",
-          "value": "mailto:ehaas@healthedatainc.com"
+          "value": "pie@lists.hl7.org"
         }
       ]
     }
   ],
   "description": "This is a **Healthedata1** sandbox for creation of resources and examples",
-  "packageId": "healthedata1-sandbox",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.us.healthedata1-sandbox",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
   ],
   "dependsOn": [
     {
-      "id": "uscore3",
-      "packageId": "hl7.fhir.us.core.3.1.1",
-      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
-      "version": "3.1.1"
-    },
-    {
-      "id": "uscore6",
       "packageId": "hl7.fhir.us.core",
+      "version": "7.0.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
-      "version": "6.1.0"
-    },
-    {
-      "id": "uscore7",
-      "packageId": "hl7.fhir.us.core.v700",
-      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
-      "version": "7.0.0"
-    },
-    {
-      "packageId": "hl7.fhir.uv.sdc",
-      "version": "3.0.0",
-      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
-      "id": "hl7_fhir_uv_sdc"
-    },
-    {
-      "packageId": "hl7.fhir.uv.bulkdata",
-      "version": "2.0.0",
-      "uri": "http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata",
-      "id": "hl7_fhir_uv_bulkdata"
-    },
-    {
-      "packageId": "hl7.fhir.uv.smart-app-launch",
-      "version": "2.0.0",
-      "uri": "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch",
-      "id": "hl7_fhir_uv_smart_app_launch"
+      "id": "hl7_fhir_us_core"
     },
     {
       "id": "vsac",
       "packageId": "us.nlm.vsac",
       "uri": "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac",
-      "version": "0.19.0"
-    },
-    {
-      "id": "uscdcphinvads",
-      "packageId": "us.cdc.phinvads",
-      "uri": "http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads",
-      "version": "0.12.0"
+      "version": "0.20.0"
     }
   ],
   "definition": {
-    "grouping": [
-      {
-        "id": "TestExamples",
-        "name": "Test Examples",
-        "description": "Examples for Testing Stuff Out!!!"
-      }
-    ],
     "resource": [
       {
         "reference": {
-          "reference": "Patient/example"
+          "reference": "StructureDefinition/My-core-goal"
         },
-        "name": "example",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "MedicationRequest/medicationrequest-coded-oral-axid"
-        },
-        "description": "This is an prescribed oral solution example for the *US Core MedicationRequest Profile*.  It represents the medication and reason using codes.",
-        "name": "MedicationRequest Coded Oral Axid Example",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
-      },
-      {
-        "reference": {
-          "reference": "CareTeam/example"
-        },
-        "description": "This is a careteam example for the *US Core CareTeam Profile*.",
-        "name": "My CareTeam Example",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/us-core-servicerequest"
-        },
-        "description": "testing using  GFM (Github Flavored Markdown) tables in a resource markdown\n\n|FOO|BAR|\n|---|---|\n|foo|bar|\n{:.grid}\n",
+        "description": "The My Goal Profile inherits from the FHIR [Goal](https://hl7.org/fhir/R4/goal.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Goal resource to record,  search, and fetch Goal information associated with a patient.   It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
         "exampleBoolean": false,
-        "name": "US Core ServiceRequest Profile"
+        "name": "My Goal Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-location"
+        },
+        "description": "The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a \"physical place of available services or resources.\"  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "exampleBoolean": false,
+        "name": "US Core Location Profile"
       }
     ],
     "page": {
@@ -222,6 +169,10 @@
       {
         "code": "propagate-status",
         "value": "true"
+      },
+      {
+        "code": "path-history",
+        "value": "http://hl7.org/fhir/us/healthedata1-sandbox/history.html"
       }
     ]
   }

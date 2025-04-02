@@ -1,4 +1,2 @@
-[example]: Patient-example.html
-[medicationrequest-coded-oral-axid]: MedicationRequest-medicationrequest-coded-oral-axid.html
-[example]: CareTeam-example.html
-[USCoreServiceRequestProfile]: StructureDefinition-us-core-servicerequest.html
+[MyGoalProfile]: StructureDefinition-My-core-goal.html
+[USCoreLocationProfile]: StructureDefinition-us-core-location.html
