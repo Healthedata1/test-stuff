@@ -1,16 +1,23 @@
 [
   {
-    "id" : "healthedata1-sandbox",
-    "type" : "ImplementationGuide",
-    "url" : "http://www.fhir.org/guides/healthedata1-sandbox/ImplementationGuide/healthedata1-sandbox",
+    "id" : "My-core-goal",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/my/StructureDefinition/My-core-goal",
     "version" : "0.1.0",
-    "name" : "HealthEData_1Sandbox"
+    "name" : "MyGoalProfile"
   },
   {
-    "id" : "us-core-servicerequest",
+    "id" : "us-core-location",
     "type" : "StructureDefinition",
-    "url" : "http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
     "version" : "0.1.0",
-    "name" : "USCoreServiceRequestProfile"
+    "name" : "USCoreLocationProfile"
+  },
+  {
+    "id" : "hl7.fhir.us.healthedata1-sandbox",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox",
+    "version" : "0.1.0",
+    "name" : "HealthEData_1Sandbox"
   }
 ]

@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for HealthEData_1Sandbox</h1>
- <p>Generated Sat Nov 16 01:22:30 UTC 2024, FHIR version 4.0.1 for healthedata1-sandbox#0.1.0 (canonical = <a href="http://www.fhir.org/guides/healthedata1-sandbox">http://www.fhir.org/guides/healthedata1-sandbox</a> (<a href="http://www.fhir.org/guides/healthedata1-sandbox/history.html">history</a>))</p>
+ <p>Generated Wed Apr 02 04:37:33 UTC 2025, FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/healthedata1-sandbox">http://hl7.org/fhir/us/healthedata1-sandbox</a> (<a href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -19,8 +19,15 @@
     <b>system-version</b>
 :     <code>http://snomed.info/sct|http://snomed.info/sct/731000124108</code>
   </li>
+  <li>
+    <b>displayLanguage</b>
+:     <code>en-US</code>
+  </li>
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
+<p>
+  <b>Decisions</b>
+</p>
 <table class="grid">
   <tr>
     <td>
@@ -56,126 +63,49 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4, auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4, auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4]</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar</td>
+    <td>http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description</td>
     <td>http://loinc.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>urn:ietf:bcp:47</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>http://hl7.org/fhir/ValueSet/languages--0|4.0.1</td>
-    <td>urn:ietf:bcp:47</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found partially authoritative server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30|20190418</td>
-    <td>[http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction, http://snomed.info/sct|http://snomed.info/sct/731000124108, http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301]</td>
-    <td>[auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]</td>
-  </tr>
-  <tr>
-    <td>Found partially authoritative server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30|20190418</td>
-    <td>[http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction, http://snomed.info/sct|http://snomed.info/sct/731000124108, http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301]</td>
-    <td>[auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]</td>
-  </tr>
-  <tr>
-    <td>Found partially authoritative server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30|20190418</td>
-    <td>[http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction, http://snomed.info/sct|http://snomed.info/sct/731000124108, http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301]</td>
-    <td>[auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]</td>
-  </tr>
-  <tr>
-    <td>Found partially authoritative server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30|20190418</td>
-    <td>[http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction, http://snomed.info/sct|http://snomed.info/sct/731000124108, http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301]</td>
-    <td>[auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found partially authoritative server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.8|20231025</td>
-    <td>[http://snomed.info/sct, http://terminology.hl7.org/CodeSystem/data-absent-reason]</td>
-    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir, auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir]</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4</td>
   </tr>
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4|20170601</td>
-    <td>[http://www.nlm.nih.gov/research/umls/rxnorm, http://www.nlm.nih.gov/research/umls/rxnorm|05062024]</td>
-    <td>[auth = , candidates=http://tx.fhir.org/r4, auth = , candidates=http://tx.fhir.org/r4]</td>
-  </tr>
-  <tr>
-    <td>Found partially authoritative server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code|7.0.0</td>
-    <td>[http://hl7.org/fhir/sid/icd-10-cm, http://hl7.org/fhir/sid/icd-9-cm, http://snomed.info/sct|http://snomed.info/sct/731000124108, http://snomed.info/sct]</td>
-    <td>[auth = http://tx.fhir.org/r4, candidates=, auth = http://tx.fhir.org/r4, candidates=, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://hl7.org/fhir/ValueSet/units-of-time|4.0.1</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://tx.fhir.org/r4</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://hl7.org/fhir/ValueSet/ucum-common|4.0.1</td>
-    <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166:-2</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4</td>
   </tr>
 </table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 18. Code Systems used: </p>
+<p>Use Count: 11. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -198,22 +128,6 @@
     <td></td>
   </tr>
   <tr>
-    <td>http://hl7.org/fhir/sid/icd-10-cm</td>
-    <td>0</td>
-    <td>1</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-icd10CM.html">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://hl7.org/fhir/sid/icd-9-cm</td>
-    <td>0</td>
-    <td>1</td>
-    <td>
-      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-ICD-9CM-procedurecodes.html">ICD-9-CM (procedure codes)</a>
-    </td>
-  </tr>
-  <tr>
     <td>http://loinc.org</td>
     <td>0</td>
     <td>1</td>
@@ -222,71 +136,31 @@
     </td>
   </tr>
   <tr>
-    <td>http://snomed.info/sct</td>
-    <td>0</td>
-    <td>5</td>
-    <td>
-      <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://snomed.info/sct|http://snomed.info/sct/731000124108</td>
-    <td>0</td>
-    <td>5</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301</td>
-    <td>0</td>
-    <td>4</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td>
-    <td>0</td>
-    <td>1</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-data-absent-reason.html">DataAbsentReason</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction</td>
-    <td>0</td>
-    <td>4</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ParticipationFunction.html">ParticipationFunction</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://unitsofmeasure.org</td>
-    <td>0</td>
-    <td>4</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://www.nlm.nih.gov/research/umls/rxnorm</td>
-    <td>0</td>
-    <td>1</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-rxNorm.html">RxNorm</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://www.nlm.nih.gov/research/umls/rxnorm|05062024</td>
+    <td>http://unstats.un.org/unsd/methods/m49/m49.htm</td>
     <td>0</td>
     <td>1</td>
     <td></td>
   </tr>
   <tr>
-    <td>urn:ietf:bcp:47</td>
-    <td>0</td>
-    <td>2</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>3</td>
+    <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ietf3066.html">Tags for the Identification of Languages</a>
+      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:3166:-2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-iso3166-2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
     </td>
   </tr>
 </table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description</li>
+</ul>
 </body>
 </html>

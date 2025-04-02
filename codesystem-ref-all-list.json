@@ -1,76 +1,76 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/request-intent",
+      "url" : "http://hl7.org/fhir/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "oids" : ["2.16.840.1.113883.4.642.4.70"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "oids" : ["2.16.840.1.113883.4.642.4.68"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "oids" : ["2.16.840.1.113883.4.642.4.513"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+    },
+    {
+      "url" : "http://hl7.org/fhir/goal-status",
       "version" : "4.0.1",
       "status" : "draft",
-      "name" : "RequestIntent",
-      "title" : "RequestIntent",
-      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.114"],
+      "name" : "GoalLifecycleStatus",
+      "title" : "GoalLifecycleStatus",
+      "description" : "Codes that reflect the current state of a goal and whether the goal is still being targeted.",
+      "oids" : ["2.16.840.1.113883.4.642.4.272"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
+      "http://hl7.org/fhir/R4/valueset-goal-status.html" : "GoalLifecycleStatus"
     },
     {
-      "url" : "http://hl7.org/fhir/request-priority",
+      "url" : "http://hl7.org/fhir/location-mode",
       "version" : "4.0.1",
       "status" : "draft",
-      "name" : "RequestPriority",
-      "title" : "RequestPriority",
-      "description" : "Identifies the level of importance to be assigned to actioning the request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "name" : "LocationMode",
+      "title" : "LocationMode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "oids" : ["2.16.840.1.113883.4.642.4.331"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+      "http://hl7.org/fhir/R4/valueset-location-mode.html" : "LocationMode"
     },
     {
-      "url" : "http://hl7.org/fhir/request-status",
+      "url" : "http://hl7.org/fhir/location-status",
       "version" : "4.0.1",
       "status" : "draft",
-      "name" : "RequestStatus",
-      "title" : "RequestStatus",
-      "description" : "Codes identifying the lifecycle stage of a request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.112"],
+      "name" : "LocationStatus",
+      "title" : "LocationStatus",
+      "description" : "Indicates whether the location is still in use.",
+      "oids" : ["2.16.840.1.113883.4.642.4.333"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
-    },
-    {
-      "url" : "http://hl7.org/fhir/sid/icd-10-cm",
-      "version" : "2.0.1",
-      "status" : "active",
-      "name" : "Icd10CM",
-      "title" : "International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)",
-      "description" : "The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM), describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases. The ICD-10-CM codes can be used as the value of the Act.cd attribute.",
-      "oids" : ["2.16.840.1.113883.6.90"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
-    },
-    {
-      "url" : "http://hl7.org/fhir/sid/icd-9-cm",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "icd9CMProcedureCodes",
-      "title" : "ICD-9-CM (procedure codes)",
-      "description" : "The International Classification of Diseases, 9th Revision, Clinical Modification (ICD-9-CM), Volumes I, II (diagnoses) and III (procedures) describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases and procedures. The ICD-9-CM codes can be used as the value of the Act.cd attribute.",
-      "oids" : ["2.16.840.1.113883.6.104"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
-      "version" : "7.0.0",
-      "status" : "active",
-      "name" : "USCoreCategory",
-      "title" : "US Core Category",
-      "description" : "Category codes used across US Core Profiles and resource types. They are typically used when there is a need for categorization for searching and finding resources or workflow hints.",
-      "oids" : ["2.16.840.1.113883.4.642.40.2.16.3"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes"
+      "http://hl7.org/fhir/R4/valueset-location-status.html" : "LocationStatus"
     },
     {
       "url" : "http://loinc.org",
@@ -82,7 +82,7 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -94,14 +94,69 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
+      "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/goal-achievement",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "GoalAchievementStatus",
+      "title" : "Goal achievement status",
+      "description" : "Describes the progression, or lack thereof, towards the goal against the target.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1375"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-goal-achievement.html" : "Goal achievement status"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/goal-category",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "GoalCategory",
+      "title" : "Goal category",
+      "description" : "Codes for grouping goals to use for filtering or presentation.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1097"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-goal-category.html" : "Goal category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/goal-priority",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "GoalPriority",
+      "title" : "Goal priority",
+      "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1096"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-goal-priority.html" : "Goal priority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0116",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "BedStatus",
+      "title" : "bedStatus",
+      "description" : "Code system of concepts which specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.  Used in HL7 Version 2.x messaging in the DLD and PV1 segments.",
+      "oids" : ["2.16.840.1.113883.18.47"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -116,52 +171,29 @@
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
     },
     {
-      "url" : "http://www.ada.org/cdt",
-      "version" : "3.0.1",
+      "url" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+      "version" : "2022",
       "status" : "active",
-      "name" : "CDT",
-      "title" : "Code on Dental Procedures and Nomenclature",
-      "description" : "The purpose of the CDT Code is to achieve uniformity, consistency and specificity in accurately documenting dental treatment. One use of the CDT Code is to provide for the efficient processing of dental claims, and another is to populate an Electronic Health Record.",
-      "oids" : ["2.16.840.1.113883.6.13"],
+      "name" : "HSLOC",
+      "title" : "Healthcare Service Location",
+      "description" : null,
+      "oids" : ["2.16.840.1.113883.6.259"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation",
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion" : "HealthcareServiceLocation"
     },
     {
-      "url" : "http://www.ama-assn.org/go/cpt",
-      "version" : "3.0.1",
+      "url" : "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
+      "version" : "1.1.1",
       "status" : "active",
-      "name" : "CPT",
-      "title" : "Current Procedural Terminology (CPT®)",
-      "description" : "The Current Procedural Terminology (CPT) code set, created and maintained by the American Medical Association, is the language of medicine today and the code to its future. This system of terminology is the most widely accepted medical nomenclature used to report medical procedures and services under public and private health insurance programs. CPT coding is also used for administrative management purposes such as claims processing and developing guidelines for medical care review. Each year, via a rigorous, evidence-based and transparent process, the independent CPT Editorial Panel revises, creates or deletes hundreds of codes in order to reflect current medical practice.\r\n\r\nDesignated by the U.S. Department of Health and Human Services under the Health Insurance Portability and Accountability Act (HIPAA) as a national coding set for physician and other health care professional services and procedures, CPT’s evidence-based codes accurately encompass the full range of health care services.\r\n\r\nAll CPT codes are five-digits and can be either numeric or alphanumeric, depending on the category. CPT code descriptors are clinically focused and utilize common standards so that a diverse set of users can have common understanding across the clinical health care paradigm.\r\n\r\nThere are various types of CPT codes:\r\n\r\nCategory I: These codes have descriptors that correspond to a procedure or service. Codes range from 00100–99499 and are generally ordered into sub-categories based on procedure/service type and anatomy.\r\n\r\nCategory II: These alphanumeric tracking codes are supplemental codes used for performance measurement. Using them is optional and not required for correct coding.\r\n\r\nCategory III: These are temporary alphanumeric codes for new and developing technology, procedures and services. They were created for data collection, assessment and in some instances, payment of new services and procedures that currently don’t meet the criteria for a Category I code.\r\n\r\nProprietary Laboratory Analyses (PLA) codes: These codes describe proprietary clinical laboratory analyses and can be either provided by a single (“solesource”) laboratory or licensed or marketed to multiple providing laboratories that are cleared or approved by the Food and Drug Administration (FDA)). This category includes but is not limited to Advanced Diagnostic Laboratory Tests (ADLTs) and Clinical Diagnostic Laboratory Tests (CDLTs), as defined under the Protecting Access to Medicare Act of 2014 (PAMA).",
-      "oids" : ["2.16.840.1.113883.6.12"],
+      "name" : "CMSPlaceofServiceCodes",
+      "title" : "CMS Place of Service Codes (POS)",
+      "description" : "Place of Service Codes are two-digit codes placed on health care professional claims to indicate the setting in which a service was provided. The Centers for Medicare & Medicaid Services (CMS) maintain POS codes used throughout the health care industry.\r\n\r\nThis code set is required for use in the implementation guide adopted as the national standard for electronic transmission of professional health care claims under the provisions of the Health Insurance Portability and Accountability Act of 1996 (HIPAA). HIPAA directed the Secretary of HHS to adopt national standards for electronic transactions. These standard transactions require all health plans and providers to use standard code sets to populate data elements in each transaction. The Transaction and Code Set Rule adopted the ASC X12N-837 Health Care Claim: Professional, volumes 1 and 2, as the standard for electronic submission of professional claims. This standard names the POS code set currently maintained by CMS as the code set to be used for describing sites of service in such claims. POS information is often needed to determine the acceptability of direct billing of Medicare, Medicaid and private insurance services provided by a given provider.",
+      "oids" : ["2.16.840.1.113883.15.5"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
-    },
-    {
-      "url" : "http://www.cms.gov/Medicare/Coding/ICD10",
-      "version" : "2.0.1",
-      "status" : "active",
-      "name" : "Icd10PCS",
-      "title" : "ICD-10 Procedure Codes",
-      "description" : "ICD Procedure Coding System (ICD 10 PCS)",
-      "oids" : ["2.16.840.1.113883.6.4"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
-    },
-    {
-      "url" : "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "HCPCSLevelII",
-      "title" : "Healthcare Common Procedure Coding System (HCPCS) level II alphanumeric codes",
-      "description" : "The Level II HCPCS codes, which are established by CMS's Alpha-Numeric Editorial Panel, primarily represent items and supplies and non-physician services not covered by the American Medical Association's Current Procedural Terminology-4 (CPT-4) codes; Medicare, Medicaid, and private health insurers use HCPCS procedure and modifier codes for claims processing.  Level II alphanumeric procedure and modifier codes comprise the A to V range.",
-      "oids" : ["2.16.840.1.113883.6.285"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation"
     },
     {
       "url" : "urn:ietf:bcp:47",

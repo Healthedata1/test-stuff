@@ -1,13 +1,20 @@
 {
-  "package": "healthedata1-sandbox",
+  "package": "hl7.fhir.us.healthedata1-sandbox",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
   "extensions": [],
   "profiles": {
-    "ServiceRequest": [
+    "Goal": [
       {
-        "url": "http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest",
-        "title": "US Core ServiceRequest Profile"
+        "url": "http://hl7.org/fhir/my/StructureDefinition/My-core-goal",
+        "title": "My Goal Profile"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
+        "title": "US Core Location Profile"
       }
     ]
   },
@@ -24,45 +31,24 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type",
-      "StructureDefinition.differential.element.type.targetProfile",
-      "StructureDefinition.snapshot.element.type",
-      "StructureDefinition.snapshot.element.type.targetProfile"
+      "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
-      "Patient.contact.name.family"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "CareTeam.meta",
-      "MedicationRequest.meta"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "CareTeam.meta",
-      "MedicationRequest.meta"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
-      "Patient.birthDate"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/patient-preferenceType": [
-      "Patient.communication.preferred"
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
-      "ImplementationGuide",
-      "StructureDefinition"
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "ImplementationGuide",
-      "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page",
-      "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
-      "StructureDefinition.differential.element.binding",
-      "StructureDefinition.snapshot.element.binding"
+      "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -80,8 +66,8 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence": [
-      "MedicationRequest"
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.differential.element",

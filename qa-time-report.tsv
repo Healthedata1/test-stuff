@@ -1,6 +1,4 @@
-Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-healthedata1-sandbox.json	6262	-	0	0	0	0	0	0	4	344	0	0	0	0	0	0	0	1	0	0	94	96	0	0	0	2	0	2
-input/examples/Patient-example.json	4125	46	0	0	0	0	0	0	1	112	0	0	0	0	0	0	0	0	0	0	19	33	0	0	0	0	0	0
-input/examples/careteam-example.json	3144	26	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	18	41	0	0	0	0	0	0
-input/examples/medicationrequest-coded-oral-axid.json	4894	26	0	0	0	0	0	0	0	99	0	0	0	0	0	0	0	0	0	0	31	45	0	0	0	0	0	0
-input/resources/StructureDefinition-us-core-servicerequest.json	13534	28	0	0	0	0	0	91	1	126	0	0	1	0	0	0	0	1	0	0	314	2220	0	1	0	11	0	1
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json	5405	-	0	0	0	0	0	0	5	568	0	0	0	0	0	0	0	0	0	0	123	117	0	0	0	3	0	1
+input/resources/StructureDefinition-us-core-goal.json	2956	31	0	73	1	0	0	0	0	349	0	0	0	2715	0	0	0	1	0	0	181	474	0	0	0	8	0	0
+input/resources/StructureDefinition-us-core-location.json	10274	29	0	133	0	0	0	0	0	135	0	0	0	0	0	0	0	3	0	0	444	769	0	0	0	15	0	3
