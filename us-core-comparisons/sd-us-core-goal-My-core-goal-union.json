@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "01af36e4-ea15-4ba1-a355-851a30e568be-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/01af36e4-ea15-4ba1-a355-851a30e568be-2",
+  "id" : "7366d35c-8e29-4fc4-b998-d2c229dac3a5-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7366d35c-8e29-4fc4-b998-d2c229dac3a5-2",
   "name" : "UnionUSCoreGoalProfileAndMyGoalProfile",
   "title" : "Union of US Core Goal Profile And My Goal Profile",
   "status" : "active",
-  "date" : "2025-04-08T03:02:26+00:00",
+  "date" : "2025-04-08T04:22:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

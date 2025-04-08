@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "01af36e4-ea15-4ba1-a355-851a30e568be-9",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/01af36e4-ea15-4ba1-a355-851a30e568be-9",
+  "id" : "7366d35c-8e29-4fc4-b998-d2c229dac3a5-9",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7366d35c-8e29-4fc4-b998-d2c229dac3a5-9",
   "name" : "IntersectionUSCoreLocationProfileAndUSCoreLocationSlicedProfile",
   "title" : "Intersection of US Core Location Profile And US Core Location Sliced Profile",
   "status" : "active",
-  "date" : "2025-04-08T03:02:26+00:00",
+  "date" : "2025-04-08T04:22:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -586,9 +586,9 @@
     },
     {
       "path" : "Location.type",
-      "short" : "left: Category of service or resource available in a location.; right: Type of function performed",
+      "short" : "left: Category of service or resource available in a location.; right: >>>> Slicing type by value set <<<<<",
       "definition" : "Indicates the type of function performed at the location.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
@@ -610,7 +610,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Indicates the type of function performed at the location.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/01af36e4-ea15-4ba1-a355-851a30e568be-12"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7366d35c-8e29-4fc4-b998-d2c229dac3a5-12"
       },
       "mapping" : [{
         "identity" : "w5",

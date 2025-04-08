@@ -316,7 +316,6 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     }
   ]
