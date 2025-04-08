@@ -1,5 +1,5 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json	6219	-	0	0	0	0	0	0	5	504	0	0	0	0	0	0	0	0	0	0	123	167	0	0	0	3	0	1
-input/resources/StructureDefinition-us-core-goal.json	2956	41	0	61	1	0	0	0	0	334	0	0	0	2468	0	0	0	1	0	0	235	523	0	0	0	10	0	1
-input/resources/StructureDefinition-us-core-location-bindings.json	11009	31	0	75	0	0	0	0	0	489	0	0	0	0	0	0	0	2	0	0	229	477	0	0	0	13	0	1
-input/resources/StructureDefinition-us-core-location-sliced.json	10288	24	0	61	0	0	0	0	0	78	0	0	0	0	0	0	0	0	0	0	202	374	0	0	0	12	0	0
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json	6219	-	0	0	0	0	0	0	5	314	0	0	0	1	0	0	0	0	0	0	149	166	0	0	0	3	0	1
+input/resources/StructureDefinition-us-core-goal.json	2956	29	0	59	1	0	0	0	0	202	0	0	1	2232	0	1	0	1	0	0	210	589	0	0	0	7	0	1
+input/resources/StructureDefinition-us-core-location-bindings.json	11021	20	0	65	0	0	0	0	0	105	0	0	0	0	0	0	0	2	0	0	296	624	0	0	0	14	0	1
+input/resources/StructureDefinition-us-core-location-sliced.json	10288	20	0	58	0	0	0	0	0	69	0	0	0	0	0	0	0	0	0	0	201	475	0	0	0	12	0	0

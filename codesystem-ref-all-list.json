@@ -94,9 +94,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
-      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set"
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/goal-achievement",
@@ -180,8 +180,8 @@
       "oids" : ["2.16.840.1.113883.6.259"],
       "uses" : {
       },
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion" : "HealthcareServiceLocation",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation",
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion" : "HealthcareServiceLocation"
     },
     {
       "url" : "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",

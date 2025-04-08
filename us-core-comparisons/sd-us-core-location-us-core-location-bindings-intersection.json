@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7366d35c-8e29-4fc4-b998-d2c229dac3a5-6",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7366d35c-8e29-4fc4-b998-d2c229dac3a5-6",
+  "id" : "416f7e3f-c75a-420d-9d1d-a3215bfca32c-6",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/416f7e3f-c75a-420d-9d1d-a3215bfca32c-6",
   "name" : "IntersectionUSCoreLocationProfileAndUSCoreLocationBindingsProfile",
   "title" : "Intersection of US Core Location Profile And US Core Location Bindings Profile",
   "status" : "active",
-  "date" : "2025-04-08T04:22:52+00:00",
+  "date" : "2025-04-08T19:12:48+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -610,7 +610,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "☞☞☞Extensible binding inherited from FHIR R4 `Location.type`☜☜☜",
-        "valueSet" : "http://hl7.org/fhir/us/core/ValueSet/us-core-location-type"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/416f7e3f-c75a-420d-9d1d-a3215bfca32c-9"
       },
       "mapping" : [{
         "identity" : "w5",
