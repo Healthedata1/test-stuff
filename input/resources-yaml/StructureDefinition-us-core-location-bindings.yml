@@ -68,8 +68,7 @@ differential:
     binding:
       strength: extensible
       description: ☞☞☞Extensible binding inherited from FHIR R4 `Location.type`☜☜☜
-      valueSet: http://hl7.org/fhir/us/core/ValueSet/us-core-location-type
-
+      valueSet: http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
 
 # ====== New R5 additional Binding Element for  ServiceDeliveryLocationRoleType inherited from FHIR R4 ====
 
