@@ -14,7 +14,8 @@
       "sources" : ["2.16.840.1.113883.1.11.20275"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
@@ -28,7 +29,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -42,7 +44,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -56,7 +59,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -84,7 +88,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/goal-achievement",
@@ -168,8 +173,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
-      "StructureDefinition-My-core-goal.html" : "My Goal Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-My-core-goal.html" : "My Goal Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -183,7 +189,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.330"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -199,7 +206,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -213,7 +221,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.332"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -230,6 +239,24 @@
       "StructureDefinition-My-core-goal.html" : "My Goal Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-location-type",
+      "version" : "8.0.0-ballot",
+      "status" : "active",
+      "name" : "USCoreLocationType",
+      "title" : "US Core Location Type",
+      "description" : "Concepts representing locations and settings where healthcare services are provided.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
+        "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.13"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.13"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state",
       "version" : "7.0.0",
       "status" : "active",
@@ -241,7 +268,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.40"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
@@ -255,7 +283,8 @@
       "sources" : ["2.16.840.1.113883.21.51"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-HealthcareServiceLocation",
@@ -272,7 +301,8 @@
       "sources" : ["2.16.840.1.113883.1.11.20275"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
@@ -286,7 +316,8 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     }
   ]
 }

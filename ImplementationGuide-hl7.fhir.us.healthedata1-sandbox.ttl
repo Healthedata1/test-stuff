@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-04-02T04:35:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-08T03:01:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -1112,10 +1112,28 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-location" ]
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-bindings> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-location-bindings" ]
        ] ;
-       fhir:name [ fhir:v "US Core Location Profile" ] ;
+       fhir:name [ fhir:v "US Core Location Bindings Profile" ] ;
+       fhir:description [ fhir:v "The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a \"physical place of available services or resources.\"  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-sliced> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-location-sliced" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Location Sliced Profile" ] ;
        fhir:description [ fhir:v "The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a \"physical place of available services or resources.\"  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [
          a fhir:boolean ;
@@ -1264,7 +1282,9 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/My-core-goal> a fhir:us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location> a fhir:us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-bindings> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-sliced> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

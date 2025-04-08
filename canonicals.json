@@ -7,11 +7,18 @@
     "name" : "MyGoalProfile"
   },
   {
-    "id" : "us-core-location",
+    "id" : "us-core-location-bindings",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-bindings",
     "version" : "0.1.0",
-    "name" : "USCoreLocationProfile"
+    "name" : "USCoreLocationBindingsProfile"
+  },
+  {
+    "id" : "us-core-location-sliced",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-sliced",
+    "version" : "0.1.0",
+    "name" : "USCoreLocationSlicedProfile"
   },
   {
     "id" : "hl7.fhir.us.healthedata1-sandbox",

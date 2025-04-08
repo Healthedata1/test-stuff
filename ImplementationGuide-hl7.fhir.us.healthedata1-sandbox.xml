@@ -11,7 +11,7 @@
   <name value="HealthEData_1Sandbox"/>
   <title value="Health eData 1 Sandbox"/>
   <status value="active"/>
-  <date value="2025-04-02T04:35:28+00:00"/>
+  <date value="2025-04-08T03:01:12+00:00"/>
   <publisher value="HL7 International / Payer/Provider Information Exchange Work Group"/>
   <contact>
     <name value="HL7 International / Payer/Provider Information Exchange Work Group"/>
@@ -608,9 +608,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/us-core-location"/>
+        <reference value="StructureDefinition/us-core-location-bindings"/>
       </reference>
-      <name value="US Core Location Profile"/>
+      <name value="US Core Location Bindings Profile"/>
+      <description value="The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a &quot;physical place of available services or resources.&quot;  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-location-sliced"/>
+      </reference>
+      <name value="US Core Location Sliced Profile"/>
       <description value="The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a &quot;physical place of available services or resources.&quot;  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
       <exampleBoolean value="false"/>
     </resource>
