@@ -1,9 +1,23 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "us-core-location",
-    "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
-    "name": "USCoreLocationProfile",
-    "title": "US Core Location Profile",
+    "id": "us-core-location-sliced",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "deprecated",
+            "_valueCode": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+                        "valueMarkdown": "Implementers who want to should use the HL7 standard extension instead defined in the [Genomics Reporting Guide](https://hl7.org/fhir/uv/genomics-reporting/)"
+                    }
+                ]
+            }
+        }
+    ],
+    "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-sliced",
+    "name": "USCoreLocationSlicedProfile",
+    "title": "US Core Location Sliced Profile",
     "status": "active",
     "experimental": false,
     "date": "2023-10-17",
@@ -91,13 +105,13 @@
                 "requirements": "Extensible binding inherited from FHIR R4 `Location.type`",
                 "short": "Extensible binding inherited from FHIR R4 `Location.type`",
                 "binding": {
-                    "strength": "extensible",
+                    "strength": "required",
                     "valueSet": "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"
                 },
                 "mustSupport": true
             },
             {
-                "id": "Location.type:HSLOC",
+                "id": "Location.type:HealthcareServiceLocation",
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
@@ -105,11 +119,11 @@
                     }
                 ],
                 "path": "Location.type",
-                "sliceName": "HSLOC",
-                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc , Meets the USCDI applicable vocabulary standard",
-                "requirements": "Meets the USCDI applicable vocabulary standard",
+                "sliceName": "HealthcareServiceLocation",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc ,  Meets the USCDI applicable vocabulary standard (HSLOC)",
+                "requirements": "Meets the USCDI applicable vocabulary standard (HSLOC)",
                 "binding": {
-                    "strength": "extensible",
+                    "strength": "required",
                     "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275"
                 }
             },
@@ -126,24 +140,24 @@
                 "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc, Meets the USCDI applicable vocabulary standard (SNOMED-CT)",
                 "requirements": "Meets the USCDI applicable vocabulary standard (SNOMED-CT)",
                 "binding": {
-                    "strength": "extensible",
+                    "strength": "required",
                     "valueSet": "http://hl7.org/fhir/ValueSet/c80-facilitycodes"
                 }
             },
             {
-                "id": "Location.type:POS",
+                "id": "Location.type:PlaceOfService",
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
-                        "valueBoolean": true
+                        "valueBoolean": false
                     }
                 ],
                 "path": "Location.type",
-                "sliceName": "POS",
-                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc, Meets the Health Insurance Portability and Accountability Act of 1996 (HIPAA) (POS Memorandum 2003)",
+                "sliceName": "PlaceOfService",
+                "short": "Meets the Health Insurance Portability and Accountability Act of 1996 (HIPAA) (POS Memorandum 2003)",
                 "requirements": "Meets the Health Insurance Portability and Accountability Act of 1996 (HIPAA) (POS Memorandum 2003)",
                 "binding": {
-                    "strength": "extensible",
+                    "strength": "required",
                     "valueSet": "http://terminology.hl7.org/ValueSet/v3-HealthcareServiceLocation"
                 }
             },

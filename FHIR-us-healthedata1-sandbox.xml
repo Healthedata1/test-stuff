@@ -5,7 +5,8 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/My-core-goal" key="StructureDefinition-My-core-goal" name="My Goal Profile"/>
-<artifact id="StructureDefinition/us-core-location" key="StructureDefinition-us-core-location" name="US Core Location Profile"/>
+<artifact id="StructureDefinition/us-core-location-bindings" key="StructureDefinition-us-core-location-bindings" name="US Core Location Bindings Profile"/>
+<artifact id="StructureDefinition/us-core-location-sliced" key="StructureDefinition-us-core-location-sliced" name="US Core Location Sliced Profile"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

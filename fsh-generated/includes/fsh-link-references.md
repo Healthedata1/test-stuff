@@ -1,2 +1,3 @@
 [MyGoalProfile]: StructureDefinition-My-core-goal.html
-[USCoreLocationProfile]: StructureDefinition-us-core-location.html
+[USCoreLocationBindingsProfile]: StructureDefinition-us-core-location-bindings.html
+[USCoreLocationSlicedProfile]: StructureDefinition-us-core-location-sliced.html

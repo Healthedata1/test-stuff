@@ -1,8 +1,29 @@
 resourceType: StructureDefinition
-id: us-core-location
-url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
-name: USCoreLocationProfile
-title: US Core Location Profile
+
+id: us-core-location-sliced
+
+#=== Deprecate profile ====
+
+extension:
+  - url: >-
+      http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: deprecated
+    _valueCode:
+      extension:
+        - url: >-
+            http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason
+          valueMarkdown: >-
+            Implementers who want to should use the HL7 standard extension instead
+            defined in the [Genomics Reporting
+            Guide](https://hl7.org/fhir/uv/genomics-reporting/)
+
+
+#============================
+
+
+url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-sliced
+name: USCoreLocationSlicedProfile
+title: US Core Location Sliced Profile
 status: active
 experimental: false
 date: 2023-10-17
@@ -38,7 +59,7 @@ differential:
       map: ./PrimaryAddress and ./OtherAddresses
 
 
-# ==== Slicing type by code system ====
+# ==== Slicing type by value set ====
 
   # - id: Location.type
   #   path: Location.type
@@ -94,23 +115,23 @@ differential:
     requirements: Extensible binding inherited from FHIR R4 `Location.type`
     short: Extensible binding inherited from FHIR R4 `Location.type`
     binding:
-      strength: extensible
+      strength: required
       valueSet: http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType
     mustSupport: true
 
 # ==== HSLOC Slice: USCDI APPLICABLE VOCABULARY STANDARD ====
 
-  - id: Location.type:HSLOC
+  - id: Location.type:HealthcareServiceLocation
     extension:
       - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
         valueBoolean: true
     path: Location.type
-    sliceName: HSLOC
+    sliceName: HealthcareServiceLocation
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
-      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC , Meets the USCDI applicable vocabulary standard"
-    requirements: Meets the USCDI applicable vocabulary standard
+      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC ,  Meets the USCDI applicable vocabulary standard (HSLOC)"
+    requirements: Meets the USCDI applicable vocabulary standard (HSLOC)
     binding:
-      strength: extensible
+      strength: required
       valueSet: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275
 
 
@@ -126,23 +147,22 @@ differential:
       \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC, Meets the USCDI applicable vocabulary standard (SNOMED-CT)"
     requirements: Meets the USCDI applicable vocabulary standard (SNOMED-CT)
     binding:
-      strength: extensible
+      strength: required
       valueSet: http://hl7.org/fhir/ValueSet/c80-facilitycodes
 
 # ==== Place of Service (POS)  Slice ====
 
-  - id: Location.type:POS
+  - id: Location.type:PlaceOfService
     extension:
       - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
-        valueBoolean: true
+        valueBoolean: false
     path: Location.type
-    sliceName: POS
-    short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
-      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC, Meets the Health Insurance Portability and Accountability Act of 1996 (HIPAA) (POS Memorandum 2003)"
+    sliceName: PlaceOfService
+    short: Meets the Health Insurance Portability and Accountability Act of 1996 (HIPAA) (POS Memorandum 2003)
     requirements: Meets the Health Insurance Portability and Accountability Act of 1996 (HIPAA) (POS Memorandum 2003)
     binding:
-      strength: extensible
-      valueSet: http://terminology.hl7.org/ValueSet/v3-HealthcareServiceLocation  # not the right valueset
+      strength: required
+      valueSet: http://terminology.hl7.org/ValueSet/v3-HealthcareServiceLocation  # not able to expand so cannot evaluate
   
 
 # =============================================================================
