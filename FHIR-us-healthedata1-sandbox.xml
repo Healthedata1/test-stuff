@@ -7,6 +7,8 @@
 <artifact id="StructureDefinition/My-core-goal" key="StructureDefinition-My-core-goal" name="My Goal Profile"/>
 <artifact id="StructureDefinition/us-core-location-bindings" key="StructureDefinition-us-core-location-bindings" name="US Core Location Bindings Profile"/>
 <artifact id="StructureDefinition/us-core-location-sliced" key="StructureDefinition-us-core-location-sliced" name="US Core Location Sliced Profile"/>
+<artifact id="StructureDefinition/us-core-treatment-intervention-preference-bindings" key="StructureDefinition-us-core-treatment-intervention-preference-bindings" name="US Core Treatment Intervention Preference Bindings Profile"/>
+<artifact id="StructureDefinition/us-core-treatment-intervention-preference-grouping" key="StructureDefinition-us-core-treatment-intervention-preference-grouping" name="US Core Treatment Intervention Preference Grouping Profile"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
