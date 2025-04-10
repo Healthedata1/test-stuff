@@ -1,6 +1,19 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreCategory",
+      "title" : "US Core Category",
+      "description" : "Category codes used across US Core Profiles and resource types. They are typically used when there is a need for categorization for searching and finding resources or workflow hints.",
+      "oids" : ["2.16.840.1.113883.4.642.40.2.16.3"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-screening-assessment-observation-category.html" : "US Core Screening Assessment Observation Category",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category"
+    },
+    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -11,6 +24,19 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",

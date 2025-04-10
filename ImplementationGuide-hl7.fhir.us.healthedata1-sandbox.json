@@ -10,7 +10,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-04-08T19:11:29+00:00",
+  "date" : "2025-04-10T22:44:13+00:00",
   "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact" : [{
     "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
@@ -830,6 +830,30 @@
       },
       "name" : "US Core Location Sliced Profile",
       "description" : "The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a \"physical place of available services or resources.\"  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-treatment-intervention-preference-bindings"
+      },
+      "name" : "US Core Treatment Intervention Preference Bindings Profile",
+      "description" : "The US Core Treatment Intervention Preference Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile provides guidance on how to record a treatment intervention preference expressed by the patient regarding their personal health goals,  preferences, and priorities for medical treatments or interventions in the event of a future health scenario where a person is unable to make medical decisions because of a severe illness or injury. This profile does not represent an actual order, but it can guide caregivers and medical personnel about what is important for the person. This profile sets minimum expectations for the Observation resource to record, search, and fetch for patient treatment intervention preferences. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-treatment-intervention-preference-grouping"
+      },
+      "name" : "US Core Treatment Intervention Preference Grouping Profile",
+      "description" : "The US Core Treatment Intervention Preference Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile provides guidance on how to record a treatment intervention preference expressed by the patient regarding their personal health goals,  preferences, and priorities for medical treatments or interventions in the event of a future health scenario where a person is unable to make medical decisions because of a severe illness or injury. This profile does not represent an actual order, but it can guide caregivers and medical personnel about what is important for the person. This profile sets minimum expectations for the Observation resource to record, search, and fetch for patient treatment intervention preferences. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
       "exampleBoolean" : false
     }],
     "page" : {

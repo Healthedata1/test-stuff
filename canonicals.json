@@ -21,6 +21,20 @@
     "name" : "USCoreLocationSlicedProfile"
   },
   {
+    "id" : "us-core-treatment-intervention-preference-bindings",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference-bindings",
+    "version" : "0.1.0",
+    "name" : "USCoreTreatmentInterventionPreferenceBindingsProfile"
+  },
+  {
+    "id" : "us-core-treatment-intervention-preference-grouping",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference-grouping",
+    "version" : "0.1.0",
+    "name" : "USCoreTreatmentInterventionPreferenceGroupingProfile"
+  },
+  {
     "id" : "hl7.fhir.us.healthedata1-sandbox",
     "type" : "ImplementationGuide",
     "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox",

@@ -20,6 +20,16 @@
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-sliced",
         "title": "US Core Location Sliced Profile"
       }
+    ],
+    "Observation": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference-bindings",
+        "title": "US Core Treatment Intervention Preference Bindings Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference-grouping",
+        "title": "US Core Treatment Intervention Preference Grouping Profile"
+      }
     ]
   },
   "usage": {
@@ -44,6 +54,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

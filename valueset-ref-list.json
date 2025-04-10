@@ -33,6 +33,51 @@
       "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-observation-category",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreScreeningAssessmentObservationCategory",
+      "title" : "US Core Screening Assessment Observation Category",
+      "description" : "Category codes used in the US Core Observation Screening Assessment Profile to help identify the type of USCDI Health Status/Assessment data class being reported.",
+      "systems" : ["http://hl7.org/fhir/us/core/CodeSystem/us-core-category"],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.18"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.18"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreSimpleObservationCategory",
+      "title" : "US Core Simple Observation Category",
+      "description" : "Used to classify the context of a survey, screening or assessment for simple observations and may be used to assist with indexing and searching for appropriate instances.",
+      "systems" : [
+        "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+        "http://terminology.hl7.org/CodeSystem/observation-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.19"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.19"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state",
       "version" : "7.0.0",
       "status" : "active",

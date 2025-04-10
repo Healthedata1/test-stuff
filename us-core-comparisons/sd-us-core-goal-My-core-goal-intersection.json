@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "416f7e3f-c75a-420d-9d1d-a3215bfca32c-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/416f7e3f-c75a-420d-9d1d-a3215bfca32c-3",
+  "id" : "6e93953c-fc3c-4c84-a305-46ec7f6c32b0-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6e93953c-fc3c-4c84-a305-46ec7f6c32b0-3",
   "name" : "IntersectionUSCoreGoalProfileAndMyGoalProfile",
   "title" : "Intersection of US Core Goal Profile And My Goal Profile",
   "status" : "active",
-  "date" : "2025-04-08T19:12:48+00:00",
+  "date" : "2025-04-10T22:45:36+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

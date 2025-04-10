@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "416f7e3f-c75a-420d-9d1d-a3215bfca32c-12",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/416f7e3f-c75a-420d-9d1d-a3215bfca32c-12",
+  "id" : "6e93953c-fc3c-4c84-a305-46ec7f6c32b0-12",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6e93953c-fc3c-4c84-a305-46ec7f6c32b0-12",
   "name" : "IntersectionUSCoreLocationProfileAndUSCoreLocationSlicedProfile",
   "title" : "Intersection of US Core Location Profile And US Core Location Sliced Profile",
   "status" : "active",
-  "date" : "2025-04-08T19:12:48+00:00",
+  "date" : "2025-04-10T22:45:36+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -610,7 +610,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Indicates the type of function performed at the location.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/416f7e3f-c75a-420d-9d1d-a3215bfca32c-9"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6e93953c-fc3c-4c84-a305-46ec7f6c32b0-9"
       },
       "mapping" : [{
         "identity" : "w5",
