@@ -56,6 +56,54 @@
     "resource": [
       {
         "reference": {
+          "reference": "Location/hospital-c80"
+        },
+        "description": "This is an example hospital location for the *US Core Location Profile* using the c80 `.type` Code.",
+        "name": "Hospital Location c80 Code",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/hospital-fhir"
+        },
+        "description": "This is an example hospital location for the *US Core Location Profile* using the FHIR `.type` Code.",
+        "name": "Hospital Location FHIR Code",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/hospital-fhir-hsloc"
+        },
+        "description": "This is an example hospital location for the *US Core Location Profile* using the HSLOC `.type` Code.",
+        "name": "Hospital Location HSLOC Code",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/hospital-fhir-hsloc-bad1"
+        },
+        "description": "This is an example hospital location for the *US Core Location Profile* using a bad HSLOC-bad1 `.type` Code.",
+        "name": "Hospital Location HSLOC-bad1 Code",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/hospital-fhir-hsloc-bad2"
+        },
+        "description": "This is an example hospital location for the *US Core Location Profile* using the another code insead of  HSLOC `.type` Code.",
+        "name": "Hospital Location HSLOC-bad2 Code",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/hospital-pos"
+        },
+        "description": "This is an example hospital location for the *US Core Location Profile* using the POS `.type` Code.",
+        "name": "Hospital Location POS Code",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/My-core-goal"
         },
         "description": "The My Goal Profile inherits from the FHIR [Goal](https://hl7.org/fhir/R4/goal.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Goal resource to record,  search, and fetch Goal information associated with a patient.   It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",

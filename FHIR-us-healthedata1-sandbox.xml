@@ -4,6 +4,12 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Location/hospital-fhir" key="Location-hospital-fhir" name="Hospital Location FHIR Code"/>
+<artifact id="Location/hospital-fhir-hsloc" key="Location-hospital-fhir-hsloc" name="Hospital Location HSLOC Code"/>
+<artifact id="Location/hospital-fhir-hsloc-bad1" key="Location-hospital-fhir-hsloc-bad1" name="Hospital Location HSLOC-bad1 Code"/>
+<artifact id="Location/hospital-fhir-hsloc-bad2" key="Location-hospital-fhir-hsloc-bad2" name="Hospital Location HSLOC-bad2 Code"/>
+<artifact id="Location/hospital-pos" key="Location-hospital-pos" name="Hospital Location POS Code"/>
+<artifact id="Location/hospital-c80" key="Location-hospital-c80" name="Hospital Location c80 Code"/>
 <artifact id="StructureDefinition/My-core-goal" key="StructureDefinition-My-core-goal" name="My Goal Profile"/>
 <artifact id="StructureDefinition/us-core-location-bindings" key="StructureDefinition-us-core-location-bindings" name="US Core Location Bindings Profile"/>
 <artifact id="StructureDefinition/us-core-location-sliced" key="StructureDefinition-us-core-location-sliced" name="US Core Location Sliced Profile"/>

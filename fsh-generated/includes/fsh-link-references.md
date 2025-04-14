@@ -1,3 +1,9 @@
+[hospital-c80]: Location-hospital-c80.html
+[hospital-fhir]: Location-hospital-fhir.html
+[hospital-fhir-hsloc]: Location-hospital-fhir-hsloc.html
+[hospital-fhir-hsloc-bad1]: Location-hospital-fhir-hsloc-bad1.html
+[hospital-fhir-hsloc-bad2]: Location-hospital-fhir-hsloc-bad2.html
+[hospital-pos]: Location-hospital-pos.html
 [MyGoalProfile]: StructureDefinition-My-core-goal.html
 [USCoreLocationBindingsProfile]: StructureDefinition-us-core-location-bindings.html
 [USCoreLocationSlicedProfile]: StructureDefinition-us-core-location-sliced.html

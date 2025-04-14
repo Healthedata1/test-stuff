@@ -119,11 +119,11 @@ differential:
         - url: purpose
           valueCode: extensible
         - url: valueSet
-          valueCanonical: http://terminology.hl7.org/ValueSet/v3-HealthcareServiceLocation  # not the right valueset not able to expand so cannot evaluate
+          valueCanonical: http:/example.org/ValueSet/POS  # FAKE URI
         - url: documentation
           valueMarkdown: Meets the Health Insurance Portability and Accountability Act of 1996 (HIPAA) (POS Memorandum 2003)
         - url: shortDoco
-          valueString: Meets HIPAA requirements (wrong valueset listed here)
+          valueString: Meets HIPAA requirements (FAKE URI LISTED HERE)
 
 
   - id: Location.type.coding

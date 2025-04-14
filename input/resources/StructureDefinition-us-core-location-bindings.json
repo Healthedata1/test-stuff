@@ -126,7 +126,7 @@
                                 },
                                 {
                                     "url": "valueSet",
-                                    "valueCanonical": "http://terminology.hl7.org/ValueSet/v3-HealthcareServiceLocation"
+                                    "valueCanonical": "http:/example.org/ValueSet/POS"
                                 },
                                 {
                                     "url": "documentation",
@@ -134,7 +134,7 @@
                                 },
                                 {
                                     "url": "shortDoco",
-                                    "valueString": "Meets HIPAA requirements (wrong valueset listed here)"
+                                    "valueString": "Meets HIPAA requirements (FAKE URI LISTED HERE)"
                                 }
                             ]
                         }
