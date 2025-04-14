@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="hospital-pos"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Hospital Location POS Code"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is an example hospital location for the *US Core Location Profile* using the POS `.type` Code."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location hospital-pos</b></p><a name="hospital-pos"> </a><a name="hchospital-pos"> </a><a name="hospital-pos-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-location.html">US Core Location Profile</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/5.5.0/NamingSystem-npi.html" title="National Provider Identifier">United States National Provider Identifier</a>/1234567893</p><p><b>status</b>: Active</p><p><b>name</b>: Holy Family Hospital</p><p><b>type</b>: <span title="Codes:{https://www.nubc.org/CodeSystem/TypeOfBill 14}">Hospital</span></p><p><b>telecom</b>: ph: 9786870156</p><p><b>address</b>: 70 EAST ST METHUEN MA 01844 US </p><p><b>managingOrganization</b>: <a href="http://hl7.org/fhir/us/core/STU7/Organization-holy-healthcare.html">Holy Healthcare</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="1234567893"/>
+  </identifier>
+  <status value="active"/>
+  <name value="Holy Family Hospital"/>
+  <type>
+    <coding>
+      <system value="https://www.nubc.org/CodeSystem/TypeOfBill"/>
+      <code value="14"/>
+      <display value="Hospital"/>
+    </coding>
+    <text value="Hospital"/>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="9786870156"/>
+  </telecom>
+  <address>
+    <line value="70 EAST ST"/>
+    <city value="METHUEN"/>
+    <state value="MA"/>
+    <postalCode value="01844"/>
+    <country value="US"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/holy-healthcare"/>
+    <display value="Holy Healthcare"/>
+  </managingOrganization>
+</Location>

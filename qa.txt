@@ -1,13 +1,19 @@
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 48, warn = 22, info = 3
+err = 50, warn = 24, info = 3
 IG Publisher Version: 1.8.23
-Generated Thu Apr 10 22:46:27 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
- Build Errors : 23 / 0 / 0
+Generated Mon Apr 14 19:13:43 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
+ Build Errors : 27 / 0 / 0
  /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox : 3 / 2 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-c80 : 0 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-fhir : 0 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-hsloc : 0 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-hsloc-bad1 : 1 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-hsloc-bad2 : 0 / 1 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-pos : 0 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-goal : 6 / 2 / 2
- /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-location-bindings : 21 / 10 / 1
+ /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-location-bindings : 22 / 10 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-location-sliced : 3 / 4 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-treatment-intervention-preference-bindings : 11 / 2 / 3
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-treatment-intervention-preference-groupbindings : 3 / 2 / 1
@@ -31,17 +37,30 @@ ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-My-cor
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-My-core-goal.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1035, column 180: The link 'http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description' for "http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-My-core-goal.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1160, column 229: The link 'http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description' for "http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-My-core-goal.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1352, column 180: The link 'http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description' for "http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-location-bindings.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 330, column 35: The link 'http:/example.org/ValueSet/POS' for "http:/example.org/ValueSet/POS" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-location-bindings.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 466, column 35: The link 'http:/example.org/ValueSet/POS' for "http:/example.org/ValueSet/POS" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-location-bindings.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 687, column 35: The link 'http:/example.org/ValueSet/POS' for "http:/example.org/ValueSet/POS" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-location-bindings.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 1168, column 35: The link 'http:/example.org/ValueSet/POS' for "http:/example.org/ValueSet/POS" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-location-bindings.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 1303, column 35: The link 'http:/example.org/ValueSet/POS' for "http:/example.org/ValueSet/POS" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-location-bindings.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 1524, column 35: The link 'http:/example.org/ValueSet/POS' for "http:/example.org/ValueSet/POS" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 184, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 195, column 8: The link 'examples.xml.zip' for "XML(compressed folder)" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 196, column 8: The link 'examples.json.zip' for "JSON(compressed folder)" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'ImplementationGuide-hl7.fhir.us.core.html' for "US Core ImplementationGuide Resource" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 259, column 84: The link 'foo.html' for "component" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 283, column 84: The link 'foo.html' for "component" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json ==
 WARNING: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide.dependsOn[3].uri: Canonical URL 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac' does not resolve
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: HL7 Implementation Guides must state their owning workgroup explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
 WARNING: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+== input/examples/location-hospital-c80.json ==
+== input/examples/location-hospital-fhir.json ==
+== input/examples/location-hospital-hsloc.json ==
+== input/examples/location-hospital-hsloc-bad1.json ==
+ERROR: Location/hospital-fhir-hsloc-bad1: Location.type[0].coding[0].code: Unknown code '1120-4' in the CodeSystem 'https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html' version '2022'
+== input/examples/location-hospital-hsloc-bad2.json ==
+WARNING: Location/hospital-fhir-hsloc-bad2: Location.type[0].coding[0].system: A definition for CodeSystem 'https://example.org/CodeSystem/my_codes' could not be found, so the code cannot be validated
+== input/examples/location-hospital-pos.json ==
+WARNING: Location/hospital-pos: Location.type[0].coding[0].system: A definition for CodeSystem 'https://www.nubc.org/CodeSystem/TypeOfBill' could not be found, so the code cannot be validated
 == input/resources/StructureDefinition-us-core-goal.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/my/StructureDefinition/My-core-goal'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-goal.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/My-core-goal) does not match the URL (http://hl7.org/fhir/my/StructureDefinition/My-core-goal)
 INFORMATION: StructureDefinition/My-core-goal: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
@@ -84,6 +103,7 @@ WARNING: StructureDefinition/us-core-location-bindings: StructureDefinition: The
 ERROR: StructureDefinition/us-core-location-bindings: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-bindings').baseDefinition: US FHIR Usage rules require that all profiles on Location derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-location-bindings: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-bindings vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-bindings
+ERROR: StructureDefinition.text.div: Hyperlink 'http:/example.org/ValueSet/POS' at 'div/table/tr/td/table/tr/td/a' for 'http:/example.org/ValueSet/POS' does not resolve
 == input/resources/StructureDefinition-us-core-location-sliced.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-sliced'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-location-sliced.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-sliced) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-sliced)
 WARNING: StructureDefinition/us-core-location-sliced: StructureDefinition.snapshot.element[18].binding.valueSet: There are multiple different potential matches for the url 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240606', found versions: 20200604, 20240606. Suggested fix: change the canonical reference from 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275' to 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275|20240606'

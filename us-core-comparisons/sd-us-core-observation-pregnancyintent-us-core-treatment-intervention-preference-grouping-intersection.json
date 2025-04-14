@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "6e93953c-fc3c-4c84-a305-46ec7f6c32b0-159",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6e93953c-fc3c-4c84-a305-46ec7f6c32b0-159",
+  "id" : "9ffbd580-7e30-40ff-8f6d-456f059213e3-159",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9ffbd580-7e30-40ff-8f6d-456f059213e3-159",
   "name" : "IntersectionUSCoreObservationPregnancyIntentProfileAndUSCoreTreatmentInterventionPreferenceGroupingProfile",
   "title" : "Intersection of US Core Observation Pregnancy Intent Profile And US Core Treatment Intervention Preference Grouping Profile",
   "status" : "active",
-  "date" : "2025-04-10T22:45:37+00:00",
+  "date" : "2025-04-14T19:12:55+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

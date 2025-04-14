@@ -52,6 +52,12 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "Location.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "Location.meta"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile": [
       "StructureDefinition"
     ],

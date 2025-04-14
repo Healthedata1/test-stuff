@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Location",
+  "id" : "hospital-fhir-hsloc-bad2",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Hospital Location HSLOC-bad2 Code"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is an example hospital location for the *US Core Location Profile* using the another code insead of  HSLOC `.type` Code."
+    }],
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location hospital-fhir-hsloc-bad2</b></p><a name=\"hospital-fhir-hsloc-bad2\"> </a><a name=\"hchospital-fhir-hsloc-bad2\"> </a><a name=\"hospital-fhir-hsloc-bad2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-location.html\">US Core Location Profile</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234567893</p><p><b>status</b>: Active</p><p><b>name</b>: Holy Family Hospital</p><p><b>type</b>: <span title=\"Codes:{https://example.org/CodeSystem/my_codes 123}\">Hospital</span></p><p><b>telecom</b>: ph: 9786870156</p><p><b>address</b>: 70 EAST ST METHUEN MA 01844 US </p><p><b>managingOrganization</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Organization-holy-healthcare.html\">Holy Healthcare</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org/fhir/sid/us-npi",
+    "value" : "1234567893"
+  }],
+  "status" : "active",
+  "name" : "Holy Family Hospital",
+  "type" : [{
+    "coding" : [{
+      "system" : "https://example.org/CodeSystem/my_codes",
+      "code" : "123",
+      "display" : "FOO"
+    }],
+    "text" : "Hospital"
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "9786870156"
+  }],
+  "address" : {
+    "line" : ["70 EAST ST"],
+    "city" : "METHUEN",
+    "state" : "MA",
+    "postalCode" : "01844",
+    "country" : "US"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/holy-healthcare",
+    "display" : "Holy Healthcare"
+  }
+}

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "6e93953c-fc3c-4c84-a305-46ec7f6c32b0-137",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6e93953c-fc3c-4c84-a305-46ec7f6c32b0-137",
+  "id" : "9ffbd580-7e30-40ff-8f6d-456f059213e3-137",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9ffbd580-7e30-40ff-8f6d-456f059213e3-137",
   "name" : "UnionUSCoreCareExperiencePreferenceProfileAndUSCoreTreatmentInterventionPreferenceGroupingProfile",
   "title" : "Union of US Core Care Experience Preference Profile And US Core Treatment Intervention Preference Grouping Profile",
   "status" : "active",
-  "date" : "2025-04-10T22:45:37+00:00",
+  "date" : "2025-04-14T19:12:55+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -577,7 +577,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "left: Codes for high level observation categories.; right: FHIR and US Core codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6e93953c-fc3c-4c84-a305-46ec7f6c32b0-110"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9ffbd580-7e30-40ff-8f6d-456f059213e3-110"
       },
       "mapping" : [{
         "identity" : "w5",

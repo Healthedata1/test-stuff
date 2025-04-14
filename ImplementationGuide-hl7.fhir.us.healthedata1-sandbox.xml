@@ -11,7 +11,7 @@
   <name value="HealthEData_1Sandbox"/>
   <title value="Health eData 1 Sandbox"/>
   <status value="active"/>
-  <date value="2025-04-10T22:44:13+00:00"/>
+  <date value="2025-04-14T19:11:37+00:00"/>
   <publisher value="HL7 International / Payer/Provider Information Exchange Work Group"/>
   <contact>
     <name value="HL7 International / Payer/Provider Information Exchange Work Group"/>
@@ -592,6 +592,72 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/hospital-c80"/>
+      </reference>
+      <name value="Hospital Location c80 Code"/>
+      <description value="This is an example hospital location for the *US Core Location Profile* using the c80 `.type` Code."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/hospital-fhir"/>
+      </reference>
+      <name value="Hospital Location FHIR Code"/>
+      <description value="This is an example hospital location for the *US Core Location Profile* using the FHIR `.type` Code."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/hospital-fhir-hsloc"/>
+      </reference>
+      <name value="Hospital Location HSLOC Code"/>
+      <description value="This is an example hospital location for the *US Core Location Profile* using the HSLOC `.type` Code."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/hospital-fhir-hsloc-bad1"/>
+      </reference>
+      <name value="Hospital Location HSLOC-bad1 Code"/>
+      <description value="This is an example hospital location for the *US Core Location Profile* using a bad HSLOC-bad1 `.type` Code."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/hospital-fhir-hsloc-bad2"/>
+      </reference>
+      <name value="Hospital Location HSLOC-bad2 Code"/>
+      <description value="This is an example hospital location for the *US Core Location Profile* using the another code insead of  HSLOC `.type` Code."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/hospital-pos"/>
+      </reference>
+      <name value="Hospital Location POS Code"/>
+      <description value="This is an example hospital location for the *US Core Location Profile* using the POS `.type` Code."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>

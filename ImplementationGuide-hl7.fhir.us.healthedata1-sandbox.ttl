@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-04-10T22:44:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-14T19:11:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -1090,6 +1090,120 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-c80> ;
+         fhir:reference [ fhir:v "Location/hospital-c80" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Location c80 Code" ] ;
+       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the c80 `.type` Code." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir> ;
+         fhir:reference [ fhir:v "Location/hospital-fhir" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Location FHIR Code" ] ;
+       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the FHIR `.type` Code." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc> ;
+         fhir:reference [ fhir:v "Location/hospital-fhir-hsloc" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Location HSLOC Code" ] ;
+       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the HSLOC `.type` Code." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad1> ;
+         fhir:reference [ fhir:v "Location/hospital-fhir-hsloc-bad1" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Location HSLOC-bad1 Code" ] ;
+       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using a bad HSLOC-bad1 `.type` Code." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad2> ;
+         fhir:reference [ fhir:v "Location/hospital-fhir-hsloc-bad2" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Location HSLOC-bad2 Code" ] ;
+       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the another code insead of  HSLOC `.type` Code." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-pos> ;
+         fhir:reference [ fhir:v "Location/hospital-pos" ]
+       ] ;
+       fhir:name [ fhir:v "Hospital Location POS Code" ] ;
+       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the POS `.type` Code." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1315,6 +1429,18 @@
        fhir:value [ fhir:v "input-cache/txcache" ]
      ] )
   ] . # 
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-c80> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad1> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad2> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-pos> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/My-core-goal> a fhir:us .
 

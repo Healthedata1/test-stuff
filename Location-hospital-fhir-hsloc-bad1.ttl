@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad1> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hospital-fhir-hsloc-bad1"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Hospital Location HSLOC-bad1 Code"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "This is an example hospital location for the *US Core Location Profile* using a bad HSLOC-bad1 `.type` Code."
+       ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location hospital-fhir-hsloc-bad1</b></p><a name=\"hospital-fhir-hsloc-bad1\"> </a><a name=\"hchospital-fhir-hsloc-bad1\"> </a><a name=\"hospital-fhir-hsloc-bad1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-location.html\">US Core Location Profile</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234567893</p><p><b>status</b>: Active</p><p><b>name</b>: Holy Family Hospital</p><p><b>type</b>: <span title=\"Codes:{https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html 1120-4}\">Hospital</span></p><p><b>telecom</b>: ph: 9786870156</p><p><b>address</b>: 70 EAST ST METHUEN MA 01844 US </p><p><b>managingOrganization</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Organization-holy-healthcare.html\">Holy Healthcare</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1234567893" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Holy Family Hospital"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1120-4" ] ;
+       fhir:display [ fhir:v "Medical Clinic" ]
+     ] ) ;
+     fhir:text [ fhir:v "Hospital" ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "9786870156" ]
+  ] ) ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "70 EAST ST" ] ) ;
+     fhir:city [ fhir:v "METHUEN" ] ;
+     fhir:state [ fhir:v "MA" ] ;
+     fhir:postalCode [ fhir:v "01844" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Organization/holy-healthcare> ;
+     fhir:reference [ fhir:v "Organization/holy-healthcare" ] ;
+     fhir:display [ fhir:v "Holy Healthcare" ]
+  ] . # 
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Organization/holy-healthcare> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

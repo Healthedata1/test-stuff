@@ -10,7 +10,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-04-10T22:44:13+00:00",
+  "date" : "2025-04-14T19:11:37+00:00",
   "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact" : [{
     "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
@@ -797,6 +797,78 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/hospital-c80"
+      },
+      "name" : "Hospital Location c80 Code",
+      "description" : "This is an example hospital location for the *US Core Location Profile* using the c80 `.type` Code.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/hospital-fhir"
+      },
+      "name" : "Hospital Location FHIR Code",
+      "description" : "This is an example hospital location for the *US Core Location Profile* using the FHIR `.type` Code.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/hospital-fhir-hsloc"
+      },
+      "name" : "Hospital Location HSLOC Code",
+      "description" : "This is an example hospital location for the *US Core Location Profile* using the HSLOC `.type` Code.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/hospital-fhir-hsloc-bad1"
+      },
+      "name" : "Hospital Location HSLOC-bad1 Code",
+      "description" : "This is an example hospital location for the *US Core Location Profile* using a bad HSLOC-bad1 `.type` Code.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/hospital-fhir-hsloc-bad2"
+      },
+      "name" : "Hospital Location HSLOC-bad2 Code",
+      "description" : "This is an example hospital location for the *US Core Location Profile* using the another code insead of  HSLOC `.type` Code.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/hospital-pos"
+      },
+      "name" : "Hospital Location POS Code",
+      "description" : "This is an example hospital location for the *US Core Location Profile* using the POS `.type` Code.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
