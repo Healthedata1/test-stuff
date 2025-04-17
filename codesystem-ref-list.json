@@ -35,8 +35,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1125"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category"
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category",
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -60,8 +60,8 @@
       "oids" : ["2.16.840.1.113883.6.259"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation",
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion" : "HealthcareServiceLocation"
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion" : "HealthcareServiceLocation",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation"
     },
     {
       "url" : "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",

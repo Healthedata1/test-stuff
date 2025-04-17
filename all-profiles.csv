@@ -749,7 +749,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
     <system value=""http://hl7.org/fhir/us/core/CodeSystem/us-core-category""/>
     <code value=""treatment-intervention-preference""/>
   </coding>
-</valueCodeableConcept>","","","",,"preferred","Codes for high level observation categories.","http://hl7.org/fhir/ValueSet/observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"preferred","FHIR and US Core codes for high level observation categories.","http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category","",,,,"Observation.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "us-core-treatment-intervention-preference-grouping","Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}

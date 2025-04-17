@@ -59,8 +59,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -103,8 +103,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -204,10 +204,10 @@
       "uses" : {
       },
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
       "StructureDefinition-My-core-goal.html" : "My Goal Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -268,8 +268,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -284,8 +283,8 @@
       "uses" : {
       },
       "StructureDefinition-My-core-goal.html" : "My Goal Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -301,8 +300,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -316,8 +315,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -331,8 +330,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -349,8 +348,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -366,8 +365,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-observation-category",
