@@ -60,7 +60,12 @@
                         }
                     ]
                 },
-                "mustSupport": true
+                "mustSupport": true,
+                "binding": {
+                    "strength": "preferred",
+                    "description": "FHIR and US Core codes for high level observation categories.",
+                    "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category"
+                }
             },
             {
                 "id": "Observation.code",

@@ -46,6 +46,15 @@ differential:
       - system: http://hl7.org/fhir/us/core/CodeSystem/us-core-category
         code: treatment-intervention-preference
     mustSupport: true
+
+   # ====== Need to define bindings in each slice or whatever other property one is interested for =====
+   # ===== snapshot generation. Otherwise will inherit from the Parent (Base FHIR) not the slicer =====
+    binding:
+        strength: preferred
+        description: FHIR and US Core codes for high level observation categories.
+        valueSet: 'http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category'
+    #================================================================================================
+
   - id: Observation.code
     path: Observation.code
     short: Treatment intervention preferences code
