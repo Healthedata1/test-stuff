@@ -10,7 +10,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-04-17T00:37:02+00:00",
+  "date" : "2025-04-24T04:22:28+00:00",
   "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact" : [{
     "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
@@ -431,7 +431,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.4.1"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
     },
     {
       "extension" : [{
@@ -799,6 +799,30 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/cdex-parameters-example6"
+      },
+      "name" : "CDex Parameters Example 6",
+      "description" : "**CCDA Attachment Example:** Parameters Resource example showing the proposed new parameter for *Administrative ?Reference Number*",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/polst"
+      },
+      "name" : "DocumentReference POLST (PDF)",
+      "description" : "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -878,6 +902,18 @@
       },
       "name" : "My Goal Profile",
       "description" : "The My Goal Profile inherits from the FHIR [Goal](https://hl7.org/fhir/R4/goal.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Goal resource to record,  search, and fetch Goal information associated with a patient.   It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-adi-documentreference"
+      },
+      "name" : "US Core ADI DocumentReference Profile",
+      "description" : "The US Core ADI DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.html) meet the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Advance Directive Observation* Data Element requirements. It sets minimum expectations for searching and fetching patient Advance Directive Information (ADI) documents using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document contents, it communicates the type of advance directive document, the author, the verifier, and other properties. To represent whether advance directive documents exist for a patient, see the US Core Observation ADI Documentation Profile. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
       "exampleBoolean" : false
     },
     {

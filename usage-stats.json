@@ -11,6 +11,12 @@
         "title": "My Goal Profile"
       }
     ],
+    "DocumentReference": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
+        "title": "US Core ADI DocumentReference Profile"
+      }
+    ],
     "Location": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-bindings",
@@ -33,6 +39,12 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester": [
+      "DocumentReference"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attestor": [
+      "DocumentReference"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -50,13 +62,19 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type",
-      "StructureDefinition.snapshot.element.type"
+      "StructureDefinition.differential.element.type.targetProfile",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "Location.meta"
+      "DocumentReference.meta",
+      "Location.meta",
+      "Parameters.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "Location.meta"
+      "DocumentReference.meta",
+      "Location.meta",
+      "Parameters.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile": [
       "StructureDefinition"

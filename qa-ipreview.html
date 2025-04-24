@@ -35,9 +35,9 @@ ISO maintains the copyright on the country codes, and controls its use carefully
 :                 <a href="index.html">HealthEData_1Sandbox</a>
 ,                 <a href="StructureDefinition-My-core-goal.html">MyGoalProfile</a>
                 <span onClick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML" id="ips_1">
-... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 4 more</span>                </span>
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 5 more</span>                </span>
                 <span style="display: none" id="ips2_1">
-, <a href="StructureDefinition-us-core-location-bindings.html">USCoreLocationBindingsProfile</a>, <a href="StructureDefinition-us-core-location-sliced.html">USCoreLocationSlicedProfile</a>, <a href="StructureDefinition-us-core-treatment-intervention-preference-bindings.html">USCoreTreatmentInterventionPreferenceBindingsProfile</a> and <a href="StructureDefinition-us-core-treatment-intervention-preference-grouping.html">USCoreTreatmentInterventionPreferenceGroupingProfile</a>                </span>
+, <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-location-bindings.html">USCoreLocationBindingsProfile</a>, <a href="StructureDefinition-us-core-location-sliced.html">USCoreLocationSlicedProfile</a>, <a href="StructureDefinition-us-core-treatment-intervention-preference-bindings.html">USCoreTreatmentInterventionPreferenceBindingsProfile</a> and <a href="StructureDefinition-us-core-treatment-intervention-preference-grouping.html">USCoreTreatmentInterventionPreferenceGroupingProfile</a>                </span>
               </li>
 
 
@@ -81,7 +81,10 @@ This material contains content from           <a href="http://loinc.org">LOINC</
 
               <li>
                 <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-loinc.html">LOINC</a>
-:                 <a href="StructureDefinition-us-core-treatment-intervention-preference-bindings.html">USCoreTreatmentInterventionPreferenceBindingsProfile</a>
+:                 <a href="DocumentReference-polst.html">DocumentReference/polst</a>
+,                 <a href="Parameters-cdex-parameters-example6.html">Parameters/cdex-parameters-example6</a>
+,                 <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>
+,                 <a href="StructureDefinition-us-core-treatment-intervention-preference-bindings.html">USCoreTreatmentInterventionPreferenceBindingsProfile</a>
  and                 <a href="StructureDefinition-us-core-treatment-intervention-preference-grouping.html">USCoreTreatmentInterventionPreferenceGroupingProfile</a>
               </li>
 
@@ -105,6 +108,7 @@ This material contains content that is copyright of SNOMED International. Implem
               <li>
                 <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
 :                 <a href="Location-hospital-c80.html">Holy Family Hospital</a>
+,                 <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>
  and                 <a href="StructureDefinition-us-core-location-sliced.html">USCoreLocationSlicedProfile</a>
               </li>
 
@@ -128,6 +132,11 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
                 <a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>
 :                 <a href="StructureDefinition-us-core-treatment-intervention-preference-bindings.html">USCoreTreatmentInterventionPreferenceBindingsProfile</a>
  and                 <a href="StructureDefinition-us-core-treatment-intervention-preference-grouping.html">USCoreTreatmentInterventionPreferenceGroupingProfile</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-HL7DocumentFormatCodes.html">HL7 Document Format Codes</a>
+:                 <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>
               </li>
 
               <li>
@@ -158,6 +167,11 @@ Used by permission of HL7 International, all rights reserved Creative Commons Li
  and                 <a href="StructureDefinition-us-core-treatment-intervention-preference-grouping.html">USCoreTreatmentInterventionPreferenceGroupingProfile</a>
               </li>
 
+              <li>
+                <a href="http://hl7.org/fhir/us/core/STU7/CodeSystem-us-core-documentreference-category.html">US Core DocumentReferences Category Codes</a>
+:                 <a href="Parameters-cdex-parameters-example6.html">Parameters/cdex-parameters-example6</a>
+              </li>
+
 
             </ul>
 
@@ -174,7 +188,7 @@ Used by permission of HL7 International, all rights reserved Creative Commons Li
     <ul>
       <li>
 
-          IG &copy; 2020+ HL7 International / Payer/Provider Information Exchange Work Group.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on FHIR 4.0.1. Generated 2025-04-17 
+          IG &copy; 2020+ HL7 International / Payer/Provider Information Exchange Work Group.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on FHIR 4.0.1. Generated 2025-04-24 
           
           
                       Links: Table of Contents |
@@ -205,7 +219,7 @@ Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7
 This material contains content from LOINC. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc. Show Usage 
 
 
-* LOINC: USCoreTreatmentInterventionPreferenceBindingsProfile and USCoreTreatmentInterventionPreferenceGroupingProfile
+* LOINC: DocumentReference/polst, Parameters/cdex-parameters-example6, USCoreADIDocumentReferenceProfile, USCoreTreatmentInterventionPreferenceBindingsProfile and USCoreTreatmentInterventionPreferenceGroupingProfile
 
 
 
@@ -218,6 +232,8 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
 
 * Observation Category Codes: USCoreTreatmentInterventionPreferenceBindingsProfile and USCoreTreatmentInterventionPreferenceGroupingProfile
+
+* HL7 Document Format Codes: USCoreADIDocumentReferenceProfile
 
 * RoleCode: Holy Family Hospital, USCoreLocationBindingsProfile and USCoreLocationSlicedProfile
 
@@ -262,9 +278,9 @@ ISO maintains the copyright on the country codes, and controls its use carefully
 :                 <a href="index.html">HealthEData_1Sandbox</a>
 ,                 <a href="StructureDefinition-My-core-goal.html">MyGoalProfile</a>
                 <span onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML" id="ips_1">
-... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 4 more</span>                </span>
+... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 5 more</span>                </span>
                 <span style="display: none" id="ips2_1">
-, <a href="StructureDefinition-us-core-location-bindings.html">USCoreLocationBindingsProfile</a>, <a href="StructureDefinition-us-core-location-sliced.html">USCoreLocationSlicedProfile</a>, <a href="StructureDefinition-us-core-treatment-intervention-preference-bindings.html">USCoreTreatmentInterventionPreferenceBindingsProfile</a> and <a href="StructureDefinition-us-core-treatment-intervention-preference-grouping.html">USCoreTreatmentInterventionPreferenceGroupingProfile</a>                </span>
+, <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-location-bindings.html">USCoreLocationBindingsProfile</a>, <a href="StructureDefinition-us-core-location-sliced.html">USCoreLocationSlicedProfile</a>, <a href="StructureDefinition-us-core-treatment-intervention-preference-bindings.html">USCoreTreatmentInterventionPreferenceBindingsProfile</a> and <a href="StructureDefinition-us-core-treatment-intervention-preference-grouping.html">USCoreTreatmentInterventionPreferenceGroupingProfile</a>                </span>
               </li>
 
 

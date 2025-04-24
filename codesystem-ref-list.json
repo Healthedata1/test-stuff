@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "oids" : ["2.16.840.1.113883.4.642.4.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
       "version" : "7.0.0",
       "status" : "active",
@@ -10,8 +22,8 @@
       "oids" : ["2.16.840.1.113883.4.642.40.2.16.3"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-screening-assessment-observation-category.html" : "US Core Screening Assessment Observation Category",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category"
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-screening-assessment-observation-category.html" : "US Core Screening Assessment Observation Category"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -35,8 +47,20 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1125"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category",
-      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "HL7DocumentFormatCodes",
+      "title" : "HL7 Document Format Codes",
+      "description" : "This codeSystem contains codes which specify the technical format of a document. Each code provides sufficient information to allow any potential document consumer to know if it will be able to process the document. The codes are sufficiently specific to ensure processing/display by identifying a document encoding, structure and template. For example, formatCodes can be used in the FHIR DocumentReference resource to characterize the document being referenced.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1407"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.2.0/ValueSet-v3-HL7FormatCodes.html" : "HL7 ValueSet of Format Codes for use with Document Sharing"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -60,8 +84,8 @@
       "oids" : ["2.16.840.1.113883.6.259"],
       "uses" : {
       },
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion" : "HealthcareServiceLocation",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation",
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion" : "HealthcareServiceLocation"
     },
     {
       "url" : "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",

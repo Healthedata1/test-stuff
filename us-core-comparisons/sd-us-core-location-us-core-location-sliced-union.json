@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "2a0f8eec-8610-4da4-87ca-175ed3859044-11",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/2a0f8eec-8610-4da4-87ca-175ed3859044-11",
+  "id" : "d76ed2bc-5c78-4cd2-be57-2e7afa40b650-11",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/d76ed2bc-5c78-4cd2-be57-2e7afa40b650-11",
   "name" : "UnionUSCoreLocationProfileAndUSCoreLocationSlicedProfile",
   "title" : "Union of US Core Location Profile And US Core Location Sliced Profile",
   "status" : "active",
-  "date" : "2025-04-17T00:38:30+00:00",
+  "date" : "2025-04-24T04:23:56+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -598,7 +598,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Indicates the type of function performed at the location.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/2a0f8eec-8610-4da4-87ca-175ed3859044-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/d76ed2bc-5c78-4cd2-be57-2e7afa40b650-8"
       },
       "mapping" : [{
         "identity" : "w5",
