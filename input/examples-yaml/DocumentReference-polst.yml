@@ -14,7 +14,7 @@ meta:
 #   - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-authentication-time
 #     valueDateTime: 2024-10-08T19:48:54.316108-07:00
 extension:
-  - url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attestor"
+  - url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester"
     extension:
       - url: mode
         valueCodeableConcept:
@@ -27,7 +27,7 @@ extension:
         valueReference:
           reference: Practitioner/practitioner-1
           display: Practitioner-1
-  - url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attestor"
+  - url: "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester"
     extension:
       - url: mode
         valueCodeableConcept:

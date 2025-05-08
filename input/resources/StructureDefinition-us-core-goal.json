@@ -40,6 +40,21 @@
             {
                 "id": "Goal.subject",
                 "path": "Goal.subject",
+                "example": [
+                    {
+                        "label": "$all",
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-suppress",
+                                "valueBoolean": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "General",
+                        "valueString": "FOO"
+                    }
+                ],
                 "mustSupport": true
             },
             {

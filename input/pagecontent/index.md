@@ -4,6 +4,11 @@
 
 ### h3 element
 
+<span class="glyphicon glyphicon-ok-circle"></span>
+
+
+<span class="glyphicon glyphicon-ok-circle" style="color: #ff0000;"></span>
+
 ###  another h3 element
 
 #### h4 element

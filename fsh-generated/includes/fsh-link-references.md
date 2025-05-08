@@ -1,4 +1,3 @@
-[cdex-parameters-example6]: Parameters-cdex-parameters-example6.html
 [polst]: DocumentReference-polst.html
 [hospital-c80]: Location-hospital-c80.html
 [hospital-fhir]: Location-hospital-fhir.html
@@ -8,6 +7,7 @@
 [hospital-pos]: Location-hospital-pos.html
 [MyGoalProfile]: StructureDefinition-My-core-goal.html
 [USCoreADIDocumentReferenceProfile]: StructureDefinition-us-core-adi-documentreference.html
+[USCoreAverageBloodPressureProfile]: StructureDefinition-us-core-average-blood-pressure.html
 [USCoreLocationBindingsProfile]: StructureDefinition-us-core-location-bindings.html
 [USCoreLocationSlicedProfile]: StructureDefinition-us-core-location-sliced.html
 [USCoreTreatmentInterventionPreferenceBindingsProfile]: StructureDefinition-us-core-treatment-intervention-preference-bindings.html
