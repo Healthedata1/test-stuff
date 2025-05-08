@@ -42,8 +42,8 @@
       "sources" : ["2.16.840.1.113883.1.11.20275"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -57,8 +57,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
@@ -131,8 +131,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.40"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes",
@@ -180,8 +180,8 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
     }
   ]
 }
