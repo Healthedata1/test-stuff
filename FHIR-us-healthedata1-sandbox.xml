@@ -12,6 +12,8 @@
 <artifact id="Location/hospital-pos" key="Location-hospital-pos" name="Hospital Location POS Code"/>
 <artifact id="Location/hospital-c80" key="Location-hospital-c80" name="Hospital Location c80 Code"/>
 <artifact id="StructureDefinition/My-core-goal" key="StructureDefinition-My-core-goal" name="My Goal Profile"/>
+<artifact id="StructureDefinition/parameters-test" key="StructureDefinition-parameters-test" name="Parameters Test Profile"/>
+<artifact id="OperationDefinition/test" key="OperationDefinition-test" name="Test"/>
 <artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
 <artifact id="StructureDefinition/us-core-average-blood-pressure" key="StructureDefinition-us-core-average-blood-pressure" name="US Core Average Blood Pressure Profile"/>
 <artifact id="StructureDefinition/us-core-location-bindings" key="StructureDefinition-us-core-location-bindings" name="US Core Location Bindings Profile"/>

@@ -6,6 +6,8 @@
 [hospital-fhir-hsloc-bad2]: Location-hospital-fhir-hsloc-bad2.html
 [hospital-pos]: Location-hospital-pos.html
 [MyGoalProfile]: StructureDefinition-My-core-goal.html
+[ParametersTest]: StructureDefinition-parameters-test.html
+[Test]: OperationDefinition-test.html
 [USCoreADIDocumentReferenceProfile]: StructureDefinition-us-core-adi-documentreference.html
 [USCoreAverageBloodPressureProfile]: StructureDefinition-us-core-average-blood-pressure.html
 [USCoreLocationBindingsProfile]: StructureDefinition-us-core-location-bindings.html
