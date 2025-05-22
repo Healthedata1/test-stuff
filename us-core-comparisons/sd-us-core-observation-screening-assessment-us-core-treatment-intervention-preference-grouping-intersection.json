@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "741eca92-2c23-47fa-a215-4acdc89afcf9-165",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/741eca92-2c23-47fa-a215-4acdc89afcf9-165",
+  "id" : "07352450-8faa-49df-be9e-bfc2de03feca-165",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/07352450-8faa-49df-be9e-bfc2de03feca-165",
   "name" : "IntersectionUSCoreObservationScreeningAssessmentProfileAndUSCoreTreatmentInterventionPreferenceGroupingProfile",
   "title" : "Intersection of US Core Observation Screening Assessment Profile And US Core Treatment Intervention Preference Grouping Profile",
   "status" : "active",
-  "date" : "2025-05-08T17:05:44+00:00",
+  "date" : "2025-05-22T23:40:29+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

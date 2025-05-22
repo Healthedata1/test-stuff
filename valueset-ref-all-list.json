@@ -42,8 +42,8 @@
       "sources" : ["2.16.840.1.113883.1.11.20275"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
@@ -57,8 +57,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -72,8 +72,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -87,8 +87,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
     },
     {
@@ -103,9 +103,9 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
       "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -161,8 +161,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
     },
     {
@@ -177,8 +177,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
@@ -304,13 +304,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
       "StructureDefinition-My-core-goal.html" : "My Goal Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-parameters-test.html" : "Parameters Test Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -324,8 +325,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.330"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -341,8 +342,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -356,8 +357,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.332"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
@@ -400,9 +401,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
       "StructureDefinition-My-core-goal.html" : "My Goal Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
     },
     {
@@ -419,8 +420,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
     },
     {
@@ -435,8 +436,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
     },
     {
@@ -451,8 +452,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
     },
     {
@@ -484,8 +485,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
     },
     {
@@ -502,8 +503,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
     },
     {
@@ -569,8 +570,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.40"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
@@ -584,8 +585,8 @@
       "sources" : ["2.16.840.1.113883.21.51"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
@@ -645,8 +646,8 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile"
+      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     }
   ]
 }

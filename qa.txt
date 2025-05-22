@@ -1,10 +1,10 @@
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 38, warn = 32, info = 3
+err = 41, warn = 33, info = 3
 IG Publisher Version: 1.8.26
-Generated Thu May 08 17:06:41 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
- Build Errors : 39 / 1 / 0
+Generated Thu May 22 23:41:35 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
+ Build Errors : 41 / 1 / 0
  /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox : 3 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-polst : 0 / 0 / 3
  /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-c80 : 0 / 0 / 1
@@ -13,7 +13,9 @@ Generated Thu May 08 17:06:41 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healt
  /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-hsloc-bad1 : 1 / 0 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-hsloc-bad2 : 0 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital-pos : 0 / 1 / 1
- /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference : 4 / 4 / 2
+ /home/runner/work/test-stuff/test-stuff/input/resources/OperationDefinition-test : 2 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-parameters-test : 1 / 1 / 2
+ /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference : 4 / 4 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-average-blood-pressure : 8 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-goal : 8 / 2 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-location-bindings : 4 / 10 / 1
@@ -40,6 +42,7 @@ ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-My-cor
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-My-core-goal.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1035, column 180: The link 'http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description' for "http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-My-core-goal.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1160, column 229: The link 'http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description' for "http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-My-core-goal.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1352, column 180: The link 'http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description' for "http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-parameters-test.html#/html/body/div/div/div/div/div/p/p/a at Line 238, column 41: The link 'OperationDefinition-submit-attachment.html' for "Submit Attachment Operation" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 253, column 2248: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 321, column 1192: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-adi-documentreference-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 451, column 919: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
@@ -58,10 +61,11 @@ ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-cor
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-location-bindings.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 1168, column 35: The link 'http:/example.org/ValueSet/POS' for "http:/example.org/ValueSet/POS" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-location-bindings.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 1303, column 35: The link 'http:/example.org/ValueSet/POS' for "http:/example.org/ValueSet/POS" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/StructureDefinition-us-core-location-bindings.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 1524, column 35: The link 'http:/example.org/ValueSet/POS' for "http:/example.org/ValueSet/POS" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/artifacts.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 191, column 225: The link 'StructureDefinition-us-core-observation-adi-documentation.html' for "US Core Observation ADI Documentation Profile" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/artifacts.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 210, column 41: The link 'OperationDefinition-submit-attachment.html' for "Submit Attachment Operation" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/artifacts.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 219, column 225: The link 'StructureDefinition-us-core-observation-adi-documentation.html' for "US Core Observation ADI Documentation Profile" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 184, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
 ERROR: /home/runner/work/test-stuff/test-stuff/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'ImplementationGuide-hl7.fhir.us.core.html' for "US Core ImplementationGuide Resource" cannot be resolved
-ERROR: /home/runner/work/test-stuff/test-stuff/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 306, column 84: The link 'foo.html' for "component" cannot be resolved
+ERROR: /home/runner/work/test-stuff/test-stuff/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 318, column 84: The link 'foo.html' for "component" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json ==
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -79,9 +83,15 @@ ERROR: Location/hospital-fhir-hsloc-bad1: Location.type[0].coding[0].code: Unkno
 WARNING: Location/hospital-fhir-hsloc-bad2: Location.type[0].coding[0].system: A definition for CodeSystem 'https://example.org/CodeSystem/my_codes' could not be found, so the code cannot be validated
 == input/examples/location-hospital-pos.json ==
 WARNING: Location/hospital-pos: Location.type[0].coding[0].system: A definition for CodeSystem 'https://www.nubc.org/CodeSystem/TypeOfBill' could not be found, so the code cannot be validated
+== input/resources/OperationDefinition-test.json ==
+ERROR: OperationDefinition/test: OperationDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: OperationDefinition/test: OperationDefinition.inputProfile.parameter[0]: The type 'null' is not allowed for the parameter 'Foo' in the  in profile but is in the list of allowed types for the parameter (profile types = )
+== input/resources/StructureDefinition-parameters-test.json ==
+INFORMATION: StructureDefinition/parameters-test: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+ERROR: StructureDefinition/parameters-test: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test'): The Implementation Guide contains no examples for this profile
 == input/resources/StructureDefinition-us-core-adi-documentreference.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-adi-documentreference.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference)
-INFORMATION: StructureDefinition/us-core-adi-documentreference: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 WARNING: StructureDefinition/us-core-adi-documentreference: StructureDefinition.snapshot.element[14].binding.valueSet: There are multiple different potential matches for the url 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240416', found versions: 20230627, 20240416. Suggested fix: change the canonical reference from 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57' to 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57|20240416'
 WARNING: StructureDefinition/us-core-adi-documentreference: StructureDefinition.snapshot.element[45].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.1.0', found versions: 2.0.0, 2.1.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes' to 'http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes|2.1.0'
 WARNING: StructureDefinition/us-core-adi-documentreference: StructureDefinition.differential.element[4].binding.valueSet: There are multiple different potential matches for the url 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '20240416', found versions: 20230627, 20240416. Suggested fix: change the canonical reference from 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57' to 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57|20240416'

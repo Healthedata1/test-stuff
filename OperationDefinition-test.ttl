@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/test> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "test"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition test</b></p><a name=\"test\"> </a><a name=\"hctest\"> </a><a name=\"test-en-US\"> </a><p>URL: [base]/$test</p><p>Input parameters Profile:<a href=\"StructureDefinition-parameters-test.html\">Parameters Test Profile</a></p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>Foo</td><td/><td>1..*</td><td></td><td/><td><div><p>Parameter with parts</p>\n</div></td></tr><tr><td>IN</td><td>Foo.Part1</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Nested part parameter 1</p>\n</div></td></tr><tr><td>IN</td><td>Foo.Part2</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Nested part parameter 2</p>\n</div></td></tr></table><div><p>foo</p>\n</div></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/test"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Test"] ; # 
+  fhir:title [ fhir:v "Test"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:date [ fhir:v "2025-05-22"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/claims" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "pie@lists.hl7.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "test nested parameters defined by SD"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:code [ fhir:v "test"] ; # 
+  fhir:comment [ fhir:v "foo"] ; # 
+  fhir:resource ( [ fhir:v "Claim"] ) ; # 
+  fhir:system [ fhir:v true] ; # 
+  fhir:type [ fhir:v false] ; # 
+  fhir:instance [ fhir:v false] ; # 
+  fhir:inputProfile [
+     fhir:v "http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test>
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "Foo" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Parameter with parts" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "Part1" ] ;
+       fhir:use [ fhir:v "in" ] ;
+       fhir:min [ fhir:v 0 ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:documentation [ fhir:v "Nested part parameter 1" ] ;
+       fhir:type [ fhir:v "string" ]
+     ] [
+       fhir:name [ fhir:v "Part2" ] ;
+       fhir:use [ fhir:v "in" ] ;
+       fhir:min [ fhir:v 0 ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:documentation [ fhir:v "Nested part parameter 2" ] ;
+       fhir:type [ fhir:v "string" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

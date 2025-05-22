@@ -36,6 +36,12 @@
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-sliced",
         "title": "US Core Location Sliced Profile"
       }
+    ],
+    "Parameters": [
+      {
+        "url": "http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test",
+        "title": "Parameters Test Profile"
+      }
     ]
   },
   "usage": {

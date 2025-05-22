@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "741eca92-2c23-47fa-a215-4acdc89afcf9-35",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/741eca92-2c23-47fa-a215-4acdc89afcf9-35",
+  "id" : "07352450-8faa-49df-be9e-bfc2de03feca-35",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/07352450-8faa-49df-be9e-bfc2de03feca-35",
   "name" : "UnionUSCoreBodyHeightProfileAndUSCoreTreatmentInterventionPreferenceBindingsProfile",
   "title" : "Union of US Core Body Height Profile And US Core Treatment Intervention Preference Bindings Profile",
   "status" : "active",
-  "date" : "2025-05-08T17:05:44+00:00",
+  "date" : "2025-05-22T23:40:29+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -628,7 +628,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/741eca92-2c23-47fa-a215-4acdc89afcf9-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/07352450-8faa-49df-be9e-bfc2de03feca-17"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1939,7 +1939,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/741eca92-2c23-47fa-a215-4acdc89afcf9-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/07352450-8faa-49df-be9e-bfc2de03feca-17"
       },
       "mapping" : [{
         "identity" : "w5",

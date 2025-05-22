@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-05-08T17:04:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-22T23:38:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -1245,6 +1245,42 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test> ;
+         fhir:reference [ fhir:v "StructureDefinition/parameters-test" ]
+       ] ;
+       fhir:name [ fhir:v "Parameters Test Profile" ] ;
+       fhir:description [ fhir:v "The Parameters profile for Da Vinci [Submit Attachment Operation](OperationDefinition-submit-attachment.html)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "OperationDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/test> ;
+         fhir:reference [ fhir:v "OperationDefinition/test" ]
+       ] ;
+       fhir:name [ fhir:v "Test" ] ;
+       fhir:description [ fhir:v "test nested parameters defined by SD" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> ;
          fhir:reference [ fhir:v "StructureDefinition/us-core-adi-documentreference" ]
        ] ;
@@ -1500,6 +1536,10 @@
 <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-pos> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/My-core-goal> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/test> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> a fhir:us .
 
