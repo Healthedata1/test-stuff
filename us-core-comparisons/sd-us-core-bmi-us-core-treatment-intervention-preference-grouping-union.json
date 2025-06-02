@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "07352450-8faa-49df-be9e-bfc2de03feca-125",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/07352450-8faa-49df-be9e-bfc2de03feca-125",
+  "id" : "48bd5afe-1933-481a-97b9-86b83b80d5a3-122",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/48bd5afe-1933-481a-97b9-86b83b80d5a3-122",
   "name" : "UnionUSCoreBMIProfileAndUSCoreTreatmentInterventionPreferenceGroupingProfile",
   "title" : "Union of US Core BMI Profile And US Core Treatment Intervention Preference Grouping Profile",
   "status" : "active",
-  "date" : "2025-05-22T23:40:29+00:00",
+  "date" : "2025-06-02T20:22:13+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -588,7 +588,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "left: Codes for high level observation categories.; right: FHIR and US Core codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/07352450-8faa-49df-be9e-bfc2de03feca-110"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/48bd5afe-1933-481a-97b9-86b83b80d5a3-107"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -628,7 +628,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/07352450-8faa-49df-be9e-bfc2de03feca-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/48bd5afe-1933-481a-97b9-86b83b80d5a3-14"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1939,7 +1939,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/07352450-8faa-49df-be9e-bfc2de03feca-17"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/48bd5afe-1933-481a-97b9-86b83b80d5a3-14"
       },
       "mapping" : [{
         "identity" : "w5",

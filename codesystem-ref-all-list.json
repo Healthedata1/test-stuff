@@ -134,7 +134,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
-      "version" : "7.0.0",
+      "version" : "8.0.0-ballot",
       "status" : "active",
       "name" : "USCoreCategory",
       "title" : "US Core Category",
@@ -142,8 +142,8 @@
       "oids" : ["2.16.840.1.113883.4.642.40.2.16.3"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-screening-assessment-observation-category.html" : "US Core Screening Assessment Observation Category",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category"
+      "http://tx.fhir.org/r4/ValueSet/us-core-simple-observation-category" : "US Core Simple Observation Category",
+      "http://tx.fhir.org/r4/ValueSet/us-core-screening-assessment-observation-category" : "US Core Screening Assessment Observation Category"
     },
     {
       "url" : "http://loinc.org",
@@ -155,8 +155,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -168,13 +168,13 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
       "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
       "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -247,7 +247,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-simple-observation-category.html" : "US Core Simple Observation Category"
+      "http://tx.fhir.org/r4/ValueSet/us-core-simple-observation-category" : "US Core Simple Observation Category",
+      "http://tx.fhir.org/r4/ValueSet/us-core-screening-assessment-observation-category" : "US Core Screening Assessment Observation Category"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
@@ -295,7 +296,7 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1407"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.3.0/ValueSet-v3-HL7FormatCodes.html" : "HL7 ValueSet of Format Codes for use with Document Sharing"
+      "http://terminology.hl7.org/6.4.0/ValueSet-v3-HL7FormatCodes.html" : "HL7 ValueSet of Format Codes for use with Document Sharing"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -331,8 +332,8 @@
       "oids" : ["2.16.840.1.113883.6.259"],
       "uses" : {
       },
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion" : "HealthcareServiceLocation",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation",
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion" : "HealthcareServiceLocation"
     },
     {
       "url" : "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
@@ -344,7 +345,20 @@
       "oids" : ["2.16.840.1.113883.15.5"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation",
+      "http://terminology.hl7.org/6.4.0/ValueSet-CMSPlaceOfServiceCodes.html" : "CMS Place of Service Codes (POS)"
+    },
+    {
+      "url" : "https://www.usps.com/",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "USPSStateCodes",
+      "title" : "USPS State Codes",
+      "description" : "State Codes as defined by US Postal Service\r\n\r\nFor more information, see [https://pe.usps.com/text/pub28/28apb.htm](https://pe.usps.com/text/pub28/28apb.htm)",
+      "uses" : {
+      },
+      "http://tx.fhir.org/r4/ValueSet/us-core-usps-state" : "USPS Two Letter Alphabetic Codes",
+      "http://terminology.hl7.org/6.4.0/ValueSet-USPS-State.html" : "USPS Two Letter Alphabetic Codes"
     },
     {
       "url" : "urn:ietf:bcp:47",

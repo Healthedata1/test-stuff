@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "07352450-8faa-49df-be9e-bfc2de03feca-65",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/07352450-8faa-49df-be9e-bfc2de03feca-65",
+  "id" : "48bd5afe-1933-481a-97b9-86b83b80d5a3-62",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/48bd5afe-1933-481a-97b9-86b83b80d5a3-62",
   "name" : "UnionUSCoreObservationOccupationProfileAndUSCoreTreatmentInterventionPreferenceBindingsProfile",
   "title" : "Union of US Core Observation Occupation Profile And US Core Treatment Intervention Preference Bindings Profile",
   "status" : "active",
-  "date" : "2025-05-22T23:40:29+00:00",
+  "date" : "2025-06-02T20:22:13+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

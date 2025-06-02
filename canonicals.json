@@ -21,11 +21,11 @@
     "name" : "USCoreAverageBloodPressureProfile"
   },
   {
-    "id" : "us-core-location-bindings",
+    "id" : "us-core-location",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-bindings",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
     "version" : "0.1.0",
-    "name" : "USCoreLocationBindingsProfile"
+    "name" : "USCoreLocationProfile"
   },
   {
     "id" : "us-core-location-sliced",

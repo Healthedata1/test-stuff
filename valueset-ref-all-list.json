@@ -2,12 +2,12 @@
   "codeSystems" : [
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57",
-      "version" : "20240416",
+      "version" : "20250323",
       "status" : "active",
       "name" : "AdvanceDirectivesContentType",
       "title" : "Advance Directives Content Type",
-      "description" : "Grouper created to permit Advance Directive Content Types to be expressed using SCT or LOINC.",
-      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "description" : "Grouper created to permit Advance Directive entry Content Types to be expressed using LOINC.",
+      "systems" : ["http://loinc.org"],
       "oids" : ["2.16.840.1.113762.1.4.1099.57"],
       "sources" : ["2.16.840.1.113762.1.4.1099.57"],
       "uses" : {
@@ -15,18 +15,21 @@
       "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
-      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.25",
-      "version" : "20240629",
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.31",
+      "version" : "20250516",
       "status" : "active",
-      "name" : "AdvanceHealthcareDirectiveCategoriesGrouper",
-      "title" : "Advance Healthcare Directive Categories Grouper",
-      "description" : "Combines Advance Directive Categories and Portable Medical Order Categories together",
-      "systems" : ["http://loinc.org"],
-      "oids" : ["2.16.840.1.113762.1.4.1115.25"],
-      "sources" : ["2.16.840.1.113762.1.4.1115.25"],
+      "name" : "HealthcareServiceLocationTypeCombined",
+      "title" : "Healthcare Service Location Type Combined",
+      "description" : "This value set consolidates encounter type codes from the two code systems permitted by USCDI for representing encounter location, as specified in USCDI v5.(https://www.healthit.gov/isp/taxonomy/term/1336/uscdi-v5)",
+      "systems" : [
+        "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113762.1.4.1267.31"],
+      "sources" : ["2.16.840.1.113762.1.4.1267.31"],
       "uses" : {
       },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275",
@@ -42,7 +45,6 @@
       "sources" : ["2.16.840.1.113883.1.11.20275"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
@@ -57,7 +59,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
@@ -72,7 +74,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
@@ -87,9 +89,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -103,7 +105,6 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
       "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
@@ -161,9 +162,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -177,7 +178,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
@@ -304,14 +305,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-My-core-goal.html" : "My Goal Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
       "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
-      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
+      "StructureDefinition-My-core-goal.html" : "My Goal Profile",
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
       "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
-      "StructureDefinition-parameters-test.html" : "Parameters Test Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
+      "StructureDefinition-parameters-test.html" : "Parameters Test Profile",
+      "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -325,7 +326,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.330"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
@@ -342,7 +343,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
@@ -357,7 +358,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.332"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
@@ -386,8 +387,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
+      "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -402,9 +403,9 @@
       "uses" : {
       },
       "StructureDefinition-My-core-goal.html" : "My Goal Profile",
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -420,9 +421,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -436,9 +437,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -452,9 +453,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
@@ -485,9 +486,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -503,9 +504,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile",
+      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile",
       "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile",
-      "StructureDefinition-us-core-average-blood-pressure.html" : "US Core Average Blood Pressure Profile"
+      "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -529,38 +530,41 @@
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-observation-category",
-      "version" : "7.0.0",
+      "version" : "8.0.0-ballot",
       "status" : "active",
       "name" : "USCoreScreeningAssessmentObservationCategory",
       "title" : "US Core Screening Assessment Observation Category",
-      "description" : "Category codes used in the US Core Observation Screening Assessment Profile to help identify the type of USCDI Health Status/Assessment data class being reported.",
-      "systems" : ["http://hl7.org/fhir/us/core/CodeSystem/us-core-category"],
-      "oids" : ["2.16.840.1.113883.4.642.40.2.48.18"],
-      "sources" : ["2.16.840.1.113883.4.642.40.2.48.18"],
+      "description" : "This value set is the minimum value set of category codes used in the US Core Observation Screening Assessment and Simple Observation Profiles that any conformant system **SHALL** support to help identify the type of USCDI Health Status/Assessment data class being reported.",
+      "systems" : [
+        "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+        "http://terminology.hl7.org/CodeSystem/observation-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.20"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.20"],
       "uses" : {
       },
       "StructureDefinition-us-core-treatment-intervention-preference-bindings.html" : "US Core Treatment Intervention Preference Bindings Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category",
-      "version" : "7.0.0",
+      "version" : "8.0.0-ballot",
       "status" : "active",
       "name" : "USCoreSimpleObservationCategory",
       "title" : "US Core Simple Observation Category",
-      "description" : "Used to classify the context of a survey, screening or assessment for simple observations and may be used to assist with indexing and searching for appropriate instances.",
+      "description" : "This value set is a value set of category codes used in the US Core Simple Observation and Condition Problems and Health Concerns Profiles that any conformant system **SHOULD** support to help identify the type of USCDI Health Status/Assessment data class being reported.",
       "systems" : [
         "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
         "http://terminology.hl7.org/CodeSystem/observation-category"
       ],
-      "oids" : ["2.16.840.1.113883.4.642.40.2.48.19"],
-      "sources" : ["2.16.840.1.113883.4.642.40.2.48.19"],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.23"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.23"],
       "uses" : {
       },
       "StructureDefinition-us-core-treatment-intervention-preference-grouping.html" : "US Core Treatment Intervention Preference Grouping Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state",
-      "version" : "7.0.0",
+      "version" : "8.0.0-ballot",
       "status" : "active",
       "name" : "UspsTwoLetterAlphabeticCodes",
       "title" : "USPS Two Letter Alphabetic Codes",
@@ -570,8 +574,33 @@
       "sources" : ["2.16.840.1.113883.4.642.3.40"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/CMSPlaceOfServiceCodes",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CMSPlaceOfServiceCodes",
+      "title" : "CMS Place of Service Codes (POS)",
+      "description" : "This is the all codes value set for the CMS POS code system.",
+      "systems" : [
+        "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/USPS-State",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UspsTwoLetterAlphabeticCodes",
+      "title" : "USPS Two Letter Alphabetic Codes",
+      "description" : "This value set defines two letter USPS alphabetic codes.",
+      "systems" : ["https://www.usps.com/"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
@@ -585,7 +614,7 @@
       "sources" : ["2.16.840.1.113883.21.51"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     },
     {
@@ -646,7 +675,7 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-us-core-location-bindings.html" : "US Core Location Bindings Profile",
+      "StructureDefinition-us-core-location.html" : "US Core Location Profile",
       "StructureDefinition-us-core-location-sliced.html" : "US Core Location Sliced Profile"
     }
   ]

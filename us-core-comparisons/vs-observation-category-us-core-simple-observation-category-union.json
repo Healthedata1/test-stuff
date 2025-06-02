@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "07352450-8faa-49df-be9e-bfc2de03feca-110",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/07352450-8faa-49df-be9e-bfc2de03feca-110",
+  "id" : "48bd5afe-1933-481a-97b9-86b83b80d5a3-107",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/48bd5afe-1933-481a-97b9-86b83b80d5a3-107",
   "name" : "UnionObservationCategoryCodesAndUSCoreSimpleObservationCategory",
   "title" : "Union of Observation Category Codes And US Core Simple Observation Category",
   "status" : "draft",
-  "date" : "2025-05-22T23:40:29+00:00",
+  "date" : "2025-06-02T20:22:13+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

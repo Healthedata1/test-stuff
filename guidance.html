@@ -144,7 +144,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.org/fhir/us/healthedata1-sandbox/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Guidance</h2>
   
 
@@ -184,6 +184,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="client-best-practices-for-search">Client Best Practices for Search:</h3>
 
+<!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: Test SVG No Comment</strong></figcaption>
+  <img src="test-no-comment.svg" class="figure-img img-responsive img-rounded center-block" alt="test-no-comment.svg" />
+</figure>
+
+<p></p>
+</div>
+
+<pre><code class="language-svg">&lt;svg height="100" width="100" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;circle r="45" cx="50" cy="50" stroke="green" stroke-width="3" fill="red" opacity="0.5" /&gt;&lt;/svg&gt; 
+</code></pre>
+
+<!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: Test SVG with Comment</strong></figcaption>
+  <img src="test-comment.svg" class="figure-img img-responsive img-rounded center-block" alt="test-comment.svg" />
+</figure>
+
+<p></p>
+</div>
+
+<pre><code class="language-svg">&lt;!-- 
+comment 
+ this is a comment with a  &lt;nested html tag&gt;
+ --&gt;
+&lt;svg height="100" width="100" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;circle r="45" cx="50" cy="50" stroke="green" stroke-width="3" fill="red" opacity="0.5" /&gt;&lt;/svg&gt; 
+</code></pre>
 
 
 
@@ -203,7 +236,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 22, 2025 23:40+0000">2025-05-22</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 2, 2025 20:21+0000">2025-06-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

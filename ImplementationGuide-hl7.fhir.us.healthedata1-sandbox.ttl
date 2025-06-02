@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-05-22T23:38:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-02T20:20:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -54,30 +54,15 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.3.0" ]
+     fhir:version [ fhir:v "6.4.0" ]
   ] [
-     fhir:id [ fhir:v "hl7ext" ] ;
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:markdown ;
-         fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
-       ]
-     ] ) ;
+     fhir:id [ fhir:v "hl7_fhir_uv_smart_app_launch" ] ;
      fhir:uri [
-       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+       fhir:v "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch>
      ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.2.0" ]
-  ] [
-     fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
-     fhir:uri [
-       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
-     ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
-     fhir:version [ fhir:v "7.0.0" ]
+     fhir:packageId [ fhir:v "hl7.fhir.uv.smart-app-launch" ] ;
+     fhir:version [ fhir:v "2.2.0" ]
   ] [
      fhir:id [ fhir:v "vsac" ] ;
      fhir:uri [
@@ -85,7 +70,31 @@
        fhir:link <http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac>
      ] ;
      fhir:packageId [ fhir:v "us.nlm.vsac" ] ;
-     fhir:version [ fhir:v "0.20.0" ]
+     fhir:version [ fhir:v "0.23.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.sdc" ] ;
+     fhir:version [ fhir:v "3.0.0" ]
+  ] [
+     fhir:id [ fhir:v "uscdcphinvads" ] ;
+     fhir:uri [
+       fhir:v "https://phinvads.cdc.gov/vads/fhir/ImplementationGuide/us.cdc.phinvads"^^xsd:anyURI ;
+       fhir:link <https://phinvads.cdc.gov/vads/fhir/ImplementationGuide/us.cdc.phinvads>
+     ] ;
+     fhir:packageId [ fhir:v "us.cdc.phinvads" ] ;
+     fhir:version [ fhir:v "0.12.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_extensions_r4" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1113,6 +1122,25 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hl7east> ;
+         fhir:reference [ fhir:v "Location/hl7east" ]
+       ] ;
+       fhir:name [ fhir:v "HL7East Example" ] ;
+       fhir:description [ fhir:v "This is a HL7East example for the *US Core Location Profile*." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-c80> ;
          fhir:reference [ fhir:v "Location/hospital-c80" ]
        ] ;
@@ -1317,10 +1345,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-bindings> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-location-bindings" ]
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-location" ]
        ] ;
-       fhir:name [ fhir:v "US Core Location Bindings Profile" ] ;
+       fhir:name [ fhir:v "US Core Location Profile" ] ;
        fhir:description [ fhir:v "The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a \"physical place of available services or resources.\"  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [
          a fhir:boolean ;
@@ -1523,6 +1551,8 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/DocumentReference/polst> a fhir:us .
 
+<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hl7east> a fhir:us .
+
 <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-c80> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir> a fhir:us .
@@ -1545,7 +1575,7 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-average-blood-pressure> a fhir:us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-bindings> a fhir:us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-sliced> a fhir:us .
 

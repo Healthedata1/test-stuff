@@ -29,8 +29,8 @@
     ],
     "Location": [
       {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-bindings",
-        "title": "US Core Location Bindings Profile"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
+        "title": "US Core Location Profile"
       },
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-sliced",
