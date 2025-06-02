@@ -40,16 +40,34 @@
   ],
   "dependsOn": [
     {
-      "packageId": "hl7.fhir.us.core",
-      "version": "7.0.0",
-      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
-      "id": "hl7_fhir_us_core"
+      "packageId": "hl7.fhir.uv.smart-app-launch",
+      "version": "2.2.0",
+      "uri": "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch",
+      "id": "hl7_fhir_uv_smart_app_launch"
     },
     {
       "id": "vsac",
       "packageId": "us.nlm.vsac",
       "uri": "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac",
-      "version": "0.20.0"
+      "version": "0.23.0"
+    },
+    {
+      "packageId": "hl7.fhir.uv.sdc",
+      "version": "3.0.0",
+      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+      "id": "hl7_fhir_uv_sdc"
+    },
+    {
+      "id": "uscdcphinvads",
+      "packageId": "us.cdc.phinvads",
+      "uri": "https://phinvads.cdc.gov/vads/fhir/ImplementationGuide/us.cdc.phinvads",
+      "version": "0.12.0"
+    },
+    {
+      "packageId": "hl7.fhir.uv.extensions.r4",
+      "version": "5.2.0",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions_r4"
     }
   ],
   "definition": {
@@ -61,6 +79,14 @@
         "description": "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*",
         "name": "DocumentReference POLST (PDF)",
         "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
+      },
+      {
+        "reference": {
+          "reference": "Location/hl7east"
+        },
+        "description": "This is a HL7East example for the *US Core Location Profile*.",
+        "name": "HL7East Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
       },
       {
         "reference": {
@@ -152,11 +178,11 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/us-core-location-bindings"
+          "reference": "StructureDefinition/us-core-location"
         },
         "description": "The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a \"physical place of available services or resources.\"  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
         "exampleBoolean": false,
-        "name": "US Core Location Bindings Profile"
+        "name": "US Core Location Profile"
       },
       {
         "reference": {

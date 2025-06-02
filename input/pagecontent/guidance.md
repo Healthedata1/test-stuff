@@ -16,3 +16,14 @@
 
 ### Client Best Practices for Search:
 
+{% include img.html img="test-no-comment.svg" caption="Figure 1: Test SVG No Comment" %}
+
+~~~svg
+{% include_relative test-no-comment.svg %}
+~~~
+
+{% include img.html img="test-comment.svg" caption="Figure 1: Test SVG with Comment" %}
+
+~~~svg
+{%  include_relative test-comment.svg %}
+~~~

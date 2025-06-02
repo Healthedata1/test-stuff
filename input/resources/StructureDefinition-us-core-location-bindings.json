@@ -1,23 +1,9 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "us-core-location-bindings",
-    "extension": [
-        {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "deprecated",
-            "_valueCode": {
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
-                        "valueMarkdown": "Implementers who want to should use the HL7 standard extension instead defined in the [Genomics Reporting Guide](https://hl7.org/fhir/uv/genomics-reporting/)"
-                    }
-                ]
-            }
-        }
-    ],
-    "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-bindings",
-    "name": "USCoreLocationBindingsProfile",
-    "title": "US Core Location Bindings Profile",
+    "id": "us-core-location",
+    "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
+    "name": "USCoreLocationProfile",
+    "title": "US Core Location Profile",
     "status": "active",
     "experimental": false,
     "date": "2023-10-17",
@@ -68,31 +54,34 @@
             {
                 "id": "Location.type",
                 "path": "Location.type",
-                "short": "Binding a grouped valueset of ServiceDeliveryLocationRoleType, HSLOC, SNOMED-CT, and POS",
+                "short": "Category of service or resource available in a location.",
                 "mustSupport": true,
                 "binding": {
                     "strength": "extensible",
-                    "description": "\u261e\u261e\u261eExtensible binding inherited from FHIR R4 `Location.type`\u261c\u261c\u261c",
                     "valueSet": "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
                     "extension": [
                         {
                             "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
                             "extension": [
                                 {
+                                    "url": "key",
+                                    "valueId": "uscore-uscdi"
+                                },
+                                {
                                     "url": "purpose",
                                     "valueCode": "extensible"
                                 },
                                 {
                                     "url": "valueSet",
-                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275"
+                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.31"
                                 },
                                 {
                                     "url": "documentation",
-                                    "valueMarkdown": "Meets the USCDI applicable vocabulary standard Healthcare Service Location Codes(HSLOC)"
+                                    "valueMarkdown": "Meets the USCDI applicable vocabulary standard Healthcare Service Location Codes(HSLOC) and SNOMED-CT."
                                 },
                                 {
                                     "url": "shortDoco",
-                                    "valueString": "USCDI applicable vocabulary standard"
+                                    "valueString": "USCDI applicable vocabulary standard Healthcare Service Location Codes (HSLOC) or SNOMED-CT Healthcare Facility Type codes"
                                 }
                             ]
                         },
@@ -100,41 +89,24 @@
                             "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
                             "extension": [
                                 {
-                                    "url": "purpose",
-                                    "valueCode": "extensible"
+                                    "url": "key",
+                                    "valueId": "uscore-pos"
                                 },
-                                {
-                                    "url": "valueSet",
-                                    "valueCanonical": "http://hl7.org/fhir/ValueSet/c80-facilitycodes"
-                                },
-                                {
-                                    "url": "documentation",
-                                    "valueMarkdown": "Meets the USCDI applicable vocabulary standard for  SNOMED-CT"
-                                },
-                                {
-                                    "url": "shortDoco",
-                                    "valueString": "USCDI applicable vocabulary standard"
-                                }
-                            ]
-                        },
-                        {
-                            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-                            "extension": [
                                 {
                                     "url": "purpose",
                                     "valueCode": "extensible"
                                 },
                                 {
                                     "url": "valueSet",
-                                    "valueCanonical": "http:/example.org/ValueSet/POS"
+                                    "valueCanonical": "http://terminology.hl7.org/ValueSet/CMSPlaceOfServiceCodes"
                                 },
                                 {
                                     "url": "documentation",
-                                    "valueMarkdown": "Meets the Health Insurance Portability and Accountability Act of 1996 (HIPAA) (POS Memorandum 2003)"
+                                    "valueMarkdown": "NUBC Place of Service (POS) codes meet the Health Insurance Portability and Accountability Act of 1996 (HIPAA) (POS Memorandum 2003)."
                                 },
                                 {
                                     "url": "shortDoco",
-                                    "valueString": "Meets HIPAA requirements (FAKE URI LISTED HERE)"
+                                    "valueString": "NUBC Place of Service (POS) codes"
                                 }
                             ]
                         }
@@ -186,7 +158,7 @@
                 ],
                 "example": [
                     {
-                        "label": "General",
+                        "label": "US Core",
                         "valueString": "49 MEADOW ST"
                     }
                 ],
@@ -218,7 +190,7 @@
                 ],
                 "example": [
                     {
-                        "label": "General",
+                        "label": "US Core",
                         "valueString": "OK"
                     }
                 ],
@@ -226,7 +198,7 @@
                 "binding": {
                     "strength": "extensible",
                     "description": "Two letter USPS alphabetic codes.",
-                    "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state"
+                    "valueSet": "http://terminology.hl7.org/ValueSet/USPS-State"
                 },
                 "mapping": [
                     {
@@ -246,7 +218,7 @@
                 ],
                 "example": [
                     {
-                        "label": "General",
+                        "label": "US Core",
                         "valueString": "74047"
                     }
                 ],

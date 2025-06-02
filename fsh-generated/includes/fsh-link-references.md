@@ -1,4 +1,5 @@
 [polst]: DocumentReference-polst.html
+[hl7east]: Location-hl7east.html
 [hospital-c80]: Location-hospital-c80.html
 [hospital-fhir]: Location-hospital-fhir.html
 [hospital-fhir-hsloc]: Location-hospital-fhir-hsloc.html
@@ -10,7 +11,7 @@
 [Test]: OperationDefinition-test.html
 [USCoreADIDocumentReferenceProfile]: StructureDefinition-us-core-adi-documentreference.html
 [USCoreAverageBloodPressureProfile]: StructureDefinition-us-core-average-blood-pressure.html
-[USCoreLocationBindingsProfile]: StructureDefinition-us-core-location-bindings.html
+[USCoreLocationProfile]: StructureDefinition-us-core-location.html
 [USCoreLocationSlicedProfile]: StructureDefinition-us-core-location-sliced.html
 [USCoreTreatmentInterventionPreferenceBindingsProfile]: StructureDefinition-us-core-treatment-intervention-preference-bindings.html
 [USCoreTreatmentInterventionPreferenceGroupingProfile]: StructureDefinition-us-core-treatment-intervention-preference-grouping.html
