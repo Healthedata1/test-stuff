@@ -4,6 +4,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Bundle/cdex-document-digital-sig-example" key="Bundle-cdex-document-digital-sig-example" name="CDEX Document with Digital Signature Example"/>
 <artifact id="DocumentReference/polst" key="DocumentReference-polst" name="DocumentReference POLST (PDF)"/>
 <artifact id="Location/hl7east" key="Location-hl7east" name="HL7East Example"/>
 <artifact id="Location/hospital-fhir" key="Location-hospital-fhir" name="Hospital Location FHIR Code"/>

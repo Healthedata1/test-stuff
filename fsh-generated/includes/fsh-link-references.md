@@ -1,3 +1,4 @@
+[cdex-document-digital-sig-example]: Bundle-cdex-document-digital-sig-example.html
 [polst]: DocumentReference-polst.html
 [hl7east]: Location-hl7east.html
 [hospital-c80]: Location-hospital-c80.html

@@ -28,7 +28,7 @@ differential:
       binding:
         strength: preferred #extensible
         description: Value set to describe the Goal
-        valueSet: http://hl7.org/fhir/us/core/ValueSet/My-core-goal-description
+        valueSet: http://loinc.org/vs/valid-hl7-attachment-requests
     - id: Goal.subject
       path: Goal.subject
       example:
