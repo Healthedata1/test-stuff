@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "hl7.fhir.us.healthedata1-sandbox"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.us.healthedata1-sandbox</b></p><a name=\"hl7.fhir.us.healthedata1-sandbox\"> </a><a name=\"hchl7.fhir.us.healthedata1-sandbox\"> </a><a name=\"hl7.fhir.us.healthedata1-sandbox-en-US\"> </a><h2>HealthEData_1Sandbox</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox</pre><div><p>This is a <strong>Healthedata1</strong> sandbox for creation of resources and examples</p>\n</div></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.us.healthedata1-sandbox</b></p><a name=\"hl7.fhir.us.healthedata1-sandbox\"> </a><a name=\"hchl7.fhir.us.healthedata1-sandbox\"> </a><h2>HealthEData_1Sandbox</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox</pre><div><p>This is a <strong>Healthedata1</strong> sandbox for creation of resources and examples</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-06-02T20:20:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-08T17:46:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -54,7 +54,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_smart_app_launch" ] ;
      fhir:uri [
@@ -1099,6 +1099,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Bundle"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Bundle/cdex-document-digital-sig-example> ;
+         fhir:reference [ fhir:v "Bundle/cdex-document-digital-sig-example" ]
+       ] ;
+       fhir:name [ fhir:v "CDEX Document with Digital Signature Example" ] ;
+       fhir:description [ fhir:v "Digital signature example showing how it is used to sign a FHIR Document.  The CDEX use case would be the target resource in response to a Task-based request where a digital signature was required.  If no signature was required, the response would typically be in the form of an individual resource." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "DocumentReference"
          ]
        ] ) ;
@@ -1548,6 +1566,8 @@
        fhir:value [ fhir:v "input-cache/txcache" ]
      ] )
   ] . # 
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Bundle/cdex-document-digital-sig-example> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/DocumentReference/polst> a fhir:us .
 

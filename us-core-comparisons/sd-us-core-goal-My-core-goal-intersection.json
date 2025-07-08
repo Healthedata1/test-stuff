@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "48bd5afe-1933-481a-97b9-86b83b80d5a3-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/48bd5afe-1933-481a-97b9-86b83b80d5a3-3",
+  "id" : "4004d630-a85b-4bdf-b492-df271ac3b6a5-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4004d630-a85b-4bdf-b492-df271ac3b6a5-3",
   "name" : "IntersectionUSCoreGoalProfileAndMyGoalProfile",
   "title" : "Intersection of US Core Goal Profile And My Goal Profile",
   "status" : "active",
-  "date" : "2025-06-02T20:22:13+00:00",
+  "date" : "2025-07-08T17:48:01+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -576,6 +576,10 @@
         "description" : "Value set to describe the Goal",
         "valueSet" : "http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description",
         "additional" : [{
+          "extension" : [{
+            "url" : "key",
+            "valueId" : "gravity-sdoh-goals"
+          }],
           "purpose" : "preferred",
           "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1247.71",
           "documentation" : "Social Determinants of Health Goals when the Goal is an SDOH goal."

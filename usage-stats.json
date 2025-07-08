@@ -72,14 +72,6 @@
       "StructureDefinition.snapshot.element.type",
       "StructureDefinition.snapshot.element.type.targetProfile"
     ],
-    "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "DocumentReference.meta",
-      "Location.meta"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "DocumentReference.meta",
-      "Location.meta"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile": [
       "StructureDefinition"
     ],

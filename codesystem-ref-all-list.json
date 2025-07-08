@@ -168,13 +168,13 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
       "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -296,7 +296,7 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1407"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.4.0/ValueSet-v3-HL7FormatCodes.html" : "HL7 ValueSet of Format Codes for use with Document Sharing"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-HL7FormatCodes.html" : "HL7 ValueSet of Format Codes for use with Document Sharing"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -346,7 +346,7 @@
       "uses" : {
       },
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-HealthcareServiceLocation.html" : "HealthcareServiceLocation",
-      "http://terminology.hl7.org/6.4.0/ValueSet-CMSPlaceOfServiceCodes.html" : "CMS Place of Service Codes (POS)"
+      "http://terminology.hl7.org/6.5.0/ValueSet-CMSPlaceOfServiceCodes.html" : "CMS Place of Service Codes (POS)"
     },
     {
       "url" : "https://www.usps.com/",
@@ -358,7 +358,7 @@
       "uses" : {
       },
       "http://tx.fhir.org/r4/ValueSet/us-core-usps-state" : "USPS Two Letter Alphabetic Codes",
-      "http://terminology.hl7.org/6.4.0/ValueSet-USPS-State.html" : "USPS Two Letter Alphabetic Codes"
+      "http://terminology.hl7.org/6.5.0/ValueSet-USPS-State.html" : "USPS Two Letter Alphabetic Codes"
     },
     {
       "url" : "urn:ietf:bcp:47",

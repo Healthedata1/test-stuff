@@ -9,28 +9,9 @@
 <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad2> a fhir:Location ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "hospital-fhir-hsloc-bad2"] ; # 
-  fhir:meta [
-     fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "Hospital Location HSLOC-bad2 Code"
-       ]
-     ] [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:markdown ;
-         fhir:v "This is an example hospital location for the *US Core Location Profile* using the another code insead of  HSLOC `.type` Code."
-       ]
-     ] ) ;
-     fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
-     ] )
-  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location hospital-fhir-hsloc-bad2</b></p><a name=\"hospital-fhir-hsloc-bad2\"> </a><a name=\"hchospital-fhir-hsloc-bad2\"> </a><a name=\"hospital-fhir-hsloc-bad2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-location.html\">US Core Location Profile</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234567893</p><p><b>status</b>: Active</p><p><b>name</b>: Holy Family Hospital</p><p><b>type</b>: <span title=\"Codes:{https://example.org/CodeSystem/my_codes 123}\">Hospital</span></p><p><b>telecom</b>: ph: 9786870156</p><p><b>address</b>: 70 EAST ST METHUEN MA 01844 US </p><p><b>managingOrganization</b>: <a href=\"Organization/holy-healthcare\">Holy Healthcare</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location hospital-fhir-hsloc-bad2</b></p><a name=\"hospital-fhir-hsloc-bad2\"> </a><a name=\"hchospital-fhir-hsloc-bad2\"> </a><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234567893</p><p><b>status</b>: Active</p><p><b>name</b>: Holy Family Hospital</p><p><b>type</b>: <span title=\"Codes:{https://example.org/CodeSystem/my_codes 123}\">Hospital</span></p><p><b>telecom</b>: ph: 9786870156</p><p><b>address</b>: 70 EAST ST METHUEN MA 01844 US </p><p><b>managingOrganization</b>: <a href=\"Organization/holy-healthcare\">Holy Healthcare</a></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;

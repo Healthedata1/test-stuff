@@ -1,0 +1,259 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Bundle/cdex-document-digital-sig-example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cdex-document-digital-sig-example"] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:c173535e-135e-48e3-ab64-38bacc68dba8" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2021-10-25T20:16:29-07:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:17a80a8d-4cf1-4deb-a1fd-2db1130e5f76"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:17a80a8d-4cf1-4deb-a1fd-2db1130e5f76> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:0820c16d-91de-4dfa-a3a6-f140a516a9bc"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:0820c16d-91de-4dfa-a3a6-f140a516a9bc> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:970af6c9-5bbd-4067-b6c1-d9b2c823aece"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:970af6c9-5bbd-4067-b6c1-d9b2c823aece> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:014a68ec-d691-49e0-b980-91b0d924e570"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:014a68ec-d691-49e0-b980-91b0d924e570> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:5ce5c83a-000f-47d2-941c-039358cc9112"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:5ce5c83a-000f-47d2-941c-039358cc9112> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:e37f004b-dc10-422b-b833-cdaa10a055a3"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:e37f004b-dc10-422b-b833-cdaa10a055a3> )
+  ] ) ; # 
+  fhir:signature [
+     fhir:type ( [
+       fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1.2.840.10065.1.12.1.5" ] ;
+       fhir:display [ fhir:v "Verification Signature" ]
+     ] ) ;
+     fhir:when [ fhir:v "2025-07-08T17:48:15Z"^^xsd:dateTime ] ;
+     fhir:who [
+       fhir:identifier [
+         fhir:system [ fhir:v "http://example.org/certificates"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us" ]
+       ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:identifier [
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1184932014" ]
+       ]
+     ] ;
+     fhir:targetFormat [ fhir:v "application/fhir+json;canonicalization=http://hl7.org/fhir/canonicalization/json#document" ] ;
+     fhir:sigFormat [ fhir:v "application/jose" ] ;
+     fhir:data [ fhir:v "ZXlKMGVYQWlPaUpLVDFORklpd2lZV3huSWpvaVVsTXlOVFlpTENKemFXZFVJam94TnpVeE9UazJPRGsxTENKallXNXZiaUk2SW1oMGRIQTZMeTlvYkRjdWIzSm5MMlpvYVhJdlkyRnViMjVwWTJGc2FYcGhkR2x2Ymk5cWMyOXVJMlJ2WTNWdFpXNTBJaXdpZURWaklqcGJJazFKU1VSdmVrTkRRVzl4WjBGM1NVSkJaMGxDUVVSQlRrSm5hM0ZvYTJsSE9YY3dRa0ZSTUVaQlJFSnlUVkZ6ZDBOUldVUldVVkZIUlhkS01XTjZSVkpOUVRoSFFURlZSVU5CZDBsVVYyeDZZekk1TVdOdGEzaEVSRUZMUW1kT1ZrSkJiMDFCTUdoTlRucEZVVTFCTkVkQk1WVkZRWGQzU0dGSGR6Tk1iVGw1V25wRlUwMUNRVWRCTVZWRlFuZDNTbEZYTlhWSlJVWjVXVzA1ZVUxU1ZYZEZkMWxFVmxGUlRFUkJlRXBTZVVKUlpGZEtjMkZZVG05YVdFbDNTR2hqVGsxcVZYZE9ha1UxVFVSSmVrMUVUWHBYYUdOT1RXcFpkMDVxU1hkTlJFbDZUVVJOZWxkcVFuSk5VWE4zUTFGWlJGWlJVVWRGZDBveFkzcEZVazFCT0VkQk1WVkZRMEYzU1ZSWGJIcGpNamt4WTIxcmVFUkVRVXRDWjA1V1FrRnZUVUV3YUUxT2VrVlJUVUUwUjBFeFZVVkJkM2RJWVVkM00weHRPWGxhZWtWVFRVSkJSMEV4VlVWQ2QzZEtVVmMxZFVsRlJubFpiVGw1VFZKVmQwVjNXVVJXVVZGTVJFRjRTbEo1UWxGa1YwcHpZVmhPYjFwWVNYZG5aMFZxVFVFd1IwTlRjVWRUU1dJelJGRkZRa0ZSVlVGQk5FbENSVUZCZDJkblJVeEJiMGxDUVdkRE9WVnpPSFl3VlhsUGVTdFlWMHhTWm1ZeU9VZElVV0U1WVhoeGRFUmhiemRoZW5OWGJrWXlMMEZDWkdjeFp6WmtUMFl2TUZwcmNtaE1aSEZLU1ZOcU9FMXNVMUExVmt4dmRUWTNhVnBKU0RCU2VGSk5abE5CTUdVdlptazVSRVU0VVZONmNFbFBiSFZsWlVneVRUaFJNbFpsYzB0d00yaEphM0FyZUVOaFIxQmlZelJNTUd0YVZtdEZOa1ZYSzFSVlVqZFJWSE14VG10aGVIUjNXWFpYT0RkblMzcHVOa0pNTUZsNEx6VnRkVEZWUmxkalNpOVlkRXhJYTJsaFozUkpZbE5wUlZoVFpITnFlSFpwVDJKS1RUSlRZVll6ZEdGRFlXRjVSMHRXUm5CVk5uSlFURVF2VmxKaGNuUTJXbEF4UTBwUk1ucHNTWE5yUlVWUGJtNVZTMFZWZFhkalJuQk1OM1ExUmxocFNGWlBXREJvV2pWbWMzVkhXWFE0UlhWTWQyRTNaMmxGVVhabUwxQmhVV0pVY2xSV1RVOWtTMGd2UlVkV1NrazRNVTFtVG1kNlJXSnlRUzlEZG1OSEwyeG5Sek5FVFN0S2QwbEVRVkZCUW04eFFYZFVha0ZrUW1kT1ZraFJORVZHWjFGVmNVSkxiekpwVVRCU05YSTFSMmxPYkdneWMwNURla1Z4T1ZGSmQwaDNXVVJXVWpCcVFrSm5kMFp2UVZWeFFrdHZNbWxSTUZJMWNqVkhhVTVzYURKelRrTjZSWEU1VVVsM1JFRlpSRlpTTUZSQ1FWVjNRWGRGUWk5NlFVNUNaMnR4YUd0cFJ6bDNNRUpCVVRCR1FVRlBRMEZSU1VGcE9FWldjM0ZhU2pSUFptbHBaMnBuY0RRclEyVklSSGcyVEVwU2RYRTJXVzlwVG1WeWVFbzBiQ3RGVkRSQ1lqZHFPRVV2UkVSbFJXWmxZa1ZSZG5kUWNtaHNUM2xHVDJaNWIzTjZZVUp1UmpoRmNDOUlhemRQYWpaamNFeG9iMEZJYW1WV00wZFZlU3N6ZUdjelRrSXpSSFZGTjBwb2JuZzVPV3QzWmxKTU9YUlBXRW8xSzB4c01VRkphSGxVTUVwSlJEaEtOaTg1T1ZFMVZtMTNVME5WWlZKbWJtaHVibWxuV214M1V6UldhRUZ2WVc1b2NuRjZkMWgyY0U5amJ5dEllV2hNTUhremJXMWlRa2d2WlV0VkswZzFVQ3RNTWtsR2FWTkdURFpZUVV3MFVFMHpjRmxKTDNwcUswNTVhRUZZV2xwYWQyeHNVbXB2U1V0bWJFZFBUemhJVldNMWFVcHBWRWhvV1c4d2FVdFRNV3hRZUVOSWIwdDVRU3RoVmtWaFZrVXZaMjl4UW5kdlpUTldPVzE0U0VGNk5GVnhPR1V2WVZFd1QyWmphVVp0YWpVMWN6WnRlRFZsVldSNU5XeFJjV1p2Wld0RlBTSmRmUS4uQzRzX2tEbEJQb19xNm1jWHhtejduZFdOOWhsLVU3NnFKcDBmNmljc0JsZW5tdm1QckFpaTh1dTRzdHJYVGhzMzItRFRhTVJwRDJuV1NDN0ZKNnlMNUdTNmlyWFhndU52aG9aVHE5V2NQUTg3VmZGSFMzallXVjZqOHZMYXlENVBPbWt0eXBMYkVRS2lQNFlOV2gtS2paNWRheU5YS1dSaTlfOUNDWUhjUHlyUE1KZWxnd184OG1uRHZVZ2VWcHluVDBoWXRDQ1BfeVdSUjdkbnBSUHRFZlQ0aXY2QW9XTWdNTVNta3psVTkxbm50enlod0FncE0zYXdyOFNGelM4UUY3ZVd5OUllTXRIOHN2aEVpNlFHS2tIQVptWXFrZTlyTnZvZWU0RVZPdXFIazQ3TDBmZ1lod3pGWDJwMDlEMHJFUXJTOG5KZS02dl9USmNfTmZDNlZnOA=="^^xsd:base64Binary ]
+  ] . # 
+
+<urn:uuid:17a80a8d-4cf1-4deb-a1fd-2db1130e5f76> a fhir:Composition ;
+  fhir:id [ fhir:v "17a80a8d-4cf1-4deb-a1fd-2db1130e5f76"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_17a80a8d-4cf1-4deb-a1fd-2db1130e5f76\"> </a><h3>Medical Records Document</h3><p>This document, titled \"Active Conditions,\" was created on October 25, 2021, by Dr. John Hancock, who also legally attested to its accuracy on the same date. It summarizes the active medical conditions for a patient based on an emergency encounter on October 25, 2021. The document includes one section detailing an active condition: Type 2 Diabetes Mellitus.</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:11503-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11503-0" ]
+     ] ) ;
+     fhir:text [ fhir:v "Medical records" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:970af6c9-5bbd-4067-b6c1-d9b2c823aece" ] ;
+     fhir:display [ fhir:v "Example Patient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:reference [ fhir:v "urn:uuid:5ce5c83a-000f-47d2-941c-039358cc9112" ] ;
+     fhir:display [ fhir:v "Example Encounter" ]
+  ] ; # 
+  fhir:date [ fhir:v "2021-10-25T20:16:29-07:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:reference [ fhir:v "urn:uuid:0820c16d-91de-4dfa-a3a6-f140a516a9bc" ] ;
+     fhir:display [ fhir:v "Example Practitioner" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Active Conditions"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:time [ fhir:v "2021-10-25T20:16:29-07:00"^^xsd:dateTime ] ;
+     fhir:party [
+       fhir:reference [ fhir:v "urn:uuid:0820c16d-91de-4dfa-a3a6-f140a516a9bc" ] ;
+       fhir:display [ fhir:v "Example Practitioner" ]
+     ]
+  ] ) ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Active Condition 1" ] ;
+     fhir:entry ( [
+       fhir:reference [ fhir:v "urn:uuid:014a68ec-d691-49e0-b980-91b0d924e570" ]
+     ] )
+  ] ) . # 
+
+<urn:uuid:0820c16d-91de-4dfa-a3a6-f140a516a9bc> a fhir:Practitioner ;
+  fhir:id [ fhir:v "0820c16d-91de-4dfa-a3a6-f140a516a9bc"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2013-05-05T16:13:03Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_0820c16d-91de-4dfa-a3a6-f140a516a9bc\"> </a><h3>Practitioner Information</h3><p>Dr. John Hancock is a healthcare provider with National Provider Identifier (NPI) 9941339100. He authored and attested to the medical records document.</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9941339100" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Hancock" ] ;
+     fhir:given ( [ fhir:v "John" ] )
+  ] ) . # 
+
+<urn:uuid:970af6c9-5bbd-4067-b6c1-d9b2c823aece> a fhir:Patient ;
+  fhir:id [ fhir:v "970af6c9-5bbd-4067-b6c1-d9b2c823aece"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_970af6c9-5bbd-4067-b6c1-d9b2c823aece\"> </a><h3>Patient Information</h3><p>CDEX Example Patient, a male, is identified by member ID Member123 in the payer system http://example.org/cdex/payer/member-ids. He is the subject of this medical records document. The patient said, \"I feel great!\"</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MB" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://example.org/cdex/payer/member-ids"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Member123" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "CDEX Example Patient" ] ;
+     fhir:family [ fhir:v "Patient" ] ;
+     fhir:given ( [ fhir:v "CDEX Example" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] . # 
+
+<urn:uuid:014a68ec-d691-49e0-b980-91b0d924e570> a fhir:Condition ;
+  fhir:id [ fhir:v "014a68ec-d691-49e0-b980-91b0d924e570"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_014a68ec-d691-49e0-b980-91b0d924e570\"> </a><h3>Active Condition</h3><p>The patient has an active diagnosis of Type 2 Diabetes Mellitus (SNOMED CT: 44054006), first identified in 2006. This condition was documented by Dr. John Hancock and is listed as a problem on the patient’s problem list.</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:1.3.6.1.4.1.22812.4.111.0.4.1.2.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ] ;
+       fhir:display [ fhir:v "Problem List Item" ]
+     ] ) ;
+     fhir:text [ fhir:v "Problem List Item" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:44054006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "44054006" ] ;
+       fhir:display [ fhir:v "Type 2 Diabetes Mellitus" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:970af6c9-5bbd-4067-b6c1-d9b2c823aece" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2006"^^xsd:gYear
+  ] ; # 
+  fhir:asserter [
+     fhir:reference [ fhir:v "urn:uuid:0820c16d-91de-4dfa-a3a6-f140a516a9bc" ]
+  ] . # 
+
+<urn:uuid:5ce5c83a-000f-47d2-941c-039358cc9112> a fhir:Encounter ;
+  fhir:id [ fhir:v "5ce5c83a-000f-47d2-941c-039358cc9112"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_5ce5c83a-000f-47d2-941c-039358cc9112\"> </a><h3>Encounter Details</h3><p>An emergency encounter occurred on October 25, 2021, from 8:10 PM to 8:16 PM, involving CDEX Example Patient and attended by Dr. John Hancock at CDEX Example Organization. The encounter type is unspecified (SNOMED CT: 261665006).</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "EMER" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:261665006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "261665006" ] ;
+       fhir:display [ fhir:v "Unknown (qualifier value)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Unknown (qualifier value)" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:970af6c9-5bbd-4067-b6c1-d9b2c823aece" ] ;
+     fhir:display [ fhir:v "CDEX Example Patient" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:individual [
+       fhir:reference [ fhir:v "urn:uuid:0820c16d-91de-4dfa-a3a6-f140a516a9bc" ] ;
+       fhir:display [ fhir:v "John Hancock" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2021-10-25T20:10:29-07:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2021-10-25T20:16:29-07:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:reference [ fhir:v "urn:uuid:e37f004b-dc10-422b-b833-cdaa10a055a3" ] ;
+     fhir:display [ fhir:v "CDEX Example Organization" ]
+  ] . # 
+
+<urn:uuid:e37f004b-dc10-422b-b833-cdaa10a055a3> a fhir:Organization ;
+  fhir:id [ fhir:v "e37f004b-dc10-422b-b833-cdaa10a055a3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_e37f004b-dc10-422b-b833-cdaa10a055a3\"> </a><h3>Organization Information</h3><p>CDEX Example Organization, located at 1 CDEX Lane, Boston, MA 01002, USA, is the service provider for the documented encounter. Contact details include phone: (+1) 555-555-5555 and email: customer-service@example.org. The organization's NPI is 1234567893.</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1234567893" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name [ fhir:v "CDEX Example Organization"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(+1) 555-555-5555" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "customer-service@example.org" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "1 CDEX Lane" ] ) ;
+     fhir:city [ fhir:v "Boston" ] ;
+     fhir:state [ fhir:v "MA" ] ;
+     fhir:postalCode [ fhir:v "01002" ] ;
+     fhir:country [ fhir:v "USA" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

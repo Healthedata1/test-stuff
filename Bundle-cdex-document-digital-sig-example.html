@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CDEX Document with Digital Signature Example - Health eData 1 Sandbox v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.10"}
+    h3,h4,h5,h6{--heading-prefix:"6.10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Health eData 1 Sandbox</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">General Guidance</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="ImplementationGuide.html">IG Page</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CDEX Document with Digital Signature Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.org/fhir/us/healthedata1-sandbox/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+
+  
+    <li>
+      <a href="Bundle-cdex-document-digital-sig-example.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: CDEX Document with Digital Signature Example</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Details</b></p><p class="res-header-id"/><a name="cdex-document-digital-sig-example"> </a><a name="hccdex-document-digital-sig-example"> </a></div><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Subject</b></p><a name="Patient_970af6c9-5bbd-4067-b6c1-d9b2c823aece"> </a><h3>Patient Information</h3><p>CDEX Example Patient, a male, is identified by member ID Member123 in the payer system http://example.org/cdex/payer/member-ids. He is the subject of this medical records document. The patient said, &quot;I feel great!&quot;</p></div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Content</b></p><a name="Composition_17a80a8d-4cf1-4deb-a1fd-2db1130e5f76"> </a><h3>Medical Records Document</h3><p>This document, titled &quot;Active Conditions,&quot; was created on October 25, 2021, by Dr. John Hancock, who also legally attested to its accuracy on the same date. It summarizes the active medical conditions for a patient based on an emergency encounter on October 25, 2021. The document includes one section detailing an active condition: Type 2 Diabetes Mellitus.</p><hr/><div><h2>Active Condition 1</h2></div></div><hr/><h2>Additional Resources Included in Document</h2><a name="urn-uuid-0820c16d-91de-4dfa-a3a6-f140a516a9bc"> </a><a name="Practitioner_0820c16d-91de-4dfa-a3a6-f140a516a9bc"> </a><a name="hcPractitioner_0820c16d-91de-4dfa-a3a6-f140a516a9bc"> </a><hr/><p>Entry 2 - fullUrl = urn:uuid:0820c16d-91de-4dfa-a3a6-f140a516a9bc</p><p>Resource Practitioner:</p><blockquote><h3>Practitioner Information</h3><p>Dr. John Hancock is a healthcare provider with National Provider Identifier (NPI) 9941339100. He authored and attested to the medical records document.</p></blockquote><a name="urn-uuid-970af6c9-5bbd-4067-b6c1-d9b2c823aece"> </a><a name="Patient_970af6c9-5bbd-4067-b6c1-d9b2c823aece"> </a><a name="hcPatient_970af6c9-5bbd-4067-b6c1-d9b2c823aece"> </a><hr/><p>Entry 3 - fullUrl = urn:uuid:970af6c9-5bbd-4067-b6c1-d9b2c823aece</p><p>Resource Patient:</p><blockquote><h3>Patient Information</h3><p>CDEX Example Patient, a male, is identified by member ID Member123 in the payer system http://example.org/cdex/payer/member-ids. He is the subject of this medical records document. The patient said, &quot;I feel great!&quot;</p></blockquote><a name="urn-uuid-014a68ec-d691-49e0-b980-91b0d924e570"> </a><a name="Condition_014a68ec-d691-49e0-b980-91b0d924e570"> </a><a name="hcCondition_014a68ec-d691-49e0-b980-91b0d924e570"> </a><hr/><p>Entry 4 - fullUrl = urn:uuid:014a68ec-d691-49e0-b980-91b0d924e570</p><p>Resource Condition:</p><blockquote><h3>Active Condition</h3><p>The patient has an active diagnosis of Type 2 Diabetes Mellitus (SNOMED CT: 44054006), first identified in 2006. This condition was documented by Dr. John Hancock and is listed as a problem on the patient’s problem list.</p></blockquote><a name="urn-uuid-5ce5c83a-000f-47d2-941c-039358cc9112"> </a><a name="Encounter_5ce5c83a-000f-47d2-941c-039358cc9112"> </a><a name="hcEncounter_5ce5c83a-000f-47d2-941c-039358cc9112"> </a><hr/><p>Entry 5 - fullUrl = urn:uuid:5ce5c83a-000f-47d2-941c-039358cc9112</p><p>Resource Encounter:</p><blockquote><h3>Encounter Details</h3><p>An emergency encounter occurred on October 25, 2021, from 8:10 PM to 8:16 PM, involving CDEX Example Patient and attended by Dr. John Hancock at CDEX Example Organization. The encounter type is unspecified (SNOMED CT: 261665006).</p></blockquote><a name="urn-uuid-e37f004b-dc10-422b-b833-cdaa10a055a3"> </a><a name="Organization_e37f004b-dc10-422b-b833-cdaa10a055a3"> </a><a name="hcOrganization_e37f004b-dc10-422b-b833-cdaa10a055a3"> </a><hr/><p>Entry 6 - fullUrl = urn:uuid:e37f004b-dc10-422b-b833-cdaa10a055a3</p><p>Resource Organization:</p><blockquote><h3>Organization Information</h3><p>CDEX Example Organization, located at 1 CDEX Lane, Boston, MA 01002, USA, is the service provider for the documented encounter. Contact details include phone: (+1) 555-555-5555 and email: customer-service@example.org. The organization's NPI is 1234567893.</p></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 8, 2025 17:47+0000">2025-07-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

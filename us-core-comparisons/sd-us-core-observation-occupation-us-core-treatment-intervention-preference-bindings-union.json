@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "48bd5afe-1933-481a-97b9-86b83b80d5a3-62",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/48bd5afe-1933-481a-97b9-86b83b80d5a3-62",
+  "id" : "4004d630-a85b-4bdf-b492-df271ac3b6a5-65",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4004d630-a85b-4bdf-b492-df271ac3b6a5-65",
   "name" : "UnionUSCoreObservationOccupationProfileAndUSCoreTreatmentInterventionPreferenceBindingsProfile",
   "title" : "Union of US Core Observation Occupation Profile And US Core Treatment Intervention Preference Bindings Profile",
   "status" : "active",
-  "date" : "2025-06-02T20:22:13+00:00",
+  "date" : "2025-07-08T17:48:01+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -868,7 +868,7 @@
     },
     {
       "path" : "Observation.performer",
-      "short" : "Who is responsible for the observation",
+      "short" : "left: 𝗔𝗗𝗗𝗜𝗧𝗜𝗢𝗡𝗔𝗟 𝗨𝗦𝗖𝗗𝗜: Who is responsible for the observation; right: Who is responsible for the observation",
       "definition" : "Who was responsible for asserting the observed value as \"true\".",
       "requirements" : "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
       "min" : 0,

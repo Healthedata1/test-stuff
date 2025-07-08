@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "48bd5afe-1933-481a-97b9-86b83b80d5a3-146",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/48bd5afe-1933-481a-97b9-86b83b80d5a3-146",
+  "id" : "4004d630-a85b-4bdf-b492-df271ac3b6a5-149",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4004d630-a85b-4bdf-b492-df271ac3b6a5-149",
   "name" : "UnionUSCoreObservationClinicalResultProfileAndUSCoreTreatmentInterventionPreferenceGroupingProfile",
   "title" : "Union of US Core Observation Clinical Result Profile And US Core Treatment Intervention Preference Grouping Profile",
   "status" : "active",
-  "date" : "2025-06-02T20:22:13+00:00",
+  "date" : "2025-07-08T17:48:01+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -587,7 +587,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "left: Codes for high level observation categories.; right: FHIR and US Core codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/48bd5afe-1933-481a-97b9-86b83b80d5a3-107"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4004d630-a85b-4bdf-b492-df271ac3b6a5-110"
       },
       "mapping" : [{
         "identity" : "w5",
