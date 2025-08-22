@@ -5,23 +5,9 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="Bundle/cdex-document-digital-sig-example" key="Bundle-cdex-document-digital-sig-example" name="CDEX Document with Digital Signature Example"/>
-<artifact id="DocumentReference/polst" key="DocumentReference-polst" name="DocumentReference POLST (PDF)"/>
-<artifact id="Location/hl7east" key="Location-hl7east" name="HL7East Example"/>
-<artifact id="Location/hospital-fhir" key="Location-hospital-fhir" name="Hospital Location FHIR Code"/>
-<artifact id="Location/hospital-fhir-hsloc" key="Location-hospital-fhir-hsloc" name="Hospital Location HSLOC Code"/>
-<artifact id="Location/hospital-fhir-hsloc-bad1" key="Location-hospital-fhir-hsloc-bad1" name="Hospital Location HSLOC-bad1 Code"/>
-<artifact id="Location/hospital-fhir-hsloc-bad2" key="Location-hospital-fhir-hsloc-bad2" name="Hospital Location HSLOC-bad2 Code"/>
-<artifact id="Location/hospital-pos" key="Location-hospital-pos" name="Hospital Location POS Code"/>
-<artifact id="Location/hospital-c80" key="Location-hospital-c80" name="Hospital Location c80 Code"/>
-<artifact id="StructureDefinition/My-core-goal" key="StructureDefinition-My-core-goal" name="My Goal Profile"/>
 <artifact id="StructureDefinition/parameters-test" key="StructureDefinition-parameters-test" name="Parameters Test Profile"/>
 <artifact id="OperationDefinition/test" key="OperationDefinition-test" name="Test"/>
-<artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
-<artifact id="StructureDefinition/us-core-average-blood-pressure" key="StructureDefinition-us-core-average-blood-pressure" name="US Core Average Blood Pressure Profile"/>
-<artifact id="StructureDefinition/us-core-location" key="StructureDefinition-us-core-location" name="US Core Location Profile"/>
-<artifact id="StructureDefinition/us-core-location-sliced" key="StructureDefinition-us-core-location-sliced" name="US Core Location Sliced Profile"/>
-<artifact id="StructureDefinition/us-core-treatment-intervention-preference-bindings" key="StructureDefinition-us-core-treatment-intervention-preference-bindings" name="US Core Treatment Intervention Preference Bindings Profile"/>
-<artifact id="StructureDefinition/us-core-treatment-intervention-preference-grouping" key="StructureDefinition-us-core-treatment-intervention-preference-grouping" name="US Core Treatment Intervention Preference Grouping Profile"/>
+<artifact id="StructureDefinition/test-binding" key="StructureDefinition-test-binding" name="Test Binding"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
