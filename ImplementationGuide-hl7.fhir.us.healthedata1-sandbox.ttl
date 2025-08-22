@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-07-08T17:46:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-22T19:48:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -596,7 +596,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
        ]
      ] [
        fhir:extension ( [
@@ -1117,176 +1117,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "DocumentReference"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/DocumentReference/polst> ;
-         fhir:reference [ fhir:v "DocumentReference/polst" ]
-       ] ;
-       fhir:name [ fhir:v "DocumentReference POLST (PDF)" ] ;
-       fhir:description [ fhir:v "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*" ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Location"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hl7east> ;
-         fhir:reference [ fhir:v "Location/hl7east" ]
-       ] ;
-       fhir:name [ fhir:v "HL7East Example" ] ;
-       fhir:description [ fhir:v "This is a HL7East example for the *US Core Location Profile*." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Location"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-c80> ;
-         fhir:reference [ fhir:v "Location/hospital-c80" ]
-       ] ;
-       fhir:name [ fhir:v "Hospital Location c80 Code" ] ;
-       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the c80 `.type` Code." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Location"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir> ;
-         fhir:reference [ fhir:v "Location/hospital-fhir" ]
-       ] ;
-       fhir:name [ fhir:v "Hospital Location FHIR Code" ] ;
-       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the FHIR `.type` Code." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Location"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc> ;
-         fhir:reference [ fhir:v "Location/hospital-fhir-hsloc" ]
-       ] ;
-       fhir:name [ fhir:v "Hospital Location HSLOC Code" ] ;
-       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the HSLOC `.type` Code." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Location"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad1> ;
-         fhir:reference [ fhir:v "Location/hospital-fhir-hsloc-bad1" ]
-       ] ;
-       fhir:name [ fhir:v "Hospital Location HSLOC-bad1 Code" ] ;
-       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using a bad HSLOC-bad1 `.type` Code." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Location"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad2> ;
-         fhir:reference [ fhir:v "Location/hospital-fhir-hsloc-bad2" ]
-       ] ;
-       fhir:name [ fhir:v "Hospital Location HSLOC-bad2 Code" ] ;
-       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the another code insead of  HSLOC `.type` Code." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Location"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-pos> ;
-         fhir:reference [ fhir:v "Location/hospital-pos" ]
-       ] ;
-       fhir:name [ fhir:v "Hospital Location POS Code" ] ;
-       fhir:description [ fhir:v "This is an example hospital location for the *US Core Location Profile* using the POS `.type` Code." ] ;
-       fhir:example [
-         a fhir:canonical ;
-         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-location>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/My-core-goal> ;
-         fhir:reference [ fhir:v "StructureDefinition/My-core-goal" ]
-       ] ;
-       fhir:name [ fhir:v "My Goal Profile" ] ;
-       fhir:description [ fhir:v "The My Goal Profile inherits from the FHIR [Goal](https://hl7.org/fhir/R4/goal.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Goal resource to record,  search, and fetch Goal information associated with a patient.   It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1327,101 +1157,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-adi-documentreference" ]
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/test-binding> ;
+         fhir:reference [ fhir:v "StructureDefinition/test-binding" ]
        ] ;
-       fhir:name [ fhir:v "US Core ADI DocumentReference Profile" ] ;
-       fhir:description [ fhir:v "The US Core ADI DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.html) meet the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Advance Directive Observation* Data Element requirements. It sets minimum expectations for searching and fetching patient Advance Directive Information (ADI) documents using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document contents, it communicates the type of advance directive document, the author, the verifier, and other properties. To represent whether advance directive documents exist for a patient, see the US Core Observation ADI Documentation Profile. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-average-blood-pressure> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-average-blood-pressure" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Average Blood Pressure Profile" ] ;
-       fhir:description [ fhir:v "The US Core Average Blood Pressure Profile inherits from the [Observation](https://hl7.org/fobservation.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for recording, searching, and fetching average diastolic and systolic blood pressure observations with standard LOINC codes and UCUM units of measure. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-location" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Location Profile" ] ;
-       fhir:description [ fhir:v "The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a \"physical place of available services or resources.\"  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-sliced> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-location-sliced" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Location Sliced Profile" ] ;
-       fhir:description [ fhir:v "The US Core Location Profile inherits from the FHIR [Location](https://hl7.org/fhir/R4/location.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Location resource for  recording, searching, and fetching a \"physical place of available services or resources.\"  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-treatment-intervention-preference-bindings> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-treatment-intervention-preference-bindings" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Treatment Intervention Preference Bindings Profile" ] ;
-       fhir:description [ fhir:v "The US Core Treatment Intervention Preference Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile provides guidance on how to record a treatment intervention preference expressed by the patient regarding their personal health goals,  preferences, and priorities for medical treatments or interventions in the event of a future health scenario where a person is unable to make medical decisions because of a severe illness or injury. This profile does not represent an actual order, but it can guide caregivers and medical personnel about what is important for the person. This profile sets minimum expectations for the Observation resource to record, search, and fetch for patient treatment intervention preferences. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-treatment-intervention-preference-grouping> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-treatment-intervention-preference-grouping" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Treatment Intervention Preference Grouping Profile" ] ;
-       fhir:description [ fhir:v "The US Core Treatment Intervention Preference Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile provides guidance on how to record a treatment intervention preference expressed by the patient regarding their personal health goals,  preferences, and priorities for medical treatments or interventions in the event of a future health scenario where a person is unable to make medical decisions because of a severe illness or injury. This profile does not represent an actual order, but it can guide caregivers and medical personnel about what is important for the person. This profile sets minimum expectations for the Observation resource to record, search, and fetch for patient treatment intervention preferences. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:name [ fhir:v "Test Binding" ] ;
+       fhir:description [ fhir:v "A profile on the FHIR R4 Basic resource for representing a referral, with the code element constrained to the LOINC valid HL7 attachment requests value set." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1569,39 +1309,11 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/Bundle/cdex-document-digital-sig-example> a fhir:us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/DocumentReference/polst> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hl7east> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-c80> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad1> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-fhir-hsloc-bad2> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital-pos> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/My-core-goal> a fhir:us .
-
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/test> a fhir:us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-average-blood-pressure> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-location-sliced> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-treatment-intervention-preference-bindings> a fhir:us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-treatment-intervention-preference-grouping> a fhir:us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/test-binding> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

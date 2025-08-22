@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "4004d630-a85b-4bdf-b492-df271ac3b6a5-45",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/4004d630-a85b-4bdf-b492-df271ac3b6a5-45",
-  "name" : "IntersectionUSCoreSimpleObservationCategoryAndObservationCategoryCodes",
-  "title" : "Intersection of US Core Simple Observation Category And Observation Category Codes",
-  "status" : "active",
-  "date" : "2025-07-08T17:48:01+00:00"
-}

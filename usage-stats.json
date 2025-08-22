@@ -5,36 +5,10 @@
   "jurisdiction": "US",
   "extensions": [],
   "profiles": {
-    "Goal": [
+    "Basic": [
       {
-        "url": "http://hl7.org/fhir/my/StructureDefinition/My-core-goal",
-        "title": "My Goal Profile"
-      }
-    ],
-    "DocumentReference": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
-        "title": "US Core ADI DocumentReference Profile"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference-bindings",
-        "title": "US Core Treatment Intervention Preference Bindings Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-treatment-intervention-preference-grouping",
-        "title": "US Core Treatment Intervention Preference Grouping Profile"
-      }
-    ],
-    "Location": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
-        "title": "US Core Location Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location-sliced",
-        "title": "US Core Location Sliced Profile"
+        "url": "http://example.org/fhir/StructureDefinition/test-binding",
+        "title": "Test Binding"
       }
     ],
     "Parameters": [
@@ -45,9 +19,6 @@
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester": [
-      "DocumentReference"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -60,40 +31,17 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-suppress": [
-      "StructureDefinition.differential.element.example"
+    "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "Bundle.meta"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
-      "StructureDefinition.differential.element.type",
-      "StructureDefinition.differential.element.type.targetProfile",
-      "StructureDefinition.snapshot.element.type",
-      "StructureDefinition.snapshot.element.type.targetProfile"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile": [
-      "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
+    "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "Bundle.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
-      "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.snapshot.element.type"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "ImplementationGuide.definition.page.page",
-      "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
-      "StructureDefinition.differential.element.binding",
-      "StructureDefinition.snapshot.element.binding"
+      "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -113,10 +61,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
-    ],
-    "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
-      "StructureDefinition.differential.element",
-      "StructureDefinition.snapshot.element"
     ]
   }
 }
