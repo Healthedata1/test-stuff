@@ -1,30 +1,72 @@
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 22, warn = 19, info = 16
-IG Publisher Version: 2.0.14
-Generated Fri Aug 22 19:50:22 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
- Build Errors : 7 / 1 / 0
+err = 69, warn = 55, info = 16
+IG Publisher Version: 2.0.15
+Generated Tue Aug 26 21:19:32 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
+ Build Errors : 32 / 2 / 0
  /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox : 3 / 1 / 1
+ /home/runner/work/test-stuff/test-stuff/input/examples/USCore_PMO_ServiceRequest_example : 12 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/cdex-document-digital-sig-example : 14 / 15 / 22
  /home/runner/work/test-stuff/test-stuff/input/resources/Basic-test-binding : 2 / 1 / 2
  /home/runner/work/test-stuff/test-stuff/input/resources/OperationDefinition-test : 1 / 0 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-parameters-test : 1 / 1 / 1
+ /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-uscore-pmo-servicerequest : 32 / 34 / 1
 </table>
 == n/a ==
+ERROR: http://hl7.org/fhir/R4/: The reference us-core-condition could not be resolved
+ERROR: http://hl7.org/fhir/R4/: The reference us-core-observation could not be resolved
+ERROR: http://hl7.org/fhir/R4/: The reference us-core-diagnosticreport could not be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/example-pmo-servicerequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-healthedata1-sandbox in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
 WARNING: /home/runner/work/test-stuff/test-stuff/output/Bundle-cdex-document-digital-sig-example.html: The html source has duplicate anchor Ids: Patient_970af6c9-5bbd-4067-b6c1-d9b2c823aece
 ERROR: ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 198, column 8: The link 'ImplementationGuide-.xml' for "XML" cannot be resolved
 ERROR: ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 199, column 8: The link 'ImplementationGuide-.json' for "JSON" cannot be resolved
+ERROR: ServiceRequest-example-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/p/a at Line 185, column 894: The link 'Patient/example' for "Granny Smith" cannot be resolved
+ERROR: ServiceRequest-example-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/p/a at Line 185, column 961: The link 'Encounter/example' for "Encounter/example" cannot be resolved
+ERROR: ServiceRequest-example-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/p/a at Line 185, column 1124: The link 'Practitioner/example' for "Dr. Jane Doe" cannot be resolved
+ERROR: ServiceRequest-example-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/p/a at Line 185, column 1306: The link 'DocumentReference/example' for "US Core ADI DocumentReference for POLST" cannot be resolved
 ERROR: StructureDefinition-parameters-test.html#/html/body/div/div/div/div/div/p/p/a at Line 238, column 41: The link 'OperationDefinition-submit-attachment.html' for "Submit Attachment Operation" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 396, column 503: The link 'us-core-condition.html' for "us-core-condition" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 396, column 560: The link 'us-core-observation.html' for "us-core-observation" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 396, column 621: The link 'us-core-diagnosticreport.html' for "us-core-diagnosticreport" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 538, column 505: The link 'us-core-condition.html' for "us-core-condition" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 538, column 562: The link 'us-core-observation.html' for "us-core-observation" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 538, column 623: The link 'us-core-diagnosticreport.html' for "us-core-diagnosticreport" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 852, column 505: The link 'us-core-condition.html' for "us-core-condition" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 852, column 562: The link 'us-core-observation.html' for "us-core-observation" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 852, column 623: The link 'us-core-diagnosticreport.html' for "us-core-diagnosticreport" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1172, column 503: The link 'us-core-condition.html' for "us-core-condition" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1172, column 560: The link 'us-core-observation.html' for "us-core-observation" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1172, column 621: The link 'us-core-diagnosticreport.html' for "us-core-diagnosticreport" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1313, column 505: The link 'us-core-condition.html' for "us-core-condition" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1313, column 562: The link 'us-core-observation.html' for "us-core-observation" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1313, column 623: The link 'us-core-diagnosticreport.html' for "us-core-diagnosticreport" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1627, column 505: The link 'us-core-condition.html' for "us-core-condition" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1627, column 562: The link 'us-core-observation.html' for "us-core-observation" cannot be resolved
+ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1627, column 623: The link 'us-core-diagnosticreport.html' for "us-core-diagnosticreport" cannot be resolved
 ERROR: artifacts.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 201, column 41: The link 'OperationDefinition-submit-attachment.html' for "Submit Attachment Operation" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'ImplementationGuide-hl7.fhir.us.core.html' for "US Core ImplementationGuide Resource" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 84: The link 'foo.html' for "component" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 263, column 84: The link 'foo.html' for "component" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json ==
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: HL7 Implementation Guides must state their owning workgroup explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
 WARNING: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+== input/examples/USCore_PMO_ServiceRequest_example.json ==
+ERROR: ServiceRequest.reasonCode[0].coding[0].code: Error parsing JSON: the primitive value must be a string
+ERROR: ServiceRequest/example-pmo-servicerequest: ServiceRequest.category[0]: Slicing cannot be evaluated: Could not match discriminator ($this) for slice ServiceRequest.category:us-core-pmo in profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest|0.1.0 - the discriminator [$this] does not have fixed value, binding or existence assertions
+WARNING: ServiceRequest/example-pmo-servicerequest: ServiceRequest.code: ValueSet 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code' not found
+ERROR: ServiceRequest/example-pmo-servicerequest: ServiceRequest.code.coding[0].display: Wrong Display Name 'No CPR: Do Not Attempt Resuscitation' for http://loinc.org#LA33471-6. Valid display is 'No CPR: Do Not Attempt Resuscitation.' (en-US) (for the language(s) 'en-US')
+ERROR: ServiceRequest/example-pmo-servicerequest: ServiceRequest.subject: Unable to resolve resource with reference 'Patient/example'
+ERROR: ServiceRequest/example-pmo-servicerequest: ServiceRequest.encounter: Unable to resolve resource with reference 'Encounter/example'
+ERROR: ServiceRequest/example-pmo-servicerequest: ServiceRequest.requester: Unable to resolve resource with reference 'Practitioner/example'
+ERROR: ServiceRequest/example-pmo-servicerequest: ServiceRequest.reasonCode[0].coding[0].display: Wrong Display Name 'Terminal illness' for http://snomed.info/sct#422650009. Valid display is one of 2 choices: 'Social isolation (finding)' (en) or 'Social isolation' (en) (for the language(s) 'en-US')
+ERROR: ServiceRequest/example-pmo-servicerequest: ServiceRequest.reasonReference[0]: Unable to resolve resource with reference 'DocumentReference/example'
+ERROR: ServiceRequest.text.div: Hyperlink 'Patient/example' at 'div/p/a' for 'Granny Smith' does not resolve
+ERROR: ServiceRequest.text.div: Hyperlink 'Encounter/example' at 'div/p/a' for 'Encounter/example' does not resolve
+ERROR: ServiceRequest.text.div: Hyperlink 'Practitioner/example' at 'div/p/a' for 'Dr. Jane Doe' does not resolve
+ERROR: ServiceRequest.text.div: Hyperlink 'DocumentReference/example' at 'div/p/a' for 'US Core ADI DocumentReference for POLST' does not resolve
 == input/examples/cdex-document-digital-sig-example.json ==
 ERROR: Bundle/cdex-document-digital-sig-example: Bundle.meta.profile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/davinci-cdex/StructureDefinition/cdex-signature-bundle'
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle.entry[0].resource/*Composition/17a80a8d-4cf1-4deb-a1fd-2db1130e5f76*/.encounter: Details for urn:uuid:5ce5c83a-000f-47d2-941c-039358cc9112 matching against profile http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1
@@ -65,7 +107,7 @@ WARNING: Bundle/cdex-document-digital-sig-example: Bundle.entry[5].resource/*Org
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: Signature Verification is a work in progress. Feedback welcome at https://chat.fhir.org/#narrow/channel/179247-Security-and-Privacy/topic/Signature/with/524324965
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The signature verified OK
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed by OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us,OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us,ou=ig publisher,l=ann arbor,cn=hl7.org,o=hl7,st=missouri,c=us (and this has been verified by the signature)
-INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed at 2025-08-22T19:49:42Z (and this has been verified by the signature)
+INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed at 2025-08-26T21:18:41Z (and this has been verified by the signature)
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed for the purpose of Verification Signature (urn:oid:1.2.840.10065.1.12.1.5) (and this has been verified by the signature)
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: Signing Certificate Details: Subject='OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us', Issuer='OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us', Serial='0'
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: Signing Certificate Source: -----BEGIN CERTIFICATE-----MIIDozCCAoqgAwIBAgIBADANBgkqhkiG9w0BAQ0FADBrMQswCQYDVQQGEwJ1czERMA8GA1UECAwITWlzc291cmkxDDAKBgNVBAoMA0hMNzEQMA4GA1UEAwwHaGw3Lm9yZzESMBAGA1UEBwwJQW5uIEFyYm9yMRUwEwYDVQQLDAxJRyBQdWJsaXNoZXIwHhcNMjUwNjE5MDIzMDMzWhcNMjYwNjIwMDIzMDMzWjBrMQswCQYDVQQGEwJ1czERMA8GA1UECAwITWlzc291cmkxDDAKBgNVBAoMA0hMNzEQMA4GA1UEAwwHaGw3Lm9yZzESMBAGA1UEBwwJQW5uIEFyYm9yMRUwEwYDVQQLDAxJRyBQdWJsaXNoZXIwggEjMA0GCSqGSIb3DQEBAQUAA4IBEAAwggELAoIBAgC9Us8v0UyOy+XWLRff29GHQa9axqtDao7azsWnF2/ABdg1g6dOF/0ZkrhLdqJISj8MlSP5VLou67iZIH0RxRMfSA0e/fi9DE8QSzpIOlueeH2M8Q2VesKp3hIkp+xCaGPbc4L0kZVkE6EW+TUR7QTs1NkaxtwYvW87gKzn6BL0Yx/5mu1UFWcJ/XtLHkiagtIbSiEXSdsjxviObJM2SaV3taCaayGKVFpU6rPLD/VRart6ZP1CJQ2zlIskEEOnnUKEUuwcFpL7t5FXiHVOX0hZ5fsuGYt8EuLwa7giEQvf/PaQbTrTVMOdKH/EGVJI81MfNgzEbrA/CvcG/lgG3DM+JwIDAQABo1AwTjAdBgNVHQ4EFgQUqBKo2iQ0R5r5GiNlh2sNCzEq9QIwHwYDVR0jBBgwFoAUqBKo2iQ0R5r5GiNlh2sNCzEq9QIwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQ0FAAOCAQIAi8FVsqZJ4Ofiigjgp4+CeHDx6LJRuq6YoiNerxJ4l+ET4Bb7j8E/DDeEfebEQvwPrhlOyFOfyoszaBnF8Ep/Hk7Oj6cpLhoAHjeV3GUy+3xg3NB3DuE7Jhnx99kwfRL9tOXJ5+Ll1AIhyT0JID8J6/99Q5VmwSCUeRfnhnnigZlwS4VhAoanhrqzwXvpOco+HyhL0y3mmbBH/eKU+H5P+L2IFiSFL6XAL4PM3pYI/zj+NyhAXZZZwllRjoIKflGOO8HUc5iJiTHhYo0iKS1lPxCHoKyA+aVEaVE/goqBwoe3V9mxHAz4Uq8e/aQ0OfciFmj55s6mx5eUdy5lQqfoekE=-----END CERTIFICATE-----
@@ -80,3 +122,70 @@ ERROR: OperationDefinition/test: OperationDefinition: When HL7 is publishing a r
 == input/resources/StructureDefinition-parameters-test.json ==
 ERROR: StructureDefinition/parameters-test: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test'): The Implementation Guide contains no examples for this profile
+== input/resources/StructureDefinition-uscore-pmo-servicerequest.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-uscore-pmo-servicerequest.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-pmo-servicerequest) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest)
+WARNING: StructureDefinition.differential.element[9]: Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient on ServiceRequest.subject is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[9]: Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location on ServiceRequest.subject is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[10]: Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter on ServiceRequest.encounter is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[13]: Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner on ServiceRequest.requester is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[13]: Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization on ServiceRequest.requester is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[13]: Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient on ServiceRequest.requester is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[13]: Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson on ServiceRequest.requester is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[15]: Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference on ServiceRequest.reasonReference is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[15]: Cannot check whether the target profile http://hl7.org/fhir/StructureDefinition/us-core-condition on ServiceRequest.reasonReference is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[15]: Cannot check whether the target profile http://hl7.org/fhir/StructureDefinition/us-core-observation on ServiceRequest.reasonReference is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[15]: Cannot check whether the target profile http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport on ServiceRequest.reasonReference is valid constraint on the base because it is not known
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[18].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[21].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[32].type[0].targetProfile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[32].type[0].targetProfile[2]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-location'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[33].type[0].targetProfile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[37].type[0].targetProfile[1]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[37].type[0].targetProfile[2]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[37].type[0].targetProfile[4]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[43].type[0].targetProfile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[43].type[0].targetProfile[1]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-condition'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[43].type[0].targetProfile[2]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-observation'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[43].type[0].targetProfile[3]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[4].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[5].binding.valueSet: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[9].type[0].targetProfile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[9].type[0].targetProfile[2]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-location'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[10].type[0].targetProfile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[13].type[0].targetProfile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[13].type[0].targetProfile[1]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[13].type[0].targetProfile[2]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[13].type[0].targetProfile[4]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[15].type[0].targetProfile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[15].type[0].targetProfile[1]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-condition'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[15].type[0].targetProfile[2]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-observation'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[15].type[0].targetProfile[3]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport'
+ERROR: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[9].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[9].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[10].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[13].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[13].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[13].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[13].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[15].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[15].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/StructureDefinition/us-core-condition
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[15].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/StructureDefinition/us-core-observation
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.differential.element[15].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[32].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[32].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[33].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[43].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[43].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/StructureDefinition/us-core-condition
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[43].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/StructureDefinition/us-core-observation
+WARNING: StructureDefinition/us-core-pmo-servicerequest: StructureDefinition.snapshot.element[43].type[0].targetProfile[0]: Unable to resolve profile http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest').baseDefinition: US FHIR Usage rules require that all profiles on ServiceRequest derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
+ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-uscore-pmo-servicerequest: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-pmo-servicerequest vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest
+ERROR: StructureDefinition.text.div: Hyperlink 'us-core-condition.html' at 'div/table/tr/td/a' for 'us-core-condition' does not resolve
+ERROR: StructureDefinition.text.div: Hyperlink 'us-core-observation.html' at 'div/table/tr/td/a' for 'us-core-observation' does not resolve
+ERROR: StructureDefinition.text.div: Hyperlink 'us-core-diagnosticreport.html' at 'div/table/tr/td/a' for 'us-core-diagnosticreport' does not resolve

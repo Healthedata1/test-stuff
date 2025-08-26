@@ -7,6 +7,13 @@
     "name" : "TestBinding"
   },
   {
+    "id" : "us-core-pmo-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest",
+    "version" : "0.1.0",
+    "name" : "USCorePMOServiceRequestProfile"
+  },
+  {
     "id" : "hl7.fhir.us.healthedata1-sandbox",
     "type" : "ImplementationGuide",
     "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox",

@@ -35,7 +35,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Business identifier","Identifier assigned to the resource for business purposes, outside the context of FHIR.","","","","","","","","","",,,,,"",,,,"Basic.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./identifier","FiveWs.identifier"
 "Basic.code","Basic.code","","","",1,1,"","Y","Y","CodeableConcept {[]} {[]}
-","Kind of referral","Identifies the type of referral, constrained to valid HL7 attachment request codes from LOINC.","Because resource references will only be able to indicate 'Basic', the type of reference will need to be specified in a Profile identified as part of the resource.  Refer to the resource notes section for information on appropriate terminologies for this code.
+","Kind of attachment","constrained to valid HL7 attachment request codes from LOINC.","Because resource references will only be able to indicate 'Basic', the type of reference will need to be specified in a Profile identified as part of the resource.  Refer to the resource notes section for information on appropriate terminologies for this code.
 
 This element is labeled as a modifier because it defines the meaning of the resource and cannot be ignored.","Must be able to distinguish different types of Basic resources.","","","","","","","",,"required","bound to LOINC valid HL7 attachment requests.","http://loinc.org/vs/valid-hl7-attachment-requests","",,,,"Basic.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code","FiveWs.what[x]"

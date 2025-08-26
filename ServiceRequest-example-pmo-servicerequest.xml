@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="example-pmo-servicerequest"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest example-pmo-servicerequest</b></p><a name="example-pmo-servicerequest"> </a><a name="hcexample-pmo-servicerequest"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-us-core-pmo-servicerequest.html">US Core PMO ServiceRequest Profile</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Directive</p><p><b>category</b>: <span title="Codes:{http://loinc.org 100822-6}">Cardiopulmonary resuscitation orders</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org LA33471-6}">No CPR: Do Not Attempt Resuscitation</span></p><p><b>orderDetail</b>: <span title="Codes:">Patient has explicitly declined CPR per advance directive discussion</span></p><p><b>subject</b>: <a href="Patient/example">Granny Smith</a></p><p><b>encounter</b>: <a href="Encounter/example">Encounter/example</a></p><p><b>occurrence</b>: 2025-08-26 --&gt; (ongoing)</p><p><b>authoredOn</b>: 2025-08-26</p><p><b>requester</b>: <a href="Practitioner/example">Dr. Jane Doe</a></p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 422650009}">Terminal illness</span></p><p><b>reasonReference</b>: <a href="DocumentReference/example">US Core ADI DocumentReference for POLST</a></p></div>
+  </text>
+  <status value="active"/>
+  <intent value="directive"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="100822-6"/>
+      <display value="Cardiopulmonary resuscitation orders"/>
+    </coding>
+    <text value="Cardiopulmonary resuscitation orders"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA33471-6"/>
+      <display value="No CPR: Do Not Attempt Resuscitation"/>
+    </coding>
+    <text value="No CPR: Do Not Attempt Resuscitation"/>
+  </code>
+  <orderDetail>
+    <text value="Patient has explicitly declined CPR per advance directive discussion"/>
+  </orderDetail>
+  <subject>
+    <reference value="Patient/example"/>
+    <display value="Granny Smith"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/example"/>
+  </encounter>
+  <occurrencePeriod>
+    <start value="2025-08-26"/>
+  </occurrencePeriod>
+  <authoredOn value="2025-08-26"/>
+  <requester>
+    <reference value="Practitioner/example"/>
+    <display value="Dr. Jane Doe"/>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="422650009"/>
+      <display value="Terminal illness"/>
+    </coding>
+    <text value="Terminal illness"/>
+  </reasonCode>
+  <reasonReference>
+    <reference value="DocumentReference/example"/>
+    <display value="US Core ADI DocumentReference for POLST"/>
+  </reasonReference>
+</ServiceRequest>

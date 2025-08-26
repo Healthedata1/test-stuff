@@ -11,6 +11,12 @@
         "title": "Test Binding"
       }
     ],
+    "ServiceRequest": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest",
+        "title": "US Core PMO ServiceRequest Profile"
+      }
+    ],
     "Parameters": [
       {
         "url": "http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test",
@@ -30,6 +36,15 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.differential.element.type.targetProfile",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
       "Bundle.meta"

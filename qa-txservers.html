@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for HealthEData_1Sandbox</h1>
- <p>Generated Fri Aug 22 19:50:22 UTC 2025, FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/healthedata1-sandbox">http://hl7.org/fhir/us/healthedata1-sandbox</a> (<a href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">history</a>))</p>
+ <p>Generated Tue Aug 26 21:19:32 UTC 2025, FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/healthedata1-sandbox">http://hl7.org/fhir/us/healthedata1-sandbox</a> (<a href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -85,6 +85,34 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code|8.0.0-ballot</td>
+    <td>[http://terminology.hl7.org/CodeSystem/icd9cm, http://hl7.org/fhir/sid/icd-10-cm, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=, auth = http://tx.fhir.org/r4, candidates=http://tx.hl7europe.eu/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
     <td>http://hl7.org/fhir/ValueSet/doc-typecodes--0|4.0.1</td>
     <td>http://loinc.org</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
@@ -106,7 +134,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:195bdcc8-583b-4ba9-bb2b-13c99489d75a</td>
+    <td>urn:uuid:8a82b4e3-c6ce-4531-a73a-1da079f23f19</td>
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
   </tr>
@@ -120,7 +148,7 @@
   <tr>
     <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
-    <td>urn:uuid:ccf7d3c1-097c-4b31-9ce1-e0ff46d3dfd8</td>
+    <td>urn:uuid:bb095c3d-6dd0-49a7-b8e7-38833426fc81</td>
     <td>urn:ietf:bcp:13</td>
     <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
   </tr>
@@ -162,7 +190,7 @@
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 42. Code Systems used: </p>
+<p>Use Count: 69. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -181,7 +209,7 @@
   <tr>
     <td>http://loinc.org</td>
     <td>0</td>
-    <td>4</td>
+    <td>6</td>
     <td>
       <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
@@ -189,7 +217,7 @@
   <tr>
     <td>http://snomed.info/sct</td>
     <td>0</td>
-    <td>2</td>
+    <td>3</td>
     <td>
       <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
     </td>
@@ -225,24 +253,36 @@
 </table>
 <p>ValueSets fetched:</p>
 <ul>
+  <li>http://hl7.org/fhir/StructureDefinition/us-core-condition</li>
+  <li>http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport</li>
+  <li>http://hl7.org/fhir/StructureDefinition/us-core-observation</li>
+  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|6.1.0</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|7.0.0</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition|3.1.1</li>
+  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|3.1.1</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|6.1.0</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter|7.0.0</li>
+  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-location</li>
+  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization</li>
+  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|3.1.1</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0</li>
+  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|3.1.1</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0</li>
   <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|7.0.0</li>
+  <li>http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson</li>
+  <li>http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code</li>
+  <li>http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category</li>
   <li>http://hl7.org/fhir/us/davinci-cdex/StructureDefinition/cdex-signature-bundle</li>
   <li>http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization</li>
 </ul>
 <h2>Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 6. Code Systems used: </p>
+<p>Use Count: 9. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -259,5 +299,11 @@
     </th>
   </tr>
 </table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>
+    <a href="http://tx.fhir.org/r4/ValueSet/us-core-condition-code">http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code</a>
+  </li>
+</ul>
 </body>
 </html>
