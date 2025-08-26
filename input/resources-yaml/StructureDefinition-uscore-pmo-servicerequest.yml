@@ -1,0 +1,165 @@
+resourceType: StructureDefinition
+id: us-core-pmo-servicerequest
+url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest
+name: USCorePMOServiceRequestProfile
+title: US Core PMO ServiceRequest Profile
+status: draft
+date: 2025-08-26
+description: |
+  The US Core PMO ServiceRequest Profile defines constraints for Portable Medical Orders (PMO) based on the FHIR R4 ServiceRequest resource. It establishes minimum expectations for recording, searching, and fetching PMO-related ServiceRequest information, specifying core elements, extensions, vocabularies, and value sets that SHALL be present to promote interoperability for PMO use cases, such as POLST and MOLST.
+kind: resource
+abstract: false
+type: ServiceRequest
+baseDefinition: http://hl7.org/fhir/StructureDefinition/ServiceRequest
+derivation: constraint
+differential:
+  element:
+  - id: ServiceRequest
+    path: ServiceRequest
+    mustSupport: false
+  - id: ServiceRequest.status
+    path: ServiceRequest.status
+    mustSupport: true
+  - id: ServiceRequest.intent
+    path: ServiceRequest.intent
+    mustSupport: true
+    fixedCode: directive
+  - id: ServiceRequest.category
+    path: ServiceRequest.category
+    slicing:
+      discriminator:
+      - type: value
+        path: $this
+      rules: open
+    mustSupport: true
+  - id: ServiceRequest.category:us-core-pmo
+    path: ServiceRequest.category
+    sliceName: us-core-pmo
+    mustSupport: true
+    binding:
+      strength: extensible
+      description: '[Portable Medical Order panel codes](https://loinc.org/100821-8)'
+      valueSet: http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category
+  - id: ServiceRequest.code
+    path: ServiceRequest.code
+    min: 1
+    mustSupport: true
+    binding:
+      strength: extensible
+      description: Portable Medical Order panel answers - mostly free-text
+      valueSet: http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code
+  - id: ServiceRequest.code.text
+    path: ServiceRequest.code.text
+    mustSupport: true
+    short: "Plain text representation of the PMO procedure or service."
+  - id: ServiceRequest.orderDetail
+    path: ServiceRequest.orderDetail
+    mustSupport: true
+  - id: ServiceRequest.orderDetail.text
+    path: ServiceRequest.orderDetail.text
+    mustSupport: true
+    short: "Plain text representation to capture additional PMO order details."
+  - id: ServiceRequest.subject
+    path: ServiceRequest.subject
+    type:
+    - code: Reference
+      targetProfile:
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+      - http://hl7.org/fhir/StructureDefinition/Group
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
+      - http://hl7.org/fhir/StructureDefinition/Device
+      _targetProfile:
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: true
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+    mustSupport: true
+  - id: ServiceRequest.encounter
+    path: ServiceRequest.encounter
+    type:
+    - code: Reference
+      targetProfile:
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
+    mustSupport: true
+  - id: ServiceRequest.occurrence[x]
+    path: ServiceRequest.occurrence[x]
+    type:
+    - extension:
+      - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+        valueBoolean: true
+      code: Period
+    - code: dateTime
+    - code: Timing
+    mustSupport: true
+  - id: ServiceRequest.authoredOn
+    path: ServiceRequest.authoredOn
+    mustSupport: true
+  - id: ServiceRequest.requester
+    path: ServiceRequest.requester
+    type:
+    - code: Reference
+      targetProfile:
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+      - http://hl7.org/fhir/StructureDefinition/PractitionerRole
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson
+      - http://hl7.org/fhir/StructureDefinition/Device
+      _targetProfile:
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: true
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+    mustSupport: true
+  - id: ServiceRequest.reasonCode
+    path: ServiceRequest.reasonCode
+    binding:
+      strength: extensible
+      valueSet: http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code
+    mustSupport: true
+  - id: ServiceRequest.reasonReference
+    path: ServiceRequest.reasonReference
+    type:
+    - code: Reference
+      targetProfile:
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference
+      - http://hl7.org/fhir/StructureDefinition/us-core-condition
+      - http://hl7.org/fhir/StructureDefinition/us-core-observation
+      - http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport
+      _targetProfile:
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: true
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+      - extension:
+        - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
+          valueBoolean: false
+    mustSupport: true
+    short: "US Core ADI DocumentReference Profile or other US Core profiles that support the requested PMO service."

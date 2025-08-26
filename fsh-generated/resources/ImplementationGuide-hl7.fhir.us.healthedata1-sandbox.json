@@ -82,6 +82,13 @@
       },
       {
         "reference": {
+          "reference": "ServiceRequest/example-pmo-servicerequest"
+        },
+        "name": "example-pmo-servicerequest",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/parameters-test"
         },
         "description": "The Parameters profile for Da Vinci [Submit Attachment Operation](OperationDefinition-submit-attachment.html)",
@@ -103,6 +110,14 @@
         "description": "A profile on the FHIR R4 Basic resource for representing a referral, with the code element constrained to the LOINC valid HL7 attachment requests value set.",
         "exampleBoolean": false,
         "name": "Test Binding"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-pmo-servicerequest"
+        },
+        "description": "The US Core PMO ServiceRequest Profile defines constraints for Portable Medical Orders (PMO) based on the FHIR R4 ServiceRequest resource. It establishes minimum expectations for recording, searching, and fetching PMO-related ServiceRequest information, specifying core elements, extensions, vocabularies, and value sets that SHALL be present to promote interoperability for PMO use cases, such as POLST and MOLST.\n",
+        "exampleBoolean": false,
+        "name": "US Core PMO ServiceRequest Profile"
       }
     ],
     "page": {
