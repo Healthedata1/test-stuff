@@ -97,6 +97,14 @@
       },
       {
         "reference": {
+          "reference": "OperationDefinition/submit-cgm-bundle"
+        },
+        "description": "foo",
+        "exampleBoolean": false,
+        "name": "Submit CGM Bundle"
+      },
+      {
+        "reference": {
           "reference": "OperationDefinition/test"
         },
         "description": "test nested parameters defined by SD",
