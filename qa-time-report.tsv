@@ -1,8 +1,9 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json	6896	-	0	0	0	0	0	0	15	157	0	0	0	0	0	0	0	0	0	0	92	136	0	0	0	3	0	2
-input/examples/USCore_PMO_ServiceRequest_example.json	1876	38	0	0	0	0	0	0	0	45	0	0	0	0	0	0	0	0	0	0	31	45	0	0	0	0	0	1
-input/examples/cdex-document-digital-sig-example.json	15929	19	29	0	1	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	48	100	0	0	0	0	0	0
-input/resources/Basic-test-binding.json	1689	17	0	31	0	0	0	0	0	98	0	0	0	2070	0	0	0	1	0	0	74	466	0	0	0	8	0	0
-input/resources/OperationDefinition-test.json	1365	12	0	0	0	0	0	0	1	68	0	0	0	0	0	0	0	0	0	0	28	123	0	0	0	1	0	1
-input/resources/StructureDefinition-parameters-test.json	4124	10	0	82	6	0	0	0	0	126	0	0	0	0	0	0	0	1	0	0	172	666	0	0	0	8	0	1
-input/resources/StructureDefinition-uscore-pmo-servicerequest.json	13865	22	0	121	0	0	0	0	0	2270	0	0	0	1	0	0	0	1	0	0	202	527	0	4	0	12	0	3
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json	7109	-	0	0	0	0	0	0	13	112	0	0	0	0	0	0	0	0	0	0	94	152	0	0	0	3	0	2
+input/examples/USCore_PMO_ServiceRequest_example.json	1876	39	0	0	0	0	0	0	1	30	0	0	0	0	1	0	0	0	0	0	29	83	0	0	0	0	0	0
+input/examples/cdex-document-digital-sig-example.json	15929	27	34	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	47	129	0	0	0	0	0	0
+input/resources/Basic-test-binding.json	1689	18	0	32	0	0	0	0	1	67	0	0	0	1562	0	0	0	1	0	0	81	586	0	0	0	3	0	0
+input/resources/OperationDefinition-test.json	1365	10	0	0	1	0	0	0	0	43	0	0	0	0	0	0	0	0	0	0	25	128	0	0	0	0	0	0
+input/resources/OperationDefinition-test2.json	825	8	0	0	0	0	0	0	0	55	0	0	0	0	0	0	0	0	0	0	15	52	0	0	0	1	0	0
+input/resources/StructureDefinition-parameters-test.json	4124	9	0	60	5	0	0	0	0	133	0	0	0	0	0	0	0	1	0	0	120	566	0	0	0	6	0	2
+input/resources/StructureDefinition-uscore-pmo-servicerequest.json	13865	9	0	78	0	0	0	0	1	1097	0	0	0	1	0	0	0	1	0	0	178	535	0	6	0	11	0	2

@@ -1,15 +1,16 @@
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 69, warn = 55, info = 16
-IG Publisher Version: 2.0.15
-Generated Tue Aug 26 21:19:32 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
+err = 72, warn = 55, info = 16
+IG Publisher Version: 2.0.16
+Generated Wed Aug 27 22:48:10 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
  Build Errors : 32 / 2 / 0
  /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox : 3 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/USCore_PMO_ServiceRequest_example : 12 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/cdex-document-digital-sig-example : 14 / 15 / 22
  /home/runner/work/test-stuff/test-stuff/input/resources/Basic-test-binding : 2 / 1 / 2
  /home/runner/work/test-stuff/test-stuff/input/resources/OperationDefinition-test : 1 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/resources/OperationDefinition-test2 : 3 / 0 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-parameters-test : 1 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-uscore-pmo-servicerequest : 32 / 34 / 1
 </table>
@@ -45,9 +46,9 @@ ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/di
 ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1627, column 505: The link 'us-core-condition.html' for "us-core-condition" cannot be resolved
 ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1627, column 562: The link 'us-core-observation.html' for "us-core-observation" cannot be resolved
 ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1627, column 623: The link 'us-core-diagnosticreport.html' for "us-core-diagnosticreport" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 201, column 41: The link 'OperationDefinition-submit-attachment.html' for "Submit Attachment Operation" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 210, column 41: The link 'OperationDefinition-submit-attachment.html' for "Submit Attachment Operation" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'ImplementationGuide-hl7.fhir.us.core.html' for "US Core ImplementationGuide Resource" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 263, column 84: The link 'foo.html' for "component" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 268, column 84: The link 'foo.html' for "component" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json ==
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -107,7 +108,7 @@ WARNING: Bundle/cdex-document-digital-sig-example: Bundle.entry[5].resource/*Org
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: Signature Verification is a work in progress. Feedback welcome at https://chat.fhir.org/#narrow/channel/179247-Security-and-Privacy/topic/Signature/with/524324965
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The signature verified OK
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed by OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us,OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us,ou=ig publisher,l=ann arbor,cn=hl7.org,o=hl7,st=missouri,c=us (and this has been verified by the signature)
-INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed at 2025-08-26T21:18:41Z (and this has been verified by the signature)
+INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed at 2025-08-27T22:47:31Z (and this has been verified by the signature)
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed for the purpose of Verification Signature (urn:oid:1.2.840.10065.1.12.1.5) (and this has been verified by the signature)
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: Signing Certificate Details: Subject='OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us', Issuer='OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us', Serial='0'
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: Signing Certificate Source: -----BEGIN CERTIFICATE-----MIIDozCCAoqgAwIBAgIBADANBgkqhkiG9w0BAQ0FADBrMQswCQYDVQQGEwJ1czERMA8GA1UECAwITWlzc291cmkxDDAKBgNVBAoMA0hMNzEQMA4GA1UEAwwHaGw3Lm9yZzESMBAGA1UEBwwJQW5uIEFyYm9yMRUwEwYDVQQLDAxJRyBQdWJsaXNoZXIwHhcNMjUwNjE5MDIzMDMzWhcNMjYwNjIwMDIzMDMzWjBrMQswCQYDVQQGEwJ1czERMA8GA1UECAwITWlzc291cmkxDDAKBgNVBAoMA0hMNzEQMA4GA1UEAwwHaGw3Lm9yZzESMBAGA1UEBwwJQW5uIEFyYm9yMRUwEwYDVQQLDAxJRyBQdWJsaXNoZXIwggEjMA0GCSqGSIb3DQEBAQUAA4IBEAAwggELAoIBAgC9Us8v0UyOy+XWLRff29GHQa9axqtDao7azsWnF2/ABdg1g6dOF/0ZkrhLdqJISj8MlSP5VLou67iZIH0RxRMfSA0e/fi9DE8QSzpIOlueeH2M8Q2VesKp3hIkp+xCaGPbc4L0kZVkE6EW+TUR7QTs1NkaxtwYvW87gKzn6BL0Yx/5mu1UFWcJ/XtLHkiagtIbSiEXSdsjxviObJM2SaV3taCaayGKVFpU6rPLD/VRart6ZP1CJQ2zlIskEEOnnUKEUuwcFpL7t5FXiHVOX0hZ5fsuGYt8EuLwa7giEQvf/PaQbTrTVMOdKH/EGVJI81MfNgzEbrA/CvcG/lgG3DM+JwIDAQABo1AwTjAdBgNVHQ4EFgQUqBKo2iQ0R5r5GiNlh2sNCzEq9QIwHwYDVR0jBBgwFoAUqBKo2iQ0R5r5GiNlh2sNCzEq9QIwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQ0FAAOCAQIAi8FVsqZJ4Ofiigjgp4+CeHDx6LJRuq6YoiNerxJ4l+ET4Bb7j8E/DDeEfebEQvwPrhlOyFOfyoszaBnF8Ep/Hk7Oj6cpLhoAHjeV3GUy+3xg3NB3DuE7Jhnx99kwfRL9tOXJ5+Ll1AIhyT0JID8J6/99Q5VmwSCUeRfnhnnigZlwS4VhAoanhrqzwXvpOco+HyhL0y3mmbBH/eKU+H5P+L2IFiSFL6XAL4PM3pYI/zj+NyhAXZZZwllRjoIKflGOO8HUc5iJiTHhYo0iKS1lPxCHoKyA+aVEaVE/goqBwoe3V9mxHAz4Uq8e/aQ0OfciFmj55s6mx5eUdy5lQqfoekE=-----END CERTIFICATE-----
@@ -119,6 +120,10 @@ WARNING: StructureDefinition.where(url = 'http://example.org/fhir/StructureDefin
 ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/Basic-test-binding: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/test-binding vs http://example.org/fhir/StructureDefinition/test-binding
 == input/resources/OperationDefinition-test.json ==
 ERROR: OperationDefinition/test: OperationDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+== input/resources/OperationDefinition-test2.json ==
+ERROR: OperationDefinition.where(url = 'http://hl7.org/fhir/uv/cgm/OperationDefinition/submit-cgm-bundle'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/OperationDefinition-test2.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/submit-cgm-bundle) does not match the URL (http://hl7.org/fhir/uv/cgm/OperationDefinition/submit-cgm-bundle)
+ERROR: OperationDefinition/submit-cgm-bundle: OperationDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/OperationDefinition-test2: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/submit-cgm-bundle vs http://hl7.org/fhir/uv/cgm/OperationDefinition/submit-cgm-bundle
 == input/resources/StructureDefinition-parameters-test.json ==
 ERROR: StructureDefinition/parameters-test: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test'): The Implementation Guide contains no examples for this profile

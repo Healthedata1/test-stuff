@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-08-26T21:17:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-27T22:46:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -1157,6 +1157,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/submit-cgm-bundle> ;
+         fhir:reference [ fhir:v "OperationDefinition/submit-cgm-bundle" ]
+       ] ;
+       fhir:name [ fhir:v "Submit CGM Bundle" ] ;
+       fhir:description [ fhir:v "foo" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "OperationDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/test> ;
          fhir:reference [ fhir:v "OperationDefinition/test" ]
        ] ;
@@ -1348,6 +1366,8 @@
 <http://hl7.org/fhir/us/healthedata1-sandbox/ServiceRequest/example-pmo-servicerequest> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/submit-cgm-bundle> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/test> a fhir:us .
 

@@ -10,7 +10,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-08-26T21:17:39+00:00",
+  "date" : "2025-08-27T22:46:38+00:00",
   "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact" : [{
     "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
@@ -837,6 +837,18 @@
       },
       "name" : "Parameters Test Profile",
       "description" : "The Parameters profile for Da Vinci [Submit Attachment Operation](OperationDefinition-submit-attachment.html)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/submit-cgm-bundle"
+      },
+      "name" : "Submit CGM Bundle",
+      "description" : "foo",
       "exampleBoolean" : false
     },
     {

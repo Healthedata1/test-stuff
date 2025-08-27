@@ -33,5 +33,12 @@
     "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test",
     "version" : "0.1.0",
     "name" : "ParametersTest"
+  },
+  {
+    "id" : "submit-cgm-bundle",
+    "type" : "OperationDefinition",
+    "url" : "http://hl7.org/fhir/uv/cgm/OperationDefinition/submit-cgm-bundle",
+    "version" : "0.1.0",
+    "name" : "SubmitCGMBundle"
   }
 ]

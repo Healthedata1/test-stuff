@@ -1,0 +1,54 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "submit-cgm-bundle",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition submit-cgm-bundle</b></p><a name=\"submit-cgm-bundle\"> </a><a name=\"hcsubmit-cgm-bundle\"> </a><p>URL: [base]/$$submit-cgm-bundle</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>A</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>B</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "http://hl7.org/fhir/uv/cgm/OperationDefinition/submit-cgm-bundle",
+  "version" : "0.1.0",
+  "name" : "SubmitCGMBundle",
+  "title" : "Submit CGM Bundle",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2025-08-27T15:22:53-07:00",
+  "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
+  "contact" : [{
+    "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/claims"
+    },
+    {
+      "system" : "email",
+      "value" : "pie@lists.hl7.org"
+    }]
+  }],
+  "description" : "foo",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "code" : "submit-cgm-bundle",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "resource",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "A",
+    "type" : "code"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "B",
+    "type" : "code"
+  }]
+}
