@@ -1,6 +1,20 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.31",
+      "version" : "20240906",
+      "status" : "active",
+      "name" : "CardiopulmonaryResuscitationProceduresGrouping",
+      "title" : "Cardiopulmonary Resuscitation Procedures Grouping",
+      "description" : "",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113762.1.4.1115.31"],
+      "sources" : ["2.16.840.1.113762.1.4.1115.31"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile"
+    },
+    {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.32",
       "version" : "20250409",
       "status" : "active",
@@ -10,6 +24,20 @@
       "systems" : ["http://snomed.info/sct"],
       "oids" : ["2.16.840.1.113762.1.4.1115.32"],
       "sources" : ["2.16.840.1.113762.1.4.1115.32"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.33",
+      "version" : "20240905",
+      "status" : "active",
+      "name" : "InitialTreatmentPortableMedicalOrderProceduresGrouping",
+      "title" : "Initial Treatment Portable Medical Order Procedures Grouping",
+      "description" : "",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113762.1.4.1115.33"],
+      "sources" : ["2.16.840.1.113762.1.4.1115.33"],
       "uses" : {
       },
       "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile"
