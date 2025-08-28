@@ -70,13 +70,13 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
       "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
       "http://tx.fhir.org/r4/ValueSet/us-core-condition-code" : "US Core Condition Codes",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1115.32/expansion" : "Additional Portable Medical Order Procedures",
       "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes"
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1115.32/expansion" : "Additional Portable Medical Order Procedures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/icd9cm",

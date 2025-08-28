@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3ced3856-b5b4-4016-9103-63c4b16ef7e3-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3ced3856-b5b4-4016-9103-63c4b16ef7e3-2",
+  "id" : "4071a393-de44-4059-9900-57f5e0650d6a-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4071a393-de44-4059-9900-57f5e0650d6a-2",
   "name" : "UnionUSCoreServiceRequestProfileAndUSCorePMOServiceRequestProfile",
   "title" : "Union of US Core ServiceRequest Profile And US Core PMO ServiceRequest Profile",
   "status" : "active",
-  "date" : "2025-08-28T02:16:30+00:00",
+  "date" : "2025-08-28T03:24:48+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
