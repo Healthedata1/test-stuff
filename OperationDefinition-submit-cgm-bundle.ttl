@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "submit-cgm-bundle"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition submit-cgm-bundle</b></p><a name=\"submit-cgm-bundle\"> </a><a name=\"hcsubmit-cgm-bundle\"> </a><p>URL: [base]/$$submit-cgm-bundle</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>A</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>B</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition submit-cgm-bundle</b></p><a name=\"submit-cgm-bundle\"> </a><a name=\"hcsubmit-cgm-bundle\"> </a><p>URL: [base]/$$submit-cgm-bundle</p><p>URL: [base]/Bundle/$submit-cgm-bundle</p><p>URL: [base]/Bundle/[id]/$submit-cgm-bundle</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>A</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>B</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://hl7.org/fhir/uv/cgm/OperationDefinition/submit-cgm-bundle"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -39,9 +39,10 @@
      ] )
   ] ) ; # 
   fhir:code [ fhir:v "submit-cgm-bundle"] ; # 
+  fhir:resource ( [ fhir:v "Bundle"] ) ; # 
   fhir:system [ fhir:v true] ; # 
-  fhir:type [ fhir:v false] ; # 
-  fhir:instance [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v true] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "resource" ] ;
      fhir:use [ fhir:v "in" ] ;

@@ -3,7 +3,7 @@
   "id" : "submit-cgm-bundle",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition submit-cgm-bundle</b></p><a name=\"submit-cgm-bundle\"> </a><a name=\"hcsubmit-cgm-bundle\"> </a><p>URL: [base]/$$submit-cgm-bundle</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>A</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>B</p>\n</div></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition submit-cgm-bundle</b></p><a name=\"submit-cgm-bundle\"> </a><a name=\"hcsubmit-cgm-bundle\"> </a><p>URL: [base]/$$submit-cgm-bundle</p><p>URL: [base]/Bundle/$submit-cgm-bundle</p><p>URL: [base]/Bundle/[id]/$submit-cgm-bundle</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>A</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td/><td><div><p>B</p>\n</div></td></tr></table></div>"
   },
   "url" : "http://hl7.org/fhir/uv/cgm/OperationDefinition/submit-cgm-bundle",
   "version" : "0.1.0",
@@ -32,9 +32,10 @@
     }]
   }],
   "code" : "submit-cgm-bundle",
+  "resource" : ["Bundle"],
   "system" : true,
-  "type" : false,
-  "instance" : false,
+  "type" : true,
+  "instance" : true,
   "parameter" : [{
     "name" : "resource",
     "use" : "in",
