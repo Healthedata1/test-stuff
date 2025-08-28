@@ -61,6 +61,83 @@
                 "min": 1,
                 "mustSupport": true,
                 "binding": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+                            "extension": [
+                                {
+                                    "url": "key",
+                                    "valueId": "us-core-cardiopulmonary-resuscitation-orders"
+                                },
+                                {
+                                    "url": "purpose",
+                                    "valueCode": "extensible"
+                                },
+                                {
+                                    "url": "valueSet",
+                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.31  "
+                                },
+                                {
+                                    "url": "documentation",
+                                    "valueMarkdown": "Cardiopulmonary resuscitation procedures grouping"
+                                },
+                                {
+                                    "url": "shortDoco",
+                                    "valueString": "SeviceRequest.category = Cardiopulmonary resuscitation orders"
+                                }
+                            ]
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+                            "extension": [
+                                {
+                                    "url": "key",
+                                    "valueId": "us-core-initial-portable-medical-treatment-orders"
+                                },
+                                {
+                                    "url": "purpose",
+                                    "valueCode": "extensible"
+                                },
+                                {
+                                    "url": "valueSet",
+                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.33 "
+                                },
+                                {
+                                    "url": "documentation",
+                                    "valueMarkdown": "Initial Treatment Portable Medical Order Procedures Grouping"
+                                },
+                                {
+                                    "url": "shortDoco",
+                                    "valueString": "SeviceRequest.category = Initial portable medical treatment orders"
+                                }
+                            ]
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+                            "extension": [
+                                {
+                                    "url": "key",
+                                    "valueId": "additional-portable-medical-orders-or-instructions# based on the loinc panel code"
+                                },
+                                {
+                                    "url": "purpose",
+                                    "valueCode": "extensible"
+                                },
+                                {
+                                    "url": "valueSet",
+                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.32"
+                                },
+                                {
+                                    "url": "documentation",
+                                    "valueMarkdown": "Additional Portable Medical Order Procedures"
+                                },
+                                {
+                                    "url": "shortDoco",
+                                    "valueString": "SeviceRequest.category = Additional portable medical orders or instructions"
+                                }
+                            ]
+                        }
+                    ],
                     "strength": "extensible",
                     "description": "Portable Medical Order panel answers - mostly free-text",
                     "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code"

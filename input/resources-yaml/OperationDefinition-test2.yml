@@ -8,9 +8,11 @@ kind: operation
 date: '2025-08-27T15:22:53-07:00'
 description: foo
 code: submit-cgm-bundle
+resource: 
+  - Bundle
 system: true
-type: false
-instance: false
+type: true
+instance: true
 parameter:
     - 
         name: resource
