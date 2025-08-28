@@ -48,10 +48,11 @@
                 "id": "ServiceRequest.category:us-core-pmo",
                 "path": "ServiceRequest.category",
                 "sliceName": "us-core-pmo",
+                "short": "100821-8 (National POLST Form: A Portable Medical Order panel) | 100822-6 (Cardiopulmonary resuscitation orders) | 100823-4 (Initial portable medical treatment orders) | 100824-2 (Additional portable medical orders or instructions) | 100825-9 (Medically assisted nutrition orders) | 100970-3 (Portable medical order completion information) | 100826-7 (Portable medical order &or advance directive review) | 100827-5 (Portable medical order discussion participants) | 100828-3 (Portable medical order administrative information)\n",
                 "mustSupport": true,
                 "binding": {
                     "strength": "extensible",
-                    "description": "[Portable Medical Order panel codes](https://loinc.org/100821-8)",
+                    "description": "[Portable Medical Order panel codes](https://loinc.org/100821-8)\n",
                     "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category"
                 }
             },
