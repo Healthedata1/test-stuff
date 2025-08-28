@@ -76,7 +76,7 @@
                                 },
                                 {
                                     "url": "valueSet",
-                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.31  "
+                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.31"
                                 },
                                 {
                                     "url": "documentation",
@@ -101,7 +101,7 @@
                                 },
                                 {
                                     "url": "valueSet",
-                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.33 "
+                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.33"
                                 },
                                 {
                                     "url": "documentation",

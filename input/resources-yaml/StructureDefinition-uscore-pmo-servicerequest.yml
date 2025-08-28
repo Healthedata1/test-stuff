@@ -59,7 +59,7 @@ differential:
               valueCode: extensible
             - url: valueSet
               valueCanonical: >-   # based on the Pacio VS
-                http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.31  
+                http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.31
             - url: documentation
               valueMarkdown: >-  # based on the value VS description
                 Cardiopulmonary resuscitation procedures grouping
@@ -75,12 +75,12 @@ differential:
               valueCode: extensible
             - url: valueSet
               valueCanonical: >-   # based on the Pacio VS
-                http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.33 
+                http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.33
             - url: documentation
               valueMarkdown: >-  # based on the value VS description
                 Initial Treatment Portable Medical Order Procedures Grouping
             - url: shortDoco
-              valueString: SeviceRequest.category = Initial portable medical treatment orders # based on the loinc panel code
+              valueString: SeviceRequest.category = Initial portable medical treatment orders # (https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1115.33/expansion/Latest) # based on the loinc panel code
 
         - url: 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding'
           extension:
