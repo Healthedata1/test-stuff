@@ -5,3 +5,4 @@
 [Test]: OperationDefinition-test.html
 [TestBinding]: StructureDefinition-test-binding.html
 [USCorePMOServiceRequestProfile]: StructureDefinition-us-core-pmo-servicerequest.html
+[USCorePortableMedicalOrders]: ValueSet-us-core-portable-medical-orders.html

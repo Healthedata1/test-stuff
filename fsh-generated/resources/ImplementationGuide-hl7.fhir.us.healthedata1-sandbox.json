@@ -126,6 +126,14 @@
         "description": "The US Core PMO ServiceRequest Profile defines constraints for Portable Medical Orders (PMO) based on the FHIR R4 ServiceRequest resource. It establishes minimum expectations for recording, searching, and fetching PMO-related ServiceRequest information, specifying core elements, extensions, vocabularies, and value sets that SHALL be present to promote interoperability for PMO use cases, such as POLST and MOLST.\n",
         "exampleBoolean": false,
         "name": "US Core PMO ServiceRequest Profile"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/us-core-portable-medical-orders"
+        },
+        "description": "A value set of LOINC codes for portable medical orders.",
+        "exampleBoolean": false,
+        "name": "US Core Portable Medical Orders"
       }
     ],
     "page": {

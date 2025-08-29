@@ -1,0 +1,33 @@
+resourceType: ValueSet
+id: us-core-portable-medical-orders
+url: http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders
+name: USCorePortableMedicalOrders
+title: US Core Portable Medical Orders
+status: draft
+experimental: true
+date: 2024-05-14
+version: 4.0.1
+description: A value set of LOINC codes for portable medical orders.
+copyright: "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+compose:
+  include:
+  - system: http://loinc.org
+    concept:
+    - code: 100821-8
+      display: 'National POLST Form: A Portable Medical Order panel'
+    - code: 100822-6
+      display: Cardiopulmonary resuscitation orders
+    - code: 100823-4
+      display: Initial portable medical treatment orders
+    - code: 100824-2
+      display: Additional portable medical orders or instructions
+    - code: 100825-9
+      display: Medically assisted nutrition orders
+    - code: 100970-3
+      display: Portable medical order completion information
+    - code: 100826-7
+      display: Portable medical order &or advance directive review
+    - code: 100827-5
+      display: Portable medical order discussion participants
+    - code: 100828-3
+      display: Portable medical order administrative information

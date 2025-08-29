@@ -27,8 +27,8 @@
             {
                 "id": "ServiceRequest.intent",
                 "path": "ServiceRequest.intent",
-                "mustSupport": true,
-                "fixedCode": "directive"
+                "short": "Note: To allow for the resource life cycle, no constraint on intent, use \"directive\" in PMO document",
+                "mustSupport": true
             },
             {
                 "id": "ServiceRequest.category",
@@ -48,12 +48,12 @@
                 "id": "ServiceRequest.category:us-core-pmo",
                 "path": "ServiceRequest.category",
                 "sliceName": "us-core-pmo",
-                "short": "100821-8 (National POLST Form: A Portable Medical Order panel) | 100822-6 (Cardiopulmonary resuscitation orders) | 100823-4 (Initial portable medical treatment orders) | 100824-2 (Additional portable medical orders or instructions) | 100825-9 (Medically assisted nutrition orders) | 100970-3 (Portable medical order completion information) | 100826-7 (Portable medical order &or advance directive review) | 100827-5 (Portable medical order discussion participants) | 100828-3 (Portable medical order administrative information)\n",
+                "short": "Multiple portable medical order categories vs a single \"PMO\" category (2 vs 3 level code heirarchy)?",
                 "mustSupport": true,
                 "binding": {
                     "strength": "extensible",
                     "description": "[Portable Medical Order panel codes](https://loinc.org/100821-8)\n",
-                    "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category"
+                    "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders"
                 }
             },
             {
@@ -164,48 +164,12 @@
             {
                 "id": "ServiceRequest.subject",
                 "path": "ServiceRequest.subject",
+                "short": "limited to Patient",
                 "type": [
                     {
                         "code": "Reference",
                         "targetProfile": [
-                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
-                            "http://hl7.org/fhir/StructureDefinition/Group",
-                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
-                            "http://hl7.org/fhir/StructureDefinition/Device"
-                        ],
-                        "_targetProfile": [
-                            {
-                                "extension": [
-                                    {
-                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                        "valueBoolean": true
-                                    }
-                                ]
-                            },
-                            {
-                                "extension": [
-                                    {
-                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                        "valueBoolean": false
-                                    }
-                                ]
-                            },
-                            {
-                                "extension": [
-                                    {
-                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                        "valueBoolean": false
-                                    }
-                                ]
-                            },
-                            {
-                                "extension": [
-                                    {
-                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                        "valueBoolean": false
-                                    }
-                                ]
-                            }
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
                         ]
                     }
                 ],
@@ -214,6 +178,7 @@
             {
                 "id": "ServiceRequest.encounter",
                 "path": "ServiceRequest.encounter",
+                "short": "**NOT USED WHEN PART OF A PMO DOCUMENT**",
                 "type": [
                     {
                         "code": "Reference",
@@ -227,6 +192,7 @@
             {
                 "id": "ServiceRequest.occurrence[x]",
                 "path": "ServiceRequest.occurrence[x]",
+                "short": "Often just a start date",
                 "type": [
                     {
                         "extension": [
@@ -249,21 +215,20 @@
             {
                 "id": "ServiceRequest.authoredOn",
                 "path": "ServiceRequest.authoredOn",
+                "short": "Date Order signed vs date of PMO document - same if part of PMO document",
                 "mustSupport": true
             },
             {
                 "id": "ServiceRequest.requester",
                 "path": "ServiceRequest.requester",
+                "short": "Authored only by Practitioner",
                 "type": [
                     {
                         "code": "Reference",
                         "targetProfile": [
                             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
                             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
-                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
-                            "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson",
-                            "http://hl7.org/fhir/StructureDefinition/Device"
+                            "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
                         ],
                         "_targetProfile": [
                             {
@@ -271,30 +236,6 @@
                                     {
                                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
                                         "valueBoolean": true
-                                    }
-                                ]
-                            },
-                            {
-                                "extension": [
-                                    {
-                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                        "valueBoolean": false
-                                    }
-                                ]
-                            },
-                            {
-                                "extension": [
-                                    {
-                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                        "valueBoolean": false
-                                    }
-                                ]
-                            },
-                            {
-                                "extension": [
-                                    {
-                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                        "valueBoolean": false
                                     }
                                 ]
                             },

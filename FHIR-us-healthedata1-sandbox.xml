@@ -10,6 +10,7 @@
 <artifact id="OperationDefinition/test" key="OperationDefinition-test" name="Test"/>
 <artifact id="StructureDefinition/test-binding" key="StructureDefinition-test-binding" name="Test Binding"/>
 <artifact id="StructureDefinition/us-core-pmo-servicerequest" key="StructureDefinition-us-core-pmo-servicerequest" name="US Core PMO ServiceRequest Profile"/>
+<artifact id="ValueSet/us-core-portable-medical-orders" key="ValueSet-us-core-portable-medical-orders" name="US Core Portable Medical Orders"/>
 <artifact id="ServiceRequest/example-pmo-servicerequest" key="ServiceRequest-example-pmo-servicerequest" name="example-pmo-servicerequest"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
