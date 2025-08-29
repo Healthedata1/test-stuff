@@ -68,9 +68,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile",
       "StructureDefinition-test-binding.html" : "Test Binding",
-      "StructureDefinition-parameters-test.html" : "Parameters Test Profile"
+      "StructureDefinition-parameters-test.html" : "Parameters Test Profile",
+      "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -184,6 +184,18 @@
       ],
       "oids" : ["2.16.840.1.113883.4.642.40.2.48.7"],
       "sources" : ["2.16.840.1.113883.4.642.40.2.48.7"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "USCorePortableMedicalOrders",
+      "title" : "US Core Portable Medical Orders",
+      "description" : "A value set of LOINC codes for portable medical orders.",
+      "systems" : ["http://loinc.org"],
       "uses" : {
       },
       "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile"

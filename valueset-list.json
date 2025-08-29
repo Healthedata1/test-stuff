@@ -1,3 +1,13 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "USCorePortableMedicalOrders",
+      "title" : "US Core Portable Medical Orders",
+      "description" : "A value set of LOINC codes for portable medical orders.",
+      "systems" : ["http://loinc.org"]
+    }
+  ]
 }

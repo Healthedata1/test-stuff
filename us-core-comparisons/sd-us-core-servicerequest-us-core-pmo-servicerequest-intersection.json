@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "41f40ba8-8240-4265-aca7-f7a943cd29df-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/41f40ba8-8240-4265-aca7-f7a943cd29df-3",
+  "id" : "165aa6a3-ff4b-4469-a84c-89c702dc93fa-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/165aa6a3-ff4b-4469-a84c-89c702dc93fa-3",
   "name" : "IntersectionUSCoreServiceRequestProfileAndUSCorePMOServiceRequestProfile",
   "title" : "Intersection of US Core ServiceRequest Profile And US Core PMO ServiceRequest Profile",
   "status" : "active",
-  "date" : "2025-08-28T16:13:31+00:00",
+  "date" : "2025-08-29T19:47:54+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -654,7 +654,7 @@
     },
     {
       "path" : "ServiceRequest.intent",
-      "short" : "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option",
+      "short" : "left: proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option; right: Note: To allow for the resource life cycle, no constraint on intent, use \"directive\" in PMO document",
       "definition" : "Whether the request is a proposal, plan, an original order or a reflex order.",
       "comment" : "This element is labeled as a modifier because the intent alters when and how the resource is actually applicable.",
       "min" : 1,
@@ -1104,7 +1104,7 @@
     },
     {
       "path" : "ServiceRequest.subject",
-      "short" : "Individual or Entity the service is ordered for",
+      "short" : "left: Individual or Entity the service is ordered for; right: limited to Patient",
       "definition" : "On whom or what the service is to be performed. This is usually a human patient, but can also be requested on animals, groups of humans or animals, devices such as dialysis machines, or even locations (typically for environmental scans).",
       "min" : 1,
       "max" : "1",
@@ -1180,7 +1180,7 @@
     },
     {
       "path" : "ServiceRequest.encounter",
-      "short" : "Encounter in which the request was created",
+      "short" : "left: Encounter in which the request was created; right: **NOT USED WHEN PART OF A PMO DOCUMENT**",
       "definition" : "An encounter that provides additional information about the healthcare context in which this request is made.",
       "alias" : ["context"],
       "min" : 0,
@@ -1226,7 +1226,7 @@
     },
     {
       "path" : "ServiceRequest.occurrence[x]",
-      "short" : "When service should occur",
+      "short" : "left: When service should occur; right: Often just a start date",
       "definition" : "The date/time at which the requested service should occur.",
       "alias" : ["schedule"],
       "min" : 0,
@@ -1325,7 +1325,7 @@
     },
     {
       "path" : "ServiceRequest.authoredOn",
-      "short" : "Date request signed",
+      "short" : "left: Date request signed; right: Date Order signed vs date of PMO document - same if part of PMO document",
       "definition" : "When the request transitioned to being actionable.",
       "alias" : ["orderedOn"],
       "min" : 0,
@@ -1370,7 +1370,7 @@
     },
     {
       "path" : "ServiceRequest.requester",
-      "short" : "Who/what is requesting service",
+      "short" : "left: Who/what is requesting service; right: Authored only by Practitioner",
       "definition" : "The individual who initiated the request and has responsibility for its activation.",
       "comment" : "This not the dispatcher, but rather who is the authorizer.  This element is not intended to handle delegation which would generally be managed through the Provenance resource.",
       "alias" : ["author",

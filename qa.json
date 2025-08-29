@@ -6,14 +6,14 @@
   "status" : "active",
   "package-id" : "hl7.fhir.us.healthedata1-sandbox",
   "ig-ver" : "0.1.0",
-  "date" : "Thu, 28 Aug, 2025 16:13:17 +0000",
-  "dateISO8601" : "2025-08-28T16:13:17+00:00",
-  "errs" : 74,
-  "warnings" : 59,
+  "date" : "Fri, 29 Aug, 2025 19:47:40 +0000",
+  "dateISO8601" : "2025-08-29T19:47:40+00:00",
+  "errs" : 69,
+  "warnings" : 50,
   "hints" : 16,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 3460235264
+  "maxMemory" : 1649554432
 }

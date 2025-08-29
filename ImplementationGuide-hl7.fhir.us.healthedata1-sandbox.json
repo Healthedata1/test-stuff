@@ -10,7 +10,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-08-28T16:12:33+00:00",
+  "date" : "2025-08-29T19:47:00+00:00",
   "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact" : [{
     "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
@@ -885,6 +885,18 @@
       },
       "name" : "US Core PMO ServiceRequest Profile",
       "description" : "The US Core PMO ServiceRequest Profile defines constraints for Portable Medical Orders (PMO) based on the FHIR R4 ServiceRequest resource. It establishes minimum expectations for recording, searching, and fetching PMO-related ServiceRequest information, specifying core elements, extensions, vocabularies, and value sets that SHALL be present to promote interoperability for PMO use cases, such as POLST and MOLST.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/us-core-portable-medical-orders"
+      },
+      "name" : "US Core Portable Medical Orders",
+      "description" : "A value set of LOINC codes for portable medical orders.",
       "exampleBoolean" : false
     }],
     "page" : {

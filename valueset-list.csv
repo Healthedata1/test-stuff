@@ -1,1 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders,0.1.0,draft,,USCorePortableMedicalOrders,US Core Portable Medical Orders,"A value set of LOINC codes for portable medical orders.",,"LOINC"

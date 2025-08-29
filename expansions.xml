@@ -1,9 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0fd04830-03b5-4331-a198-0ad92dcfa440"/>
+  <id value="bf4a0607-48e4-427e-85ef-17f226cc5465"/>
   <meta>
-    <lastUpdated value="2025-08-28T16:13:17.386+00:00"/>
+    <lastUpdated value="2025-08-29T19:47:40.510+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.81</p>
+            <p>This value set contains 9 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-100821-8"> </a>  
+                  <a href="https://loinc.org/100821-8/">100821-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>National POLST form: portable medical order panel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-100822-6"> </a>  
+                  <a href="https://loinc.org/100822-6/">100822-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Cardiopulmonary resuscitation orders</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-100823-4"> </a>  
+                  <a href="https://loinc.org/100823-4/">100823-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Initial portable medical treatment orders</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-100824-2"> </a>  
+                  <a href="https://loinc.org/100824-2/">100824-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Additional portable medical orders or instructions</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-100825-9"> </a>  
+                  <a href="https://loinc.org/100825-9/">100825-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Medically assisted nutrition orders</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-100970-3"> </a>  
+                  <a href="https://loinc.org/100970-3/">100970-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Portable medical order completion information</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-100826-7"> </a>  
+                  <a href="https://loinc.org/100826-7/">100826-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Portable medical order AndOr advance directive review</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-100827-5"> </a>  
+                  <a href="https://loinc.org/100827-5/">100827-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Portable medical order discussion participants</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-100828-3"> </a>  
+                  <a href="https://loinc.org/100828-3/">100828-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Portable medical order administrative information</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders"/>
+        <version value="0.1.0"/>
+        <name value="USCorePortableMedicalOrders"/>
+        <title value="US Core Portable Medical Orders"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2024-05-14"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:718e5a10-cefe-492a-8aa8-e779cf312a3e"/>
+          <timestamp value="2025-08-29T19:48:07+00:00"/>
+          <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.81"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.81"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100821-8"/>
+            <display value="National POLST form: portable medical order panel"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100822-6"/>
+            <display value="Cardiopulmonary resuscitation orders"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100823-4"/>
+            <display value="Initial portable medical treatment orders"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100824-2"/>
+            <display value="Additional portable medical orders or instructions"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100825-9"/>
+            <display value="Medically assisted nutrition orders"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100970-3"/>
+            <display value="Portable medical order completion information"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100826-7"/>
+            <display value="Portable medical order AndOr advance directive review"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100827-5"/>
+            <display value="Portable medical order discussion participants"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="100828-3"/>
+            <display value="Portable medical order administrative information"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

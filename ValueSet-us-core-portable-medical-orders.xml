@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="us-core-portable-medical-orders"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet us-core-portable-medical-orders</b></p><a name="us-core-portable-medical-orders"> </a><a name="hcus-core-portable-medical-orders"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/100821-8/">100821-8</a></td><td>National POLST Form: A Portable Medical Order panel</td></tr><tr><td><a href="https://loinc.org/100822-6/">100822-6</a></td><td>Cardiopulmonary resuscitation orders</td></tr><tr><td><a href="https://loinc.org/100823-4/">100823-4</a></td><td>Initial portable medical treatment orders</td></tr><tr><td><a href="https://loinc.org/100824-2/">100824-2</a></td><td>Additional portable medical orders or instructions</td></tr><tr><td><a href="https://loinc.org/100825-9/">100825-9</a></td><td>Medically assisted nutrition orders</td></tr><tr><td><a href="https://loinc.org/100970-3/">100970-3</a></td><td>Portable medical order completion information</td></tr><tr><td><a href="https://loinc.org/100826-7/">100826-7</a></td><td>Portable medical order &amp;or advance directive review</td></tr><tr><td><a href="https://loinc.org/100827-5/">100827-5</a></td><td>Portable medical order discussion participants</td></tr><tr><td><a href="https://loinc.org/100828-3/">100828-3</a></td><td>Portable medical order administrative information</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders"/>
+  <version value="0.1.0"/>
+  <name value="USCorePortableMedicalOrders"/>
+  <title value="US Core Portable Medical Orders"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-05-14"/>
+  <publisher value="HL7 International / Payer/Provider Information Exchange Work Group"/>
+  <contact>
+    <name value="HL7 International / Payer/Provider Information Exchange Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/claims"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pie@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="A value set of LOINC codes for portable medical orders."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="100821-8"/>
+        <display value="National POLST Form: A Portable Medical Order panel"/>
+      </concept>
+      <concept>
+        <code value="100822-6"/>
+        <display value="Cardiopulmonary resuscitation orders"/>
+      </concept>
+      <concept>
+        <code value="100823-4"/>
+        <display value="Initial portable medical treatment orders"/>
+      </concept>
+      <concept>
+        <code value="100824-2"/>
+        <display value="Additional portable medical orders or instructions"/>
+      </concept>
+      <concept>
+        <code value="100825-9"/>
+        <display value="Medically assisted nutrition orders"/>
+      </concept>
+      <concept>
+        <code value="100970-3"/>
+        <display value="Portable medical order completion information"/>
+      </concept>
+      <concept>
+        <code value="100826-7"/>
+        <display value="Portable medical order &amp;or advance directive review"/>
+      </concept>
+      <concept>
+        <code value="100827-5"/>
+        <display value="Portable medical order discussion participants"/>
+      </concept>
+      <concept>
+        <code value="100828-3"/>
+        <display value="Portable medical order administrative information"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

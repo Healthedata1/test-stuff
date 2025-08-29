@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-08-28T16:12:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-29T19:47:00+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -1220,6 +1220,24 @@
          a fhir:boolean ;
          fhir:v false
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/us-core-portable-medical-orders> ;
+         fhir:reference [ fhir:v "ValueSet/us-core-portable-medical-orders" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Portable Medical Orders" ] ;
+       fhir:description [ fhir:v "A value set of LOINC codes for portable medical orders." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -1374,6 +1392,8 @@
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/test-binding> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-pmo-servicerequest> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/us-core-portable-medical-orders> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 28, errors = 74, warn = 59, info = 16-->
+<!-- broken links = 28, errors = 69, warn = 50, info = 16-->
 <head>
   <title>HealthEData_1Sandbox : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for HealthEData_1Sandbox</h1>
- <p>Generated Thu Aug 28 16:14:14 UTC 2025, FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/healthedata1-sandbox">http://hl7.org/fhir/us/healthedata1-sandbox</a> (<a href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Aug 29 19:48:38 UTC 2025, FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = <a href="http://hl7.org/fhir/us/healthedata1-sandbox">http://hl7.org/fhir/us/healthedata1-sandbox</a> (<a href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.16</span></td></tr>
  <tr><td>Publication Code:</td><td>healthedata1-sandbox<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.us.healthedata1-sandbox, Canonical = http://hl7.org/fhir/us/healthedata1-sandbox</td></tr>
@@ -78,7 +78,7 @@
  <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
  <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
  <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a>, <a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
- <tr><td>HTA Analysis:</td><td><i>no Non-HL7 references found</i></td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
@@ -101,12 +101,11 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-servicerequest-category.html">ServiceRequestCategoryCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html">ServiceRequestOrderDetailsCodes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
- (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-participant-role.html">ParticipantRoles</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
@@ -117,7 +116,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
   </li>
   <li>
 hl7.fhir.uv.extensions.r4#5.2.0:     <a href="http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-elementdefinition-type-must-support.html">TypeMustSupport</a>
- (30 uses)
+ (16 uses)
   </li>
   <li>
 hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/ImplementationGuide-hl7.fhir.uv.sdc.html">StructuredDataCapture</a>
@@ -130,7 +129,7 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 74, warn = 59, info = 16, broken links = 28, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 69, warn = 50, info = 16, broken links = 28, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -161,7 +160,10 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><a href="#_home_runner_work_test-stuff_test-stuff_input_resources_StructureDefinition-parameters-test"><b>/home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-parameters-test</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_test-stuff_test-stuff_input_resources_StructureDefinition-uscore-pmo-servicerequest"><b>/home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-uscore-pmo-servicerequest</b></a></td><td><b>34</b></td><td><b>38</b></td><td><b>0</b></td>
+     <td><a href="#_home_runner_work_test-stuff_test-stuff_input_resources_StructureDefinition-uscore-pmo-servicerequest"><b>/home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-uscore-pmo-servicerequest</b></a></td><td><b>26</b></td><td><b>29</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_test-stuff_test-stuff_input_resources_ValueSet-us-core-protable-medical-orders"><b>/home/runner/work/test-stuff/test-stuff/input/resources/ValueSet-us-core-protable-medical-orders</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -209,67 +211,67 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><b><a href="StructureDefinition-parameters-test.html#l334">StructureDefinition-parameters-test&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/p&#8203;/a at Line 238, column 41</a></b></td><td><b>error</b></td><td><b>The link 'OperationDefinition-submit-attachment.html' for &quot;Submit Attachment Operation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l1152">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 407, column 503</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l1120">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 406, column 503</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l1152">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 407, column 560</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l1120">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 406, column 560</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l1152">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 407, column 621</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l1120">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 406, column 621</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l2098">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 561, column 505</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l2042">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 559, column 505</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l2098">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 561, column 562</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l2042">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 559, column 562</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l2098">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 561, column 623</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l2042">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 559, column 623</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l4116">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 887, column 505</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l4037">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 884, column 505</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l4116">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 887, column 562</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l4037">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 884, column 562</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l4116">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 887, column 623</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l4037">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 884, column 623</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l5606">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1220, column 503</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l5484">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1213, column 503</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l5606">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1220, column 560</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l5484">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1213, column 560</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l5606">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1220, column 621</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l5484">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1213, column 621</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l6549">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1373, column 505</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l6403">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1365, column 505</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l6549">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1373, column 562</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l6403">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1365, column 562</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l6549">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1373, column 623</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l6403">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1365, column 623</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l8567">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1699, column 505</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l8398">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1690, column 505</a></b></td><td><b>error</b></td><td><b>The link 'us-core-condition.html' for &quot;us-core-condition&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l8567">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1699, column 562</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l8398">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1690, column 562</a></b></td><td><b>error</b></td><td><b>The link 'us-core-observation.html' for &quot;us-core-observation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l8567">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1699, column 623</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="StructureDefinition-us-core-pmo-servicerequest.html#l8398">StructureDefinition-us-core-pmo-servicerequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1690, column 623</a></b></td><td><b>error</b></td><td><b>The link 'us-core-diagnosticreport.html' for &quot;us-core-diagnosticreport&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#l374">artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/a at Line 210, column 41</a></b></td><td><b>error</b></td><td><b>The link 'OperationDefinition-submit-attachment.html' for &quot;Submit Attachment Operation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="artifacts.html#l380">artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/p&#8203;/a at Line 213, column 41</a></b></td><td><b>error</b></td><td><b>The link 'OperationDefinition-submit-attachment.html' for &quot;Submit Attachment Operation&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="downloads.html#l396">downloads&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 227, column 8</a></b></td><td><b>error</b></td><td><b>The link 'ImplementationGuide-hl7.fhir.us.core.html' for &quot;US Core ImplementationGuide Resource&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#l419">index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 268, column 84</a></b></td><td><b>error</b></td><td><b>The link 'foo.html' for &quot;component&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+     <td><b><a href="index.html#l419">index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 273, column 84</a></b></td><td><b>error</b></td><td><b>The link 'foo.html' for &quot;component&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
    </tr>
 </table>
 <hr/>
@@ -282,16 +284,16 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide (l1/c19098)</b></td><td><b>error</b></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_HL7_WG_NEEDED</span></td>
+     <td><b>ImplementationGuide (l1/c19421)</b></td><td><b>error</b></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_HL7_WG_NEEDED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide (l1/c19098)</b></td><td><b>error</b></td><td><b>HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_HL7_STANDARDS_STATUS_REQUIRED</span></td>
+     <td><b>ImplementationGuide (l1/c19421)</b></td><td><b>error</b></td><td><b>HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_HL7_STANDARDS_STATUS_REQUIRED</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide (l1/c19098)</b></td><td><b>error</b></td><td><b>HL7 Implementation Guides must state their owning workgroup explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-wg</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_HL7_WG_REQUIRED</span></td>
+     <td><b>ImplementationGuide (l1/c19421)</b></td><td><b>error</b></td><td><b>HL7 Implementation Guides must state their owning workgroup explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-wg</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_HL7_WG_REQUIRED</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide (l1/c19098)</b></td><td><b>warning</b></td><td><b>HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_HL7_FMM_SHOULD</span></td>
+     <td><b>ImplementationGuide (l1/c19421)</b></td><td><b>warning</b></td><td><b>HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">IG_HL7_FMM_SHOULD</span></td>
    </tr>
 </table>
 <hr/>
@@ -470,7 +472,7 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td><b>The content was signed by OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us,OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us,ou=ig publisher,l=ann arbor,cn=hl7.org,o=hl7,st=missouri,c=us (and this has been verified by the signature)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SIGNATURE_SIGNED_BY_VERIFIED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td><b>The content was signed at 2025-08-28T16:13:32Z (and this has been verified by the signature)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SIGNATURE_SIGNED_AT_VERIFIED</span></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td><b>The content was signed at 2025-08-29T19:47:55Z (and this has been verified by the signature)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SIGNATURE_SIGNED_AT_VERIFIED</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td><b>The content was signed for the purpose of Verification Signature (urn:oid:1.2.840.10065.1.12.1.5) (and this has been verified by the signature)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">BUNDLE_SIGNATURE_SIGNED_FOR_VERIFIED</span></td>
@@ -571,9 +573,6 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient on ServiceRequest.subject is valid constraint on the base because it is not known</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location on ServiceRequest.subject is valid constraint on the base because it is not known</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter on ServiceRequest.encounter is valid constraint on the base because it is not known</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -581,12 +580,6 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization on ServiceRequest.requester is valid constraint on the base because it is not known</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient on ServiceRequest.requester is valid constraint on the base because it is not known</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson on ServiceRequest.requester is valid constraint on the base because it is not known</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference on ServiceRequest.reasonReference is valid constraint on the base because it is not known</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -601,109 +594,79 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport on ServiceRequest.reasonReference is valid constraint on the base because it is not known</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.short (l1&#8203;/c77815)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace '100821-8 (National POLST Form: A Portable Medical Order panel) | 100822-6 (Cardiopulmonary resuscitation orders) | 100823-4 (Initial portable medical treatment orders) | 100824-2 (Additional portable medical orders or instructions) | 100825-9 (Medically assisted nutrition orders) | 100970-3 (Portable medical order completion information) | 100826-7 (Portable medical order &amp;or advance directive review) | 100827-5 (Portable medical order discussion participants) | 100828-3 (Portable medical order administrative information)\n'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.binding&#8203;.description (l1&#8203;/c77096)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace '[Portable Medical Order panel codes](https://loinc.org/100821-8)\n'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding&#8203;.extension[2]&#8203;.extension[0]&#8203;.value&#8203;.ofType(id) (l1&#8203;/c82227)</b></td><td><b>error</b></td><td><b>id value 'additional-portable-medical-orders-or-instructions# based on the loinc panel code' is not valid</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_ID_Valid</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding&#8203;.valueSet (l1&#8203;/c82824)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c96212)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c97275)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c101819)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.type[0]&#8203;.targetProfile[1] (l1&#8203;/c101890)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c110947)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.type[0]&#8203;.targetProfile[1] (l1&#8203;/c111007)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-condition'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.type[0]&#8203;.targetProfile[2] (l1&#8203;/c111069)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-observation'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.type[0]&#8203;.targetProfile[3] (l1&#8203;/c111136)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.binding&#8203;.description (l1&#8203;/c78788)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace '[Portable Medical Order panel codes](https://loinc.org/100821-8)\n'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding&#8203;.description (l1&#8203;/c121130)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace '[Portable Medical Order panel codes](https://loinc.org/100821-8)\n'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.binding&#8203;.valueSet (l1&#8203;/c78874)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.binding&#8203;.extension[2]&#8203;.extension[0]&#8203;.value&#8203;.ofType(id) (l1&#8203;/c122460)</b></td><td><b>error</b></td><td><b>id value 'additional-portable-medical-orders-or-instructions# based on the loinc panel code' is not valid</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_ID_Valid</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding&#8203;.extension[2]&#8203;.extension[0]&#8203;.value&#8203;.ofType(id) (l1&#8203;/c83923)</b></td><td><b>error</b></td><td><b>id value 'additional-portable-medical-orders-or-instructions# based on the loinc panel code' is not valid</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_ID_Valid</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.binding&#8203;.valueSet (l1&#8203;/c123057)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21]&#8203;.binding&#8203;.valueSet (l1&#8203;/c84520)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c123687)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c97937)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c123941)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32]&#8203;.type[0]&#8203;.targetProfile[2] (l1&#8203;/c98052)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-location'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c124673)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c99676)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.type[0]&#8203;.targetProfile[1] (l1&#8203;/c124744)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c104170)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c125729)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.type[0]&#8203;.targetProfile[1] (l1&#8203;/c104241)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[1] (l1&#8203;/c125789)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-condition'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.type[0]&#8203;.targetProfile[2] (l1&#8203;/c104307)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[2] (l1&#8203;/c125851)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-observation'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.type[0]&#8203;.targetProfile[4] (l1&#8203;/c104438)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[3] (l1&#8203;/c125918)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c113854)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.type[0]&#8203;.targetProfile[1] (l1&#8203;/c113914)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-condition'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.type[0]&#8203;.targetProfile[2] (l1&#8203;/c113976)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-observation'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.type[0]&#8203;.targetProfile[3] (l1&#8203;/c114043)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+     <td><b>StructureDefinition (l1/c126454)</b></td><td><b>error</b></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_HL7_WG_NEEDED</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.short (l1&#8203;/c124238)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace '100821-8 (National POLST Form: A Portable Medical Order panel) | 100822-6 (Cardiopulmonary resuscitation orders) | 100823-4 (Initial portable medical treatment orders) | 100824-2 (Additional portable medical orders or instructions) | 100825-9 (Medically assisted nutrition orders) | 100970-3 (Portable medical order completion information) | 100826-7 (Portable medical order &amp;or advance directive review) | 100827-5 (Portable medical order discussion participants) | 100828-3 (Portable medical order administrative information)\n'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding&#8203;.description (l1&#8203;/c124375)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace '[Portable Medical Order panel codes](https://loinc.org/100821-8)\n'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding&#8203;.valueSet (l1&#8203;/c124461)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.binding&#8203;.extension[2]&#8203;.extension[0]&#8203;.value&#8203;.ofType(id) (l1&#8203;/c125709)</b></td><td><b>error</b></td><td><b>id value 'additional-portable-medical-orders-or-instructions# based on the loinc panel code' is not valid</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_ID_Valid</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.binding&#8203;.valueSet (l1&#8203;/c126306)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c126907)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.type[0]&#8203;.targetProfile[2] (l1&#8203;/c127022)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-location'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c127784)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c128359)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.type[0]&#8203;.targetProfile[1] (l1&#8203;/c128430)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.type[0]&#8203;.targetProfile[2] (l1&#8203;/c128496)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.type[0]&#8203;.targetProfile[4] (l1&#8203;/c128627)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[0] (l1&#8203;/c129971)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[1] (l1&#8203;/c130031)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-condition'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[2] (l1&#8203;/c130093)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-observation'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[3] (l1&#8203;/c130160)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition (l1/c130696)</b></td><td><b>error</b></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_HL7_WG_NEEDED</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'ServiceRequest.category' binds to the value set 'http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
@@ -713,12 +676,6 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
@@ -733,10 +690,10 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.binding</b></td><td><b>warning</b></td><td><b>The definition for the element 'ServiceRequest.category' binds to the value set 'http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders' which is experimental, but this structure is not labeled as experimental</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_EXPERIMENTAL_BINDING</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
@@ -746,12 +703,6 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
@@ -781,6 +732,25 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><b>StructureDefinition.text.div</b></td><td><b>error</b></td><td><b>Hyperlink 'us-core-diagnosticreport.html' at 'div/table/tr/td/a' for 'us-core-diagnosticreport' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
 </table>
+<hr/>
+<a name="_home_runner_work_test-stuff_test-stuff_input_resources_ValueSet-us-core-protable-medical-orders"> </a>
+<h2><a href="ValueSet-us-core-portable-medical-orders.html">input/resources/ValueSet-us-core-protable-medical-orders.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/ValueSet&#8203;/us-core-portable-medical-orders')</b></td><td><b>error</b></td><td><b>Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/ValueSet-us-core-protable-medical-orders.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/us-core-portable-medical-orders) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c3509)</b></td><td><b>error</b></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALIDATION_HL7_WG_NEEDED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/resources&#8203;/ValueSet-us-core-protable-medical-orders</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/us-core-portable-medical-orders vs http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
@@ -806,7 +776,7 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
 <h2>BUNDLE_SIGNATURE_SIGNED_AT_VERIFIED</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-cdex-document-digital-sig-example.html">input/examples/cdex-document-digital-sig-example.json</a></td><td><b>The content was signed at 2025-08-28T16:13:32Z (and this has been verified by the signature)</b></td>
+     <td><a href="Bundle-cdex-document-digital-sig-example.html">input/examples/cdex-document-digital-sig-example.json</a></td><td><b>The content was signed at 2025-08-29T19:47:55Z (and this has been verified by the signature)</b></td>
    </tr>
 </table>
 <hr/>
@@ -918,6 +888,9 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-uscore-pmo-servicerequest.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-pmo-servicerequest) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest)</b></td>
    </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-us-core-portable-medical-orders.html">input/resources/ValueSet-us-core-protable-medical-orders.json</a></td><td><b>Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/ValueSet-us-core-protable-medical-orders.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/us-core-portable-medical-orders) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders)</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="Reference_REF_CantResolve"> </a>
@@ -937,14 +910,22 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    </tr>
 </table>
 <hr/>
+<a name="SD_ED_EXPERIMENTAL_BINDING"> </a>
+<h2>SD_ED_EXPERIMENTAL_BINDING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>The definition for the element 'ServiceRequest.category' binds to the value set 'http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>The definition for the element 'ServiceRequest.category' binds to the value set 'http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders' which is experimental, but this structure is not labeled as experimental</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="SD_ED_TYPE_PROFILE_UNKNOWN"> </a>
 <h2>SD_ED_TYPE_PROFILE_UNKNOWN</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter</b></td>
@@ -954,12 +935,6 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference</b></td>
@@ -977,9 +952,6 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-location</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
@@ -987,12 +959,6 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>Unable to resolve profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference</b></td>
@@ -1062,16 +1028,10 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><a href="Bundle-cdex-document-digital-sig-example.html">input/examples/cdex-document-digital-sig-example.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization'</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category'</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code'</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-location'</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'</b></td>
@@ -1081,12 +1041,6 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization'</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson'</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'</b></td>
@@ -1101,16 +1055,10 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/StructureDefinition/us-core-diagnosticreport'</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-servicerequest-category'</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/ValueSet/us-core-pmo-procedure-code'</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-location'</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter'</b></td>
@@ -1120,12 +1068,6 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization'</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson'</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference'</b></td>
@@ -1164,13 +1106,7 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
 <h2>Type_Specific_Checks_DT_String_WS</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>value should not start or finish with whitespace '100821-8 (National POLST Form: A Portable Medical Order panel) | 100822-6 (Cardiopulmonary resuscitation orders) | 100823-4 (Initial portable medical treatment orders) | 100824-2 (Additional portable medical orders or instructions) | 100825-9 (Medically assisted nutrition orders) | 100970-3 (Portable medical order completion information) | 100826-7 (Portable medical order &amp;or advance directive review) | 100827-5 (Portable medical order discussion participants) | 100828-3 (Portable medical order administrative information)\n'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>value should not start or finish with whitespace '[Portable Medical Order panel codes](https://loinc.org/100821-8)\n'</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>value should not start or finish with whitespace '100821-8 (National POLST Form: A Portable Medical Order panel) | 100822-6 (Cardiopulmonary resuscitation orders) | 100823-4 (Initial portable medical treatment orders) | 100824-2 (Additional portable medical orders or instructions) | 100825-9 (Medically assisted nutrition orders) | 100970-3 (Portable medical order completion information) | 100826-7 (Portable medical order &amp;or advance directive review) | 100827-5 (Portable medical order discussion participants) | 100828-3 (Portable medical order administrative information)\n'</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>value should not start or finish with whitespace '[Portable Medical Order panel codes](https://loinc.org/100821-8)\n'</b></td>
@@ -1210,6 +1146,9 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-pmo-servicerequest.html">input/resources/StructureDefinition-uscore-pmo-servicerequest.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-us-core-portable-medical-orders.html">input/resources/ValueSet-us-core-protable-medical-orders.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
    </tr>
 </table>
 <hr/>

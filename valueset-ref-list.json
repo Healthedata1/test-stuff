@@ -61,6 +61,18 @@
       "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "USCorePortableMedicalOrders",
+      "title" : "US Core Portable Medical Orders",
+      "description" : "A value set of LOINC codes for portable medical orders.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile"
+    },
+    {
       "url" : "http://loinc.org/vs/valid-hl7-attachment-requests",
       "version" : null,
       "status" : "active",

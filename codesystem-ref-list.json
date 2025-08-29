@@ -22,7 +22,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "https://fhir.loinc.org/ValueSet/valid-hl7-attachment-requests/" : "HL7 Attachment Requests"
+      "https://fhir.loinc.org/ValueSet/valid-hl7-attachment-requests/" : "HL7 Attachment Requests",
+      "ValueSet-us-core-portable-medical-orders.html" : "US Core Portable Medical Orders"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -34,8 +35,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://tx.fhir.org/r4/ValueSet/us-core-condition-code" : "US Core Condition Codes",
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1115.32/expansion" : "Additional Portable Medical Order Procedures"
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1115.32/expansion" : "Additional Portable Medical Order Procedures",
+      "http://tx.fhir.org/r4/ValueSet/us-core-condition-code" : "US Core Condition Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/icd9cm",

@@ -1,8 +1,106 @@
 {
   "resourceType" : "Bundle",
-  "id" : "0fd04830-03b5-4331-a198-0ad92dcfa440",
+  "id" : "bf4a0607-48e4-427e-85ef-17f226cc5465",
   "meta" : {
-    "lastUpdated" : "2025-08-28T16:13:17.386+00:00"
+    "lastUpdated" : "2025-08-29T19:47:40.510+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.81</p><p>This value set contains 9 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100821-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100821-8/\">100821-8</a></td><td>http://loinc.org</td><td>National POLST form: portable medical order panel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100822-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100822-6/\">100822-6</a></td><td>http://loinc.org</td><td>Cardiopulmonary resuscitation orders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100823-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100823-4/\">100823-4</a></td><td>http://loinc.org</td><td>Initial portable medical treatment orders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100824-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100824-2/\">100824-2</a></td><td>http://loinc.org</td><td>Additional portable medical orders or instructions</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100825-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100825-9/\">100825-9</a></td><td>http://loinc.org</td><td>Medically assisted nutrition orders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100970-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100970-3/\">100970-3</a></td><td>http://loinc.org</td><td>Portable medical order completion information</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100826-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100826-7/\">100826-7</a></td><td>http://loinc.org</td><td>Portable medical order AndOr advance directive review</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100827-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100827-5/\">100827-5</a></td><td>http://loinc.org</td><td>Portable medical order discussion participants</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-100828-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/100828-3/\">100828-3</a></td><td>http://loinc.org</td><td>Portable medical order administrative information</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders",
+      "version" : "0.1.0",
+      "name" : "USCorePortableMedicalOrders",
+      "title" : "US Core Portable Medical Orders",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2024-05-14",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:718e5a10-cefe-492a-8aa8-e779cf312a3e",
+        "timestamp" : "2025-08-29T19:48:07+00:00",
+        "total" : 9,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.81"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.81"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "100821-8",
+          "display" : "National POLST form: portable medical order panel"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "100822-6",
+          "display" : "Cardiopulmonary resuscitation orders"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "100823-4",
+          "display" : "Initial portable medical treatment orders"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "100824-2",
+          "display" : "Additional portable medical orders or instructions"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "100825-9",
+          "display" : "Medically assisted nutrition orders"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "100970-3",
+          "display" : "Portable medical order completion information"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "100826-7",
+          "display" : "Portable medical order AndOr advance directive review"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "100827-5",
+          "display" : "Portable medical order discussion participants"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "100828-3",
+          "display" : "Portable medical order administrative information"
+        }]
+      }
+    }
+  }]
 }
