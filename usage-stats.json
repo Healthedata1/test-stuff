@@ -5,10 +5,10 @@
   "jurisdiction": "US",
   "extensions": [],
   "profiles": {
-    "Basic": [
+    "DocumentReference": [
       {
-        "url": "http://example.org/fhir/StructureDefinition/test-binding",
-        "title": "Test Binding"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
+        "title": "US Core ADI DocumentReference Profile"
       }
     ],
     "ServiceRequest": [
@@ -16,15 +16,15 @@
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest",
         "title": "US Core PMO ServiceRequest Profile"
       }
-    ],
-    "Parameters": [
-      {
-        "url": "http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test",
-        "title": "Parameters Test Profile"
-      }
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester": [
+      "DocumentReference"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attestor": [
+      "DocumentReference"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -47,10 +47,12 @@
       "StructureDefinition.snapshot.element.type.targetProfile"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "Bundle.meta"
+      "Bundle.meta",
+      "DocumentReference.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "Bundle.meta"
+      "Bundle.meta",
+      "DocumentReference.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b9937fb8-b906-4446-8b44-3cf920413551-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b9937fb8-b906-4446-8b44-3cf920413551-11",
+  "name" : "UnionServiceRequestOrderDetailsCodesAndServiceRequestOrderDetailsCodes",
+  "title" : "Union of Service Request Order Details Codes And Service Request Order Details Codes",
+  "status" : "draft",
+  "date" : "2025-09-26T19:23:31+00:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "47545007",
+        "display" : "Continuous positive airway pressure ventilation treatment (regime/therapy)"
+      },
+      {
+        "code" : "286812008",
+        "display" : "Pressure controlled ventilation (procedure)"
+      },
+      {
+        "code" : "243144002",
+        "display" : "Patient triggered inspiratory assistance (procedure)"
+      },
+      {
+        "code" : "243150007",
+        "display" : "Assisted controlled mandatory ventilation (procedure)"
+      },
+      {
+        "code" : "59427005",
+        "display" : "Synchronized intermittent mandatory ventilation (procedure)"
+      }]
+    }]
+  }
+}

@@ -1,10 +1,10 @@
 [
   {
-    "id" : "test-binding",
+    "id" : "us-core-adi-documentreference",
     "type" : "StructureDefinition",
-    "url" : "http://example.org/fhir/StructureDefinition/test-binding",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
     "version" : "0.1.0",
-    "name" : "TestBinding"
+    "name" : "USCoreADIDocumentReferenceProfile"
   },
   {
     "id" : "us-core-pmo-servicerequest",
@@ -26,26 +26,5 @@
     "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox",
     "version" : "0.1.0",
     "name" : "HealthEData_1Sandbox"
-  },
-  {
-    "id" : "test",
-    "type" : "OperationDefinition",
-    "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/OperationDefinition/test",
-    "version" : "0.1.0",
-    "name" : "Test"
-  },
-  {
-    "id" : "parameters-test",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/parameters-test",
-    "version" : "0.1.0",
-    "name" : "ParametersTest"
-  },
-  {
-    "id" : "submit-cgm-bundle",
-    "type" : "OperationDefinition",
-    "url" : "http://hl7.org/fhir/uv/cgm/OperationDefinition/submit-cgm-bundle",
-    "version" : "0.1.0",
-    "name" : "SubmitCGMBundle"
   }
 ]

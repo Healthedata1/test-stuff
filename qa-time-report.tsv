@@ -1,10 +1,8 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json	7391	-	0	0	0	0	0	0	12	124	0	0	0	0	0	0	0	1	0	0	81	120	0	0	0	4	0	2
-input/examples/USCore_PMO_ServiceRequest_example.json	1876	10	0	0	0	0	0	0	1	33	0	0	0	0	0	0	0	0	0	0	21	48	0	0	0	0	0	0
-input/examples/cdex-document-digital-sig-example.json	15929	14	29	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	31	77	0	0	0	0	0	0
-input/resources/Basic-test-binding.json	1689	14	0	26	1	0	0	0	1	71	0	0	0	1696	0	0	0	1	0	0	118	387	0	0	0	3	0	1
-input/resources/OperationDefinition-test.json	1365	13	0	0	0	0	0	0	0	40	0	0	0	0	0	0	0	0	0	0	14	126	0	0	0	1	0	0
-input/resources/OperationDefinition-test2.json	865	13	0	0	0	0	0	0	1	40	0	0	0	0	0	0	0	0	0	0	15	44	0	0	0	0	0	0
-input/resources/StructureDefinition-parameters-test.json	4124	14	0	111	5	0	0	0	0	91	0	0	0	0	0	0	0	1	0	0	115	371	0	0	0	8	0	1
-input/resources/StructureDefinition-uscore-pmo-servicerequest.json	15139	8	0	82	0	0	0	0	0	1176	0	0	0	0	0	0	0	1	0	0	218	463	0	7	0	15	0	2
-input/resources/ValueSet-us-core-protable-medical-orders.json	2530	6	0	0	1	0	0	0	0	356	0	0	0	0	0	0	0	0	0	0	26	768	0	0	0	1	0	0
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json	8364	-	0	0	0	0	0	0	13	134	0	0	0	0	0	0	0	1	0	0	181	188	0	0	0	4	0	2
+input/examples/DocumentReference-polst.json	1319927	125	0	0	0	0	0	0	1	2085	0	0	0	0	0	0	0	0	0	0	1684	309	0	0	0	0	0	1
+input/examples/USCore_PMO_ServiceRequest_example.json	1876	42	0	0	0	0	0	0	0	18	0	0	0	0	0	0	0	0	0	0	85	97	0	0	0	0	0	0
+input/examples/cdex-document-digital-sig-example.json	15929	25	43	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	99	97	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-adi-documentreference.json	13771	20	0	136	7	0	0	0	1	572	0	0	1	2093	0	0	0	2	0	0	262	884	0	0	0	15	0	3
+input/resources/StructureDefinition-uscore-pmo-servicerequest.json	15139	18	0	100	0	0	0	1	0	1249	0	0	0	1	0	0	0	1	0	0	245	515	0	5	0	15	0	1
+input/resources/ValueSet-us-core-protable-medical-orders.json	2530	15	0	0	0	0	0	0	1	485	0	0	0	0	0	0	0	0	0	0	85	1162	0	0	0	1	0	0

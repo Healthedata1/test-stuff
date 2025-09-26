@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "165aa6a3-ff4b-4469-a84c-89c702dc93fa-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/165aa6a3-ff4b-4469-a84c-89c702dc93fa-3",
+  "id" : "b9937fb8-b906-4446-8b44-3cf920413551-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b9937fb8-b906-4446-8b44-3cf920413551-3",
   "name" : "IntersectionUSCoreServiceRequestProfileAndUSCorePMOServiceRequestProfile",
   "title" : "Intersection of US Core ServiceRequest Profile And US Core PMO ServiceRequest Profile",
   "status" : "active",
-  "date" : "2025-08-29T19:47:54+00:00",
+  "date" : "2025-09-26T19:23:31+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
