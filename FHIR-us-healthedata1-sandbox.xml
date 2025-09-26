@@ -5,8 +5,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="Bundle/cdex-document-digital-sig-example" key="Bundle-cdex-document-digital-sig-example" name="CDEX Document with Digital Signature Example"/>
-<artifact id="StructureDefinition/test-binding" key="StructureDefinition-test-binding" name="Test Binding"/>
-<artifact id="StructureDefinition/test-qr" key="StructureDefinition-test-qr" name="Test QR"/>
+<artifact id="DocumentReference/polst" key="DocumentReference-polst" name="DocumentReference POLST (PDF)"/>
 <artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
 <artifact id="StructureDefinition/us-core-pmo-servicerequest" key="StructureDefinition-us-core-pmo-servicerequest" name="US Core PMO ServiceRequest Profile"/>
 <artifact id="ValueSet/us-core-portable-medical-orders" key="ValueSet-us-core-portable-medical-orders" name="US Core Portable Medical Orders"/>

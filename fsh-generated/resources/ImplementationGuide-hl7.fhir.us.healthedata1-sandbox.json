@@ -82,26 +82,18 @@
       },
       {
         "reference": {
+          "reference": "DocumentReference/polst"
+        },
+        "description": "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*",
+        "name": "DocumentReference POLST (PDF)",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/example-pmo-servicerequest"
         },
         "name": "example-pmo-servicerequest",
         "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/test-binding"
-        },
-        "description": "A profile on the FHIR R4 Basic resource for representing a referral, with the code element constrained to the LOINC valid HL7 attachment requests value set.",
-        "exampleBoolean": false,
-        "name": "Test Binding"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/test-qr"
-        },
-        "description": "A test profile on FHIR QR to see how snap shot is generated",
-        "exampleBoolean": false,
-        "name": "Test QR"
       },
       {
         "reference": {
@@ -222,10 +214,6 @@
       {
         "code": "excludemap",
         "value": "true"
-      },
-      {
-        "code": "ipa-comparison",
-        "value": "{current}"
       },
       {
         "code": "propagate-status",
