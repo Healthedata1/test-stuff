@@ -48,11 +48,15 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
       "Bundle.meta",
-      "DocumentReference.meta"
+      "DocumentReference.meta",
+      "Location.meta",
+      "ServiceRequest.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
       "Bundle.meta",
-      "DocumentReference.meta"
+      "DocumentReference.meta",
+      "Location.meta",
+      "ServiceRequest.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

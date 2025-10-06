@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
       <!-- Placeholder for child template CSS declarations -->
     <link rel="stylesheet" href="assets/css/hl7.css"/>
     <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
@@ -31,32 +32,34 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"3"}
     h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
+
           <!-- Placeholder for child template header declarations -->
 
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+          <a id="hl7-logo" href="http://hl7.org" data-no-external="true">
             <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
           </a>
         </div>
         <div id="family-nav">
-          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+          <a id="family-logo" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
         </div>
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
 
@@ -224,7 +227,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The following link to the <a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a> resource defines the technical details of this publication, including dependencies and  publishing parameters:</p>
 
 <ul>
-  <li><a name="l396">​</a><a href="ImplementationGuide-hl7.fhir.us.core.html">US Core ImplementationGuide Resource</a></li>
+  <li><a name="l402">​</a><a href="ImplementationGuide-hl7.fhir.us.core.html">US Core ImplementationGuide Resource</a></li>
 </ul>
 
   <!-- FHIR Core Resources -->
@@ -253,17 +256,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 26, 2025 19:23+0000">2025-09-26</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 6, 2025 19:55+0000">2025-10-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html" target="_blank">Version History</a> |
-                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
-                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
           </span>
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -274,7 +276,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
     </div>    <!-- /container -->
   </div>    <!-- /segment-post-footer -->
-  
+
     <!-- JS and analytics only. -->
     <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -285,7 +287,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-  
     <!-- Analytics Below
   ================================================== -->
   </body>

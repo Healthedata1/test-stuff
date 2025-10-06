@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
       <!-- Placeholder for child template CSS declarations -->
     <link rel="stylesheet" href="assets/css/hl7.css"/>
     <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
@@ -31,32 +32,34 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"4"}
     h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
+
           <!-- Placeholder for child template header declarations -->
 
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+          <a id="hl7-logo" href="http://hl7.org" data-no-external="true">
             <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
           </a>
         </div>
         <div id="family-nav">
-          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+          <a id="family-logo" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
         </div>
         <div id="hl7-search">
-          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+          <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
         </div>
 
 
@@ -195,8 +198,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </table>
 
 <ul>
-  <li><a name="l355">​</a><a href="ImplementationGuide-.xml">XML</a></li>
-  <li><a name="l359">​</a><a href="ImplementationGuide-.json">JSON</a></li>
+  <li><a name="l361">​</a><a href="ImplementationGuide-.xml">XML</a></li>
+  <li><a name="l365">​</a><a href="ImplementationGuide-.json">JSON</a></li>
 </ul>
 
 <h3 id="cross-version-analysis">Cross Version Analysis</h3>
@@ -241,33 +244,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>This publication includes IP covered under the following statements.</p>
 <ul>
-<li>ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_1">
+<li>ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1" data-fhir="generated"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_1">
 <ul>
 <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>: <a href="index.html">HealthEData_1Sandbox</a>, <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-pmo-servicerequest.html">USCorePMOServiceRequestProfile</a> and <a href="ValueSet-us-core-portable-medical-orders.html">USCorePortableMedicalOrders</a></li>
 </ul>
 </div></li>
-<li>These codes are excerpted from ASTM Standard, E1762-95(2013) - Standard Guide for Electronic Authentication of Health Care Information, Copyright by ASTM International, 100 Barr Harbor Drive, West Conshohocken, PA 19428. Copies of this standard are available through the ASTM Web Site at www.astm.org.<div onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_2">
+<li>These codes are excerpted from ASTM Standard, E1762-95(2013) - Standard Guide for Electronic Authentication of Health Care Information, Copyright by ASTM International, 100 Barr Harbor Drive, West Conshohocken, PA 19428. Copies of this standard are available through the ASTM Web Site at www.astm.org.<div onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2" data-fhir="generated"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_2">
 <ul>
 <li><a href="http://hl7.org/fhir/R4/codesystem-signature-type.html">Signature Type Codes</a>: <a href="Bundle-cdex-document-digital-sig-example.html">Bundle/cdex-document-digital-sig-example</a></li>
 </ul>
 </div></li>
-<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div onclick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_3">
+<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div onclick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3" data-fhir="generated"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_3">
 <ul>
-<li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="Bundle-cdex-document-digital-sig-example.html">Bundle/cdex-document-digital-sig-example</a>, <a href="DocumentReference-polst.html">DocumentReference/polst</a><span onclick="document.getElementById('ips_3').innerHTML = document.getElementById('ips2_3').innerHTML" id="ips_3">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 4 more</span></span><span style="display: none" id="ips2_3">, <a href="ServiceRequest-example-pmo-servicerequest.html">ServiceRequest/example-pmo-servicerequest</a>, <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-pmo-servicerequest.html">USCorePMOServiceRequestProfile</a> and <a href="ValueSet-us-core-portable-medical-orders.html">USCorePortableMedicalOrders</a></span></li>
+<li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="Bundle-cdex-document-digital-sig-example.html">Bundle/cdex-document-digital-sig-example</a>, <a href="DocumentReference-polst.html">DocumentReference/polst</a><span onclick="document.getElementById('ips_3').innerHTML = document.getElementById('ips2_3').innerHTML" id="ips_3">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 4 more</span></span><span style="display: none" id="ips2_3">, <a href="ServiceRequest-servicerequest-pmo-example1.html">ServiceRequest/servicerequest-pmo-example1</a>, <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-pmo-servicerequest.html">USCorePMOServiceRequestProfile</a> and <a href="ValueSet-us-core-portable-medical-orders.html">USCorePortableMedicalOrders</a></span></li>
 </ul>
 </div></li>
-<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div onclick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}" id="ipp_4"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_4">
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div onclick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}" id="ipp_4" data-fhir="generated"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_4">
 <ul>
-<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="Bundle-cdex-document-digital-sig-example.html">Bundle/cdex-document-digital-sig-example</a>, <a href="ServiceRequest-example-pmo-servicerequest.html">ServiceRequest/example-pmo-servicerequest</a> and <a href="StructureDefinition-us-core-pmo-servicerequest.html">USCorePMOServiceRequestProfile</a></li>
+<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="Bundle-cdex-document-digital-sig-example.html">Bundle/cdex-document-digital-sig-example</a>, <a href="Location-hospital.html">Holy Family Hospital</a>, <a href="ServiceRequest-servicerequest-pmo-example1.html">ServiceRequest/servicerequest-pmo-example1</a> and <a href="StructureDefinition-us-core-pmo-servicerequest.html">USCorePMOServiceRequestProfile</a></li>
 </ul>
 </div></li>
-<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div onclick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}" id="ipp_5"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_5">
+<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div onclick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}" id="ipp_5" data-fhir="generated"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_5">
 <ul>
 <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-condition-category.html">Condition Category Codes</a>: <a href="Bundle-cdex-document-digital-sig-example.html">Bundle/cdex-document-digital-sig-example</a></li>
 <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>: <a href="Bundle-cdex-document-digital-sig-example.html">Bundle/cdex-document-digital-sig-example</a></li>
 <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v2-0203.html">identifierType</a>: <a href="Bundle-cdex-document-digital-sig-example.html">Bundle/cdex-document-digital-sig-example</a></li>
 <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">ActCode</a>: <a href="Bundle-cdex-document-digital-sig-example.html">Bundle/cdex-document-digital-sig-example</a></li>
 <li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-HL7DocumentFormatCodes.html">HL7 Document Format Codes</a>: <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a></li>
+<li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-RoleCode.html">RoleCode</a>: <a href="Location-hospital.html">Holy Family Hospital</a></li>
 </ul>
 </div></li>
 </ul>
@@ -296,17 +300,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 26, 2025 19:23+0000">2025-09-26</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 6, 2025 19:55+0000">2025-10-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html" target="_blank">Version History</a> |
-                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
-                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
+                 | <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/us/healthedata1-sandbox/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
           </span>
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -317,7 +320,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
     </div>    <!-- /container -->
   </div>    <!-- /segment-post-footer -->
-  
+
     <!-- JS and analytics only. -->
     <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -328,7 +331,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-  
     <!-- Analytics Below
   ================================================== -->
   </body>

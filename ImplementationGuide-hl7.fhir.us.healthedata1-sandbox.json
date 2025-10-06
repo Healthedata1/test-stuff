@@ -10,7 +10,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-09-26T19:22:20+00:00",
+  "date" : "2025-10-06T19:54:25+00:00",
   "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact" : [{
     "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
@@ -831,12 +831,25 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/hospital"
+      },
+      "name" : "Hospital Location",
+      "description" : "This is an example hospital location for the *US Core Location Profile* using three coding type, showing  SNOMED CT, HSLOC, and v3-RoleCode concepts.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/example-pmo-servicerequest"
+        "reference" : "ServiceRequest/servicerequest-pmo-example1"
       },
-      "name" : "example-pmo-servicerequest",
+      "name" : "ServiceRequest DNR Example",
+      "description" : "This is an example DNR request using the *US Core PMO ServiceRequest Profile*.",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest"
     },
     {
@@ -860,7 +873,7 @@
         "reference" : "StructureDefinition/us-core-pmo-servicerequest"
       },
       "name" : "US Core PMO ServiceRequest Profile",
-      "description" : "The US Core PMO ServiceRequest Profile defines constraints for Portable Medical Orders (PMO) based on the FHIR R4 ServiceRequest resource. It establishes minimum expectations for recording, searching, and fetching PMO-related ServiceRequest information, specifying core elements, extensions, vocabularies, and value sets that SHALL be present to promote interoperability for PMO use cases, such as POLST and MOLST.",
+      "description" : "The US Core PMO ServiceRequest Profile inherits from the [FHIR ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) resource; refer to it for scope and usage definitions. This profile represents an order based on a PMO document and references the [US Core ADI DocumentReference Profile](StructureDefinition-us-core-adi-documentreference.html) to communicate the contents of the PMO document, such as POLST, MOLST, or other state-specific forms. PMO documents follow the patient across care settings and are typically stored as scanned images in EMRs/EHRs. Together, these two profiles satisfy the USCDI's PMO Order Data Element's intent to represent orders based on an individual's PMO. The US Core PMO ServiceRequest Profile establishes minimum expectations for recording, searching, and fetching PMO-related ServiceRequest information, specifying core elements, extensions, vocabularies, and value sets that SHALL be present to promote interoperability.",
       "exampleBoolean" : false
     },
     {
