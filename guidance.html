@@ -221,6 +221,46 @@ comment
   &lt;circle r="45" cx="50" cy="50" stroke="green" stroke-width="3" fill="red" opacity="0.5" /&gt;&lt;/svg&gt; 
 </code></pre>
 
+<!-- This liquid script creates a US Core provenance requirements table using input data from input/data/provenance-elements.csv
+with the following columns:
+- Row
+- Is_Source : boolean flag if is provenance source element
+- Survey1, Survey2 : results of online vendor surveys
+- Observation_grouping: tag for grouping profiles together like ADI or vitals
+- polled_vendors: boolean flag if vendors surveyed on their use of the provenance source element for this profile
+- US_Core_Profile: title of US Core Profile (secondary sort parameter)
+- URL: Canonical URL of US Core Profile
+- Path: relative path of US Core Profile
+- Type: resource type of US Core Profile (primary sort parameter)
+- FiveWs_author: provenance source element choice based on FiveWs mapping (one per row)
+- FiveWs_source: provenance source element choice based on FiveWs mapping (one per row)
+- FiveWs_actor: provenance source element choice based on FiveWs mapping (one per row)
+- is_MS: boolean flag if provenance source element is US Core Must Support
+- vendor_support_element: boolean flag if vendors surveyed on their use of the provenance source element
+- Target_Resource_1: provenance source element target resource (can be up to 7)
+- Target_Resource_1_is_MS: boolean flag if provenance source element target resource is US Core Must Support
+- vendor_support_Target_Resource_1: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_2: provenance source element target resource (can be up to 7)
+- Target_Resource_2_is_MS: boolean flag if provenance source element target resource is US Core Must Support
+- vendor_support_Target_Resource_2: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_3: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_3: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_4: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_4: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_5: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_5: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_6: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_6: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_7: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_7: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_8: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_7: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Comments
+
+TODO. add row highlighting for Is_New==True item
+-  no include parameters:  -->
+
+
 
 
 </div>
@@ -239,7 +279,7 @@ comment
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 6, 2025 20:08+0000">2025-10-06</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/claims">HL7 International / Payer/Provider Information Exchange Work Group</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 6, 2025 20:28+0000">2025-10-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
