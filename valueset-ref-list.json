@@ -57,6 +57,78 @@
       "StructureDefinition-us-core-pmo-servicerequest.html" : "US Core PMO ServiceRequest Profile"
     },
     {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.25",
+      "version" : "20250419",
+      "status" : "active",
+      "name" : "DetailedRaceIncludingAbsenceReasons",
+      "title" : "Detailed race including absence reasons.",
+      "description" : "This value set is based on the US Core Detailed Race value set (http://hl7.org/fhir/us/core/ValueSet/detailed-race) but assigned a new OID due to its slightly different scope. It includes the CDCREC code 2131-1 (Other Race) in place of the HL7 nullFlavor code \"OTH\" (Other)",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113762.1.4.1267.25"],
+      "sources" : ["2.16.840.1.113762.1.4.1267.25"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-race.html" : "US Core Race Extension"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.4.642.2.575",
+      "version" : "20250419",
+      "status" : "active",
+      "name" : "RaceCategories",
+      "title" : "Race Categories",
+      "description" : "The HL7 OID used in the US Core Implementation Guide value set (http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category) has been retained here, as the value set content is identical. However, the preferred reference is now the VSAC-hosted version, since both US Core and C-CDA will reference this set going forward",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.2.575"],
+      "sources" : ["2.16.840.1.113883.4.642.2.575"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-race.html" : "US Core Race Extension"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.4.642.40.2.48.1",
+      "version" : "20250419",
+      "status" : "active",
+      "name" : "DetailedEthnicityIncludingAbsenceReasons",
+      "title" : "Detailed Ethnicity Including Absence Reasons",
+      "description" : "This value set was replicated from US Core's Detailed Ethnicity Set (http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity) and reuses the HL7 provided OID as it retains the same scope.",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.1"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.1"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-ethnicity.html" : "US Core Ethnicity Extension"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.4.642.40.2.48.3",
+      "version" : "20250419",
+      "status" : "active",
+      "name" : "EthnicityCategories",
+      "title" : "Ethnicity Categories",
+      "description" : "The HL7 OID used in the US Core Implementation Guide value set (http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category) has been retained here, as the value set content is identical. However, the preferred reference is now the VSAC-hosted version, since both US Core and C-CDA will reference this set going forward. Additionally, the US Core IG-based value set does not currently support expansion, making the VSAC version more suitable for implementation.",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.3"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.3"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-ethnicity.html" : "US Core Ethnicity Extension"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
       "version" : "4.0.1",
       "status" : "draft",

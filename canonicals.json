@@ -7,11 +7,25 @@
     "name" : "USCoreADIDocumentReferenceProfile"
   },
   {
+    "id" : "us-core-ethnicity",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+    "version" : "0.1.0",
+    "name" : "USCoreEthnicityExtension"
+  },
+  {
     "id" : "us-core-pmo-servicerequest",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest",
     "version" : "0.1.0",
     "name" : "USCorePMOServiceRequestProfile"
+  },
+  {
+    "id" : "us-core-race",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+    "version" : "0.1.0",
+    "name" : "USCoreRaceExtension"
   },
   {
     "id" : "us-core-portable-medical-orders",

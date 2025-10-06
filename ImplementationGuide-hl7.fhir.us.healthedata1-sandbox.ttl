@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-06T19:54:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-06T20:07:55+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -1154,6 +1154,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Patient/example> ;
+         fhir:reference [ fhir:v "Patient/example" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Example" ] ;
+       fhir:description [ fhir:v "This is a patient example for the *US Core Patient Profile*." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ServiceRequest"
          ]
        ] ) ;
@@ -1191,6 +1209,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-ethnicity> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-ethnicity" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Ethnicity Extension" ] ;
+       fhir:description [ fhir:v "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [Race & Ethnicity - CDC (CDCREC)](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories:\n\n   - Hispanic or Latino\n   - Not Hispanic or Latino." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1218,6 +1254,24 @@
        ] ;
        fhir:name [ fhir:v "US Core Portable Medical Orders" ] ;
        fhir:description [ fhir:v "A value set of LOINC codes for portable medical orders." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-race> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-race" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Race Extension" ] ;
+       fhir:description [ fhir:v "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [Race & Ethnicity - CDC (CDCREC)](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1369,13 +1423,19 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital> a fhir:us .
 
+<http://hl7.org/fhir/us/healthedata1-sandbox/Patient/example> a fhir:us .
+
 <http://hl7.org/fhir/us/healthedata1-sandbox/ServiceRequest/servicerequest-pmo-example1> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> a fhir:us .
 
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-ethnicity> a fhir:us .
+
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-pmo-servicerequest> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/us-core-portable-medical-orders> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-race> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

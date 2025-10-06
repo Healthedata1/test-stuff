@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "ee07ffb9-aab6-43a5-857e-3533d5ef7215-11",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/ee07ffb9-aab6-43a5-857e-3533d5ef7215-11",
+  "id" : "36c4f583-8d1b-4067-b7e1-847728466573-11",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/36c4f583-8d1b-4067-b7e1-847728466573-11",
   "name" : "UnionServiceRequestOrderDetailsCodesAndServiceRequestOrderDetailsCodes",
   "title" : "Union of Service Request Order Details Codes And Service Request Order Details Codes",
   "status" : "draft",
-  "date" : "2025-10-06T19:55:18+00:00",
+  "date" : "2025-10-06T20:09:05+00:00",
   "compose" : {
     "include" : [{
       "concept" : [{
