@@ -98,6 +98,14 @@
       },
       {
         "reference": {
+          "reference": "Patient/example"
+        },
+        "description": "This is a patient example for the *US Core Patient Profile*.",
+        "name": "Patient Example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ServiceRequest/servicerequest-pmo-example1"
         },
         "description": "This is an example DNR request using the *US Core PMO ServiceRequest Profile*.",
@@ -114,6 +122,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/us-core-ethnicity"
+        },
+        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [Race & Ethnicity - CDC (CDCREC)](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories:\n\n   - Hispanic or Latino\n   - Not Hispanic or Latino.",
+        "exampleBoolean": false,
+        "name": "US Core Ethnicity Extension"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-core-pmo-servicerequest"
         },
         "description": "The US Core PMO ServiceRequest Profile inherits from the [FHIR ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) resource; refer to it for scope and usage definitions. This profile represents an order based on a PMO document and references the [US Core ADI DocumentReference Profile](StructureDefinition-us-core-adi-documentreference.html) to communicate the contents of the PMO document, such as POLST, MOLST, or other state-specific forms. PMO documents follow the patient across care settings and are typically stored as scanned images in EMRs/EHRs. Together, these two profiles satisfy the USCDI's PMO Order Data Element's intent to represent orders based on an individual's PMO. The US Core PMO ServiceRequest Profile establishes minimum expectations for recording, searching, and fetching PMO-related ServiceRequest information, specifying core elements, extensions, vocabularies, and value sets that SHALL be present to promote interoperability.\n",
@@ -127,6 +143,14 @@
         "description": "A value set of LOINC codes for portable medical orders.",
         "exampleBoolean": false,
         "name": "US Core Portable Medical Orders"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-race"
+        },
+        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [Race & Ethnicity - CDC (CDCREC)](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.",
+        "exampleBoolean": false,
+        "name": "US Core Race Extension"
       }
     ],
     "page": {
