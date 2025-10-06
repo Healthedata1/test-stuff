@@ -27,3 +27,5 @@
 ~~~svg
 {%  include_relative test-comment.svg %}
 ~~~
+
+{% include provenance-source-table-generator.md %}
