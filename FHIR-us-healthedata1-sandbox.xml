@@ -6,10 +6,14 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="Bundle/cdex-document-digital-sig-example" key="Bundle-cdex-document-digital-sig-example" name="CDEX Document with Digital Signature Example"/>
 <artifact id="DocumentReference/polst" key="DocumentReference-polst" name="DocumentReference POLST (PDF)"/>
+<artifact id="FamilyMemberHistory/familymemberhistory-example" key="FamilyMemberHistory-familymemberhistory-example" name="FamilyMemberHistory Example"/>
+<artifact id="Location/hospital" key="Location-hospital" name="Hospital Location"/>
+<artifact id="ServiceRequest/servicerequest-pmo-example1" key="ServiceRequest-servicerequest-pmo-example1" name="ServiceRequest DNR Example"/>
 <artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
+<artifact id="StructureDefinition/us-core-familymemberhistory" key="StructureDefinition-us-core-familymemberhistory" name="US Core FamilyMemberHistory Profile"/>
+<artifact id="StructureDefinition/us-core-familymemberhistory-recorder" key="StructureDefinition-us-core-familymemberhistory-recorder" name="US Core FamilyMemberHistory Recorder Extension"/>
 <artifact id="StructureDefinition/us-core-pmo-servicerequest" key="StructureDefinition-us-core-pmo-servicerequest" name="US Core PMO ServiceRequest Profile"/>
 <artifact id="ValueSet/us-core-portable-medical-orders" key="ValueSet-us-core-portable-medical-orders" name="US Core Portable Medical Orders"/>
-<artifact id="ServiceRequest/example-pmo-servicerequest" key="ServiceRequest-example-pmo-servicerequest" name="example-pmo-servicerequest"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
