@@ -1,8 +1,10 @@
 [cdex-document-digital-sig-example]: Bundle-cdex-document-digital-sig-example.html
 [polst]: DocumentReference-polst.html
+[example-referral]: Basic-example-referral.html
 [hospital]: Location-hospital.html
 [example]: Patient-example.html
 [servicerequest-pmo-example1]: ServiceRequest-servicerequest-pmo-example1.html
+[TestBinding]: StructureDefinition-test-binding.html
 [USCoreADIDocumentReferenceProfile]: StructureDefinition-us-core-adi-documentreference.html
 [USCoreEthnicityExtension]: StructureDefinition-us-core-ethnicity.html
 [USCorePMOServiceRequestProfile]: StructureDefinition-us-core-pmo-servicerequest.html

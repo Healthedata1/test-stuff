@@ -9,11 +9,13 @@
 <artifact id="Location/hospital" key="Location-hospital" name="Hospital Location"/>
 <artifact id="Patient/example" key="Patient-example" name="Patient Example"/>
 <artifact id="ServiceRequest/servicerequest-pmo-example1" key="ServiceRequest-servicerequest-pmo-example1" name="ServiceRequest DNR Example"/>
+<artifact id="StructureDefinition/test-binding" key="StructureDefinition-test-binding" name="Test Binding"/>
 <artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
 <artifact id="StructureDefinition/us-core-ethnicity" key="StructureDefinition-us-core-ethnicity" name="US Core Ethnicity Extension"/>
 <artifact id="StructureDefinition/us-core-pmo-servicerequest" key="StructureDefinition-us-core-pmo-servicerequest" name="US Core PMO ServiceRequest Profile"/>
 <artifact id="ValueSet/us-core-portable-medical-orders" key="ValueSet-us-core-portable-medical-orders" name="US Core Portable Medical Orders"/>
 <artifact id="StructureDefinition/us-core-race" key="StructureDefinition-us-core-race" name="US Core Race Extension"/>
+<artifact id="Basic/example-referral" key="Basic-example-referral" name="example-referral"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

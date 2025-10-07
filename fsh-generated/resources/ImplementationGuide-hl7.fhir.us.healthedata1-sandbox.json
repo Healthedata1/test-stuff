@@ -90,6 +90,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/example-referral"
+        },
+        "name": "example-referral",
+        "exampleCanonical": "http://example.org/fhir/StructureDefinition/test-binding"
+      },
+      {
+        "reference": {
           "reference": "Location/hospital"
         },
         "description": "This is an example hospital location for the *US Core Location Profile* using three coding type, showing  SNOMED CT, HSLOC, and v3-RoleCode concepts.",
@@ -111,6 +118,14 @@
         "description": "This is an example DNR request using the *US Core PMO ServiceRequest Profile*.",
         "name": "ServiceRequest DNR Example",
         "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/test-binding"
+        },
+        "description": "A profile on the FHIR R4 Basic resource for representing a referral, with the code element constrained to the LOINC valid HL7 attachment requests value set.",
+        "exampleBoolean": false,
+        "name": "Test Binding"
       },
       {
         "reference": {
