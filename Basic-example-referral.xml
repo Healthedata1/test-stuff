@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="example-referral"/>
+  <meta>
+    <profile value="http://example.org/fhir/StructureDefinition/test-binding"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic example-referral</b></p><a name="example-referral"> </a><a name="hcexample-referral"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-test-binding.html">Test Binding</a></p></div><p><b>code</b>: <span title="Codes:{http://loinc.org 11506-3}">Progress note</span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11506-3"/>
+      <display value="Progress note"/>
+    </coding>
+  </code>
+</Basic>

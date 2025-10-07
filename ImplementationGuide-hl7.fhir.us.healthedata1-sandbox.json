@@ -10,7 +10,7 @@
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-10-06T20:27:31+00:00",
+  "date" : "2025-10-07T18:17:52+00:00",
   "publisher" : "HL7 International / Payer/Provider Information Exchange Work Group",
   "contact" : [{
     "name" : "HL7 International / Payer/Provider Information Exchange Work Group",
@@ -831,6 +831,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/example-referral"
+      },
+      "name" : "example-referral",
+      "exampleCanonical" : "http://example.org/fhir/StructureDefinition/test-binding"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -863,6 +874,18 @@
       "name" : "ServiceRequest DNR Example",
       "description" : "This is an example DNR request using the *US Core PMO ServiceRequest Profile*.",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/test-binding"
+      },
+      "name" : "Test Binding",
+      "description" : "A profile on the FHIR R4 Basic resource for representing a referral, with the code element constrained to the LOINC valid HL7 attachment requests value set.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

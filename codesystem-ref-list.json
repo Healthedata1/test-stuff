@@ -34,7 +34,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-us-core-portable-medical-orders.html" : "US Core Portable Medical Orders"
+      "ValueSet-us-core-portable-medical-orders.html" : "US Core Portable Medical Orders",
+      "https://loinc.org/attachments/" : "HL7 Attachment Requests"
     },
     {
       "url" : "http://snomed.info/sct",

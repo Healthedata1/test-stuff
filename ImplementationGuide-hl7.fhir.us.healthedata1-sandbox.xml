@@ -11,7 +11,7 @@
   <name value="HealthEData_1Sandbox"/>
   <title value="Health eData 1 Sandbox"/>
   <status value="active"/>
-  <date value="2025-10-06T20:27:31+00:00"/>
+  <date value="2025-10-07T18:17:52+00:00"/>
   <publisher value="HL7 International / Payer/Provider Information Exchange Work Group"/>
   <contact>
     <name value="HL7 International / Payer/Provider Information Exchange Work Group"/>
@@ -623,6 +623,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/example-referral"/>
+      </reference>
+      <name value="example-referral"/>
+      <exampleCanonical value="http://example.org/fhir/StructureDefinition/test-binding"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -653,6 +663,17 @@
       <name value="ServiceRequest DNR Example"/>
       <description value="This is an example DNR request using the *US Core PMO ServiceRequest Profile*."/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/test-binding"/>
+      </reference>
+      <name value="Test Binding"/>
+      <description value="A profile on the FHIR R4 Basic resource for representing a referral, with the code element constrained to the LOINC valid HL7 attachment requests value set."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

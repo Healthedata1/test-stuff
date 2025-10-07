@@ -124,6 +124,12 @@
     }
   ],
   "profiles": {
+    "Basic": [
+      {
+        "url": "http://example.org/fhir/StructureDefinition/test-binding",
+        "title": "Test Binding"
+      }
+    ],
     "DocumentReference": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",

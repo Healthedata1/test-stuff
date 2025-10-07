@@ -1,12 +1,14 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json	11224	-	0	0	0	0	0	0	13	128	0	0	0	0	0	0	0	1	0	0	77	97	0	0	0	4	0	2
-input/examples/DocumentReference-polst.json	1319927	20	0	0	0	0	0	0	0	1678	0	0	0	0	0	0	0	0	0	0	1540	336	0	0	0	0	0	0
-input/examples/cdex-document-digital-sig-example.json	15929	13	39	0	1	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	29	61	0	0	0	0	0	0
-input/examples/location-hospital.json	2075	9	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	21	25	0	0	0	0	0	0
-input/examples/patient-example.json	7473	7	0	0	0	0	0	0	1	55	0	0	0	0	0	0	0	0	0	0	31	18	0	0	0	0	0	0
-input/examples/servicerequest-DNR.json	2309	8	0	0	0	0	0	0	1	19	0	0	0	0	0	0	0	0	0	0	22	23	0	0	0	0	0	1
-input/resources/StructureDefinition-us-core-adi-documentreference.json	13771	8	0	150	5	0	0	0	0	432	0	0	1	2431	0	0	0	2	0	0	250	1044	0	0	0	16	0	2
-input/resources/StructureDefinition-us-core-ethnicity.json	8728	14	0	59	1	0	0	0	0	100	0	0	0	0	0	0	0	1	0	0	120	301	0	0	0	4	0	0
-input/resources/StructureDefinition-us-core-race.json	9173	15	0	71	0	0	0	0	0	29	0	0	0	0	0	0	0	0	0	0	116	256	0	0	0	4	0	1
-input/resources/StructureDefinition-uscore-pmo-servicerequest.json	15688	17	0	96	4	0	0	0	1	890	0	0	0	1	0	0	0	1	0	0	190	423	0	4	0	11	0	1
-input/resources/ValueSet-us-core-protable-medical-orders.json	2530	14	0	0	0	0	0	0	0	336	0	0	0	0	0	0	0	0	0	0	24	889	0	0	0	1	0	0
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json	11802	-	0	0	0	0	0	0	13	117	0	0	0	0	0	0	0	1	0	0	102	139	0	0	0	4	0	2
+input/examples/DocumentReference-polst.json	1319927	31	0	0	0	0	0	0	0	1987	0	0	0	0	0	0	0	0	0	0	1648	270	0	0	0	0	0	0
+input/examples/attachment_code_example.json	387	7	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	18	13	0	0	0	0	0	0
+input/examples/cdex-document-digital-sig-example.json	15929	13	30	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	35	65	0	0	0	0	0	1
+input/examples/location-hospital.json	2075	8	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	16	24	0	0	0	0	0	0
+input/examples/patient-example.json	7473	8	0	0	1	0	0	0	1	54	0	0	0	0	0	0	0	0	0	0	25	19	0	0	0	0	0	0
+input/examples/servicerequest-DNR.json	2309	11	0	0	0	0	0	0	1	20	0	0	0	0	0	0	0	0	0	0	23	28	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-adi-documentreference.json	13771	10	0	162	8	0	1	0	0	564	0	0	1	2016	0	0	0	2	0	0	201	1248	0	1	0	11	0	2
+input/resources/StructureDefinition-us-core-ethnicity.json	8728	10	0	60	0	0	0	0	0	68	0	0	0	0	0	0	0	0	0	0	110	411	0	0	0	5	0	1
+input/resources/StructureDefinition-us-core-race.json	9173	9	0	81	0	0	0	0	0	36	0	0	0	0	0	0	0	0	0	0	87	307	0	0	0	4	0	1
+input/resources/StructureDefinition-uscore-pmo-servicerequest.json	15688	11	0	122	6	0	0	0	1	1241	0	0	0	1	0	0	0	1	0	0	183	564	0	6	0	11	0	1
+input/resources/ValueSet-us-core-protable-medical-orders.json	2530	7	0	0	0	0	0	0	0	541	0	0	0	0	0	0	0	0	0	0	17	1322	0	0	0	0	0	0
+input/resources/test_loinc_binding.json	1689	8	0	79	1	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	52	129	0	0	0	3	0	0

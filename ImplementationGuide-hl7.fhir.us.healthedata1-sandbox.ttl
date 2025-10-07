@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-10-06T20:27:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-07T18:17:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Payer/Provider Information Exchange Work Group" ] ;
@@ -1136,6 +1136,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Basic"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/Basic/example-referral> ;
+         fhir:reference [ fhir:v "Basic/example-referral" ]
+       ] ;
+       fhir:name [ fhir:v "example-referral" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/fhir/StructureDefinition/test-binding"^^xsd:anyURI ;
+         fhir:link <http://example.org/fhir/StructureDefinition/test-binding>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -1185,6 +1203,24 @@
          a fhir:canonical ;
          fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/test-binding> ;
+         fhir:reference [ fhir:v "StructureDefinition/test-binding" ]
+       ] ;
+       fhir:name [ fhir:v "Test Binding" ] ;
+       fhir:description [ fhir:v "A profile on the FHIR R4 Basic resource for representing a referral, with the code element constrained to the LOINC valid HL7 attachment requests value set." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1421,11 +1457,15 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/DocumentReference/polst> a fhir:us .
 
+<http://hl7.org/fhir/us/healthedata1-sandbox/Basic/example-referral> a fhir:us .
+
 <http://hl7.org/fhir/us/healthedata1-sandbox/Location/hospital> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/Patient/example> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/ServiceRequest/servicerequest-pmo-example1> a fhir:us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/test-binding> a fhir:us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> a fhir:us .
 

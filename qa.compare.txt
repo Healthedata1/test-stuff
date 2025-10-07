@@ -1,12 +1,13 @@
 HealthEData_1Sandbox : Validation Results
 =========================================
 
-err = 94, warn = 67, info = 33
+err = 97, warn = 69, info = 33
 $--
 Generated $--. FHIR version $-- for hl7.fhir.us.healthedata1-sandbox#$-- (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
- Build Errors : 44 / 1 / 3
+ Build Errors : 44 / 2 / 3
  /home/runner/work/test-stuff/test-stuff/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox : 3 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/DocumentReference-polst : 6 / 0 / 6
+ /home/runner/work/test-stuff/test-stuff/input/examples/attachment_code_example : 1 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/cdex-document-digital-sig-example : 14 / 15 / 22
  /home/runner/work/test-stuff/test-stuff/input/examples/location-hospital : 3 / 1 / 1
  /home/runner/work/test-stuff/test-stuff/input/examples/patient-example : 4 / 0 / 10
@@ -16,11 +17,13 @@ Generated $--. FHIR version $-- for hl7.fhir.us.healthedata1-sandbox#$-- (canoni
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-us-core-race : 3 / 0 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/StructureDefinition-uscore-pmo-servicerequest : 24 / 26 / 1
  /home/runner/work/test-stuff/test-stuff/input/resources/ValueSet-us-core-protable-medical-orders : 3 / 0 / 1
+ /home/runner/work/test-stuff/test-stuff/input/resources/test_loinc_binding : 2 / 0 / 1
 </table>
 == n/a ==
 ERROR: http://hl7.org/fhir/R4/: The reference us-core-condition could not be resolved
 ERROR: http://hl7.org/fhir/R4/: The reference us-core-observation could not be resolved
 ERROR: http://hl7.org/fhir/R4/: The reference us-core-diagnosticreport could not be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Basic/example-referral.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: There is no jira specification file defined with the expected name of FHIR-us-healthedata1-sandbox in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
 WARNING: /home/runner/work/test-stuff/test-stuff/output/Bundle-cdex-document-digital-sig-example.html: The html source has duplicate anchor Ids: Patient_970af6c9-5bbd-4067-b6c1-d9b2c823aece
 ERROR: DocumentReference-polst.html#/html/body/div/div/div/div/div/div/blockquote/ul/li/a at Line 188, column 622: The link 'Practitioner/practitioner-1' for "Practitioner-1" cannot be resolved
@@ -63,9 +66,9 @@ ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/di
 ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2617, column 529: The link 'us-core-observation.html' for "us-core-observation" cannot be resolved
 ERROR: StructureDefinition-us-core-pmo-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2617, column 590: The link 'us-core-diagnosticreport.html' for "us-core-diagnosticreport" cannot be resolved
 INFORMATION: artifacts.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause
-ERROR: artifacts.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 191, column 225: The link 'StructureDefinition-us-core-observation-adi-documentation.html' for "US Core Observation ADI Documentation Profile" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 200, column 225: The link 'StructureDefinition-us-core-observation-adi-documentation.html' for "US Core Observation ADI Documentation Profile" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 230, column 8: The link 'ImplementationGuide-hl7.fhir.us.core.html' for "US Core ImplementationGuide Resource" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 287, column 84: The link 'foo.html' for "component" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ul/li/a at Line 299, column 84: The link 'foo.html' for "component" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json ==
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: ImplementationGuide/hl7.fhir.us.healthedata1-sandbox: ImplementationGuide: HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -83,6 +86,9 @@ INFORMATION: DocumentReference/polst: DocumentReference.extension[1].extension[0
 ERROR: DocumentReference/polst: DocumentReference.author[0]: Unable to resolve resource with reference 'Practitioner/practitioner-1'
 ERROR: DocumentReference.text.div: Hyperlink 'Practitioner/practitioner-1' at 'div/blockquote/ul/li/a' for 'Practitioner-1' does not resolve
 ERROR: DocumentReference.text.div: Hyperlink 'Practitioner/practitioner-1' at 'div/p/a' for 'Practitioner-1' does not resolve
+== input/examples/attachment_code_example.json ==
+ERROR: Basic/example-referral: Basic.code: Error from https://tx.fhir.org/r4: The filter "ValidHL7AttachmentRequest = Y" from the value set http://loinc.org/vs/valid-hl7-attachment-requests was not understood in the context of http://loinc.org (1)
+WARNING: Basic/example-referral: Basic.code: Could not confirm that the codings provided are in the value set http://loinc.org/vs/valid-hl7-attachment-requests and a coding from this value set is required (class = SERVER_ERROR)
 == input/examples/cdex-document-digital-sig-example.json ==
 ERROR: Bundle/cdex-document-digital-sig-example: Bundle.meta.profile[0]: A definition could not be found for Canonical URL 'http://hl7.org/fhir/us/davinci-cdex/StructureDefinition/cdex-signature-bundle'
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle.entry[0].resource/*Composition/17a80a8d-4cf1-4deb-a1fd-2db1130e5f76*/.encounter: Details for urn:uuid:5ce5c83a-000f-47d2-941c-039358cc9112 matching against profile http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1
@@ -123,7 +129,7 @@ WARNING: Bundle/cdex-document-digital-sig-example: Bundle.entry[5].resource/*Org
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: Signature Verification is a work in progress. Feedback welcome at https://chat.fhir.org/#narrow/channel/179247-Security-and-Privacy/topic/Signature/with/524324965
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The signature verified OK
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed by OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us,OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us,ou=ig publisher,l=ann arbor,cn=hl7.org,o=hl7,st=missouri,c=us (and this has been verified by the signature)
-INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed at 2025-10-06T20:28:43Z (and this has been verified by the signature)
+INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed at 2025-10-07T18:19:06Z (and this has been verified by the signature)
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: The content was signed for the purpose of Verification Signature (urn:oid:1.2.840.10065.1.12.1.5) (and this has been verified by the signature)
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: Signing Certificate Details: Subject='OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us', Issuer='OU=IG Publisher,L=Ann Arbor,CN=hl7.org,O=HL7,ST=Missouri,C=us', Serial='0'
 INFORMATION: Bundle/cdex-document-digital-sig-example: Bundle: Signing Certificate Source: -----BEGIN CERTIFICATE-----MIIDozCCAoqgAwIBAgIBADANBgkqhkiG9w0BAQ0FADBrMQswCQYDVQQGEwJ1czERMA8GA1UECAwITWlzc291cmkxDDAKBgNVBAoMA0hMNzEQMA4GA1UEAwwHaGw3Lm9yZzESMBAGA1UEBwwJQW5uIEFyYm9yMRUwEwYDVQQLDAxJRyBQdWJsaXNoZXIwHhcNMjUwNjE5MDIzMDMzWhcNMjYwNjIwMDIzMDMzWjBrMQswCQYDVQQGEwJ1czERMA8GA1UECAwITWlzc291cmkxDDAKBgNVBAoMA0hMNzEQMA4GA1UEAwwHaGw3Lm9yZzESMBAGA1UEBwwJQW5uIEFyYm9yMRUwEwYDVQQLDAxJRyBQdWJsaXNoZXIwggEjMA0GCSqGSIb3DQEBAQUAA4IBEAAwggELAoIBAgC9Us8v0UyOy+XWLRff29GHQa9axqtDao7azsWnF2/ABdg1g6dOF/0ZkrhLdqJISj8MlSP5VLou67iZIH0RxRMfSA0e/fi9DE8QSzpIOlueeH2M8Q2VesKp3hIkp+xCaGPbc4L0kZVkE6EW+TUR7QTs1NkaxtwYvW87gKzn6BL0Yx/5mu1UFWcJ/XtLHkiagtIbSiEXSdsjxviObJM2SaV3taCaayGKVFpU6rPLD/VRart6ZP1CJQ2zlIskEEOnnUKEUuwcFpL7t5FXiHVOX0hZ5fsuGYt8EuLwa7giEQvf/PaQbTrTVMOdKH/EGVJI81MfNgzEbrA/CvcG/lgG3DM+JwIDAQABo1AwTjAdBgNVHQ4EFgQUqBKo2iQ0R5r5GiNlh2sNCzEq9QIwHwYDVR0jBBgwFoAUqBKo2iQ0R5r5GiNlh2sNCzEq9QIwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQ0FAAOCAQIAi8FVsqZJ4Ofiigjgp4+CeHDx6LJRuq6YoiNerxJ4l+ET4Bb7j8E/DDeEfebEQvwPrhlOyFOfyoszaBnF8Ep/Hk7Oj6cpLhoAHjeV3GUy+3xg3NB3DuE7Jhnx99kwfRL9tOXJ5+Ll1AIhyT0JID8J6/99Q5VmwSCUeRfnhnnigZlwS4VhAoanhrqzwXvpOco+HyhL0y3mmbBH/eKU+H5P+L2IFiSFL6XAL4PM3pYI/zj+NyhAXZZZwllRjoIKflGOO8HUc5iJiTHhYo0iKS1lPxCHoKyA+aVEaVE/goqBwoe3V9mxHAz4Uq8e/aQ0OfciFmj55s6mx5eUdy5lQqfoekE=-----END CERTIFICATE-----
@@ -263,3 +269,6 @@ ERROR: StructureDefinition.text.div: Hyperlink 'us-core-diagnosticreport.html' a
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/ValueSet-us-core-protable-medical-orders.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/us-core-portable-medical-orders) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders). Use the special-url parameter if you really mean for it not to match
 ERROR: ValueSet/us-core-portable-medical-orders: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/ValueSet-us-core-protable-medical-orders: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/ValueSet/us-core-portable-medical-orders vs http://hl7.org/fhir/us/core/ValueSet/us-core-portable-medical-orders
+== input/resources/test_loinc_binding.json ==
+ERROR: StructureDefinition.where(url = 'http://example.org/fhir/StructureDefinition/test-binding'): Conformance resource /home/runner/work/test-stuff/test-stuff/input/resources/test_loinc_binding.json - the canonical URL (http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/test-binding) does not match the URL (http://example.org/fhir/StructureDefinition/test-binding). Use the special-url parameter if you really mean for it not to match
+ERROR: /home/runner/work/test-stuff/test-stuff/input/resources/test_loinc_binding: URL Mismatch http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/test-binding vs http://example.org/fhir/StructureDefinition/test-binding

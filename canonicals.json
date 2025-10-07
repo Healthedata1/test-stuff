@@ -1,5 +1,12 @@
 [
   {
+    "id" : "test-binding",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/fhir/StructureDefinition/test-binding",
+    "version" : "0.1.0",
+    "name" : "TestBinding"
+  },
+  {
     "id" : "us-core-adi-documentreference",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
