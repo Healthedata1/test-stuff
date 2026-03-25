@@ -40,16 +40,10 @@
   ],
   "dependsOn": [
     {
-      "packageId": "hl7.fhir.uv.smart-app-launch",
-      "version": "2.2.0",
-      "uri": "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch",
-      "id": "hl7_fhir_uv_smart_app_launch"
-    },
-    {
-      "id": "vsac",
-      "packageId": "us.nlm.vsac",
-      "uri": "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac",
-      "version": "0.23.0"
+      "id": "uscore",
+      "packageId": "hl7.fhir.us.core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "version": "6.1.0"
     },
     {
       "packageId": "hl7.fhir.uv.sdc",
@@ -58,114 +52,113 @@
       "id": "hl7_fhir_uv_sdc"
     },
     {
-      "id": "uscdcphinvads",
-      "packageId": "us.cdc.phinvads",
-      "uri": "https://phinvads.cdc.gov/vads/fhir/ImplementationGuide/us.cdc.phinvads",
-      "version": "0.12.0"
+      "packageId": "hl7.fhir.uv.bulkdata",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata",
+      "id": "hl7_fhir_uv_bulkdata"
     },
     {
-      "packageId": "hl7.fhir.uv.extensions.r4",
-      "version": "5.2.0",
-      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
-      "id": "hl7_fhir_uv_extensions_r4"
+      "packageId": "hl7.fhir.uv.smart-app-launch",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch",
+      "id": "hl7_fhir_uv_smart_app_launch"
+    },
+    {
+      "id": "uscdcphinvads",
+      "packageId": "us.cdc.phinvads",
+      "uri": "http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads",
+      "version": "0.12.0"
     }
   ],
   "definition": {
     "resource": [
       {
         "reference": {
-          "reference": "Bundle/cdex-document-digital-sig-example"
+          "reference": "DocumentReference/soap-note"
         },
-        "description": "Digital signature example showing how it is used to sign a FHIR Document.  The CDEX use case would be the target resource in response to a Task-based request where a digital signature was required.  If no signature was required, the response would typically be in the form of an individual resource.",
-        "name": "CDEX Document with Digital Signature Example",
-        "exampleBoolean": true
+        "description": "This is a Clinician Authored SOAP Note example for the *US Core DocumentReference*. It demonstrates the \"clinical-note\" document category.",
+        "name": "Clinician Authored SOAP Note",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
       },
       {
         "reference": {
-          "reference": "DocumentReference/polst"
+          "reference": "DocumentReference/ccd"
         },
-        "description": "This is a an example of POLST (PDF) for the *US Core ADI DocumentReference Profile*",
-        "name": "DocumentReference POLST (PDF)",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference"
+        "description": "This is a Continuity of Care Document (CCD) example for the *US Core DocumentReference*. It demonstrates the \"structured-document\" document category.",
+        "name": "Continuity of Care Document (CCD)",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
       },
       {
         "reference": {
-          "reference": "Basic/example-referral"
+          "reference": "DocumentReference/ips"
         },
-        "name": "example-referral",
-        "exampleCanonical": "http://example.org/fhir/StructureDefinition/test-binding"
+        "description": "This is a International Patient Summary (IPS) example for the *US Core DocumentReference*. It demonstrates the \"structured-document\" document category.",
+        "name": "International Patient Summary (IPS)",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
       },
       {
         "reference": {
-          "reference": "Location/hospital"
+          "reference": "DocumentReference/scanned-consent-form"
         },
-        "description": "This is an example hospital location for the *US Core Location Profile* using three coding type, showing  SNOMED CT, HSLOC, and v3-RoleCode concepts.",
-        "name": "Hospital Location",
-        "exampleBoolean": true
+        "description": "This is a Scanned Consent Form example for the *US Core DocumentReference*. It demonstrates the \"scanned-document\" document category.",
+        "name": "Scanned Consent Form",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
       },
       {
         "reference": {
-          "reference": "Patient/example"
+          "reference": "DocumentReference/insurance-card"
         },
-        "description": "This is a patient example for the *US Core Patient Profile*.",
-        "name": "Patient Example",
-        "exampleBoolean": true
+        "description": "This is a Scanned Insurance Card example for the *US Core DocumentReference*. It demonstrates the \"scanned-document\" document category.",
+        "name": "Scanned Insurance Card",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
       },
       {
         "reference": {
-          "reference": "ServiceRequest/servicerequest-pmo-example1"
+          "reference": "DocumentReference/photo-id"
         },
-        "description": "This is an example DNR request using the *US Core PMO ServiceRequest Profile*.",
-        "name": "ServiceRequest DNR Example",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pmo-servicerequest"
+        "description": "This is a Scanned Photo ID example for the *US Core DocumentReference*. It demonstrates the \"scanned-document\" document category.",
+        "name": "Scanned Photo ID",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/test-binding"
+          "reference": "DocumentReference/wound-image"
         },
-        "description": "A profile on the FHIR R4 Basic resource for representing a referral, with the code element constrained to the LOINC valid HL7 attachment requests value set.",
+        "description": "This is a Scanned Wound Image example for the *US Core DocumentReference*. It demonstrates the \"scanned-document\" document category.",
+        "name": "Scanned Wound Image",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/us-core-client"
+        },
+        "description": "This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
         "exampleBoolean": false,
-        "name": "Test Binding"
+        "name": "US Core Client CapabilityStatement"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/us-core-adi-documentreference"
+          "reference": "CapabilityStatement/us-core-client2"
         },
-        "description": "The US Core ADI DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.html) meet the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Advance Directive Observation* Data Element requirements. It sets minimum expectations for searching and fetching patient Advance Directive Information (ADI) documents using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document contents, it communicates the type of advance directive document, the author, the verifier, and other properties. To represent whether advance directive documents exist for a patient, see the US Core Observation ADI Documentation Profile. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "description": "This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
         "exampleBoolean": false,
-        "name": "US Core ADI DocumentReference Profile"
+        "name": "US Core Client CapabilityStatement2"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/us-core-ethnicity"
+          "reference": "CapabilityStatement/us-core-server"
         },
-        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [Race & Ethnicity - CDC (CDCREC)](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories:\n\n   - Hispanic or Latino\n   - Not Hispanic or Latino.",
+        "description": "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf).",
         "exampleBoolean": false,
-        "name": "US Core Ethnicity Extension"
+        "name": "US Core Server CapabilityStatement"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/us-core-pmo-servicerequest"
+          "reference": "CapabilityStatement/us-core-server2"
         },
-        "description": "The US Core PMO ServiceRequest Profile inherits from the [FHIR ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) resource; refer to it for scope and usage definitions. This profile represents an order based on a PMO document and references the [US Core ADI DocumentReference Profile](StructureDefinition-us-core-adi-documentreference.html) to communicate the contents of the PMO document, such as POLST, MOLST, or other state-specific forms. PMO documents follow the patient across care settings and are typically stored as scanned images in EMRs/EHRs. Together, these two profiles satisfy the USCDI's PMO Order Data Element's intent to represent orders based on an individual's PMO. The US Core PMO ServiceRequest Profile establishes minimum expectations for recording, searching, and fetching PMO-related ServiceRequest information, specifying core elements, extensions, vocabularies, and value sets that SHALL be present to promote interoperability.\n",
+        "description": "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf).",
         "exampleBoolean": false,
-        "name": "US Core PMO ServiceRequest Profile"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/us-core-portable-medical-orders"
-        },
-        "description": "A value set of LOINC codes for portable medical orders.",
-        "exampleBoolean": false,
-        "name": "US Core Portable Medical Orders"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/us-core-race"
-        },
-        "description": "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [Race & Ethnicity - CDC (CDCREC)](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.",
-        "exampleBoolean": false,
-        "name": "US Core Race Extension"
+        "name": "US Core Server UsCoreServerCapabilityStatement2"
       }
     ],
     "page": {
@@ -244,10 +237,6 @@
         "value": "input/intro-notes"
       },
       {
-        "code": "path-liquid",
-        "value": "input/images/liquid"
-      },
-      {
         "code": "excludexml",
         "value": "true"
       },
@@ -262,6 +251,14 @@
       {
         "code": "excludemap",
         "value": "true"
+      },
+      {
+        "code": "ipa-comparison",
+        "value": "{current}"
+      },
+      {
+        "code": "ips-comparison",
+        "value": "{current}"
       },
       {
         "code": "propagate-status",

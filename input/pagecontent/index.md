@@ -4,10 +4,32 @@
 
 ### h3 element
 
+<span style="font-size:1.5em">&#9940;</span>
+
+<span style="font-size:1.5em">&mdash;</span>
+
+<span style="font-size:1.5em; font-weight: bold">&mdash;</span>
+
+<strong><span style="font-size:1.5em">&mdash;</span></strong>
+
+
 <span class="glyphicon glyphicon-ok-circle"></span>
 
 
 <span class="glyphicon glyphicon-ok-circle" style="color: #ff0000;"></span>
+
+
+{% raw %} {{page.path}}  {% endraw %}  = {{page.path}}
+
+{% raw %} {{page.url}}  {% endraw %}  = {{page.url}}
+
+{% raw %} {{page.title}}  {% endraw %}  = {{page.title}}
+
+{% raw %} {{page.dir}}  {% endraw %}  = {{page.dir}}
+
+{% raw %} {{page.name}}  {% endraw %}  = {{page.name}}
+
+
 
 ###  another h3 element
 
