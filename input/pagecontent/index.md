@@ -47,8 +47,8 @@
 {% raw %}
 👇👇👇 included link list file
 ~~~
-{% include r4-link-list.md %} <-- static list of a R4 resources
-{% include page-link-list.md %} <--Uses liquid script to create a link list of all the ig pages from site.data.pages.json
+{ % include r4-link-list.md % } <-- static list of a R4 resources
+{ % include page-link-list.md % } <--Uses liquid script to create a link list of all the ig pages from site.data.pages.json
 ~~~
 {% endraw %}
 
