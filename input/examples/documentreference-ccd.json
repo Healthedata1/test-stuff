@@ -3,7 +3,17 @@
   "id": "ccd",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+    ],
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString": "Continuity of Care Document (CCD)"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown": "This is a Continuity of Care Document (CCD) example for the *US Core DocumentReference*. It demonstrates the \"structured-document\" document category."
+      }
     ]
   },
   "status": "current",
@@ -32,7 +42,7 @@
   "subject": {
     "reference": "Patient/example"
   },
-  "date": "08/15/2026T22:01:00.612Z",
+  "date": "2026-08-15T22:01:00.612Z",
   "author": [
     {
       "reference": "Practitioner/practitioner-1"

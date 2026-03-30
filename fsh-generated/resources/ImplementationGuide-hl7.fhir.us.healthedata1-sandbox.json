@@ -78,7 +78,7 @@
         },
         "description": "This is a Clinician Authored SOAP Note example for the *US Core DocumentReference*. It demonstrates the \"clinical-note\" document category.",
         "name": "Clinician Authored SOAP Note",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
       },
       {
         "reference": {
@@ -86,7 +86,7 @@
         },
         "description": "This is a Continuity of Care Document (CCD) example for the *US Core DocumentReference*. It demonstrates the \"structured-document\" document category.",
         "name": "Continuity of Care Document (CCD)",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
       },
       {
         "reference": {
@@ -94,7 +94,7 @@
         },
         "description": "This is a International Patient Summary (IPS) example for the *US Core DocumentReference*. It demonstrates the \"structured-document\" document category.",
         "name": "International Patient Summary (IPS)",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
       },
       {
         "reference": {
@@ -102,7 +102,7 @@
         },
         "description": "This is a Scanned Consent Form example for the *US Core DocumentReference*. It demonstrates the \"scanned-document\" document category.",
         "name": "Scanned Consent Form",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
       },
       {
         "reference": {
@@ -110,7 +110,7 @@
         },
         "description": "This is a Scanned Insurance Card example for the *US Core DocumentReference*. It demonstrates the \"scanned-document\" document category.",
         "name": "Scanned Insurance Card",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
       },
       {
         "reference": {
@@ -118,7 +118,7 @@
         },
         "description": "This is a Scanned Photo ID example for the *US Core DocumentReference*. It demonstrates the \"scanned-document\" document category.",
         "name": "Scanned Photo ID",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
       },
       {
         "reference": {
@@ -126,7 +126,7 @@
         },
         "description": "This is a Scanned Wound Image example for the *US Core DocumentReference*. It demonstrates the \"scanned-document\" document category.",
         "name": "Scanned Wound Image",
-        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
       },
       {
         "reference": {
@@ -143,6 +143,14 @@
         "description": "This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
         "exampleBoolean": false,
         "name": "US Core Client CapabilityStatement2"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/us-core-goal-description"
+        },
+        "description": "Concepts from SNOMED CT  and LOINC code systems that can be used to indicate the goal.",
+        "exampleBoolean": false,
+        "name": "US Core Goal Codes"
       },
       {
         "reference": {

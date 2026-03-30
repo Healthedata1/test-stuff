@@ -3,7 +3,17 @@
   "id": "photo-id",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|0.1.0"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+    ],
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString": "Scanned Photo ID"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown": "This is a Scanned Photo ID example for the *US Core DocumentReference*. It demonstrates the \"scanned-document\" document category."
+      }
     ]
   },
   "status": "current",

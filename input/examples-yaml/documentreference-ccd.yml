@@ -24,7 +24,7 @@ category:
   text: Structured Document
 subject:
   reference: Patient/example
-date: '08/15/2026T22:01:00.612Z'
+date: '2026-08-15T22:01:00.612Z'
 author:
 - reference: Practitioner/practitioner-1
 content:

@@ -7,5 +7,6 @@
 [wound-image]: DocumentReference-wound-image.html
 [UsCoreClientCapabilityStatement]: CapabilityStatement-us-core-client.html
 [UsCoreClientCapabilityStatement2]: CapabilityStatement-us-core-client2.html
+[USCoreGoalCodes]: ValueSet-us-core-goal-description.html
 [UsCoreServerCapabilityStatement]: CapabilityStatement-us-core-server.html
 [UsCoreServerCapabilityStatement2]: CapabilityStatement-us-core-server2.html
