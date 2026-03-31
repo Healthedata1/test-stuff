@@ -8,5 +8,6 @@
 [UsCoreClientCapabilityStatement]: CapabilityStatement-us-core-client.html
 [UsCoreClientCapabilityStatement2]: CapabilityStatement-us-core-client2.html
 [USCoreGoalCodes]: ValueSet-us-core-goal-description.html
+[USCoreProcedureCodes]: ValueSet-us-core-procedure-code.html
 [UsCoreServerCapabilityStatement]: CapabilityStatement-us-core-server.html
 [UsCoreServerCapabilityStatement2]: CapabilityStatement-us-core-server2.html

@@ -14,6 +14,7 @@
 <artifact id="CapabilityStatement/us-core-client" key="CapabilityStatement-us-core-client" name="US Core Client CapabilityStatement"/>
 <artifact id="CapabilityStatement/us-core-client2" key="CapabilityStatement-us-core-client2" name="US Core Client CapabilityStatement2"/>
 <artifact id="ValueSet/us-core-goal-description" key="ValueSet-us-core-goal-description" name="US Core Goal Codes"/>
+<artifact id="ValueSet/us-core-procedure-code" key="ValueSet-us-core-procedure-code" name="US Core Procedure Codes"/>
 <artifact id="CapabilityStatement/us-core-server" key="CapabilityStatement-us-core-server" name="US Core Server CapabilityStatement"/>
 <artifact id="CapabilityStatement/us-core-server2" key="CapabilityStatement-us-core-server2" name="US Core Server UsCoreServerCapabilityStatement2"/>
 <page key="NA" name="(NA)"/>
