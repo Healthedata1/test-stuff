@@ -90,6 +90,14 @@
       },
       {
         "reference": {
+          "reference": "Encounter/1036"
+        },
+        "description": "This is an encounter 1036 example for the *Encounter Profile*.",
+        "name": "Encounter 1036 Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+      },
+      {
+        "reference": {
           "reference": "DocumentReference/ips"
         },
         "description": "This is a International Patient Summary (IPS) example for the *US Core DocumentReference*. It demonstrates the \"structured-document\" document category.",
@@ -143,6 +151,14 @@
         "description": "This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
         "exampleBoolean": false,
         "name": "US Core Client CapabilityStatement2"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/us-core-encounter"
+        },
+        "description": "The US Core Encounter Profile inherits from the FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Encounter resource to record, search, and fetch basic encounter information for an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "exampleBoolean": false,
+        "name": "US Core Encounter Profile"
       },
       {
         "reference": {

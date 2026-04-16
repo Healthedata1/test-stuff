@@ -35,3 +35,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.  **[SHALL]**{: #CONF-00
 Donec scelerisque odio a lectus iaculis semper. Morbi scelerisque sem ac nunc euismod, in luctus leo pellentesque. Sed fermentum luctus diam, eget hendrerit odio pharetra in. Nullam feugiat imperdiet libero, et condimentum est. Morbi vel tempus erat. Donec ex nisl, maximus sed augue eu, [**SHOULD**][CONF-002] hendrerit imperdiet sem. Sed quis porttitor tortor. Integer maximus vitae dolor quis ultrices. Aliquam elementum quam nulla. Sed ac consequat nisi, eget dapibus arcu. Aenean sit amet ligula ac arcu blandit porttitor.
 
 Cras dignissim eleifend augue, in aliquam nisl mollis et. Nulla facilisi. Nunc leo velit, gravida quis justo ut, elementum lacinia magna. Nunc orci tellus, tincidunt egestas malesuada in, egestas feugiat sem. Curabitur ultrices lorem mi, vitae sagittis erat cursus vitae. Vivamus vitae metus scelerisque, cursus nulla nec, ultrices elit. Proin finibus, mauris vitae vulputate molestie, sapien turpis blandit nunc, id tincidunt justo dolor a ante.  [**SHALL**][CONF-003]{: #CONF-003} liquam egestas libero sed orci rutrum eleifend.
+
+
+### Liquid Script to Generate OperationDefinition All Nice N Pretty Like
+
+
+  Include: operation-table.html
+
+  Usage:
+    {%raw%}{% include operation-table.html op=site.data.my_operation %}{%endraw%}
+
+  Or directly:
+     {%raw%}{% include operation-table.html op=site.data.my_operation show_metadata=true %}{%endraw%}
+
+  Parameters:
+    op              - the OperationDefinition object (required)
+    show_metadata   - show the metadata block above the table (default: true)
+
+----
+
+{% include operation-table.html op=site.data.OperationDefinition-docref show_metadata=true %}
+

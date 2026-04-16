@@ -78,6 +78,30 @@ The table below summarizes the different profiles and resource types between Arg
 {% include dstu2-r4-table2.md %}
 
 
+###  adding rendering of a resource
+
+Rendering Raw XHTML in the publisher is enclosed in {$raw%}.
+The {% raw %}...{% endraw %} tags tell Liquid to not process the content inside — they're a Liquid escape mechanism, not something you strip at render time. Here are your options.
+
+how to get to render:
+
+Capture and render via {% raw %}{% capture %}  + {{ }} {% endraw %}.
+To keep the file as-is and strip the tags programmatically:
+
+liquid
+
+{% raw %}
+{% capture raw_content %}{% include my-component.html %}{% endcapture %}
+{{ raw_content }}
+ {% endraw %}
+
+ try it here:
+
+{% capture raw_content %}{% include DocumentReference-photo-id-html.xhtml %}{% endcapture %}
+
+{{ raw_content }}
+
+
 
 {% include link-list.md %}
 

@@ -6,6 +6,7 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="DocumentReference/soap-note" key="DocumentReference-soap-note" name="Clinician Authored SOAP Note"/>
 <artifact id="DocumentReference/ccd" key="DocumentReference-ccd" name="Continuity of Care Document (CCD)"/>
+<artifact id="Encounter/1036" key="Encounter-1036" name="Encounter 1036 Example"/>
 <artifact id="DocumentReference/ips" key="DocumentReference-ips" name="International Patient Summary (IPS)"/>
 <artifact id="DocumentReference/scanned-consent-form" key="DocumentReference-scanned-consent-form" name="Scanned Consent Form"/>
 <artifact id="DocumentReference/insurance-card" key="DocumentReference-insurance-card" name="Scanned Insurance Card"/>
@@ -13,6 +14,7 @@
 <artifact id="DocumentReference/wound-image" key="DocumentReference-wound-image" name="Scanned Wound Image"/>
 <artifact id="CapabilityStatement/us-core-client" key="CapabilityStatement-us-core-client" name="US Core Client CapabilityStatement"/>
 <artifact id="CapabilityStatement/us-core-client2" key="CapabilityStatement-us-core-client2" name="US Core Client CapabilityStatement2"/>
+<artifact id="StructureDefinition/us-core-encounter" key="StructureDefinition-us-core-encounter" name="US Core Encounter Profile"/>
 <artifact id="ValueSet/us-core-goal-description" key="ValueSet-us-core-goal-description" name="US Core Goal Codes"/>
 <artifact id="ValueSet/us-core-procedure-code" key="ValueSet-us-core-procedure-code" name="US Core Procedure Codes"/>
 <artifact id="CapabilityStatement/us-core-server" key="CapabilityStatement-us-core-server" name="US Core Server CapabilityStatement"/>
