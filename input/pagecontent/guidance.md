@@ -56,3 +56,30 @@ Cras dignissim eleifend augue, in aliquam nisl mollis et. Nulla facilisi. Nunc l
 
 {% include operation-table.html op=site.data.OperationDefinition-docref show_metadata=true %}
 
+
+
+### Links to Terminology Packages
+
+##### Value Set Packages
+
+A Value Set Package contains all the expanded value sets required for an implementation guide. In addition to the packages published with US Core, annual value set packages containing value sets expanded with the updated code system versions will be available for the following US Core Versions to assist implementers who require them.
+
+US Core 6.1.0 (published June 2023)
+
+  - [US Core 6.1.0 Value Set Package - 2023-06](#)
+  - [US Core 6.1.0 Value Set Package - 2024-05](#)
+  - [US Core 6.1.0 Value Set Package - 2025-05](#)
+  - [US Core 6.1.0 Value Set Package - 2026-05](#)
+
+US Core 8.0.1 (published June 2025)
+
+  - [US Core 8.0.1 Value Set Package - 2023-06](https://confluence.hl7.org/rest/teamopsfactory/amazon-s3/1.0/buckets/15/content/download?path=HL7%20Project%20Outreach_Medical%20Record%20Reviews%20Interoperability.pptx&targetId=86974058)  <<< **This is a link to the CGP Confluence Site File Storage Container** >>>
+  - [US Core 8.0.1 Value Set Package - 2026-05](#)
+
+US Core 9.0.0 (published June 2026)
+
+  - [US Core 9.0.0 Value Set Package - 2026-05](https://raw.githubusercontent.com/HL7/US-Core/refs/heads/master/tree.txt)   <<< **This is a link to the GitHub Repository** >>>
+
+For more information on Value Set Package and how they are created and used, see the [Value Set Package Implementation Guide](https://build.fhir.org/ig/cqframework/vsp-ig/)
+
+
