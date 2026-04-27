@@ -54,8 +54,8 @@ Cras dignissim eleifend augue, in aliquam nisl mollis et. Nulla facilisi. Nunc l
 
 ----
 
-{% include operation-table.html op=site.data.OperationDefinition-docref show_metadata=true %}
-
+{% assign op_data = site.data["OperationDefinition-docref"] %}
+{% include operation-table.html op=op_data show_metadata=true %}
 
 
 ### Links to Terminology Packages
@@ -72,7 +72,7 @@ US Core 6.1.0 (published June 2023)
   - [US Core 6.1.0 Value Set Package - 2026-05](#)
 
 US Core 8.0.1 (published June 2025)
-
+$$
   - [US Core 8.0.1 Value Set Package - 2023-06](https://confluence.hl7.org/rest/teamopsfactory/amazon-s3/1.0/buckets/15/content/download?path=HL7%20Project%20Outreach_Medical%20Record%20Reviews%20Interoperability.pptx&targetId=86974058)  <<< **This is a link to the CGP Confluence Site File Storage Container** >>>
   - [US Core 8.0.1 Value Set Package - 2026-05](#)
 
