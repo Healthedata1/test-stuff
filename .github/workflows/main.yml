@@ -39,6 +39,9 @@ jobs:
       # - name: Deploy to GitHub Pages
       #   id: deployment
       #   uses: actions/deploy-pages@v2
+
+      - name: Disable Jekyll processing  # NEW
+        run: touch output/.nojekyll
         
       - name: Deploy to GitHub Pages  # action from the GitHub Marketplace
         uses: JamesIves/github-pages-deploy-action@v4.4.3
