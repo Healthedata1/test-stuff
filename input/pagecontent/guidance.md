@@ -54,8 +54,8 @@ Cras dignissim eleifend augue, in aliquam nisl mollis et. Nulla facilisi. Nunc l
 
 ----
 
-{% assign op_data = site.data["OperationDefinition-docref"] %}
-{% include operation-table.html op=op_data show_metadata=true %}
+{% include operation-table.html op=site.data.OperationDefinition-docref show_metadata=true %}
+
 
 ### Links to Terminology Packages
 
