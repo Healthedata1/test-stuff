@@ -1,0 +1,192 @@
+resourceType: ImplementationGuide
+id: hl7.fhir.us.healthedata1-sandbox
+url: http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox
+version: 0.1.0
+name: HealthEData_1Sandbox
+title: Health eData 1 Sandbox
+status: active
+publisher: HL7 International / Payer/Provider Information Exchange Work Group
+contact:
+  - name: HL7 International / Payer/Provider Information Exchange Work Group
+    telecom:
+      - system: url
+        value: http://www.hl7.org/Special/committees/claims
+      - system: email
+        value: pie@lists.hl7.org
+description: This is a **Healthedata1** sandbox for creation of resources and examples
+jurisdiction:
+  - coding:
+      - code: US
+        system: urn:iso:std:iso:3166
+packageId: hl7.fhir.us.healthedata1-sandbox
+license: CC0-1.0
+fhirVersion:
+  - 4.0.1
+dependsOn:
+  - id: uscore
+    packageId: hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    version: 6.1.0
+  - packageId: hl7.fhir.uv.sdc
+    version: 3.0.0
+    uri: http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc
+    id: hl7_fhir_uv_sdc
+  - packageId: hl7.fhir.uv.bulkdata
+    version: 2.0.0
+    uri: http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata
+    id: hl7_fhir_uv_bulkdata
+  - packageId: hl7.fhir.uv.smart-app-launch
+    version: 2.0.0
+    uri: http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch
+    id: hl7_fhir_uv_smart_app_launch
+definition:
+  resource:
+    - reference:
+        reference: DocumentReference/soap-note
+      description: This is a Clinician Authored SOAP Note example for the *US Core DocumentReference*. It demonstrates the "clinical-note" document category.
+      name: Clinician Authored SOAP Note
+      exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
+    - reference:
+        reference: DocumentReference/ccd
+      description: This is a Continuity of Care Document (CCD) example for the *US Core DocumentReference*. It demonstrates the "structured-document" document category.
+      name: Continuity of Care Document (CCD)
+      exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
+    - reference:
+        reference: Encounter/1036
+      description: This is an encounter 1036 example for the *Encounter Profile*.
+      name: Encounter 1036 Example
+      exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
+    - reference:
+        reference: DocumentReference/ips
+      description: This is a International Patient Summary (IPS) example for the *US Core DocumentReference*. It demonstrates the "structured-document" document category.
+      name: International Patient Summary (IPS)
+      exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
+    - reference:
+        reference: Observation/observation-occupation
+      description: This example of the *US Core Observation Occupation Profile* documents a nursing assistant's work type.
+      name: Occupation Observation Example
+      exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation
+    - reference:
+        reference: DocumentReference/scanned-consent-form
+      description: This is a Scanned Consent Form example for the *US Core DocumentReference*. It demonstrates the "scanned-document" document category.
+      name: Scanned Consent Form
+      exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
+    - reference:
+        reference: DocumentReference/insurance-card
+      description: This is a Scanned Insurance Card example for the *US Core DocumentReference*. It demonstrates the "scanned-document" document category.
+      name: Scanned Insurance Card
+      exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
+    - reference:
+        reference: DocumentReference/photo-id
+      description: This is a Scanned Photo ID example for the *US Core DocumentReference*. It demonstrates the "scanned-document" document category.
+      name: Scanned Photo ID
+      exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
+    - reference:
+        reference: DocumentReference/wound-image
+      description: This is a Scanned Wound Image example for the *US Core DocumentReference*. It demonstrates the "scanned-document" document category.
+      name: Scanned Wound Image
+      exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
+    - reference:
+        reference: CapabilityStatement/us-core-client
+      description: This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.
+      exampleBoolean: false
+      name: US Core Client CapabilityStatement
+    - reference:
+        reference: CapabilityStatement/us-core-client2
+      description: This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.
+      exampleBoolean: false
+      name: US Core Client CapabilityStatement2
+    - reference:
+        reference: StructureDefinition/us-core-encounter
+      description: |-
+        The US Core Encounter Profile inherits from the FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Encounter resource to record, search, and fetch basic encounter information for an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.
+
+
+         > **NOTE**: US Core SearchParameters referenced in this CapabilityStatement that are derived from standard FHIR SearchParameters are only defined to document Server and Client expectations. They specify additional expectations for the following SearchParameter elements:
+         > - `multipleAnd`
+         > - `multipleOr`
+         > - `comparator`
+         > - `modifier`
+         > - `chain`
+         >
+         > They **SHALL NOT** be interpreted as search parameters for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameters.
+      exampleBoolean: false
+      name: US Core Encounter Profile
+    - reference:
+        reference: ValueSet/us-core-goal-description
+      description: Concepts from SNOMED CT  and LOINC code systems that can be used to indicate the goal.
+      exampleBoolean: false
+      name: US Core Goal Codes
+    - reference:
+        reference: ValueSet/us-core-procedure-code
+      description: Concepts from CPT, SNOMED CT, HCPCS Level II Alphanumeric Codes, ICD-10-PCS, CDT and LOINC code systems that can be used to indicate the type of procedure performed.
+      exampleBoolean: false
+      name: US Core Procedure Codes
+    - reference:
+        reference: CapabilityStatement/us-core-server
+      description: This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf).
+      exampleBoolean: false
+      name: US Core Server CapabilityStatement
+    - reference:
+        reference: CapabilityStatement/us-core-server2
+      description: This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf).
+      exampleBoolean: false
+      name: US Core Server UsCoreServerCapabilityStatement2
+  page:
+    nameUrl: toc.html
+    title: Table of Contents
+    generation: html
+    page:
+      - nameUrl: index.html
+        title: Home
+        generation: markdown
+        extension:
+          - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+            valueCode: draft
+      - nameUrl: guidance.html
+        title: Guidance
+        generation: markdown
+      - nameUrl: downloads.html
+        title: Downloads
+        generation: markdown
+      - nameUrl: ImplementationGuide.html
+        title: ImplementationGuide Resource
+        generation: markdown
+      - nameUrl: changes.html
+        title: Change Log
+        generation: markdown
+  parameter:
+    - code: copyrightyear
+      value: 2020+
+    - code: releaselabel
+      value: CI Build
+    - code: path-expansion-params
+      value: ../../input/_resources/exp-params.json
+    - code: show-inherited-invariants
+      value: "true"
+    - code: usage-stats-opt-out
+      value: "false"
+    - code: path-output
+      value: output
+    - code: path-resource
+      value: input/resources
+    - code: path-resource
+      value: fsh-generated/resources
+    - code: path-resource
+      value: input/intro-notes
+    - code: excludexml
+      value: "true"
+    - code: excludejson
+      value: "false"
+    - code: excludettl
+      value: "true"
+    - code: excludemap
+      value: "true"
+    - code: ipa-comparison
+      value: '{current}'
+    - code: ips-comparison
+      value: '{current}'
+    - code: propagate-status
+      value: "true"
+    - code: path-history
+      value: http://hl7.org/fhir/us/healthedata1-sandbox/history.html

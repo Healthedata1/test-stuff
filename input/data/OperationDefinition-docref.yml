@@ -1,0 +1,369 @@
+resourceType: OperationDefinition
+id: bulk-submit
+language: en
+text:
+  status: generated
+  div: >-
+    <div xmlns="http://www.w3.org/1999/xhtml"><p
+    class="res-header-id"><b>Generated Narrative: OperationDefinition
+    bulk-submit</b></p><a name="bulk-submit"> </a><a name="hcbulk-submit">
+    </a><p>URL: [base]/$bulk-submit</p><h3>Parameters</h3><table
+    class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>submitter</td><td/><td>1..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>The
+    submitter must match a system and code specified by the Data Consumer
+    (coordinated out-of-band or in an implementation guide specific to a use
+    case).</p>
+
+    </div></td></tr><tr><td>IN</td><td>submissionId</td><td/><td>1..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>The
+    value must be unique for the <code>submitter</code>.</p>
+
+    </div></td></tr><tr><td>IN</td><td>submissionStatus</td><td/><td>0..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td/><td><div><p>System
+    of <code>http://hl7.org/fhir/uv/bulkdata/ValueSet/submission-status</code>,
+    code of <code>in-progress</code> (default if parameter is omitted),
+    <code>complete</code> or <code>aborted</code>. Once a request has been
+    submitted with a <code>submissionStatus</code> of <code>aborted</code> or
+    <code>complete</code>, no additional requests may be submitted for that
+    <code>submitter</code> and <code>submissionId</code> combination. At least
+    one of the <code>submissionStatus</code> and <code>manifestUrl</code>
+    parameters SHALL be populated.</p>
+
+    </div></td></tr><tr><td>IN</td><td>manifestUrl</td><td/><td>0..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></td><td/><td><div><p>Url
+    pointing to a <a
+    href="https://build.fhir.org/ig/HL7/bulk-data/export.html#response---output-manifest">Bulk
+    Export Manifest</a> with a pre-coordinated FHIR data set. Files in multiple
+    submitted manifests with the same <code>submitter</code> and
+    <code>submissionId</code> SHALL be treated by the Data Consumer as if they
+    were submitted in a single manifest. This parameter MAY be omitted when the
+    operation is being called to set the submissionStatus to
+    <code>complete</code> or <code>aborted</code>. The value must be unique for
+    all manifests that share a <code>submitter</code> and
+    <code>submissionId</code> combination. At least one of the
+    <code>submissionStatus</code> and <code>manifestUrl</code> parameters SHALL
+    be populated. When this parameter is populated, the <code>fhirBaseUrl</code>
+    parameter SHALL also be populated.</p>
+
+    </div></td></tr><tr><td>IN</td><td>replacesManifestUrl</td><td/><td>0..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></td><td/><td><div><p>The
+    url of a previously submitted manifest that has the same
+    <code>submissionId</code> and <code>submitter</code> as this request. When
+    provided, Data Consumer SHALL replace the data in the referenced manifest
+    with the one in the current request. If the url is invalid or the Data
+    Consumer is unable to replace the data, it should respond to the request
+    with an OperationOutcome describing the error.</p>
+
+    </div></td></tr><tr><td>IN</td><td>outputFormat</td><td/><td>0..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>The
+    format for the Bulk Data files in the manifest. The MIME-type MAY include a
+    MIME-type parameter of <code>fhirVersion</code> as described in the <a
+    href="https://hl7.org/fhir/http.html#version-parameter">FHIR
+    specification</a> to indicate which version of FHIR the resources in the
+    Bulk Data files are based on. When omitted, defaults to
+    <code>application/fhir+ndjson</code> (Newline Delimited JSON) with a version
+    of FHIR determined by the Data Consumer. All of the resources in a
+    submission SHALL use the same version of FHIR.</p>
+
+    </div></td></tr><tr><td>IN</td><td>fhirBaseUrl</td><td/><td>0..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></td><td/><td><div><p>Base
+    url to be used by the Data Consumer when resolving relative references in
+    the submitted resources. When the <code>manifestUrl</code> parameter is
+    populated, this parameter SHALL be populated.</p>
+
+    </div></td></tr><tr><td>IN</td><td>fileRequestHeader</td><td/><td>0..*</td><td/><td/><td><div><p>HTTP
+    headers that the Data Consumer should use when requesting a data file from
+    the Data Provider.</p>
+
+    </div></td></tr><tr><td>IN</td><td>fileRequestHeader.headerName</td><td/><td>1..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td/></tr><tr><td>IN</td><td>fileRequestHeader.headerValue</td><td/><td>1..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td/></tr><tr><td>IN</td><td>oauthMetadataUrl</td><td/><td>0..*</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#url">url</a></td><td/><td><div><p>Location
+    that a Data Consumer can use to obtain the information needed to retrieve
+    files protected using OAuth 2.0. The url SHALL be the path to a <a
+    href="https://hl7.org/fhir/smart-app-launch/conformance.html#using-well-known">FHIR
+    Authorization Endpoint and Capabilities Discovery file</a> or another <a
+    href="https://datatracker.ietf.org/doc/rfc9728/">OAuth 2.0 Protected
+    Resource Metadata file</a> that is registered in the <a
+    href="https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml">IANA
+    Well-Known URIs Registry</a>.</p>
+
+    </div></td></tr><tr><td>IN</td><td>fileEncryptionKey</td><td/><td>0..1</td><td/><td/><td><div><p>Encryption
+    key information for the Data Consumer to decrypt retrieved data files from
+    the Data Provider.</p>
+
+    </div></td></tr><tr><td>IN</td><td>fileEncryptionKey.coding</td><td/><td>0..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td/><td><div><p>If
+    omitted, defaults to a system of
+    <code>http://hl7.org/fhir/uv/bulkdata/ValueSet/file-encryption-type</code>
+    and code of <code>jwe</code>.</p>
+
+    </div></td></tr><tr><td>IN</td><td>fileEncryptionKey.value</td><td/><td>1..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>For
+    the system of <code>file-encryption-type</code> and code of
+    <code>jwe</code>, populate with the JSON Web Encryption structure to deliver
+    a Content Encryption Key for the Data Consumer to decrypt retrieved data
+    files from the Data Provider.</p>
+
+    </div></td></tr><tr><td>IN</td><td>metadata</td><td/><td>0..1</td><td/><td/><td><div><p>Child
+    parameters can be added under this parameter to pass pre-coordinated data
+    relevant to the submission from the Data Provider to the Data Consumer. Each
+    child parameter name SHALL be an absolute URL. Specific child parameters are
+    defined in implementation guides for particular use cases.</p>
+
+    </div></td></tr><tr><td>IN</td><td>metadata.parameterUrl</td><td/><td>1..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td/><td><div><p>An
+    absolute URL identifying this metadata parameter.</p>
+
+    </div></td></tr><tr><td>IN</td><td>metadata.parameterValue</td><td/><td>1..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>The
+    value for this metadata parameter.</p>
+
+    </div></td></tr><tr><td>IN</td><td>import</td><td/><td>0..1</td><td/><td/><td><div><p>Child
+    parameters can be added under this parameter to pass pre-coordinated options
+    relevant to how the data will be processed from the Data Provider to the
+    Data Consumer. For example, a Data Consumer may allow the Data Provider to
+    specify whether or not existing data should be replaced with the data in the
+    submission. Each child parameter name SHALL be an absolute URL. Specific
+    child parameters are defined in implementation guides for particular use
+    cases.</p>
+
+    </div></td></tr><tr><td>IN</td><td>import.parameterUrl</td><td/><td>1..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td/><td><div><p>An
+    absolute URL identifying this import parameter.</p>
+
+    </div></td></tr><tr><td>IN</td><td>import.parameterValue</td><td/><td>1..1</td><td><a
+    href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>The
+    value for this import parameter.</p>
+
+    </div></td></tr></table></div>
+extension:
+  - url: 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm'
+    valueInteger: 2
+  - url: 'http://hl7.org/fhir/StructureDefinition/structuredefinition-wg'
+    valueCode: fhir
+  - url: >-
+      http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
+    _valueCode:
+      extension:
+        - url: >-
+            http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom
+          valueCanonical: >-
+            http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata
+url: 'http://hl7.org/fhir/uv/bulkdata/OperationDefinition/bulk-submit'
+version: 4.0.0
+name: BulkSubmit
+title: FHIR Bulk Data Submit
+status: active
+kind: operation
+date: '2025-01-27'
+publisher: HL7 International / FHIR Infrastructure
+contact:
+  - name: HL7 International / FHIR Infrastructure
+    telecom:
+      - system: url
+        value: 'http://www.hl7.org/Special/committees/fiwg'
+      - system: email
+        value: fhir@lists.HL7.org
+description: >-
+  FHIR Operation through which an authenticated and authorized Data Provider may
+  submit Bulk FHIR Data to a Data Consumer and receive status information
+  regarding the Data Consumer's receipt and processing of the data. The Data
+  Provider provides one or more manifest URLs pointing to pre-coordinated FHIR
+  data sets, along with metadata needed for the Data Consumer to retrieve and
+  process the files.
+jurisdiction:
+  - coding:
+      - system: 'http://unstats.un.org/unsd/methods/m49/m49.htm'
+        code: '001'
+code: bulk-submit
+system: true
+type: false
+instance: false
+parameter:
+  - name: submitter
+    use: in
+    min: 1
+    max: '1'
+    documentation: >-
+      The submitter must match a system and code specified by the Data Consumer
+      (coordinated out-of-band or in an implementation guide specific to a use
+      case).
+    type: Identifier
+  - name: submissionId
+    use: in
+    min: 1
+    max: '1'
+    documentation: The value must be unique for the `submitter`.
+    type: string
+  - name: submissionStatus
+    use: in
+    min: 0
+    max: '1'
+    documentation: >-
+      System of `http://hl7.org/fhir/uv/bulkdata/ValueSet/submission-status`,
+      code of `in-progress` (default if parameter is omitted), `complete` or
+      `aborted`. Once a request has been submitted with a `submissionStatus` of
+      `aborted` or `complete`, no additional requests may be submitted for that
+      `submitter` and `submissionId` combination. At least one of the
+      `submissionStatus` and `manifestUrl` parameters SHALL be populated.
+    type: Coding
+  - name: manifestUrl
+    use: in
+    min: 0
+    max: '1'
+    documentation: >-
+      Url pointing to a [Bulk Export
+      Manifest](https://build.fhir.org/ig/HL7/bulk-data/export.html#response---output-manifest)
+      with a pre-coordinated FHIR data set. Files in multiple submitted
+      manifests with the same `submitter` and `submissionId` SHALL be treated by
+      the Data Consumer as if they were submitted in a single manifest. This
+      parameter MAY be omitted when the operation is being called to set the
+      submissionStatus to `complete` or `aborted`. The value must be unique for
+      all manifests that share a `submitter` and `submissionId` combination. At
+      least one of the `submissionStatus` and `manifestUrl` parameters SHALL be
+      populated. When this parameter is populated, the `fhirBaseUrl` parameter
+      SHALL also be populated.
+    type: url
+  - name: replacesManifestUrl
+    use: in
+    min: 0
+    max: '1'
+    documentation: >-
+      The url of a previously submitted manifest that has the same
+      `submissionId` and `submitter` as this request. When provided, Data
+      Consumer SHALL replace the data in the referenced manifest with the one in
+      the current request. If the url is invalid or the Data Consumer is unable
+      to replace the data, it should respond to the request with an
+      OperationOutcome describing the error.
+    type: url
+  - name: outputFormat
+    use: in
+    min: 0
+    max: '1'
+    documentation: >-
+      The format for the Bulk Data files in the manifest. The MIME-type MAY
+      include a MIME-type parameter of `fhirVersion` as described in the [FHIR
+      specification](https://hl7.org/fhir/http.html#version-parameter) to
+      indicate which version of FHIR the resources in the Bulk Data files are
+      based on. When omitted, defaults to `application/fhir+ndjson` (Newline
+      Delimited JSON) with a version of FHIR determined by the Data Consumer.
+      All of the resources in a submission SHALL use the same version of FHIR.
+    type: string
+  - name: fhirBaseUrl
+    use: in
+    min: 0
+    max: '1'
+    documentation: >-
+      Base url to be used by the Data Consumer when resolving relative
+      references in the submitted resources. When the `manifestUrl` parameter is
+      populated, this parameter SHALL be populated.
+    type: url
+  - name: fileRequestHeader
+    use: in
+    min: 0
+    max: '*'
+    documentation: >-
+      HTTP headers that the Data Consumer should use when requesting a data file
+      from the Data Provider.
+    part:
+      - name: headerName
+        use: in
+        min: 1
+        max: '1'
+        type: string
+      - name: headerValue
+        use: in
+        min: 1
+        max: '1'
+        type: string
+  - name: oauthMetadataUrl
+    use: in
+    min: 0
+    max: '*'
+    documentation: >-
+      Location that a Data Consumer can use to obtain the information needed to
+      retrieve files protected using OAuth 2.0. The url SHALL be the path to a
+      [FHIR Authorization Endpoint and Capabilities Discovery
+      file](https://hl7.org/fhir/smart-app-launch/conformance.html#using-well-known)
+      or another [OAuth 2.0 Protected Resource Metadata
+      file](https://datatracker.ietf.org/doc/rfc9728/) that is registered in the
+      [IANA Well-Known URIs
+      Registry](https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml).
+    type: url
+  - name: fileEncryptionKey
+    use: in
+    min: 0
+    max: '1'
+    documentation: >-
+      Encryption key information for the Data Consumer to decrypt retrieved data
+      files from the Data Provider.
+    part:
+      - name: coding
+        use: in
+        min: 0
+        max: '1'
+        documentation: >-
+          If omitted, defaults to a system of
+          `http://hl7.org/fhir/uv/bulkdata/ValueSet/file-encryption-type` and
+          code of `jwe`.
+        type: Coding
+      - name: value
+        use: in
+        min: 1
+        max: '1'
+        documentation: >-
+          For the system of `file-encryption-type` and code of `jwe`, populate
+          with the JSON Web Encryption structure to deliver a Content Encryption
+          Key for the Data Consumer to decrypt retrieved data files from the
+          Data Provider.
+        type: string
+  - name: metadata
+    use: in
+    min: 0
+    max: '1'
+    documentation: >-
+      Child parameters can be added under this parameter to pass pre-coordinated
+      data relevant to the submission from the Data Provider to the Data
+      Consumer. Each child parameter name SHALL be an absolute URL. Specific
+      child parameters are defined in implementation guides for particular use
+      cases.
+    part:
+      - name: parameterUrl
+        use: in
+        min: 1
+        max: '1'
+        documentation: An absolute URL identifying this metadata parameter.
+        type: uri
+      - name: parameterValue
+        use: in
+        min: 1
+        max: '1'
+        documentation: The value for this metadata parameter.
+        type: string
+  - name: import
+    use: in
+    min: 0
+    max: '1'
+    documentation: >-
+      Child parameters can be added under this parameter to pass pre-coordinated
+      options relevant to how the data will be processed from the Data Provider
+      to the Data Consumer. For example, a Data Consumer may allow the Data
+      Provider to specify whether or not existing data should be replaced with
+      the data in the submission. Each child parameter name SHALL be an absolute
+      URL. Specific child parameters are defined in implementation guides for
+      particular use cases.
+    part:
+      - name: parameterUrl
+        use: in
+        min: 1
+        max: '1'
+        documentation: An absolute URL identifying this import parameter.
+        type: uri
+      - name: parameterValue
+        use: in
+        min: 1
+        max: '1'
+        documentation: The value for this import parameter.
+        type: string
