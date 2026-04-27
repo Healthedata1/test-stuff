@@ -8,6 +8,7 @@
 <artifact id="DocumentReference/ccd" key="DocumentReference-ccd" name="Continuity of Care Document (CCD)"/>
 <artifact id="Encounter/1036" key="Encounter-1036" name="Encounter 1036 Example"/>
 <artifact id="DocumentReference/ips" key="DocumentReference-ips" name="International Patient Summary (IPS)"/>
+<artifact id="Observation/observation-occupation" key="Observation-observation-occupation" name="Occupation Observation Example"/>
 <artifact id="DocumentReference/scanned-consent-form" key="DocumentReference-scanned-consent-form" name="Scanned Consent Form"/>
 <artifact id="DocumentReference/insurance-card" key="DocumentReference-insurance-card" name="Scanned Insurance Card"/>
 <artifact id="DocumentReference/photo-id" key="DocumentReference-photo-id" name="Scanned Photo ID"/>

@@ -2,6 +2,7 @@
 [ccd]: DocumentReference-ccd.html
 [1036]: Encounter-1036.html
 [ips]: DocumentReference-ips.html
+[observation-occupation]: Observation-observation-occupation.html
 [scanned-consent-form]: DocumentReference-scanned-consent-form.html
 [insurance-card]: DocumentReference-insurance-card.html
 [photo-id]: DocumentReference-photo-id.html
