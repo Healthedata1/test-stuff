@@ -56,6 +56,53 @@ Cras dignissim eleifend augue, in aliquam nisl mollis et. Nulla facilisi. Nunc l
 
 {% include operation-table.html op=site.data.OperationDefinition-docref show_metadata=true %}
 
+### Liquid Script to Generate StructureDefinition All Nice N Pretty Like
+
+  Include: structure-table.html
+
+  Generate a table of elements from a StructureDefinition file that is found in the
+  _data Jekyll folder and treated as a collection.
+  The files can be copied into the data folder or use the `produce-jekyll-data`
+  implementation guide parameter.
+
+  Usage:
+    {% include structure-table.html sd=site.data.my_profile %}
+    {% include structure-table.html sd=site.data.my_profile source="differential" %}
+    {% include structure-table.html sd=site.data.my_profile filter="Encounter.meta" %}
+
+  Parameters:
+    sd                - the StructureDefinition object (required)
+    show_metadata     - show the metadata block above the table (default: true)
+    source            - which element list to render: "snapshot" or "differential"
+                        (default: "snapshot")
+    filter            - render only one element and its descendants. Matches against
+                        ElementDefinition.id (e.g. "Encounter.meta" includes the
+                        meta row plus meta.lastUpdated, meta.profile, etc.). May
+                        also be passed as ".meta" or "meta" — the resource type
+                        prefix is added automatically.
+    show_modifier     - include the "Modifier Element" column (default: false)
+    show_must_support - include the "Must Support" column (default: false)
+    show_uscdi        - include the "Add'l USCDI" column, populated from a
+                        "𝗔𝗗𝗗𝗜𝗧𝗜𝗢𝗡𝗔𝗟 𝗨𝗦𝗖𝗗𝗜:" marker in the element's
+                        short text (default: false). The marker is stripped from
+                        the displayed short regardless of this flag.
+    show_constraints  - include FHIR ElementDefinition.constraint[] entries
+                        (key/severity/human) in the description column and change
+                        the column header to "Description & Constraints"
+                        (default: false)
+
+  The default column set is: Element, Cardinality, Type, Description. Set any of
+  the show_* flags to true to opt in to the corresponding optional content.
+
+#### Example : US Core Encounter
+
+{% include structure-table.html sd=site.data.StructureDefinition-us-core-encounter source="differential" %}
+
+
+#### Example : US Core Encounter.participant
+
+{% include structure-table.html sd=site.data.StructureDefinition-us-core-encounter source="differential" filter="participant" %}
+
 
 ### Links to Terminology Packages
 

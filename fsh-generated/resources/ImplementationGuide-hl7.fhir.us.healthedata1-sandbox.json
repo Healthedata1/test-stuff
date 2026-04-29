@@ -243,6 +243,10 @@
         "value": "CI Build"
       },
       {
+        "code": "produce-jekyll-data",
+        "value": "true"
+      },
+      {
         "code": "path-expansion-params",
         "value": "../../input/_resources/exp-params.json"
       },

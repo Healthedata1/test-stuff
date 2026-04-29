@@ -82,6 +82,7 @@ pages:
 
 
 parameters:
+  produce-jekyll-data: true
   path-expansion-params: '../../input/_resources/exp-params.json'  # for using US ed of SNOMED
   show-inherited-invariants: true
   usage-stats-opt-out: false

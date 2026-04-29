@@ -1,0 +1,210 @@
+{% comment %}
+  Include: structure-table.html
+
+  Generate a table of elements from a StructureDefinition file that is found in the
+  _data Jekyll folder and treated as a collection.
+  The files can be copied into the data folder or use the `produce-jekyll-data`
+  implementation guide parameter.
+
+  Usage:
+    {% include structure-table.html sd=site.data.my_profile %}
+    {% include structure-table.html sd=site.data.my_profile source="differential" %}
+
+  Parameters:
+    sd              - the StructureDefinition object (required)
+    show_metadata   - show the metadata block above the table (default: true)
+    source          - which element list to render: "snapshot" or "differential"
+                      (default: "snapshot")
+{% endcomment %}
+
+{% assign sd = include.sd %}
+{% assign show_metadata = include.show_metadata | default: true %}
+{% assign source = include.source | default: "snapshot" %}
+
+{% if sd %}
+
+{% comment %} ── Metadata block ── {% endcomment %}
+{% if show_metadata %}
+<div class="sd-metadata">
+  <h2>
+    {{ sd.name }}
+    {% if sd.title %}<span class="sd-title"> — {{ sd.title }}</span>{% endif %}
+  </h2>
+
+  {% if sd.description %}<p class="sd-description">{{ sd.description | markdownify }}</p>{% endif %}
+
+  <dl class="sd-details">
+    {% if sd.url %}
+      <dt>URL</dt>
+      <dd><code>{{ sd.url }}</code></dd>
+    {% endif %}
+    {% if sd.version %}
+      <dt>Version</dt>
+      <dd>{{ sd.version }}</dd>
+    {% endif %}
+    <dt>Status</dt>
+    <dd>{{ sd.status }}</dd>
+    <dt>Kind</dt>
+    <dd>{{ sd.kind }}</dd>
+    <dt>Type</dt>
+    <dd><code>{{ sd.type }}</code></dd>
+    {% if sd.baseDefinition %}
+      <dt>Base Definition</dt>
+      <dd><code>{{ sd.baseDefinition }}</code></dd>
+    {% endif %}
+    <dt>Derivation</dt>
+    <dd>{{ sd.derivation | default: "specialization" }}</dd>
+    {% if sd.abstract == true %}
+      <dt>Abstract</dt>
+      <dd>Yes</dd>
+    {% endif %}
+    {% if sd.experimental == true %}
+      <dt>Experimental</dt>
+      <dd>Yes</dd>
+    {% endif %}
+  </dl>
+</div>
+{% endif %}
+
+{% comment %} ── Pick element list (snapshot or differential) ── {% endcomment %}
+{% if source == "differential" %}
+  {% assign elements = sd.differential.element %}
+{% else %}
+  {% assign elements = sd.snapshot.element %}
+{% endif %}
+
+{% comment %} ── Element table ── {% endcomment %}
+{% if elements and elements != empty %}
+<h3>Elements ({{ source }})</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Flags</th>
+      <th>Cardinality</th>
+      <th>Type</th>
+      <th>Description &amp; Constraints</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for el in elements %}
+
+      {% comment %} ── derive indent from path depth ── {% endcomment %}
+      {% assign segments  = el.path | split: "." %}
+      {% assign depth     = segments | size | minus: 1 %}
+      {% assign indent_px = depth | times: 18 %}
+      {% assign last_seg  = segments | last %}
+
+      <tr>
+        <td>
+          <span style="padding-left: {{ indent_px }}px; display: inline-block;">
+            {% if depth > 0 %}↳ {% endif %}<code>{{ last_seg }}</code>
+            {% if el.sliceName %}<br/><small>slice: <code>{{ el.sliceName }}</code></small>{% endif %}
+          </span>
+        </td>
+
+        {% comment %} ── Flags column ── {% endcomment %}
+        <td>
+          {% if el.mustSupport == true %}<span title="Must Support"><strong>S</strong></span> {% endif %}
+          {% if el.isModifier == true %}<span title="Is Modifier">?!</span> {% endif %}
+          {% if el.isSummary == true %}<span title="Is Summary">Σ</span> {% endif %}
+          {% if el.constraint %}<span title="Has constraints">I</span>{% endif %}
+        </td>
+
+        {% comment %} ── Cardinality ── {% endcomment %}
+        <td>{{ el.min | default: 0 }}..{{ el.max | default: "*" }}</td>
+
+        {% comment %} ── Type(s) with profiles / target profiles ── {% endcomment %}
+        <td>
+          {% if el.type %}
+            {% for t in el.type %}
+              <code>{{ t.code }}</code>
+              {% if t.profile %}
+                {% for p in t.profile %}<br/><small>profile: {{ p }}</small>{% endfor %}
+              {% endif %}
+              {% if t.targetProfile %}
+                {% for tp in t.targetProfile %}<br/><small>target: {{ tp }}</small>{% endfor %}
+              {% endif %}
+              {% if t.aggregation %}
+                <br/><small>aggregation: {{ t.aggregation | join: ", " }}</small>
+              {% endif %}
+              {% unless forloop.last %}<br/>{% endunless %}
+            {% endfor %}
+          {% elsif el.contentReference %}
+            <small>see <code>{{ el.contentReference }}</code></small>
+          {% endif %}
+        </td>
+
+        {% comment %} ── Description, binding, fixed/pattern, slicing, constraints ── {% endcomment %}
+        <td>
+          {% if el.short %}<strong>{{ el.short }}</strong>{% endif %}
+          {% if el.definition and el.definition != el.short %}
+            <br/>{{ el.definition | markdownify }}
+          {% endif %}
+
+          {% if el.binding %}
+            <br/><small>
+              <strong>Binding:</strong>
+              {% if el.binding.valueSet %}<code>{{ el.binding.valueSet }}</code>{% endif %}
+              {% if el.binding.strength %} ({{ el.binding.strength }}){% endif %}
+              {% if el.binding.description %} — {{ el.binding.description }}{% endif %}
+            </small>
+          {% endif %}
+
+          {% if el.fixedCode %}
+            <br/><small><strong>Fixed (code):</strong> <code>{{ el.fixedCode }}</code></small>
+          {% endif %}
+          {% if el.fixedString %}
+            <br/><small><strong>Fixed (string):</strong> <code>{{ el.fixedString }}</code></small>
+          {% endif %}
+          {% if el.fixedUri %}
+            <br/><small><strong>Fixed (uri):</strong> <code>{{ el.fixedUri }}</code></small>
+          {% endif %}
+          {% if el.fixedBoolean != nil %}
+            <br/><small><strong>Fixed (boolean):</strong> <code>{{ el.fixedBoolean }}</code></small>
+          {% endif %}
+
+          {% if el.patternCodeableConcept %}
+            <br/><small><strong>Pattern (CodeableConcept):</strong>
+              {% for c in el.patternCodeableConcept.coding %}
+                <code>{{ c.system }}#{{ c.code }}</code>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </small>
+          {% endif %}
+          {% if el.patternIdentifier %}
+            <br/><small><strong>Pattern (Identifier):</strong>
+              system <code>{{ el.patternIdentifier.system }}</code>
+            </small>
+          {% endif %}
+
+          {% if el.slicing %}
+            <br/><small><strong>Slicing:</strong>
+              {% if el.slicing.discriminator %}
+                discriminator
+                {% for d in el.slicing.discriminator %}
+                  <code>{{ d.type }}@{{ d.path }}</code>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              {% endif %}
+              {% if el.slicing.rules %} — rules: {{ el.slicing.rules }}{% endif %}
+              {% if el.slicing.ordered %} — ordered{% endif %}
+            </small>
+          {% endif %}
+
+          {% if el.constraint %}
+            {% for c in el.constraint %}
+              <br/><small><strong>{{ c.key }}</strong> ({{ c.severity }}): {{ c.human }}</small>
+            {% endfor %}
+          {% endif %}
+        </td>
+      </tr>
+
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+  <p><em>No elements found in {{ source }}.</em></p>
+{% endif %}
+
+{% else %}
+  <p><em>No StructureDefinition data provided.</em></p>
+{% endif %}

@@ -160,6 +160,8 @@ definition:
       value: 2020+
     - code: releaselabel
       value: CI Build
+    - code: produce-jekyll-data
+      value: "true"
     - code: path-expansion-params
       value: ../../input/_resources/exp-params.json
     - code: show-inherited-invariants

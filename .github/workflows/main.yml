@@ -1,4 +1,5 @@
 # Use the modern Pages Actions deployment (no branch at all to build GitHub Page
+# set Setting .. Pages .. to "GitHub Actions"
 
 name: Build and Deploy
 
