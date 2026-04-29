@@ -49,8 +49,8 @@ Cras dignissim eleifend augue, in aliquam nisl mollis et. Nulla facilisi. Nunc l
      {%raw%}{% include operation-table.html op=site.data.my_operation show_metadata=true %}{%endraw%}
 
   Parameters:
-    op              - the OperationDefinition object (required)
-    show_metadata   - show the metadata block above the table (default: true)
+    - op              - the OperationDefinition object (required)
+    - show_metadata   - show the metadata block above the table (default: true)
 
 ----
 
@@ -66,40 +66,47 @@ Cras dignissim eleifend augue, in aliquam nisl mollis et. Nulla facilisi. Nunc l
   implementation guide parameter.
 
   Usage:
-    {% include structure-table.html sd=site.data.my_profile %}
-    {% include structure-table.html sd=site.data.my_profile source="differential" %}
-    {% include structure-table.html sd=site.data.my_profile filter="Encounter.meta" %}
+  {% raw %}
+  {% include structure-table.html sd=site.data.my_profile %}
+
+  {% include structure-table.html sd=site.data.my_profile source="differential" %}
+
+  {% include structure-table.html sd=site.data.my_profile filter="Encounter.meta" %}
+  {% endraw %}
 
   Parameters:
-    sd                - the StructureDefinition object (required)
-    show_metadata     - show the metadata block above the table (default: true)
-    source            - which element list to render: "snapshot" or "differential"
-                        (default: "snapshot")
-    filter            - render only one element and its descendants. Matches against
-                        ElementDefinition.id (e.g. "Encounter.meta" includes the
-                        meta row plus meta.lastUpdated, meta.profile, etc.). May
-                        also be passed as ".meta" or "meta" — the resource type
-                        prefix is added automatically.
-    show_modifier     - include the "Modifier Element" column (default: false)
-    show_must_support - include the "Must Support" column (default: false)
-    show_uscdi        - include the "Add'l USCDI" column, populated from a
-                        "𝗔𝗗𝗗𝗜𝗧𝗜𝗢𝗡𝗔𝗟 𝗨𝗦𝗖𝗗𝗜:" marker in the element's
-                        short text (default: false). The marker is stripped from
-                        the displayed short regardless of this flag.
-    show_constraints  - include FHIR ElementDefinition.constraint[] entries
-                        (key/severity/human) in the description column and change
-                        the column header to "Description & Constraints"
-                        (default: false)
+  1. `sd`                - the StructureDefinition object (required)
+  2. `show_metadata`     - show the metadata block above the table (default: true)
+  3. `source`            - which element list to render: "snapshot" or "differential"
+                      (default: "snapshot")
+  4. `filter`            - render only one element and its descendants. Matches against
+                      ElementDefinition.id (e.g. "Encounter.meta" includes the
+                      meta row plus meta.lastUpdated, meta.profile, etc.). May
+                      also be passed as ".meta" or "meta" — the resource type
+                      prefix is added automatically.
+  5. `show_modifier`    - include the "Modifier Element" column (default: false)
+  6. `show_must_support` - include the "Must Support" column (default: false)
+  7. `show_uscdi`        - include the "Add'l USCDI" column, populated from a
+                      "𝗔𝗗𝗗𝗜𝗧𝗜𝗢𝗡𝗔𝗟 𝗨𝗦𝗖𝗗𝗜:" marker in the element's
+                      short text (default: false). The marker is stripped from
+                      the displayed short regardless of this flag.
+  8. `show_constraints`  - include FHIR ElementDefinition.constraint[] entries
+                      (key/severity/human) in the description column and change
+                      the column header to "Description & Constraints"
+                      (default: false)
 
   The default column set is: Element, Cardinality, Type, Description. Set any of
   the show_* flags to true to opt in to the corresponding optional content.
 
 #### Example : US Core Encounter
 
+{% raw %} {% include structure-table.html sd=site.data.StructureDefinition-us-core-encounter source="differential" %}{% endraw %}
+
 {% include structure-table.html sd=site.data.StructureDefinition-us-core-encounter source="differential" %}
 
 
 #### Example : US Core Encounter.participant
+{% raw %}{% include structure-table.html sd=site.data.StructureDefinition-us-core-encounter source="differential" filter="participant" %}{% endraw %}
 
 {% include structure-table.html sd=site.data.StructureDefinition-us-core-encounter source="differential" filter="participant" %}
 
