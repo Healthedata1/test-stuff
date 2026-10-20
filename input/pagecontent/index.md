@@ -97,11 +97,13 @@ liquid
 
  try it here:
 
+{% comment %}
+
 {% capture raw_content %}{% include DocumentReference-photo-id-html.xhtml %}{% endcapture %}
 
 {{ raw_content }}
 
-
+{% endcomment %}
 
 {% include link-list.md %}
 
