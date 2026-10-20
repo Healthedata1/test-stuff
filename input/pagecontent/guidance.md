@@ -98,12 +98,18 @@ Cras dignissim eleifend augue, in aliquam nisl mollis et. Nulla facilisi. Nunc l
   The default column set is: Element, Cardinality, Type, Description. Set any of
   the show_* flags to true to opt in to the corresponding optional content.
 
-#### Example : US Core Encounter
+#### Example : US Core Appointment
 
-{% raw %} {% include structure-table.html sd=site.data.StructureDefinition-us-core-encounter source="differential" %}{% endraw %}
+{% raw %} {% include structure-table.md sd=site.data.StructureDefinition-us-core-appointment source="differential" show_must_support=true show_uscdi=true %}{% endraw %}
 
-{% include structure-table.html sd=site.data.StructureDefinition-us-core-encounter source="differential" %}
+{% include structure-table.md sd=site.data.StructureDefinition-us-core-appointment source="differential" show_must_support=true show_uscdi=true %}
 
+{% capture md_table %}{% include structure-table.md sd=site.data.StructureDefinition-us-core-appointment source="differential" show_must_support=true show_uscdi=true %}
+{% endcapture %}
+
+```text
+{{ md_table }}
+```
 
 #### Example : US Core Encounter.participant
 {% raw %}{% include structure-table.html sd=site.data.StructureDefinition-us-core-encounter source="differential" filter="participant" %}{% endraw %}

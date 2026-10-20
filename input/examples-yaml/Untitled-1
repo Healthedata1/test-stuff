@@ -1,0 +1,52 @@
+OST https://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+resourceType: Parameters
+parameter:
+    -
+        name: codeableConcept
+        valueCodeableConcept:
+            coding:
+                -
+                    system: 'http://loinc.org'
+                    code: 57133-1
+                    display: Referral note
+            text: Referral note
+    -
+        name: displayLanguage
+        valueString: en-US
+    -
+        name: default-to-latest-version
+        valueBoolean: true
+    -
+        name: valueSet
+        resource:
+            resourceType: ValueSet
+            url: 'http://loinc.org/vs/valid-hl7-attachment-requests'
+            name: HL7AttachmentRequests
+            title: HL7 Attachment Requests
+            status: active
+            copyright: 'This content LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use'
+            compose:
+                include:
+                    -
+                        system: 'http://loinc.org'
+                        filter:
+                            -
+                                property: ValidHL7AttachmentRequest
+                                op: =
+                                value: 'Y'
+    -
+        name: cache-id
+        valueId: 1bb13323-d9c1-4d10-8a5f-4a58aee5d541
+    -
+        name: system-version
+        valueUri: 'http://snomed.info/sct|http://snomed.info/sct/731000124108'
+    -
+        name: diagnostics
+        valueBoolean: true
+
+Create a Plain language summary of the CDEx guide to be placed on the first page:  √
+Proposal for FHIR-46527 — Sort out the QuestionnaireResponse Profile across US Core, CDex, DTR, SDC √
